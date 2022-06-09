@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Home
+from . models import Home,Settings
 # Register your models here.
 
 
@@ -14,4 +14,8 @@ class SingleInstanceAdminMixin(object):
 class HomeAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
     model = Home
 
+class SettingsAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
+    model = Settings
+
+admin.site.register(Settings,SettingsAdmin)
 admin.site.register(Home,HomeAdmin)

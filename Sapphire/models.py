@@ -14,6 +14,34 @@ class SingleInstanceMixin(object):
             raise ValidationError("Can only create 1 %s instance" % model.__name__)
         super(SingleInstanceMixin, self).clean()
 
+class Settings(SingleInstanceMixin,models.Model):
+    Company_name = models.CharField(max_length=225)
+    Main_Logo = models.ImageField()
+    
+    Office_Address_Title = models.CharField(max_length=225)
+    Office_Address = models.CharField(max_length=225)
+    Office_Location_Pincode = models.IntegerField()
+
+    Contact_Number_1 = models.IntegerField()
+    Contact_Number_2 = models.IntegerField()
+    Contact_Number_3 = models.IntegerField()
+
+    Offical_Email_Id = models.EmailField()
+    Offical_Information_Email_Id = models.EmailField()
+
+    Facebook_Page_Link = models.CharField(max_length=225)
+    Instagram_Page_Link = models.CharField(max_length=225)
+    
+
+
+    Factory_Address_Title = models.CharField(max_length=255)
+    Factory_Address = models.CharField(max_length=255)
+    Factory_Location_Pincode = models.IntegerField()
+
+    copyright_field = models.CharField(max_length=225)
+
+    Footor_Logo = models.ImageField()
+
 class Home(SingleInstanceMixin,models.Model):
     
     Top_Background_Image = models.ImageField()
@@ -22,3 +50,5 @@ class Home(SingleInstanceMixin,models.Model):
 
     What_We_Offer_Title = models.CharField(max_length=225) 
     What_We_Offer_Description = models.TextField()     
+
+
