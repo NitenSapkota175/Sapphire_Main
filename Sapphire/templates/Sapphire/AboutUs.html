@@ -1,0 +1,95 @@
+{% extends 'main.html' %}
+
+{%block content%}
+
+{%for obj in About_obj %}
+<section class="background-image">
+    <div class="aboutus">
+        <h1>{{obj.About_Us_Title}}</h1>
+        <p>{{obj.About_Us_Description}}</p>
+    </div>
+</section>
+
+<section class="main-frame">
+    <div class="content">
+        <img src="{{obj.Where_It_All_Began_Image.url}}" alt="image">
+        <div class="paragraph">
+            <h1>{{ obj.Where_It_All_Began_Title}} </h1>
+            <p>{{ obj.Where_It_All_Began_Description}}</p>
+        </div>
+    </div>
+</section>
+
+
+<div class="ourmission">
+    <div class="ourmissionh1">
+        <h1>{{obj.Our_Mission_Title}}</h1>
+    </div>
+
+    <div class="ourmissionpara">
+        <p>{{obj.Our_Mission_Description}}</p>
+    </div>
+</div>
+
+{% endfor %}
+<div class="ratings">
+    <div class="rate-quote">
+        <h1>What People are Saying</h1>
+    </div>
+
+    <div class="rate-row">
+        <div class="rate-col-1">
+                <div class="rate-icons">
+                    ******
+                </div>
+
+                <div class="rate-para">
+                    <h1>Professionalism & Value</h1>
+                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
+
+                    <h2>Amit Shrestha</h2>
+                </div>
+        </div>
+
+        <div class="rate-col-1">
+                <div class="rate-icons">
+                    ******
+                </div>
+
+                <div class="rate-para">
+                    <h1>Professionalism & Value</h1>
+                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
+
+                    <h2>Amit Shrestha</h2>
+                </div>
+        </div>
+
+        <div class="rate-col-1">
+                <div class="rate-icons">
+                    *****
+                </div>
+
+                <div class="rate-para">
+                    <h1>Professionalism & Value</h1>
+                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
+
+                    <h2>Amit Shrestha</h2>
+                </div>
+        </div>
+
+        <div class="rate-col-1">
+            <div class="rate-icons">
+                ******
+            </div>
+
+            <div class="rate-para">
+                <h2>Professionalism & Value</h2>
+                <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
+
+                <h2>Amit Shrestha</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock content%}
