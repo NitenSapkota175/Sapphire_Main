@@ -1,0 +1,89 @@
+{%extends 'main.html'%}
+{%block content %}
+
+
+{%for product2 in Product2%}
+<section class="pvcprofile">
+    <img src="{{product2.Product_Top_Background_Image.url}}" alt="img">
+    <div class="profile">
+        <h1>{{product2.Product_Name}}</h1>
+        
+        <p>{{product2.Product_Short_Description_1}}</p>
+    </div>
+</section>
+<div class="profile-row">
+    <div class="col-profile1">
+        <h1>{{product2.Product_Name}}</h1>
+        <p>{{product2.Product_Short_Description_2}}</p>
+    </div>
+
+    <div class="col-profile2">
+        <p>{{product2.Visit_Our_Website_Title}}</p>
+        <a href="#">{{product2.Website_Link}}</a>
+    </div>
+</div>
+
+<section class="profile-container">
+    <img src="{{product2.Product_Middle_Image.url}}" alt="">
+</section>
+
+<div class="content-profile">
+    <div class="content1">
+        <h1>{{product2.Introduction_Section_Title}}</h1>
+
+        <p>{{ product2.Introduction_Section_Description|linebreaksbr}}</p>
+
+        
+        <ul>
+            {% for features in product2.product_type2_features_set.all%}   
+            <li>{{features.ProductType2_Feature}}</li>
+            {% endfor %} 
+        </ul>
+        
+    </div>
+
+    <div class="content2">
+        <h1>{{product2.To_Know_More_Visit_Our_Website}}</h1>
+        <p><a href="#">{{product2.Website_Link}}</a></p>
+        <div class="content-images">
+            <div class="content-row">
+                <div class="content-col">
+                    <img src="{{product2.Introduction_Section_Image.url }}" alt="">
+                </div>
+
+               
+            </div>
+
+
+         
+         </div>
+
+
+        <ul>
+            {% for Assurance in product2.product_type2_assurance_set.all%}   
+            <li>{{Assurance.ProductType2_Assurance }}</li>
+            {% endfor %} 
+        </ul>
+    </div>
+</div>
+
+<section class="whyus">
+    <div class="whyus-img">
+        <img src="{{product2.Why_Us_Image1.url}}" alt="img">
+        <img src="{{product2.Why_Us_Image1.url}}" alt="img">
+    </div>
+
+    <div class="whyus-content">
+        <h1>{{product2.Why_Us_Title}}</h1>
+        <p>{{product2.Why_Us_Description|linebreaksbr}}</p>
+    </div>
+</section>
+
+{%include 'Sapphire/EndsectionofEveryProduct.html'%}
+
+
+{% endfor %} 
+
+
+
+{%endblock content %}

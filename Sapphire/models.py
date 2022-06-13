@@ -7,6 +7,8 @@ from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
 
 
+
+
 class SingleInstanceMixin(object):
     
 
@@ -28,10 +30,12 @@ class Settings(SingleInstanceMixin,models.Model):
 
 
 
+    Contact_Title = models.CharField(max_length=225,null=True,blank=True)
     Contact_Number_1 = PhoneNumberField()
     Contact_Number_2 = PhoneNumberField()
     Contact_Number_3 = PhoneNumberField()
 
+    Email_Title = models.CharField(max_length=225,null=True,blank=True)
     Offical_Email_Id = models.EmailField()
     Offical_Information_Email_Id = models.EmailField()
 
@@ -105,6 +109,8 @@ class About(SingleInstanceMixin,models.Model):
 
 class Testimonial(models.Model):
 
+ 
+
     Title =  models.CharField(max_length=225)
     Body = models.TextField()
     Full_Name = models.CharField(max_length=225)
@@ -130,6 +136,8 @@ class Product_Type_1(models.Model):
     Product_Short_Description_1 = models.CharField(max_length=225)
     Product_Top_Background_Image = models.ImageField()
     Product_Short_Description_2 = models.CharField(max_length=225)
+    Product_HomePage_Description = models.TextField(null=True , blank=True)
+    Product_ProductPage_Description = models.TextField(null=True,blank=True)
     Product_Middle_Image = models.ImageField()
     Visit_Our_Website_Title = models.CharField(max_length=225,default="Visit our website",null=True,blank=True)
     Website_Link = models.URLField(max_length=225,null=True,blank=True)
@@ -157,7 +165,7 @@ class Product_Type_1(models.Model):
 class Product_Type1_Structure(models.Model):
     
     Product_name = models.ForeignKey(Product_Type_1 , on_delete=models.CASCADE)
-    Product1_Structure_Title = models.CharField(max_length=225,null=True,blank=True)
+    Product1_Structure_Title = models.CharField(max_length=225,null=True,blank=True,default='')
     Product1_Structure_Short_Description = models.TextField(null=True,blank=True)
    
  
@@ -179,6 +187,8 @@ class Product_Type_2(models.Model):
     Product_Short_Description_1 = models.CharField(max_length=225)
     Product_Top_Background_Image = models.ImageField()
     Product_Short_Description_2 = models.CharField(max_length=225)
+    Product_HomePage_Description = models.TextField(null=True , blank=True)
+    Product_ProductPage_Description = models.TextField(null=True,blank=True)
     Product_Middle_Image = models.ImageField()
     Visit_Our_Website_Title = models.CharField(max_length=225,default="Visit our website",null=True,blank=True)
     Website_Link = models.URLField(max_length=225,null=True,blank=True)

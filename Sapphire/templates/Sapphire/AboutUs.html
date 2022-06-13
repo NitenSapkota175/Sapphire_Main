@@ -1,21 +1,28 @@
+
 {% extends 'main.html' %}
+{%load static%}
 
 {%block content%}
-
 {%for obj in About_obj %}
+
+
 <section class="background-image">
+    <img src="{{obj.About_Us_Top_Background_Image.url}}" alt="img">
     <div class="aboutus">
         <h1>{{obj.About_Us_Title}}</h1>
-        <p>{{obj.About_Us_Description}}</p>
+        <p>{{obj.About_Us_Description|linebreaksbr}}</p>
     </div>
 </section>
+
+
+
 
 <section class="main-frame">
     <div class="content">
         <img src="{{obj.Where_It_All_Began_Image.url}}" alt="image">
         <div class="paragraph">
             <h1>{{ obj.Where_It_All_Began_Title}} </h1>
-            <p>{{ obj.Where_It_All_Began_Description}}</p>
+            <p>{{ obj.Where_It_All_Began_Description|linebreaksbr}}</p>
         </div>
     </div>
 </section>
@@ -27,69 +34,57 @@
     </div>
 
     <div class="ourmissionpara">
-        <p>{{obj.Our_Mission_Description}}</p>
+        <p>{{obj.Our_Mission_Description|linebreaksbr}}</p>
     </div>
 </div>
 
-{% endfor %}
 <div class="ratings">
+    <div class="testimonals">
+        <p>{{obj.Testimonial_Title}}</p>
+    </div>
+
+
     <div class="rate-quote">
-        <h1>What People are Saying</h1>
+        <h1>{{obj.What_People_Are_Saying_Title}}</h1>
     </div>
 
+
+    
     <div class="rate-row">
+        {%for Testi in Testimonial_obj%}
         <div class="rate-col-1">
                 <div class="rate-icons">
-                    ******
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
                 </div>
 
                 <div class="rate-para">
-                    <h1>Professionalism & Value</h1>
-                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
+                    <h2>{{Testi.Title|linebreaksbr}}</h2>
+                    <p>{{Testi.Body|linebreaksbr}}</p>
 
-                    <h2>Amit Shrestha</h2>
+                    <h2>{{Testi.Full_Name|linebreaksbr}}</h2>
                 </div>
         </div>
-
-        <div class="rate-col-1">
-                <div class="rate-icons">
-                    ******
-                </div>
-
-                <div class="rate-para">
-                    <h1>Professionalism & Value</h1>
-                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
-
-                    <h2>Amit Shrestha</h2>
-                </div>
-        </div>
-
-        <div class="rate-col-1">
-                <div class="rate-icons">
-                    *****
-                </div>
-
-                <div class="rate-para">
-                    <h1>Professionalism & Value</h1>
-                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
-
-                    <h2>Amit Shrestha</h2>
-                </div>
-        </div>
-
-        <div class="rate-col-1">
-            <div class="rate-icons">
-                ******
-            </div>
-
-            <div class="rate-para">
-                <h2>Professionalism & Value</h2>
-                <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati laborum eum! dolor sit amet consectetur adipisicing elit. Suscipit placeat tempore error!</p>
-
-                <h2>Amit Shrestha</h2>
-            </div>
-        </div>
+        {%endfor%}
+      
     </div>
+  
 </div>
 
+{%endfor%}
 {%endblock content%}
+
+
+
+
+
+
+
+
+
+
+
+

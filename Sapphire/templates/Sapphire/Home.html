@@ -2,6 +2,69 @@
 
 {%block content%}
 
-    <h1>Hi<h1>
+ {%for obj in Home_obj %}   
+<section>
+    <div class="background">
+        <img src="{{obj.Home_Top_Background_Image.url}}" alt="img">
+        <div class="para">
+            <h1>{{obj.Welcome_Title}}</h1>
+            <p>{{obj.Welcome_Description}}</p>
+        </div>
+    </div>
+</section>
 
+<main class="container-fluid">
+    <div class="main-q">
+        <h1>{{obj.What_We_Offer_Title}}</h1>
+        <p>{{obj.What_We_Offer_Description}}</p>
+    </div>
+
+{%endfor%}
+
+{%for product1 in Product1%}
+    <div class="row-l">
+        <div class="col-1">
+            <div class="card1">
+                <div class="card-head">
+                    <h1>{{product1.Product_Name}}</h1>
+                </div>
+                <div class="card-body">
+                    <p>{{product1.Product_HomePage_Description}}</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-learnmore">Read More</button>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="{{product1.Why_Us_Image1.url}}" alt="">
+            </div>
+        </div>
+    </div>
+
+  {%endfor%}
+    <div class="row-l">
+        <div class="col-1">
+            <div class="card1">
+                <div class="card-head">
+                    <h1>Sapphire</h1>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, doloribus ea? Ex voluptatum
+                        voluptate totam cum pariatur, corrupti itaque voluptatem fugiat numquam, dignissimos iure
+                        inventore sint dolore corporis ipsum ducimus officia perferendis, expedita quia?</p>
+                </div>
+
+                <div class="card-footer">
+                    <button class="btn-learnmore">Read More</button>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="/images/aboutus.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</main>
 {%endblock content%}

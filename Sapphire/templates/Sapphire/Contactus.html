@@ -1,0 +1,68 @@
+{%extends 'main.html'%}
+
+{%block content %}
+    
+<section class="contactlist">
+    <div class="contact">
+        <div class="contactform">
+          
+            <div class="contactpara">
+                {%for contact in contactus%}
+                <h1>{{contact.Title}}</h1>
+                <p>{{contact.Description}}</p>
+            {%endfor%}
+            </div>
+       
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="Number" name="phoneno" placeholder="Phone No.">
+            <textarea name="help" id="textarea" cols="30" rows="10" placeholder="How can we help you out?"></textarea>
+            <button class="btn-contact">Send</button>
+        </div>
+
+    
+        <div class="contactinfo">
+            {%for setting in settings %}
+            <div class="address">
+                <h1>{{setting.Office_Address_Title}}</h1>
+                <ul>
+                    <li>{{setting.Office_Address1}}</li>
+                    <li>{{setting.Office_Address2}}</li>
+                    <li>{{setting.City_1}} {{setting.Office_Address_Zip_Code}}</li>
+                </ul>
+            </div>
+
+            <div class="Factoryaddress">
+                <h1>{{setting.Factory_Address_Title}}</h1>
+                <ul>
+                    <li>{{setting.Factory_Address1}}</li>
+                    <li>{{setting.Factory_Address2}}</li>
+                    <li>{{setting.City_2}} {{setting.Factory_Adress_Zip_Code}}</li>
+                </ul>
+            </div>
+
+            <div class="phone">
+                <h1>{{setting.Contact_Title}}</h1>
+                <ul>
+                    <li>{{setting.Contact_Number_1 }}</li>
+                    <li>{{setting.Contact_Number_2 }}</li>
+                    <li>{{setting.Contact_Number_3 }}</li>
+                </ul>
+            </div>
+
+            <div class="emailus">
+                <h1>{{setting.Email_Title}}</h1>
+                <ul>
+                    {{setting.Offical_Email_Id }}
+                </ul>
+            </div>
+            {%endfor%}
+        </div>
+       
+    </div>
+</section>   
+
+
+
+
+{%endblock content%}

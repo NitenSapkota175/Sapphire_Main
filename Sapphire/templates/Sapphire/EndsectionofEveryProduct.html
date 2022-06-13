@@ -1,0 +1,25 @@
+<section class="aboutproduct">
+    {%for End_sec in End_Section %}
+    <img src="{{End_sec.Background_Image.url}}" alt="">
+    <div class="quality">
+       
+        <div class="q1">
+            <img src="{{End_sec.logo1.url}}" alt="img">
+            <h2>{{End_sec.Title1}}</h2>
+            <p>{{End_sec.Description1}}</p>
+        </div>
+
+        <div class="q1">
+            <img src="{{End_sec.logo2.url}}" alt="img">
+            <h2>{{End_sec.Title2}}</h2>
+            <p>{{End_sec.Description2}}</p>
+        </div>
+
+        <div class="q1">
+            <img src="{{End_sec.logo3.url}}" alt="img">
+            <h2>{{End_sec.Title3}}</h2>
+            <p>{{End_sec.Description3}}</p>
+        </div>
+        {%endfor%}
+    </div>
+</section>

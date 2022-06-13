@@ -1,0 +1,17 @@
+{%extends 'main.html'%}
+
+{%block content%}
+    
+<section class="ourwork">
+    
+   
+    <div class="row-ourwork">
+        {%for ourwork in Our_works%}
+        <div class="col-ourwork">
+            <img src="{{ourwork.Image.url}}" alt="">
+        </div>
+
+   {%endfor%}
+</section>
+
+{%endblock content%}
