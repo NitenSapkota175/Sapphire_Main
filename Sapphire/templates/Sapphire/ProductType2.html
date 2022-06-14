@@ -37,7 +37,7 @@
              
         <ul>
             {% for features in product2.product_type2_features_set.all%}   
-            <li><img src="{%static ./images/tick.png %}" alt="">{{features.ProductType2_Feature}}</li>
+            <li><img src="{%static '/images/tick.png' %}" alt="">{{features.ProductType2_Feature}}</li>
             {% endfor %} 
         </ul>
         
@@ -56,7 +56,7 @@
 
             <ul>
                 {% for Assurance in product2.product_type2_assurance_set.all%}   
-                <li><img src="{%static ./images/check.png %}" alt="">{{Assurance.ProductType2_Assurance }}</li>
+                <li><img src="{%static '/images/check.png' %}" alt="">{{Assurance.ProductType2_Assurance }}</li>
                 {% endfor %} 
             </ul>
        
