@@ -5,13 +5,24 @@
 <section class="ourwork">
     
    
-    <div class="row-ourwork">
-        {%for ourwork in Our_works%}
-        <div class="col-ourwork">
-            <img src="{{ourwork.Image.url}}" alt="">
+
+    <section class="ourwork">
+        <div class="row-ourwork">
+            {%for ourwork in Our_works%}
+            <div class="col-ourwork">
+                <img src="{{ourwork.Image1.url}}" alt="">
+            </div>
+
+            <div class="col-ourwork">
+                <img src="{{ourwork.Image2.url}}" alt="">
+            </div>
+
+            <div class="col-ourwork">
+                <img src="{{ourwork.Image3.url}}" alt="">
+            </div>
+            {%endfor%}
         </div>
 
-   {%endfor%}
 </section>
 
 {%endblock content%}

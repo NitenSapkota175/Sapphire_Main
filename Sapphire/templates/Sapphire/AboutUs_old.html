@@ -1,8 +1,10 @@
+
 {% extends 'main.html' %}
 {%load static%}
 
 {%block content%}
 {%for obj in About_obj %}
+
 
 <section class="background-image">
     <img src="{{obj.About_Us_Top_Background_Image.url}}" alt="img">
@@ -13,18 +15,18 @@
 </section>
 
 
+
+
 <section class="main-frame">
     <div class="content">
         <img src="{{obj.Where_It_All_Began_Image.url}}" alt="image">
         <div class="paragraph">
-            <div class="ourstory">
-                <p>{{obj.OurStory_Title}}</p>
-            </div>
-            <h1>{{ obj.Where_It_All_Began_Title}}</h1>
+            <h1>{{ obj.Where_It_All_Began_Title}} </h1>
             <p>{{ obj.Where_It_All_Began_Description|linebreaksbr}}</p>
         </div>
     </div>
 </section>
+
 
 <div class="ourmission">
     <div class="ourmissionh1">
@@ -40,34 +42,51 @@
     <div class="testimonals">
         <p>{{obj.Testimonial_Title}}</p>
     </div>
+
+
     <div class="rate-quote">
         <h1>{{obj.What_People_Are_Saying_Title}}</h1>
     </div>
 
+
+    
     <div class="rate-row">
         {%for Testi in Testimonial_obj%}
         <div class="rate-col-1">
                 <div class="rate-icons">
-                    <img src="{% static '/images/star_3.png' %}" alt="">
-                    <img src="{% static '/images/star_3.png' %}" alt="">
-                    <img src="{% static '/images/star_3.png' %}" alt="">
-                    <img src="{% static '/images/star_3.png' %}" alt="">
-                    <img src="{% static '/images/star_3.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
+                    <img src="{% static '/images/star.png' %}" alt="">
                 </div>
 
                 <div class="rate-para">
                     <h2>{{Testi.Title|linebreaksbr}}</h2>
-                    <p>{{Testi.Body|linebreaksbr}}!</p>
+                    <p>{{Testi.Body|linebreaksbr}}</p>
 
                     <h2>{{Testi.Full_Name|linebreaksbr}}</h2>
                 </div>
         </div>
-
         {%endfor%}
+      
     </div>
+  
 </div>
 
 {%endfor%}
-
 {%endblock content%}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -124,7 +124,9 @@ class Testimonial(models.Model):
 
 class Our_Works(models.Model):
         
-        Image = models.ImageField()
+        Image1 = models.ImageField()
+        Image2 = models.ImageField()
+        Image3 = models.ImageField()
         
         class Meta:
             verbose_name_plural = "Our_Works"

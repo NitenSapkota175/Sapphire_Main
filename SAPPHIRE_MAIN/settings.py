@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'SAPPHIRE_MAIN.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sapphire_main',
-        'USER' : 'postgres',
+        'NAME': 'Sapphire_Main',
+        'USER' : 'nitensapkota1705',
         'PASSWORD' : 'nitensapkota10101111',
-        'HOST' : 'localhost',
+        'HOST' : 'database-1.cffz4bxhc8ow.us-east-1.rds.amazonaws.com',
         'PORT' : '5432',
 }
 }
