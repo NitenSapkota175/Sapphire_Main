@@ -70,7 +70,3 @@ def Contactus(request):
     context = {'contactus' : contactus , 'settings' : settings}
     return render(request,'Sapphire/Contactus.html',context)
 
-def Footer(request):
-    settings = Settings.objects.all()
-    context = {'settings' : settings }
-    return render(request,'Sapphire/footer.html',context)

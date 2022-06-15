@@ -1,36 +1,40 @@
 {%load static %}
+{%for setting in settings%}
 <footer>
-    <h1>Sapphire Commotrade Pvt. Ltd</h1>
+  
+    <h1>{{setting.Company_Name}}</h1>
+ 
     <div class="footer-row">
         <div class="footer-ul">
-            <h4>Office Address</h4>
+            <h4>{{setting.Office_Address_Title}}</h4>
             <ul>
-                <li>2nd Floor, New Golden Plaza</li>
-                <li>Burdwan Road</li>
-                <li>siliguri - 734001</li>
+                <li>{{setting.Office_Address1}}</li>
+                <li>{{setting.Office_Address2}}</li>
+                <li>{{setting.City_1}} {{setting.Office_Address_Zip_Code}}</li>
             </ul>
         </div>
 
         <div class="footer-logo">
-            logo
+            <img src = "{{setting.Footor_Logo.url}}" >
         </div>
 
         <div class="footer-ul">
-            <h4>Factory Address</h4>
+            <h4>{{setting.Factory_Address_Title}}</h4>
             <ul>
-                <li>Demdema, Sanasekhata</li>
-                <li>Bhutkihat, Rajgung</li>
-                <li>Jalpaiguri - 735135</li>
+                <li>{{setting.Factory_Address1}}</li>
+                <li>{{setting.Factory_Address2}}</li>
+                <li>{{setting.City_2}} {{setting.Factory_Adress_Zip_Code}} </li>
             </ul>
-        </div>
     </div>
 
     <div class="footerSec-row">
-        <h6><i class="fa-solid fa-phone-volume"></i> +91-9832671452, +91-9832671452, +91-9832671452 </h6>
-        <h5> <i class="fa-solid fa-envelope"> @Email.com</i></h5>
+        <h6><i class="fa-solid fa-phone-volume"></i> {{setting.Contact_Number_1}}, {{setting.Contact_Number_2 }}, {{setting.Contact_Number_3}} </h6>
+        <h5> <i class="fa-solid fa-envelope"> {{setting.Offical_Email_Id}}</i></h5>
     </div>
 
     <div class="footerLast">
-        <p>@copyrights - 2022</p>
+        <p>{{setting.Copyright_Field}}</p>
     </div>
+  
 </footer>
+{%endfor%}
