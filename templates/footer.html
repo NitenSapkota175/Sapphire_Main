@@ -1,9 +1,7 @@
 {%load static %}
 {%for setting in settings%}
 <footer>
-  
     <h1>{{setting.Company_Name}}</h1>
- 
     <div class="footer-row">
         <div class="footer-ul">
             <h4>{{setting.Office_Address_Title}}</h4>
@@ -15,7 +13,7 @@
         </div>
 
         <div class="footer-logo">
-            <img src = "{{setting.Footor_Logo.url}}" >
+            <img src="{{setting.Footor_Logo.url}}" alt="">
         </div>
 
         <div class="footer-ul">
@@ -25,16 +23,16 @@
                 <li>{{setting.Factory_Address2}}</li>
                 <li>{{setting.City_2}} {{setting.Factory_Adress_Zip_Code}} </li>
             </ul>
+        </div>
     </div>
 
     <div class="footerSec-row">
-        <h6><i class="fa-solid fa-phone-volume"></i> {{setting.Contact_Number_1}}, {{setting.Contact_Number_2 }}, {{setting.Contact_Number_3}} </h6>
-        <h5> <i class="fa-solid fa-envelope"> {{setting.Offical_Email_Id}}</i></h5>
+        <h6> <img src="{% static 'images/telephone.png' %}" alt=""> {{setting.Contact_Number_1}}, {{setting.Contact_Number_2 }}, {{setting.Contact_Number_3}}</h6>
+        <h5><img src="{% static 'images/email.png' %}" alt=""> {{setting.Offical_Email_Id}}</h5>
     </div>
 
     <div class="footerLast">
         <p>{{setting.Copyright_Field}}</p>
     </div>
-  
 </footer>
 {%endfor%}

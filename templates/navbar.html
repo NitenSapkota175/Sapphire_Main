@@ -1,17 +1,18 @@
 {%load static %}
-
+{%for setting in settings%}
 <header>
     <div class="head">
-        <p><i class="fa-solid fa-envelope"></i>@Email</p>
-        <p><i class="fa-solid fa-phone-volume"></i>+91 7363030051</p>
+        <p><img src="./images/email.png" alt="">{{setting.Offical_Information_Email_Id}}</p>
+        <p><img src="./images/telephone.png" alt="">{{setting.Contact_Number_2}}</p>
     </div>
 </header>
 
 <nav>
     <div class="logo">
-        logo
+        <img src="{{setting.Main_Logo.url}}" alt="img">
     </div>
 
+{%endfor%}
     <div id="headNavOpen" class="head-nav">
         <h2>Sapphire</h2>
 
