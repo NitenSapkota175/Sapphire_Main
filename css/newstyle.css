@@ -371,6 +371,9 @@ main{
     align-items: center;
     text-align: justify;
 }
+.rate-para h2{
+    font-size: 1.1rem;
+}
 
 .testimonals{
     position: relative;
