@@ -1024,6 +1024,21 @@ ul li img{
         height: 20rem;
         width: 20rem;
     }
+    .contactlist{
+        height: 36rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .contactlist .contactlist-img{
+        height: 36rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .phone {
+            padding: 0rem 5rem 0rem 0rem;
+    }
 }
 
 @media only screen and (max-width: 1230px)
@@ -1230,6 +1245,9 @@ ul li img{
         height: 18rem;
         width: 18rem;
     }
+     .phone {
+        padding: 0rem 3rem 0rem 0rem;
+    }
 }
 
 @media only screen and (max-width: 990px){
@@ -1294,7 +1312,7 @@ ul li img{
     }
 
     .whyus-img{
-        gap: 3rem;
+       gap: 3rem;
     }
 
     .whyus-img img {
@@ -1507,6 +1525,19 @@ ul li img{
         height: 14rem;
         width: 14rem;
     }
+    .background-image{
+        height: 36rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .background-image img{
+        height: 36rem;
+        width: 100%;
+    }
+    .aboutus {
+        padding: 6rem;
+    }
 }
 
 @media only screen and (max-width: 780px){
@@ -1661,6 +1692,20 @@ ul li img{
     .nav ul li{
         font-size: 1.2rem;
     }
+     .background-image{
+        height: 36rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .background-image img{
+        height: 36rem;
+        width: 100%;
+    }
+    .aboutus {
+        padding: 6rem;
+    }
+
 }
 
 
@@ -2003,6 +2048,19 @@ ul li img{
     .col-ourwork img {
         height: 12rem;
         width: 12rem;
+    }
+    .background-image{
+        height: 30rem;
+        width: 100%;
+        position: relative;
+    }
+
+   .background-image img{
+        height: 30rem;
+        width: 100%;
+    }
+    .aboutus {
+        padding: 6rem;
     }
 }
 @media only screen and (max-width: 655px)
