@@ -95,6 +95,13 @@ nav{
     width: 10rem;
 }
 
+.menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
 /* background with image */
 
 .background{
@@ -297,8 +304,6 @@ main{
     letter-spacing: 0.01rem;
     text-align: justify;
 }
-
-
 .ourmission{
     background-color: var(--color-black-shade);
     display: flex;
@@ -371,8 +376,9 @@ main{
     align-items: center;
     text-align: justify;
 }
+
 .rate-para h2{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .testimonals{
@@ -520,15 +526,14 @@ main{
     gap: 1rem;
 }
 
-/* contact list */
 
-/* .contactlist{
+.contactlist{
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-.contactlist img{
+.contactlist .contactlist-img{
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -547,11 +552,12 @@ main{
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     gap: 1rem;
-} */
+    color: var(--color-white);
+}
 
 
 /* new contact background updated! */
-.contactlist{
+/* .contactlist{
     background-image: -webkit-linear-gradient(rgb(91, 162, 184), rgb(175, 112, 204), rgb(64, 124, 203), rgb(219, 140, 210));
 }
 .contact{
@@ -560,7 +566,7 @@ main{
     gap: 1rem;
     background-color: rgba(0, 0, 0, 0.3);
     color: var(--color-white);
-}
+} */
 .icons{
     -webkit-filter: invert();
 }
@@ -1055,6 +1061,22 @@ ul li img{
         height: 20rem;
         width: 20rem;
     }
+
+    .contactlist{
+        height: 36rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .contactlist .contactlist-img{
+        height: 36rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .phone {
+            padding: 0rem 5rem 0rem 0rem;
+    }
 }
 
 @media only screen and (max-width: 1230px)
@@ -1260,6 +1282,9 @@ ul li img{
     .col-ourwork img {
         height: 18rem;
         width: 18rem;
+    }
+    .phone {
+        padding: 0rem 3rem 0rem 0rem;
     }
 }
 
@@ -1544,6 +1569,20 @@ ul li img{
         height: 14rem;
         width: 14rem;
     }
+    .background-image{
+        height: 36rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .background-image img{
+        height: 36rem;
+        width: 100%;
+    }
+    .aboutus {
+        padding: 6rem;
+    }
+    
 }
 
 @media only screen and (max-width: 780px){
@@ -1698,6 +1737,19 @@ ul li img{
 
     .nav ul li{
         font-size: 1.2rem;
+    }
+    .background-image{
+        height: 36rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .background-image img{
+        height: 36rem;
+        width: 100%;
+    }
+    .aboutus {
+        padding: 6rem;
     }
 }
 
@@ -2226,6 +2278,19 @@ ul li img{
     .nav ul{
         gap: 2rem;
     }
+    .background-image{
+        height: 30rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .background-image img{
+        height: 30rem;
+        width: 100%;
+    }
+    .aboutus {
+        padding: 6rem;
+    }
 }
 
 @media only screen and (max-width: 565px){
@@ -2562,15 +2627,16 @@ ul li img{
         background-color: var(--color-black-shade);
         padding: 0.8rem;
     }
-    .head-nav h2{
-        color: var(--color-white);
-    }
-
     .head-nav button{
         border: 0;
-        border-radius: 0.3rem;
+        border-radius: 0.4rem;
         padding: 0.4rem;
         cursor: pointer;
+    }
+
+    .head-nav img{
+        height: 1.2rem;
+        width: 1.5rem;
     }
     .footer-row {
         justify-content: center;
@@ -3192,7 +3258,7 @@ ul li img{
     }
     .btn-read-more a {
         color: black;
-       font-size: 0.7rem;
+        font-size: 0.7rem;
         text-decoration: none;
     }
 }
