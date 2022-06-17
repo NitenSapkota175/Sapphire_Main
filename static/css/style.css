@@ -22,7 +22,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: right;
-    padding: 0.2rem 0rem 0.2rem 0rem;
+    padding: 0.2rem 2rem 0.2rem 0rem;
     gap: 1rem;
 }
 .head p{
