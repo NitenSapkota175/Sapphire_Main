@@ -30,28 +30,29 @@
 
         <p>{{product1.Introduction_Section_Description|linebreaksbr}}</p>
 
-            <ul>
+            <ul class = "features-product-type" type = "square">
 
                 {% for features in product1.product_type1_features_set.all%}   
-                <li> <img src="{%static '/images/tick.png' %}" alt="">{{features.ProductType1_Feature}}</li>
+                <li>{{features.ProductType1_Feature}}</li>
                 {% endfor %} 
            
             </ul>
     </div>
 
     <div class="content2">
-        <div class="content2-head">
-            <h2>To know more visit our website</h2>
-            <p><a href="#">www.sapphireprofile.com</a></p>
-        </div>
+   
         <ul>
         <div class="content-images">
             <img src="{{product1.Introduction_Section_Image1.url }}" alt="">
         </div>
 
+        <div class="content-images">
+            <img src="{{product1.Introduction_Section_Image2.url }}" alt="">
+        </div>
+
 
         {% for Assurance in product1.product_type1_assurances_set.all%}   
-         <li><img src="{%static '/images/check.png' %}" alt="">{{Assurance.ProductType1_Assurance }}</li>
+         <li><img src="" alt="">{{Assurance.ProductType1_Assurance }}</li>
         {% endfor %} 
         <ul>
 

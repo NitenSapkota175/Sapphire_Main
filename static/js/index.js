@@ -12,6 +12,6 @@ Open.addEventListener("click", () => {
     }
     else{
         navbar.style.display = "none";
-        headNav.style.borderRadius = "1.2rem";
+       headNav.style.borderRadius = "1.2rem";
     }
-})
+});
