@@ -41,16 +41,11 @@
 
     <div class="content2">
    
-        <ul>
-        <div class="content-images">
+        <div class="content-images2">
             <img src="{{product1.Introduction_Section_Image1.url }}" alt="">
-        </div>
-
-        <div class="content-images">
             <img src="{{product1.Introduction_Section_Image2.url }}" alt="">
         </div>
-
-
+        <ul>
         {% for Assurance in product1.product_type1_assurances_set.all%}   
          <li><img src="" alt="">{{Assurance.ProductType1_Assurance }}</li>
         {% endfor %} 
