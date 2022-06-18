@@ -140,3 +140,38 @@ MEDIA_ROOT = os.path.join(BASE_DIR , 'static/images')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    # title of the window (Will default to current_admin_site.site_title if absent or None)
+    "site_title": "Sapphire Admin",
+
+    # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_header": "Sapphire",
+
+    # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_brand": "Sapphire",
+
+    "site_logo": "images/Sapphire_uPVC_Window_Solutions_1.png",
+
+
+        # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
+    "login_logo": "images/Sapphire_uPVC_Window_Solutions_1.png" ,
+
+    # Logo to use for login form in dark themes (defaults to login_logo)
+    "login_logo_dark": None,
+
+    # CSS classes that are applied to the logo above
+    "site_logo_classes": "img-circle",
+
+    "site_logo_dark" : None,
+
+    # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
+    "site_icon":"images/Sapphire_uPVC_Window_Solutions_1.png" ,
+
+    # Welcome text on the login screen
+    "welcome_sign": "Welcome to the Sapphire Admin",
+
+    # Copyright on the footer
+    "copyright": "Sapphire",
+
+}
