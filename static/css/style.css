@@ -22,7 +22,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: right;
-    padding: 0.2rem 0rem 0.2rem 0rem;
+    padding: 0.2rem 2rem 0.2rem 0rem;
     gap: 1rem;
 }
 .head p{
@@ -95,6 +95,13 @@ nav{
     width: 10rem;
 }
 
+.menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
 /* background with image */
 
 .background{
@@ -110,7 +117,7 @@ nav{
 
 .para{
     position: absolute;
-    left: 20rem;
+    left: 16rem;
     top: 3rem;
     height: 20rem;
     width: 25rem;
@@ -262,7 +269,7 @@ main{
     gap: 1rem;
     flex-direction: column;
     background-color: rgb(247, 247, 247);
-    padding: 10rem;
+    padding: 12rem;
     color: var(--color-white);
     background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
@@ -297,8 +304,6 @@ main{
     letter-spacing: 0.01rem;
     text-align: justify;
 }
-
-
 .ourmission{
     background-color: var(--color-black-shade);
     display: flex;
@@ -370,6 +375,10 @@ main{
     gap: 1rem;
     align-items: center;
     text-align: justify;
+}
+
+.rate-para h2{
+    font-size: 1.2rem;
 }
 
 .testimonals{
@@ -486,8 +495,6 @@ main{
     color: black;
     text-decoration: none;
 }
-
-
 .aboutproduct{
     height: 100%;
     width: 100%;
@@ -519,21 +526,53 @@ main{
     gap: 1rem;
 }
 
-/* contact list */
 
 .contactlist{
-    height: 40rem;
+    height: 100%;
     width: 100%;
-    background-color: rgb(177, 177, 177);
-    color: rgb(3, 3, 3);
+    position: relative;
+}
+
+.contactlist .contactlist-img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contact{
-    background-color: rgb(209, 207, 207);
+    position: absolute;
+    top: 0%;
+    font-size: 1.2rem;
     height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     gap: 1rem;
+    color: var(--color-white);
 }
+
+
+/* new contact background updated! */
+/* .contactlist{
+    background-image: -webkit-linear-gradient(rgb(91, 162, 184), rgb(175, 112, 204), rgb(64, 124, 203), rgb(219, 140, 210));
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+} */
+.icons{
+    -webkit-filter: invert();
+}
+
+/* -------------------------------------- */
+
 
 .contactform{
     padding: 5rem;
@@ -597,7 +636,6 @@ form textarea{
     height: 1.5rem;
     width: 1.5rem;
 }
-
 .contactinfo{
     display: flex;
     width: 50%;
@@ -606,7 +644,6 @@ form textarea{
     gap: 2rem;
     padding: 4rem 0rem 4rem 0rem;
 }
-
 .contactinfo li{
     list-style-type: none;
     padding: 0.5rem 0rem 0rem 1rem;
@@ -705,7 +742,22 @@ form textarea{
     background-color: rgb(235 234 234);
     width: 60rem;
     align-items: center;
-    padding: 1rem;
+    padding: 0.8rem;
+}
+
+.col-profile2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem;
+}
+.col-profile1 h4{
+    font-size: 1rem;
+}
+
+.col-profile2 a{
+    text-decoration: none;
+    color: rgb(21, 127, 21);
 }
 
 .profile-container{
@@ -722,15 +774,14 @@ form textarea{
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    background-color:var(--color-main);
-    color: white;
+    color: black;
 }
 
 .content1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 1.6rem;
+    line-height: 1.7rem;
     gap: 1.5rem;
     width: 50%;
     text-justify: inter-word;
@@ -741,7 +792,7 @@ form textarea{
 }
 
 .content1 ul li{
-    list-style-type: none;
+    list-style-type: square;
     color: rgb(31, 248, 31);
 }
 
@@ -1024,12 +1075,13 @@ ul li img{
         height: 20rem;
         width: 20rem;
     }
+
     .contactlist{
         height: 36rem;
         width: 100%;
         position: relative;
     }
-
+    
     .contactlist .contactlist-img{
         height: 36rem;
         width: 100%;
@@ -1154,7 +1206,7 @@ ul li img{
 @media only screen and (max-width: 1030px){
     .para {
         left: 5rem;
-        width: 22rem;
+        width: 26rem;
     }
     .nav{
         display: block;
@@ -1245,7 +1297,7 @@ ul li img{
         height: 18rem;
         width: 18rem;
     }
-     .phone {
+    .phone {
         padding: 0rem 3rem 0rem 0rem;
     }
 }
@@ -1253,8 +1305,8 @@ ul li img{
 @media only screen and (max-width: 990px){
     .para {
         left: 4rem;
-        width: 18rem;
-        height: 16rem;
+        width: 24rem;
+        height: 22rem;
     }
     .nav{
         display: block;
@@ -1312,7 +1364,7 @@ ul li img{
     }
 
     .whyus-img{
-       gap: 3rem;
+        gap: 3rem;
     }
 
     .whyus-img img {
@@ -1397,6 +1449,12 @@ ul li img{
 
 @media only screen and (max-width : 930px)
 {
+    .para {
+        left: 8rem;
+        width: 22rem;
+        height: 14rem;
+        font-size: 0.8rem;
+    }
     .card-pro {
         gap: 2rem;
         padding: 0rem 7rem 0rem 7rem;
@@ -1530,7 +1588,7 @@ ul li img{
         width: 100%;
         position: relative;
     }
-
+    
     .background-image img{
         height: 36rem;
         width: 100%;
@@ -1538,13 +1596,15 @@ ul li img{
     .aboutus {
         padding: 6rem;
     }
+    
 }
 
 @media only screen and (max-width: 780px){
     .para {
         left: 8rem;
-        width: 18rem;
+        width: 22rem;
         height: 14rem;
+        font-size: 0.9rem;
     }
 
     .card-l {
@@ -1692,7 +1752,7 @@ ul li img{
     .nav ul li{
         font-size: 1.2rem;
     }
-     .background-image{
+    .background-image{
         height: 36rem;
         width: 100%;
         position: relative;
@@ -1705,15 +1765,15 @@ ul li img{
     .aboutus {
         padding: 6rem;
     }
-
 }
 
 
 @media only screen and (max-width: 700px){
     .para {
+        top: 2rem;
         left: 8rem;
-        width: 18rem;
-        height: 14rem;
+        width: 20rem;
+        height: 18rem;
     }
     .nav{
         display: block;
@@ -1860,10 +1920,10 @@ ul li img{
 
 @media only screen and (max-width: 685px){
     .para {
-        left: 3rem;
-        width: 16rem;
-        height: 10rem;
-        font-size: 0.9rem;
+        top: 1rem;
+        left: 8rem;
+        width: 20rem;
+        height: 18rem;
     }
 
     .nav{
@@ -2049,22 +2109,15 @@ ul li img{
         height: 12rem;
         width: 12rem;
     }
-    .background-image{
-        height: 30rem;
-        width: 100%;
-        position: relative;
-    }
-
-   .background-image img{
-        height: 30rem;
-        width: 100%;
-    }
-    .aboutus {
-        padding: 6rem;
-    }
 }
 @media only screen and (max-width: 655px)
 {
+    .para {
+        top: 1rem;
+        left: 4rem;
+        width: 20rem;
+        height: 16rem;
+    }
     .content {
         flex-wrap: wrap;
      }
@@ -2239,12 +2292,41 @@ ul li img{
     .nav ul{
         gap: 2rem;
     }
+    .background-image{
+        height: 30rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .background-image img{
+        height: 30rem;
+        width: 100%;
+    }
+    .aboutus {
+        padding: 6rem;
+    }
 }
 
-@media only screen and (max-width: 545px){
+@media only screen and (max-width: 565px){
 
+    .para {
+        top: 1rem;
+        left: 4rem;
+        width: 22rem;
+        height: 16rem;
+    }
     .productsh1 h1{
         font-size: 1.2rem;
+    }
+    .background{
+        height: 24rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .background img{
+        height: 24rem;
+        width: 100%;
     }
 
     .nav ul li{
@@ -2502,14 +2584,22 @@ ul li img{
 
 @media only screen and (max-width: 490px){
 
-    .para {
-        top: 3rem;
-        left: 3rem;
-        width: 18rem;
-        height: 8rem;
-        font-size: 0.9rem;
+    .background{
+        height: 20rem;
+        width: 100%;
+        position: relative;
     }
-
+    
+    .background img{
+        height: 20rem;
+        width: 100%;
+    }
+    .para {
+        top: 1rem;
+        left: 2rem;
+        width: 20rem;
+        height: 16rem;
+    }
     .nav{
         background-color: rgba(0, 0, 0, 0.7);
         padding: 1rem;
@@ -2551,15 +2641,16 @@ ul li img{
         background-color: var(--color-black-shade);
         padding: 0.8rem;
     }
-    .head-nav h2{
-        color: var(--color-white);
-    }
-
     .head-nav button{
         border: 0;
-        border-radius: 0.3rem;
+        border-radius: 0.4rem;
         padding: 0.4rem;
         cursor: pointer;
+    }
+
+    .head-nav img{
+        height: 1.2rem;
+        width: 1.5rem;
     }
     .footer-row {
         justify-content: center;
@@ -2592,17 +2683,17 @@ ul li img{
     }
 
     .card-body p{
-        font-size: 0.7;
+        font-size: 0.9rem;
     }
     .card-head h1{
         font-size: 1rem;
     }
     .col-1{
-        width: 90%;
+        width: 100%;
     }
     
     .col-2{
-        width: 90%;
+        width: 100%;
     }
     .btn-learnmore {
         height: 1.3rem;
@@ -2769,14 +2860,22 @@ ul li img{
 
 @media only screen and (max-width: 400px){
     
-    .para {
-        top: 2rem;
-        left: 2rem;
-        width: 18rem;
-        height: 7rem;
-        font-size: 0.9rem;
+    .background{
+        height: 20rem;
+        width: 100%;
+        position: relative;
     }
-
+    
+    .background img{
+        height: 20rem;
+        width: 100%;
+    }
+    .para {
+        top: 1rem;
+        left: 1rem;
+        width: 20rem;
+        height: 18rem;
+    }
     .para h1, p{
         font-size: 1rem;
     }
@@ -3177,4 +3276,3 @@ ul li img{
         text-decoration: none;
     }
 }
-

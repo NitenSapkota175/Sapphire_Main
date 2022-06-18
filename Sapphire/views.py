@@ -12,9 +12,10 @@ from Sapphire import models
 def HomePage(request):
     Home_obj = Home.objects.all()
     Product1 = Product_Type_1.objects.all()[0:2]
+    Product2 = Product_Type_2.objects.all()[0:1]
+    
 
-
-    context = { 'Home_obj' : Home_obj ,   'Product1' : Product1 }
+    context = { 'Home_obj' : Home_obj ,   'Product1' : Product1 , 'Product2' : Product2  }
     return render(request,'Sapphire/Home.html',context)
 
 def AboutUsPage(request):

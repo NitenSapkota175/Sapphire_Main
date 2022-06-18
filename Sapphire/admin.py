@@ -1,7 +1,7 @@
 from django.contrib import admin
 from . models import Contact, End_Section_Of_Products, Home,Settings,About,Testimonial,Our_Works,Product_Type_1,Product_Type_2,Product_Type1_Features,Product_Type1_Assurances,Product_Type1_Structure,Product_Type2_Assurance,Product_Type2_Features  
 # Register your models here.
-
+from django.utils.html import format_html
 
 class SingleInstanceAdminMixin(object):
    
