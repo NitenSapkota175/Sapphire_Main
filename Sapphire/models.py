@@ -1,10 +1,13 @@
 from ctypes import Structure
+from dataclasses import fields
 from email.mime import image
 from pyexpat import model
 from tkinter import CASCADE
 from django.db import models
 from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
+from django.utils.safestring import mark_safe
+
 
 
 
@@ -54,6 +57,16 @@ class Settings(SingleInstanceMixin,models.Model):
 
     Footor_Logo = models.ImageField()
 
+    def Main_logo(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Main_Logo.url))
+
+    def Footor_logo(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Footor_Logo.url))
+
+  
+   
+
+
     
     def __str__(self):
             return 'Settings'
@@ -74,6 +87,8 @@ class Home(SingleInstanceMixin,models.Model):
     def __str__(self):
             return 'Home'    
 
+    def Home_Top_Background_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Home_Top_Background_Image.url))
 
     class Meta:
         verbose_name_plural = "Home"  
@@ -98,6 +113,14 @@ class About(SingleInstanceMixin,models.Model):
     Testimonial_Title =  models.CharField(max_length=225)
 
     What_People_Are_Saying_Title =  models.CharField(max_length=225)
+
+    def About_Us_Top_Background_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.About_Us_Top_Background_Image.url))
+
+    def Where_It_All_Began_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Where_It_All_Began_Image.url))
+
+
 
 
     def __str__(self):
@@ -128,6 +151,17 @@ class Our_Works(models.Model):
         Image2 = models.ImageField()
         Image3 = models.ImageField()
         
+        def image1(self):
+                return mark_safe('<img src="{}" width="100" />'.format(self.Image1.url))
+
+        def image2(self):
+                return mark_safe('<img src="{}" width="100" />'.format(self.Image2.url))
+
+        def image3(self):
+                return mark_safe('<img src="{}" width="100" />'.format(self.Image3.url))
+
+     
+
         class Meta:
             verbose_name_plural = "Our_Works"
 
@@ -156,8 +190,34 @@ class Product_Type_1(models.Model):
     Why_Us_Image3 = models.ImageField()
     
     Product_Structure_Image = models.ImageField()
+    
+    def Product_Top_Background_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_Top_Background_Image.url))
 
-  
+    def Product_Middle_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_Middle_Image.url))
+    
+    def Introduction_Section_image1(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Introduction_Section_Image1.url))
+
+    def Introduction_Section_image2(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Introduction_Section_Image2.url))
+
+    def Why_Us_image1(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Why_Us_Image1.url))
+
+    def Why_Us_image2(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Why_Us_Image2.url))
+
+    def Why_Us_image3(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Why_Us_Image3.url))
+        
+    def Product_Structure_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_Structure_Image.url))
+          
+
+
+
     def __str__(self):
             return self.Product_Name
     class Meta:
@@ -205,6 +265,24 @@ class Product_Type_2(models.Model):
     Why_Us_Image1 = models.ImageField()
     Why_Us_Image2 = models.ImageField()
 
+    def Product_Top_Background_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_Top_Background_Image.url))
+
+    def Product_Middle_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_Middle_Image.url))
+    
+    def Introduction_Section_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Introduction_Section_Image.url))
+
+    def Introduction_Section_image2(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Introduction_Section_Image2.url))
+
+    def Why_Us_image1(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Why_Us_Image1.url))
+
+    def Why_Us_image2(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Why_Us_Image2.url))
+
 
     def __str__(self):
             return self.Product_Name
@@ -237,6 +315,17 @@ class End_Section_Of_Products(SingleInstanceMixin,models.Model):
     Title3 = models.CharField(max_length=225)
     Description3 = models.CharField(max_length=225,null=True,blank=True)
 
+    def Logo1(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.logo1.url))
+
+    def Logo2(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.logo2.url))
+
+    def Logo3(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.logo3.url))
+
+ 
+
     def __str__(self):
             return 'End_Section_Of_Products'
 
@@ -247,6 +336,11 @@ class Contact(SingleInstanceMixin,models.Model):
     Background_Image = models.ImageField()
     Title = models.CharField(max_length=255)
     Description = models.TextField()
+
+    def Background_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Background_Image.url))
+
+
 
     def __str__(self):
             return 'Contact Us'

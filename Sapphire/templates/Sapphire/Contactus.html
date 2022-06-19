@@ -4,15 +4,17 @@
 
 
 <section class="contactlist">
-    <img class="contactlist-img" src="/static/images/pexels-fwstudio-164005_1.png" alt="">
+
+    {%for contact in contactus%}
+	<img class = "contactlist-img" src=" {{contact.Background_Image.url}}" alt="">
     <div class="contact">
         <div class="contactform">
             <div class="contactpara">
-                {%for contact in contactus%}
+              
                 <h1>{{contact.Title}}</h1>
                 <p>{{contact.Description}}</p>
             </div>
-
+      
             <div class="icons">
                 <img src="{%static '/images/Facebook - Negative.png'%}" alt="">
                 <img src="{% static '/images/Instagram - Negative.png' %}" alt="">
@@ -58,12 +60,14 @@
             <div class="emailus">
                 <h1>{{setting.Email_Title}}</h1>
                 <ul>
-                    {{setting.Offical_Email_Id }}
+                   {{setting.Offical_Email_Id }}
                 </ul>
             </div>
             {%endfor%}
         </div>
+        {%endfor%}
     </div>
+   
 </section>  
-{%endfor%}
+
 {%endblock content%}
