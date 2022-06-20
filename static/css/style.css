@@ -1066,21 +1066,30 @@ footer h1 {
     color: white;
 }
 
-.footerSec-row img {
+.footerSec-row h6 img {
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    height: 1rem;
-    width: 1rem;
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.footerSec-row h5 img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 0.8rem;
+    width: 0.8rem;
 }
 
 .footerSec-row h6 {
     display: flex;
     gap: 0.4rem;
+    font-size: 0.9rem;
 }
 
 .footerSec-row h5 {
     display: flex;
     gap: 0.4rem;
+    font-size: 0.9rem;
 }
 
 .footerLast p {
@@ -3077,6 +3086,9 @@ ul li img {
         width: 15rem;
         border-radius: 1rem;
     }
+    .rate-col-1 {
+        width: 18rem;
+    }
 }
 
 @media only screen and (max-width: 490px) {
@@ -3493,6 +3505,16 @@ ul li img {
         font-size: 0.8rem;
         text-align: center;
     }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -3510,6 +3532,9 @@ ul li img {
 
     .door-whyus-img img {
         width: 24rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
     }
 }
 
@@ -3919,6 +3944,16 @@ ul li img {
         font-size: 0.8rem;
         text-align: center;
     }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -4229,5 +4264,15 @@ ul li img {
     }
     .contactpara p{
         font-size: 0.9rem;
+    }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
     }
 }
