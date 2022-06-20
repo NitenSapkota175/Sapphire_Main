@@ -1066,21 +1066,30 @@ footer h1 {
     color: white;
 }
 
-.footerSec-row img {
+.footerSec-row h6 img {
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    height: 1rem;
-    width: 1rem;
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.footerSec-row h5 img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 0.8rem;
+    width: 0.8rem;
 }
 
 .footerSec-row h6 {
     display: flex;
     gap: 0.4rem;
+    font-size: 0.9rem;
 }
 
 .footerSec-row h5 {
     display: flex;
     gap: 0.4rem;
+    font-size: 0.9rem;
 }
 
 .footerLast p {
@@ -2416,7 +2425,6 @@ ul li img {
         height: 12rem;
         width: 12rem;
     }
-<<<<<<< HEAD
 
     .rate-quote h1 {
         font-size: 1.4rem;
@@ -2439,12 +2447,6 @@ ul li img {
     }
 
     .contactpara p {
-=======
-    .rate-quote h1{
-        font-size: 1.3rem;
-    }
-    .testimonals p {
->>>>>>> 0345c61 (rendered image to image fields)
         font-size: 1rem;
     }
 }
@@ -2482,14 +2484,9 @@ ul li img {
 
     .card-pro-para {
         gap: 0.8rem;
-        color: black;
     }
-<<<<<<< HEAD
 
     .card-pro {
-=======
-    .card-pro{
->>>>>>> 0345c61 (rendered image to image fields)
         height: 22rem;
     }
 
@@ -2502,21 +2499,12 @@ ul li img {
         width: 14rem;
     }
 
-<<<<<<< HEAD
     .card-pro-para h3 {
         font-size: 1rem;
         color: black;
     }
 
     .card-pro-para p {
-=======
-    .card-pro-para h3{
-        font-size: 1.1rem;
-        color: rgb(1, 1, 1);
-    }
-    .card-pro-para p{
-        color: rgb(0, 0, 0);
->>>>>>> 0345c61 (rendered image to image fields)
         font-size: 0.9rem;
         color: black;
     }
@@ -2701,7 +2689,6 @@ ul li img {
         padding: 6rem;
     }
 
-<<<<<<< HEAD
     .productsh1 h2 {
         font-size: 1rem;
     }
@@ -2729,20 +2716,6 @@ ul li img {
     .contactpara p {
         font-size: 1rem;
     }
-=======
-    .rate-quote h1{
-        font-size: 1.2rem;
-    }
-    .testimonals p {
-        font-size: 1rem;
-    }
-    .rate-para h2{
-        font-size: 1rem;
-    }
-    .contactpara h1{
-        font-size: 1.2rem;
-    }
->>>>>>> 0345c61 (rendered image to image fields)
 }
 
 @media only screen and (max-width: 565px) {
@@ -3077,7 +3050,6 @@ ul li img {
         height: 8rem;
         width: 8rem;
     }
-<<<<<<< HEAD
 
     .productsh1 h2 {
         font-size: 1rem;
@@ -3114,28 +3086,12 @@ ul li img {
         width: 15rem;
         border-radius: 1rem;
     }
+    .rate-col-1 {
+        width: 18rem;
+    }
 }
 
 @media only screen and (max-width: 490px) {
-=======
-    .rate-quote h1{
-        font-size: 1.2rem;
-    }
-    .testimonals p {
-        font-size: 1rem;
-    }
-    .rate-para h2{
-        font-size: 0.9rem;
-    }
-    .card-pro-para h3 {
-        font-size: 1rem;
-    }
-    .contactpara h1{
-        font-size: 1.1rem;
-    }
-}
-@media only screen and (max-width: 490px){
->>>>>>> 0345c61 (rendered image to image fields)
 
     .main-q h1 {
         font-size: 1rem;
@@ -3428,15 +3384,8 @@ ul li img {
         height: 2rem;
         width: 2rem;
     }
-<<<<<<< HEAD
 
     .footer-logo img {
-=======
-    .q1 h2{
-        font-size: 0.9rem;
-    }
-    .footer-logo img{
->>>>>>> 0345c61 (rendered image to image fields)
         height: 3.2rem;
         width: 3.2rem;
     }
@@ -3473,33 +3422,10 @@ ul li img {
         height: 8rem;
         width: 8rem;
     }
-<<<<<<< HEAD
-=======
-    
-    .paragraph h1 {
-        font-size: 1rem;
-    }
-    .ourmissionh1 h1 {
-        color: var(--color-white);
-        font-size: 0.9rem;
-        padding: 2rem;
-    }
-    .rate-quote h1{
-        font-size: 1.1rem;
-    }
-    .rate-para h2{
-        font-size: 0.9rem;
-    }
-    .head {
-        padding: 0.2rem 0.8rem 0.2rem 0rem;
-        gap: 1.2rem;
-    }
->>>>>>> 0345c61 (rendered image to image fields)
 
     .productsh1 h2 {
         font-size: 1rem;
     }
-<<<<<<< HEAD
 
     .paragraph h1 {
         font-size: 1.1rem;
@@ -3518,22 +3444,6 @@ ul li img {
     }
 
     .pvcprofile {
-=======
-    .card-pro-para h3 {
-        font-size: 0.9rem;
-    }
-
-    .contactpara h1{
-        font-size: 1rem;
-    }
-    .contactpara p{
-        font-size: 0.9rem;
-    }
-}
-@media only screen and (max-width: 400px){
-    
-    .background{
->>>>>>> 0345c61 (rendered image to image fields)
         height: 20rem;
         width: 100%;
         position: relative;
@@ -3595,6 +3505,16 @@ ul li img {
         font-size: 0.8rem;
         text-align: center;
     }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -3612,6 +3532,9 @@ ul li img {
 
     .door-whyus-img img {
         width: 24rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
     }
 }
 
@@ -3771,17 +3694,9 @@ ul li img {
     .q1 {
         text-align: center;
     }
-<<<<<<< HEAD
 
     .q1 h2 {
         font-size: 0.9rem;
-=======
-    .q1 h2{
-        font-size: 0.9rem;
-    }
-    .q1 p{
-        font-size: 0.8rem;
->>>>>>> 0345c61 (rendered image to image fields)
     }
 
     .q1 p {
@@ -3905,27 +3820,17 @@ ul li img {
         height: 4rem;
         width: 5rem;
     }
-<<<<<<< HEAD
 
     .main-q h1 {
         font-size: 2rem;
-=======
-    .main-q h1{
-        font-size: 0.9rem;
->>>>>>> 0345c61 (rendered image to image fields)
     }
 
     .main-q p {
         font-size: 0.9rem;
     }
-<<<<<<< HEAD
 
     .ourworkh1 h2 {
         font-size: 1.1rem;
-=======
-    .ourworkh1 h2{
-        font-size: 1rem;
->>>>>>> 0345c61 (rendered image to image fields)
     }
 
     .row-ourwork {
@@ -3941,7 +3846,6 @@ ul li img {
         width: 20rem;
     }
 
-<<<<<<< HEAD
     .productsh1 h2 {
         font-size: 1rem;
     }
@@ -4040,6 +3944,16 @@ ul li img {
         font-size: 0.8rem;
         text-align: center;
     }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -4056,43 +3970,6 @@ ul li img {
     }
 
     .img img {
-=======
-    .paragraph h1 {
-        font-size: 0.9rem;
-    }
-
-    .ourmissionh1 h1 {
-        color: var(--color-white);
-        font-size: 1rem;
-        padding: 2rem;
-    }
-    .rate-quote h1{
-        font-size: 1.1rem;
-    }
-    .testimonals p {
-        font-size: 1rem;
-    }
-    .head {
-        padding: 0.2rem 0.7rem 0.2rem 0rem;
-        gap: 1.2rem;
-    }
-    .productsh1 h2 {
-        font-size: 1rem;
-    }
-    .card-pro-para h3 {
-        font-size: 0.9rem;
-    }
-    .contactpara h1{
-        font-size: 1rem;
-    }
-    .contactpara p{
-        font-size: 0.9rem;
-    }
-}
-
-@media only screen and (max-width: 370px){
-    .img img{
->>>>>>> 0345c61 (rendered image to image fields)
         height: 10rem;
         width: 10rem;
         padding: 0rem 0.8rem 0rem 0rem;
@@ -4139,7 +4016,7 @@ ul li img {
 
     .ourmissionh1 h1 {
         color: var(--color-white);
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         padding: 2rem;
     }
 
@@ -4291,26 +4168,16 @@ ul li img {
         padding: 1.5rem 3rem 1.5rem 3rem;
     }
 
-<<<<<<< HEAD
     .main-q h1 {
         font-size: 2rem;
-=======
-    .main-q h1{
-        font-size: 0.9rem;
->>>>>>> 0345c61 (rendered image to image fields)
     }
 
     .main-q p {
         font-size: 0.9rem;
     }
-<<<<<<< HEAD
 
     .ourworkh1 h2 {
         font-size: 1.1rem;
-=======
-    .ourworkh1 h2{
-        font-size: 0.9rem;
->>>>>>> 0345c61 (rendered image to image fields)
     }
 
     .btn-read-more {
@@ -4325,7 +4192,6 @@ ul li img {
         font-size: 0.7rem;
         text-decoration: none;
     }
-<<<<<<< HEAD
 
     .productsh1 h2 {
         font-size: 0.9rem;
@@ -4399,44 +4265,14 @@ ul li img {
     .contactpara p{
         font-size: 0.9rem;
     }
-}
-=======
-    .paragraph h1 {
-        font-size: 0.9rem;
-    }
-    .rate-quote h1{
-        font-size: 1rem;
-    }
-    .testimonals p {
-        font-size: 0.9rem;
-    }
-    .rate-para h2{
-        font-size: 0.9rem;
-    }
-    footer h1{
-        padding: 1rem 0rem 1rem 1.8rem;
-        font-size: 0.9rem;
-    }
-
-    .footer-ul h2, li{
+    .footerSec-row h6 {
         font-size: 0.8rem;
     }
-    .head {
-        padding: 0.2rem 0.5rem 0.2rem 0rem;
-        gap: 1.2rem;
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
     }
-    .productsh1 h2 {
-        font-size: 1rem;
-    }
-    .card-pro-para h3 {
-        font-size: 0.9rem;
-    }
-    .contactpara h1{
-        font-size: 1rem;
-    }
-    .contactpara p{
-        font-size: 0.9rem;
+    .rate-col-1 {
+        width: 18rem;
     }
 }
-
->>>>>>> 0345c61 (rendered image to image fields)

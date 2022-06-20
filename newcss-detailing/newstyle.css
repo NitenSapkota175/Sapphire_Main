@@ -1,79 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --color-head: rgba(242, 242, 101, 0.133);
     --color-white: rgb(244, 244, 244);
-    --color-black-shade: rgb(41, 39, 39) ;
-    --color-main : rgb(48, 197, 143);
+    --color-black-shade: rgb(41, 39, 39);
+    --color-main: rgb(48, 197, 143);
 }
 
-body{
+body {
     font-family: 'Jost';
     margin: 0;
     padding: 0;
 }
 
-.head{
-    background-color:var(--color-head);
+.head {
+    background-color: var(--color-head);
     display: flex;
     align-items: center;
     justify-content: right;
     padding: 0.2rem 2rem 0.2rem 0rem;
     gap: 1rem;
 }
-.head p{
+
+.head p {
     display: flex;
     align-items: center;
     gap: 0.3rem;
 }
 
-.head img{
+.head img {
     height: 1rem;
     width: 1rem;
 }
 
 /* navbar */
-nav{
+nav {
     background-color: var(--color-white);
     color: var(--color-black-shade);
     padding: 1rem;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
 }
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav ul{
+
+.nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
 }
-.nav ul li{
+
+.nav ul li {
     text-decoration: none;
     list-style: none;
     color: var(--color-black-shade);
     font-size: 1.6rem;
-    font-weight:bold;
+    font-weight: bold;
     position: relative;
 }
 
-.nav ul li a{
+.nav ul li a {
     text-decoration: none;
     color: var(--color-black-shade);
 }
 
-.nav ul li a:before{
+.nav ul li a:before {
     content: '';
     position: absolute;
     left: 0;
@@ -85,12 +90,12 @@ nav{
     border-radius: 0.2rem;
 }
 
-.nav ul li a:hover:before{
+.nav ul li a:hover:before {
     width: 100%;
     background-color: #61599a;
 }
 
-.logo img{
+.logo img {
     height: 8rem;
     width: 10rem;
 }
@@ -100,22 +105,22 @@ nav{
     height: 5px;
     background-color: black;
     margin: 6px 0;
-  }
+}
 
 /* background with image */
 
-.background{
+.background {
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-.background img{
+.background img {
     height: 100%;
     width: 100%;
 }
 
-.para{
+.para {
     position: absolute;
     left: 16rem;
     top: 3rem;
@@ -135,17 +140,18 @@ nav{
     text-align: justify;
 }
 
-.para h1{
+.para h1 {
     font-size: 1.6rem;
 }
 
 
 /* main */
-main{
-    background-color:var(--color-main);
+main {
+    background-color: var(--color-main);
     color: var(--color-white);
 }
-.main-q{
+
+.main-q {
     padding: 1.5rem 4rem 1.5rem 4rem;
     display: flex;
     flex-direction: column;
@@ -155,23 +161,23 @@ main{
     gap: 1rem;
 }
 
-.main-q p{
+.main-q p {
     font-size: 1.2rem;
 }
 
-.row-l{
+.row-l {
     width: 100%;
-    height: 25rem; 
+    height: 25rem;
     margin: 2rem 0rem 2rem 0rem;
     padding: 1rem 0rem 1rem 0rem;
 }
 
-.row-l:last-child{
+.row-l:last-child {
     margin: 2rem 0rem 0rem 0rem;
     padding: 1rem 0rem 2rem 0rem;
 }
 
-.col-1{
+.col-1 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,13 +190,13 @@ main{
     color: var(--color-black-shade);
 }
 
-.img img{
+.img img {
     height: 16rem;
     width: 18rem;
     padding: 0rem 3rem 0rem 0rem;
 }
 
-.card1{
+.card1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,13 +204,13 @@ main{
     padding: 2rem;
 }
 
-.card-body{
+.card-body {
     text-align: center;
     line-height: 1.4rem;
 }
 
 
-.col-2{
+.col-2 {
     float: right;
     display: flex;
     flex-direction: row;
@@ -217,7 +223,7 @@ main{
     border-bottom-left-radius: 4rem;
 }
 
-.card2{
+.card2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,7 +231,7 @@ main{
     padding: 2rem;
 }
 
-.btn-learnmore{
+.btn-learnmore {
     height: 2rem;
     width: 6rem;
     background-color: #000;
@@ -233,7 +239,7 @@ main{
     color: var(--color-white);
 }
 
-.btn-learnmore2{
+.btn-learnmore2 {
     height: 2rem;
     width: 6rem;
     background-color: rgb(255, 255, 255);
@@ -244,24 +250,24 @@ main{
 
 /* about us ------------------------ */
 
-.background-image{
-    height: 100%;
+.background-image {
+    height: 40rem;
     width: 100%;
     position: relative;
 }
 
-.background-image img{
-    height: 100%;
+.background-image img {
+    height: 40rem;
     width: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.aboutus{
+.aboutus {
     position: absolute;
     top: 0%;
     font-size: 1.2rem;
-    height: 100%;
+    height: 40rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -275,36 +281,38 @@ main{
     text-align: center;
 }
 
-.main-frame{
+.main-frame {
     background-color: var(--color-white);
 }
 
-.content{
+.content {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 1rem;
 }
 
-.content img{
+.content img {
     padding: 4rem 0rem 1.2rem 4rem;
     height: 35rem;
     width: 30rem;
 }
 
-.paragraph{
+.paragraph {
     padding: 3rem;
 }
-.paragraph h1{
+
+.paragraph h1 {
     padding: 1rem 0rem 1rem 0rem;
 }
 
-.paragraph p{
+.paragraph p {
     line-height: 2rem;
     font-size: 1rem;
     letter-spacing: 0.01rem;
     text-align: justify;
 }
-.ourmission{
+
+.ourmission {
     background-color: var(--color-black-shade);
     display: flex;
     flex-direction: column;
@@ -312,17 +320,17 @@ main{
     justify-content: center;
 }
 
-.ourmissionh1{
+.ourmissionh1 {
     position: relative;
 }
 
-.ourmissionh1 h1{
+.ourmissionh1 h1 {
     color: var(--color-white);
     font-size: 2rem;
     padding: 2rem;
 }
 
-.ourmissionpara p{
+.ourmissionpara p {
     color: var(--color-white);
     font-size: 1rem;
     padding: 1rem 10rem 2rem 10rem;
@@ -331,45 +339,46 @@ main{
     word-spacing: 0.1rem;
 }
 
-.ourmissionh1:before{
+.ourmissionh1:before {
     content: " ";
     position: absolute;
     height: 0.2rem;
     width: 100%;
     background-color: rgb(213, 164, 41);
-    border-radius : 0.3rem;
+    border-radius: 0.3rem;
     top: 80%;
     left: 0;
 }
+
 /* ratings style */
 
-.ratings{
+.ratings {
     background-color: var(--color-white);
     text-align: center;
 }
 
-.rate-quote{
+.rate-quote {
     padding: 1.2rem;
 }
 
-.rate-row{
+.rate-row {
     display: flex;
     justify-content: space-around;
-    gap:  2rem;
+    gap: 2rem;
     padding: 1rem;
 }
 
-.rate-col-1{
-   width: 30rem;
-   height: auto;
+.rate-col-1 {
+    width: 30rem;
+    height: auto;
     color: var(--color-black-shade);
-   background-color: rgb(235, 232, 232);
-   border-radius: 1rem;
-   padding: 1rem;
+    background-color: rgb(235, 232, 232);
+    border-radius: 1rem;
+    padding: 1rem;
 
 }
 
-.rate-para{
+.rate-para {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -377,37 +386,37 @@ main{
     text-align: justify;
 }
 
-.rate-para h2{
+.rate-para h2 {
     font-size: 1.2rem;
 }
 
-.testimonals{
+.testimonals {
     position: relative;
 }
 
-.testimonals p{
+.testimonals p {
     color: rgb(177, 177, 177);
     font-size: 1.2rem;
     padding: 1.2rem;
 }
 
-.testimonals:before{
+.testimonals:before {
     content: " ";
     position: absolute;
     height: 0.2rem;
     width: 10%;
     justify-content: center;
     background-color: rgb(213, 164, 41);
-    border-radius : 0.3rem;
+    border-radius: 0.3rem;
     top: 80%;
     left: 45%;
 }
 
-.ourstory{
+.ourstory {
     position: relative;
 }
 
-.ourstory:before{
+.ourstory:before {
     content: " ";
     position: absolute;
     height: 0.2rem;
@@ -419,7 +428,7 @@ main{
     left: 2%;
 }
 
-.ourstory p{
+.ourstory p {
     color: rgb(177, 177, 177);
     font-size: 1.2rem;
     padding: 1rem 0rem 1rem 0rem;
@@ -430,12 +439,12 @@ main{
 
 /* products-------------------- */
 
-.productsh1{
+.productsh1 {
     position: relative;
     padding: 3rem;
 }
 
-.productsh1 h2{
+.productsh1 h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,7 +452,7 @@ main{
     text-justify: inter-word;
 }
 
-.productsh1 h2:before{
+.productsh1 h2:before {
     content: '';
     position: absolute;
     left: 45%;
@@ -453,7 +462,7 @@ main{
     background-color: #000;
 }
 
-.product-card{
+.product-card {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -466,23 +475,23 @@ main{
     padding: 0rem 20rem 0rem 20rem;
 }
 
-.card-pro:last-child{
+.card-pro:last-child {
     margin: 0rem 0rem 2rem 0rem;
 }
 
-.card-pro img{
+.card-pro img {
     height: 18rem;
     width: 20rem;
 }
 
-.card-pro-para{
+.card-pro-para {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-justify: inter-word;
 }
 
-.btn-read-more{
+.btn-read-more {
     height: 2rem;
     width: 6rem;
     background-color: transparent;
@@ -491,23 +500,25 @@ main{
     border-radius: 0.5rem;
 }
 
-.btn-read-more a{
+.btn-read-more a {
     color: black;
     text-decoration: none;
 }
-.aboutproduct{
+
+.aboutproduct {
     height: 100%;
     width: 100%;
     position: relative;
 }
-.aboutproduct img{
+
+.aboutproduct img {
     height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.quality{
+.quality {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -519,28 +530,28 @@ main{
     justify-content: space-around;
 }
 
-.q1{
+.q1 {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
 
-.contactlist{
+.contactlist {
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-.contactlist .contactlist-img{
+.contactlist .contactlist-img {
     height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.contact{
+.contact {
     position: absolute;
     top: 0%;
     font-size: 1.2rem;
@@ -567,14 +578,14 @@ main{
     background-color: rgba(0, 0, 0, 0.3);
     color: var(--color-white);
 } */
-.icons{
+.icons {
     -webkit-filter: invert();
 }
 
 /* -------------------------------------- */
 
 
-.contactform{
+.contactform {
     padding: 5rem;
     display: flex;
     gap: 1.5rem;
@@ -583,13 +594,13 @@ main{
     flex-direction: column;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-form input{
+form input {
     height: 2.5rem;
     padding: 0.5rem;
     background-color: var(--color-white);
@@ -598,14 +609,14 @@ form input{
     letter-spacing: 0.2rem;
 }
 
-form textarea{
+form textarea {
     padding: 0.5rem;
     background-color: var(--color-white);
     border: 0;
     border-radius: 0.8rem;
 }
 
-.btn-contact{
+.btn-contact {
     width: 6rem;
     height: 2rem;
     font-size: 0.9rem;
@@ -622,8 +633,8 @@ form textarea{
     gap: 1rem;
 }
 
-.contactpara h1{
-    font-size: 2.5rem;
+.contactpara h1 {
+    font-size: 2rem;
 }
 
 .icons {
@@ -632,61 +643,84 @@ form textarea{
     gap: 2rem;
 }
 
-.icons img{
+.icons img {
     height: 1.5rem;
     width: 1.5rem;
 }
-.contactinfo{
+
+.contactinfo {
     display: flex;
     width: 50%;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
     padding: 4rem 0rem 4rem 0rem;
 }
-.contactinfo li{
+
+.contactinfo li {
     list-style-type: none;
     padding: 0.5rem 0rem 0rem 1rem;
 }
 
+.address {
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+.Factoryaddress {
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.phone {
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+.emailus {
+    padding: 0rem 0rem 0rem 3rem;
+}
+
+.emailus ul {
+    font-size: 0.9rem;
+}
+
 /* ourwork--------------------------- */
 
-.ourwork1{
+.ourwork1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.ourworkh1{
+.ourworkh1 {
     position: relative;
 }
 
-.ourworkh1 h2{
+.ourworkh1 h2 {
     color: var(--color-black-shade);
     font-size: 2rem;
     padding: 2rem;
 }
 
-.ourworkh1:before{
+.ourworkh1:before {
     content: " ";
     position: absolute;
     height: 0.2rem;
     width: 100%;
     background-color: rgb(213, 164, 41);
-    border-radius : 0.3rem;
+    border-radius: 0.3rem;
     top: 80%;
     left: 0;
 }
 
-.ourwork{
+.ourwork {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     padding: 2rem 4rem 2rem 4rem;
 }
 
-.row-ourwork{
+.row-ourwork {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -694,26 +728,26 @@ form textarea{
 }
 
 .col-ourwork img {
-    height: 24rem;
+    height: 20rem;
     width: 22rem;
 }
 
 /* pvc profile--------------------------------- */
 
-.pvcprofile{
-    height: 100%;
+.pvcprofile {
+    height: 30rem;
     width: 100%;
     position: relative;
 }
 
-.pvcprofile img{
-    height: 100%;
+.pvcprofile img {
+    height: 30rem;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.profile{
+.profile {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -724,7 +758,7 @@ form textarea{
     padding: 4rem 0rem 4rem 14rem;
 }
 
-.profile h1{
+.profile h1 {
     font-size: 2rem;
 }
 
@@ -735,7 +769,7 @@ form textarea{
     justify-content: space-around;
 }
 
-.col-profile1{
+.col-profile1 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -745,31 +779,32 @@ form textarea{
     padding: 0.8rem;
 }
 
-.col-profile2{
+.col-profile2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0.8rem;
 }
-.col-profile1 h4{
+
+.col-profile1 h4 {
     font-size: 1rem;
 }
 
-.col-profile2 a{
+.col-profile2 a {
     text-decoration: none;
     color: rgb(21, 127, 21);
 }
 
-.profile-container{
+.profile-container {
     padding: 2rem;
 }
 
-.profile-container img{
+.profile-container img {
     height: 30rem;
     width: 100%;
 }
 
-.content-profile{
+.content-profile {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -777,7 +812,7 @@ form textarea{
     color: black;
 }
 
-.content1{
+.content1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -787,16 +822,20 @@ form textarea{
     text-justify: inter-word;
 }
 
-.content1 p{
-    text-align:justify;
+.content1 p {
+    text-align: justify;
 }
 
-.content1 ul li{
+.content1 ul li {
     list-style-type: square;
-    color: rgb(31, 248, 31);
+    color: rgb(30, 171, 30);
 }
 
-.content2{
+.content1 ul {
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+.content2 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -804,74 +843,86 @@ form textarea{
     align-items: center;
 }
 
-.content2-head{
+.content2-head {
     text-align: center;
 }
 
-.content-images{
+.content-images {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.content-images img{
+.content-images img {
     height: 40rem;
     width: 35rem;
-    border-radius: 2rem;
 }
 
-.content2 ul li{
+.content-images2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content-images2 img {
+    height: 20rem;
+    width: 24rem;
+    border-radius: 1rem;
+}
+
+.content2 ul li {
     list-style-type: none;
 }
 
-.content2 h1{
+.content2 h1 {
     font-size: 1.4rem;
 }
-.content2 p a{
+
+.content2 p a {
     text-decoration: none;
-    color: rgb(34, 225, 34);
+    color: rgb(27, 144, 27);
 }
 
-.whyus{
+.whyus {
     background-color: rgb(233, 233, 233);
     display: flex;
     padding: 4rem;
     gap: 2rem;
 }
 
-.whyus-img{
+.whyus-img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.whyus-img img{
+.whyus-img img {
     height: 20rem;
     width: 40rem;
 }
 
-.whyus-content{
+.whyus-content {
     display: flex;
     gap: 1rem;
     flex-direction: column;
     text-align: justify;
 }
 
-.whyus-content p{
-    line-height: 1.5rem;  
+.whyus-content p {
+    line-height: 1.5rem;
 }
 
 
 /* pvc Door & Windows --------------------------- */
 
-.door-row{
+.door-row {
     display: flex;
     align-items: center;
     justify-content: left;
     padding: 0rem 0rem 0rem 4rem;
 }
 
-.col-door{
+.col-door {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -881,30 +932,30 @@ form textarea{
     padding: 1rem;
 }
 
-.door-img{
+.door-img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.door-img img{
+.door-img img {
     height: 20rem;
     width: 40rem;
 }
 
-.door-whyus-img{
+.door-whyus-img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.door-whyus-img img{
+.door-whyus-img img {
     height: 12rem;
     width: 34rem;
     gap: 1rem;
 }
 
-.structure{
+.structure {
     display: flex;
     background-color: rgb(6, 6, 6);
     gap: 1.5rem;
@@ -914,20 +965,21 @@ form textarea{
     color: var(--color-white);
 }
 
-.structure-img img{
+.structure-img img {
     height: 40rem;
     width: 38rem;
 }
 
-.structure-content{
+.structure-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 /* pvc Flooring ----------------------------------- */
 
 /* flooring ----------------- */
-.btn-more{
+.btn-more {
     width: 20rem;
     height: 1.8rem;
     background-color: rgb(54, 201, 208);
@@ -937,20 +989,20 @@ form textarea{
     letter-spacing: 0.1rem;
 }
 
-.pvcfloors{
-    height: 100%;
+.pvcfloors {
+    height: 30rem;
     width: 100%;
     position: relative;
 }
 
-.pvcfloors img{
-    height: 100%;
+.pvcfloors img {
+    height: 30rem;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.floors{
+.floors {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -961,12 +1013,12 @@ form textarea{
     gap: 1rem;
 }
 
-.footer-logo img{
+.footer-logo img {
     height: 6rem;
     width: 6rem;
 }
 
-.q1 img{
+.q1 img {
     height: 3.5rem;
     width: 3.5rem;
 }
@@ -975,17 +1027,18 @@ form textarea{
 
 
 
-footer, footer h1{
+footer,
+footer h1 {
     background-color: var(--color-black-shade);
     color: rgb(39, 234, 39);
     font-size: 1.2rem;
 }
 
-footer h1{
+footer h1 {
     padding: 1.4rem 0rem 1.4rem 1.8rem;
 }
 
-.footer-row{
+.footer-row {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -993,17 +1046,17 @@ footer h1{
     color: var(--color-white);
 }
 
-.footer-row .footer-ul h4{
+.footer-row .footer-ul h4 {
     font-size: 1rem;
     padding: 0.4rem 0rem 0.4rem 0rem;
 }
 
-.footer-row ul li{
+.footer-row ul li {
     list-style: none;
     font-size: 0.8rem;
 }
 
-.footerSec-row{
+.footerSec-row {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -1013,32 +1066,44 @@ footer h1{
     color: white;
 }
 
-.footerSec-row img{
-    -webkit-filter: invert(100%); 
+.footerSec-row h6 img {
+    -webkit-filter: invert(100%);
     filter: invert(100%);
-    height: 1rem;
-    width: 1rem;
-}
-.footerSec-row h6{
-    display: flex;
-    gap: 0.4rem;
-}
-.footerSec-row h5{
-    display: flex;
-    gap: 0.4rem;
+    height: 0.8rem;
+    width: 0.8rem;
 }
 
-.footerLast p{
+.footerSec-row h5 img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.footerSec-row h6 {
+    display: flex;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.footerSec-row h5 {
+    display: flex;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.footerLast p {
     color: var(--color-white);
     font-size: 0.8rem;
     padding: 1.4rem 0rem 1.2rem 1.8rem;
 }
+
 .footerLast p {
     margin-top: 0;
     margin-bottom: 0rem;
 }
 
-.head-nav{
+.head-nav {
     display: none;
 }
 
@@ -1052,107 +1117,117 @@ footer h1{
     padding: 1rem;
 }
 
-.rate-icons img{
+.rate-icons img {
     height: 1.5rem;
     width: 1.5rem;
 }
 
-ul li img{
+ul li img {
     height: 0.8rem;
     width: 0.8rem;
 }
 
-@media only screen and (max-width: 1300px)
-{
-    .row-ourwork{
+@media only screen and (max-width: 1300px) {
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3rem;
     }
-    
+
     .col-ourwork img {
         height: 20rem;
         width: 20rem;
     }
 
-    .contactlist{
+    .contactlist {
         height: 36rem;
         width: 100%;
         position: relative;
     }
-    
-    .contactlist .contactlist-img{
+
+    .contactlist .contactlist-img {
         height: 36rem;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     .phone {
-            padding: 0rem 5rem 0rem 0rem;
+        padding: 0rem 5rem 0rem 0rem;
     }
 }
 
-@media only screen and (max-width: 1230px)
-{
-    .structure{
+@media only screen and (max-width: 1230px) {
+    .structure {
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 30%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 70%;
     }
+
     .structure-img img {
         height: 30rem;
         width: 20rem;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 40rem;
         width: 35rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3rem;
     }
-    
+
     .col-ourwork img {
         height: 18rem;
         width: 18rem;
     }
-} 
+}
 
-@media only screen and (max-width: 1160px){
+@media only screen and (max-width: 1160px) {
     .para {
         left: 12rem;
         width: 26rem;
     }
-    .nav{
+
+    .nav {
         display: block;
         padding: 1rem;
     }
-    .content img{
+
+    .content img {
         padding: 4.2rem 0rem 1.2rem 4rem
     }
+
     .card-pro {
         gap: 2rem;
         padding: 0rem 11rem 0rem 11rem;
     }
-    .whyus{
+
+    .whyus {
         padding: 3rem;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 3rem;
     }
 
@@ -1161,54 +1236,74 @@ ul li img{
         width: 30rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
-    .structure{
+
+    .structure {
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 30%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 70%;
     }
+
     .structure-img img {
         height: 26rem;
         width: 16em;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 40rem;
         width: 32rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3rem;
     }
-    
+
     .col-ourwork img {
         height: 18rem;
         width: 18rem;
     }
 }
 
+@media only screen and (max-width: 1078px) {
+    .contactform {
+        padding: 4rem;
+        display: flex;
+        gap: 1rem;
+        width: 50%;
+        align-items: left;
+        flex-direction: column;
+    }
+}
 
-@media only screen and (max-width: 1030px){
+
+@media only screen and (max-width: 1030px) {
     .para {
         left: 5rem;
         width: 26rem;
     }
-    .nav{
+
+    .nav {
         display: block;
         padding: 1rem;
     }
@@ -1222,11 +1317,11 @@ ul li img{
         padding: 0rem 10rem 0rem 10rem;
     }
 
-    .whyus{
+    .whyus {
         padding: 3rem;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 3rem;
     }
 
@@ -1235,97 +1330,128 @@ ul li img{
         width: 27rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
-    .content-row{
+
+    .content-row {
         flex-wrap: wrap;
     }
-    .content-profile{
+
+    .content-profile {
         flex-wrap: wrap;
     }
-    .content1{
+
+    .content1 {
         width: 100%;
         gap: 0;
         line-height: 1.4rem;
     }
-    .content2{
+
+    .content2 {
         width: 100%;
         gap: 1rem;
         line-height: 1.2;
     }
-    .structure{
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .content-images2 img {
+        height: 20rem;
+        width: 24rem;
+        border-radius: 1rem;
+    }
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 40rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 36rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .content-images img{
+
+    .content-images img {
         height: 45rem;
         width: 38rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
     }
-    
+
     .col-ourwork img {
         height: 18rem;
         width: 18rem;
     }
+
     .phone {
         padding: 0rem 3rem 0rem 0rem;
     }
 }
 
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 990px) {
     .para {
         left: 4rem;
         width: 24rem;
         height: 22rem;
     }
-    .nav{
+
+    .nav {
         display: block;
         padding: 1rem;
     }
-    .card2{
+
+    .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         padding: 1.5rem;
     }
-    .card1{
+
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         padding: 1.5rem;
     }
+
     .rate-col-1 {
         width: 11rem;
     }
@@ -1335,35 +1461,43 @@ ul li img{
         height: 30rem;
         width: 21rem;
     }
+
     .paragraph {
         padding: 1rem;
     }
+
     .paragraph p {
         line-height: 1.2rem;
         font-size: 0.9rem;
     }
+
     .rate-row {
         gap: 0rem;
     }
-    .rate-para h1, h2 {
+
+    .rate-para h1,
+    h2 {
         font-size: 1rem;
     }
-    .rate-para p{
+
+    .rate-para p {
         font-size: 0.9rem;
     }
+
     .ourmissionpara p {
         padding: 1rem 2rem 2rem 2rem;
     }
+
     .card-pro {
         gap: 2rem;
         padding: 0rem 8rem 0rem 8rem;
     }
 
-    .whyus{
+    .whyus {
         padding: 3rem;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 3rem;
     }
 
@@ -1372,54 +1506,67 @@ ul li img{
         width: 25rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
-    .content-row{
+
+    .content-row {
         flex-wrap: wrap;
     }
-    .content-profile{
+
+    .content-profile {
         flex-wrap: wrap;
     }
-    .content1{
+
+    .content1 {
         width: 100%;
         gap: 0;
         line-height: 1.4rem;
     }
-    .content2{
+
+    .content2 {
         width: 100%;
         gap: 1rem;
         line-height: 1.2;
     }
-    .structure{
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 40rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 36rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .content-images img{
+
+    .content-images img {
         height: 45rem;
         width: 40rem;
     }
@@ -1427,51 +1574,55 @@ ul li img{
     .contactinfo {
         gap: 1rem;
     }
-    .contactinfo li{
-       font-size: 0.9rem;
+
+    .contactinfo li {
+        font-size: 0.9rem;
     }
 
-    .contactinfo h1{
+    .contactinfo h1 {
         font-size: 1.1rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
     }
-    
+
     .col-ourwork img {
         height: 16rem;
         width: 16rem;
     }
 }
 
-@media only screen and (max-width : 930px)
-{
+@media only screen and (max-width : 930px) {
     .para {
         left: 8rem;
         width: 22rem;
         height: 14rem;
         font-size: 0.8rem;
     }
+
     .card-pro {
         gap: 2rem;
         padding: 0rem 7rem 0rem 7rem;
     }
+
     .card-pro-para {
         gap: 1rem;
     }
+
     .card-pro img {
         height: 22rem;
         width: 20rem;
     }
 
-    .whyus{
+    .whyus {
         padding: 2rem;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 4rem;
     }
 
@@ -1480,7 +1631,7 @@ ul li img{
         width: 22rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
@@ -1488,118 +1639,172 @@ ul li img{
     .profile {
         padding: 4rem 0rem 4rem 10rem;
     }
-    .content-row{
+
+    .content-row {
         flex-wrap: wrap;
     }
-    .content-profile{
+
+    .content-profile {
         flex-wrap: wrap;
     }
-    .content1{
+
+    .content1 {
         width: 100%;
         gap: 1rem;
         line-height: 1.4rem;
     }
 
-    .content2{
+    .content2 {
         width: 100%;
         gap: 1rem;
         line-height: 1.2;
     }
-    .structure{
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 40rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 36rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
 
-    .col-door{
+    .col-door {
         width: 45rem;
         gap: 0.8rem;
     }
-    .col-door h1{
+
+    .col-door h1 {
         font-size: 1.3rem;
     }
-    .contactform{
+
+    .contactform {
         width: 70%;
         padding: 2rem;
         gap: 1rem;
     }
+
     .contactinfo {
         padding: 1.2rem 0rem 1.2rem 0rem;
         gap: 1rem;
         width: 30%;
     }
-    .contactinfo li{
-       font-size: 0.9rem;
+
+    .contactinfo li {
+        font-size: 0.9rem;
     }
 
-    .contactinfo h1{
+    .contactinfo h1 {
         font-size: 1.1rem;
     }
-    .q1 img{
+
+    .q1 img {
         height: 3.5rem;
         width: 3..5rem;
     }
-    .footer-logo img{
+
+    .footer-logo img {
         height: 3.8rem;
         width: 3.8rem;
     }
-    .footer-row{
+
+    .footer-row {
         gap: 1rem;
     }
-    .logo img{
+
+    .logo img {
         height: 7rem;
         width: 8rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
     }
-    
+
     .col-ourwork img {
         height: 14rem;
         width: 14rem;
     }
-    .background-image{
+
+    .background-image {
         height: 36rem;
         width: 100%;
         position: relative;
     }
-    
-    .background-image img{
+
+    .background-image img {
         height: 36rem;
         width: 100%;
     }
+
     .aboutus {
+        height: 36rem;
         padding: 6rem;
     }
-    
+
+    .address {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    .Factoryaddress {
+        padding: 0rem 2rem 0rem 0rem;
+    }
+
+    .phone {
+        padding: 0rem 4rem 0rem 0rem;
+    }
+
+    .emailus {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .content-images2 img {
+        height: 20rem;
+        width: 22rem;
+        border-radius: 1rem;
+    }
+
+    .contactpara h1 {
+        font-size: 1.5rem;
+    }
 }
 
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 780px) {
     .para {
         left: 8rem;
         width: 22rem;
@@ -1611,207 +1816,263 @@ ul li img{
         width: 20rem;
         height: 20rem;
     }
+
     .card-l-b {
         width: 20rem;
         height: 20rem;
     }
-    .nav{
+
+    .nav {
         display: block;
         padding: 1rem;
     }
 
-    .card2{
+    .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .card1{
+
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .img img{
+
+    .img img {
         height: 14rem;
         width: 16rem;
         padding: 0rem 3rem 0rem 0rem;
     }
-   .card-body{
+
+    .card-body {
         text-align: center;
         line-height: 1rem;
     }
-    .rate-row{
+
+    .rate-row {
         flex-wrap: wrap;
     }
+
     .rate-col-1 {
         width: 12rem;
         margin: 1rem 0rem 0rem 0rem;
     }
-    .productsh1{
+
+    .productsh1 {
         padding: 2.3rem;
     }
+
     .card-pro {
         gap: 2rem;
         padding: 0rem 4rem 0rem 4rem;
     }
+
     .card-pro-para {
         gap: 1rem;
     }
+
     .card-pro img {
         height: 22rem;
         width: 20rem;
     }
-    .whyus{
+
+    .whyus {
         padding: 2rem;
     }
-    .whyus-img{
+
+    .whyus-img {
         gap: 10rem;
     }
+
     .whyus-img img {
         height: 14rem;
         width: 16rem;
     }
-    .whyus-content{
+
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
+
     .profile {
         padding: 4rem 0rem 4rem 8rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.6rem;
     }
-    .content-row{
+
+    .content-row {
         flex-wrap: wrap;
     }
-    .content-profile{
+
+    .content-profile {
         flex-wrap: wrap;
     }
-    .content1{
+
+    .content1 {
         width: 100%;
         gap: 1rem;
         line-height: 1.4rem;
     }
-    .content2{
+
+    .content2 {
         width: 100%;
         gap: 1rem;
         line-height: 1.2;
     }
-    .structure{
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 40rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 36rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .col-door{
+
+    .col-door {
         width: 40rem;
         gap: 0.8rem;
     }
-    .col-door h1{
+
+    .col-door h1 {
         font-size: 1.3rem;
     }
+
     .floors {
         padding: 2rem 0rem 2rem 6rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .col-ourwork img {
         height: 12rem;
         width: 12rem;
     }
 
-    .nav ul li{
+    .nav ul li {
         font-size: 1.2rem;
     }
-    .background-image{
+
+    .background-image {
         height: 36rem;
         width: 100%;
         position: relative;
     }
-    
-    .background-image img{
+
+    .background-image img {
         height: 36rem;
         width: 100%;
     }
+
     .aboutus {
         padding: 6rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content-images2 img {
+        height: 18rem;
+        width: 20rem;
+        border-radius: 1rem;
+    }
+
+    .contactpara h1 {
+        font-size: 1.4rem;
     }
 }
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .para {
         top: 2rem;
         left: 8rem;
         width: 20rem;
         height: 18rem;
     }
-    .nav{
+
+    .nav {
         display: block;
         padding: 1rem;
     }
-    .nav ul li{
+
+    .nav ul li {
         font-size: 1rem;
     }
 
-    .card2{
+    .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .card1{
+
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .img img{
+
+    .img img {
         height: 14rem;
         width: 14rem;
         padding: 0rem 1.8rem 0rem 0rem;
     }
-    
-    .card-body{
+
+    .card-body {
         text-align: center;
         line-height: 1rem;
     }
 
-    .card-body p{
+    .card-body p {
         font-size: 0.8;
     }
-    .card-head h1{
+
+    .card-head h1 {
         font-size: 1.2rem;
     }
 
@@ -1819,19 +2080,22 @@ ul li img{
         gap: 2rem;
         padding: 0rem 4rem 0rem 4rem;
     }
+
     .card-pro-para {
         gap: 1rem;
     }
+
     .card-pro img {
         height: 22rem;
         width: 20rem;
     }
-    .whyus{
+
+    .whyus {
         padding: 2rem;
         flex-direction: column;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 2rem;
         flex-direction: row;
     }
@@ -1841,7 +2105,7 @@ ul li img{
         width: 18rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
@@ -1849,76 +2113,97 @@ ul li img{
     .profile {
         padding: 4rem 0rem 4rem 7rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.5rem;
     }
-    .structure{
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 40rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 36rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .col-door{
+
+    .col-door {
         width: 34rem;
         gap: 0.8rem;
     }
-    .col-door h1{
+
+    .col-door h1 {
         font-size: 1.3rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 40rem;
         width: 35rem;
     }
-    .q1 img{
+
+    .q1 img {
         height: 3rem;
         width: 3rem;
     }
-    .footer-logo img{
+
+    .footer-logo img {
         height: 3.6rem;
         width: 3.6rem;
     }
-    .footer-row{
+
+    .footer-row {
         gap: 1rem;
     }
-    .logo img{
+
+    .logo img {
         height: 7rem;
         width: 8rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .col-ourwork img {
         height: 12rem;
         width: 12rem;
     }
+
+    .contactpara h1 {
+        font-size: 1.3rem;
+    }
 }
 
-@media only screen and (max-width: 685px){
+@media only screen and (max-width: 685px) {
     .para {
         top: 1rem;
         left: 8rem;
@@ -1926,54 +2211,59 @@ ul li img{
         height: 18rem;
     }
 
-    .nav{
+    .nav {
         display: block;
         padding: 1rem;
     }
 
-    .nav ul li{
+    .nav ul li {
         font-size: 1.2rem;
-     }
-    .nav ul{
+    }
+
+    .nav ul {
         gap: 2.2rem;
     }
 
-    .card2{
+    .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .card1{
+
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .img img{
+
+    .img img {
         height: 14rem;
         width: 14rem;
         padding: 0rem 1.8rem 0rem 0rem;
     }
-    
-    .card-body{
+
+    .card-body {
         text-align: center;
         line-height: 1rem;
     }
 
-    .card-body p{
+    .card-body p {
         font-size: 0.8;
     }
-    .card-head h1{
+
+    .card-head h1 {
         font-size: 1.2rem;
     }
-    .col-1{
+
+    .col-1 {
         width: 90%;
     }
-    
-    .col-2{
+
+    .col-2 {
         width: 90%;
     }
 
@@ -1981,20 +2271,22 @@ ul li img{
         gap: 2rem;
         padding: 0rem 4rem 0rem 4rem;
     }
+
     .card-pro-para {
         gap: 0.8rem;
     }
+
     .card-pro img {
         height: 24rem;
         width: 20rem;
     }
-    
-    .whyus{
+
+    .whyus {
         padding: 2rem;
         flex-direction: column;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 2rem;
         flex-direction: row;
     }
@@ -2004,195 +2296,256 @@ ul li img{
         width: 18rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
+
     .profile {
         padding: 4rem 0rem 4rem 6rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.4rem;
     }
+
     .profile-container img {
         height: 15rem;
         width: 100%;
     }
-    .structure{
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 30rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 34rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .door-whyus-img img{
+
+    .door-whyus-img img {
         width: 32rem;
     }
 
-    .col-door{
+    .col-door {
         width: 34rem;
         gap: 0.5rem;
     }
-    .col-door h1{
+
+    .col-door h1 {
         font-size: 1.2rem;
     }
+
     .floors {
         padding: 2rem 0rem 2rem 5rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 38rem;
         width: 32rem;
     }
-    .contactform{
+
+    .contactform {
         width: 70%;
         padding: 2rem;
         gap: 1rem;
     }
+
     .contactinfo {
         padding: 1.2rem 0rem 1.2rem 0rem;
         gap: 1rem;
         width: 30%;
     }
-    .contactinfo li{
-       font-size: 0.9rem;
+
+    .contactinfo li {
+        font-size: 0.9rem;
     }
 
-    .contactinfo h1{
+    .contactinfo h1 {
         font-size: 1.1rem;
     }
-    .q1 img{
+
+    .q1 img {
         height: 2.8rem;
         width: 2.8rem;
     }
-    .footer-logo img{
+
+    .footer-logo img {
         height: 3.5rem;
         width: 3.5rem;
     }
-    .footer-row{
+
+    .footer-row {
         gap: 1rem;
     }
-    .logo img{
+
+    .logo img {
         height: 7rem;
         width: 8rem;
     }
-    .ourworkh1 h2{
+
+    .ourworkh1 h2 {
         font-size: 1.8rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .col-ourwork img {
         height: 12rem;
         width: 12rem;
     }
-    .rate-quote h1{
+
+    .rate-quote h1 {
+        font-size: 1.4rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content-images2 img {
+        height: 18rem;
+        width: 18rem;
+        border-radius: 1rem;
+    }
+
+    .contactpara h1 {
         font-size: 1.3rem;
     }
-    .testimonals p {
+
+    .contactpara p {
         font-size: 1rem;
     }
 }
-@media only screen and (max-width: 655px)
-{
+
+@media only screen and (max-width: 655px) {
+    .main-q h1 {
+        font-size: 1.4rem;
+    }
+
     .para {
         top: 1rem;
         left: 4rem;
         width: 20rem;
         height: 16rem;
     }
+
     .content {
         flex-wrap: wrap;
-     }
-     .content img {
-         padding: 2rem 0rem 0rem 1rem;
-         height: 30rem;
-         width: 35rem;
-     }
-     .aboutus{
-         padding: 1rem;
-     }
+    }
 
-     .card-pro {
+    .content img {
+        padding: 2rem 0rem 0rem 1rem;
+        height: 30rem;
+        width: 35rem;
+    }
+
+    .aboutus {
+        padding: 1rem;
+    }
+
+    .card-pro {
         gap: 2rem;
         padding: 0rem 2rem 0rem 2rem;
     }
+
     .card-pro-para {
         gap: 0.8rem;
-        color: black;
     }
-    .card-pro{
+
+    .card-pro {
         height: 22rem;
     }
 
-    .card-pro:last-child{
+    .card-pro:last-child {
         margin: 0rem;
     }
+
     .card-pro img {
         height: 16rem;
         width: 14rem;
     }
 
-    .card-pro-para h3{
-        font-size: 1.1rem;
-        color: rgb(1, 1, 1);
+    .card-pro-para h3 {
+        font-size: 1rem;
+        color: black;
     }
-    .card-pro-para p{
-        color: rgb(0, 0, 0);
+
+    .card-pro-para p {
         font-size: 0.9rem;
+        color: black;
     }
+
     .btn-read-more {
-        height: 1.5rem;
-        width: 5rem;
+        height: 1.8rem;
+        width: 5.5rem;
         font-size: 0.7rem;
-        background-color: white;
-        border: 1px solid black;
+        background-color: rgb(38, 38, 38);
+        border: 1px solid white;
         border-radius: 0.5rem;
     }
+
+    .btn-read-more a{
+            color: white;
+    }
+
     .quality {
         gap: 2rem;
         justify-content: center;
     }
+
     .q1 {
         text-align: center;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 1.2rem;
     }
 
-    .q1 p{
+    .q1 p {
         font-size: 1rem;
         text-align: center;
     }
-    .whyus{
+
+    .whyus {
         padding: 2rem;
         flex-direction: column;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 2rem;
         flex-direction: row;
     }
@@ -2202,7 +2555,7 @@ ul li img{
         width: 15rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
@@ -2210,123 +2563,178 @@ ul li img{
     .profile {
         padding: 4rem 0rem 4rem 5rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.4rem;
     }
+
     .profile-container img {
         height: 14rem;
         width: 100%;
     }
+
     .content-col img {
         height: 5rem;
         width: 5rem;
     }
-    .structure{
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 30rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 34rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .door-whyus-img img{
+
+    .door-whyus-img img {
         width: 32rem;
     }
-    .col-door{
+
+    .col-door {
         width: 30rem;
         gap: 0.5rem;
     }
-    .col-door h1{
+
+    .col-door h1 {
         font-size: 1.2rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 34rem;
         width: 30rem;
     }
-    .contactform{
+
+    .contactform {
         width: 100%;
         padding: 2rem;
         gap: 1rem;
     }
+
     .contactinfo {
         display: none;
     }
-    .main-q h1{
+
+    .main-q h1 {
         font-size: 2rem;
     }
 
-    .main-q p{
+    .main-q p {
         font-size: 1.3rem;
     }
-    .ourworkh1 h2{
+
+    .ourworkh1 h2 {
         font-size: 1.6rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .col-ourwork img {
         height: 10rem;
         width: 10rem;
     }
 
-    .nav ul li{
+    .nav ul li {
         font-size: 1.1rem;
-     }
-    .nav ul{
+    }
+
+    .nav ul {
         gap: 2rem;
     }
-    .background-image{
-        height: 30rem;
+
+    .background-image {
+        height: 100%;
         width: 100%;
         position: relative;
     }
-    
-    .background-image img{
-        height: 30rem;
+
+    .background-image img {
+        height: 100%;
         width: 100%;
     }
+
     .aboutus {
+        height: 100%;
         padding: 6rem;
     }
 
-    .rate-quote h1{
-        font-size: 1.2rem;
-    }
-    .testimonals p {
+    .productsh1 h2 {
         font-size: 1rem;
     }
-    .rate-para h2{
-        font-size: 1rem;
+
+    .ourmissionh1 h1 {
+        font-size: 1.8rem;
     }
-    .contactpara h1{
+
+    .rate-quote h1 {
         font-size: 1.2rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content-images2 img {
+        height: 16rem;
+        width: 16rem;
+        border-radius: 1rem;
+    }
+
+    .contactpara p {
+        font-size: 1rem;
     }
 }
 
-@media only screen and (max-width: 565px){
+@media only screen and (max-width: 565px) {
+
+    .main-q h1 {
+        font-size: 1rem;
+    }
+
+    .aboutus h1 {
+        font-size: 1rem;
+    }
+
+    .contactpara h1 {
+        font-size: 1.1rem;
+    }
+
+    .contactpara p {
+        font-size: 1rem;
+    }
 
     .para {
         top: 1rem;
@@ -2334,65 +2742,73 @@ ul li img{
         width: 22rem;
         height: 16rem;
     }
-    .productsh1 h1{
+
+    .productsh1 h1 {
         font-size: 1.2rem;
     }
-    .background{
+
+    .background {
         height: 24rem;
         width: 100%;
         position: relative;
     }
-    
-    .background img{
+
+    .background img {
         height: 24rem;
         width: 100%;
     }
 
-    .nav ul li{
+    .nav ul li {
         font-size: 1.1rem;
-     }
-    .nav ul{
+    }
+
+    .nav ul {
         gap: 1rem;
     }
 
-    .card2{
+    .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .card1{
+
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .img img{
+
+    .img img {
         height: 12rem;
         width: 12rem;
         padding: 0rem 1.8rem 0rem 0rem;
     }
-    
-    .card-body{
+
+    .card-body {
         text-align: center;
         line-height: 1rem;
     }
 
-    .card-body p{
+    .card-body p {
         font-size: 0.7;
     }
-    .card-head h1{
+
+    .card-head h1 {
         font-size: 1rem;
     }
-    .col-1{
+
+    .col-1 {
         width: 90%;
     }
-    
-    .col-2{
+
+    .col-2 {
         width: 90%;
     }
+
     .btn-learnmore {
         height: 1.5rem;
         width: 5rem;
@@ -2400,28 +2816,31 @@ ul li img{
         border-radius: 0.5rem;
         color: var(--color-white);
     }
+
     .content {
         flex-wrap: wrap;
-     }
-     .content img {
-         padding: 2rem 0rem 0rem 1rem;
-         height: 30rem;
-         width: 30rem;
-     }
-     .aboutus{
-         padding: 1rem;
-         font-size: 1rem;
-     }
+    }
 
-     .aboutus p{
+    .content img {
+        padding: 2rem 0rem 0rem 1rem;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .aboutus {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .aboutus p {
         font-size: 0.9rem;
-     }
+    }
 
-     .card-pro-para {
+    .card-pro-para {
         gap: 0.8rem;
     }
 
-    .card-pro{
+    .card-pro {
         gap: 1rem;
         padding: 0rem 1rem 0rem 1rem;
     }
@@ -2431,39 +2850,45 @@ ul li img{
         width: 12rem;
     }
 
-    .card-pro-para h3{
-        font-size: 1.1rem;
+    .card-pro-para h3 {
+        font-size: 1rem;
+        color: black;
     }
-    .card-pro-para p{
+
+    .card-pro-para p {
         font-size: 0.9rem;
+        color: black;
     }
+
     .quality {
         gap: 1.5rem;
         justify-content: center;
     }
+
     .q1 {
         text-align: center;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 1rem;
     }
 
-    .q1 p{
+    .q1 p {
         font-size: 0.9rem;
         text-align: center;
     }
 
-    .q1 img{
+    .q1 img {
         height: 1.5rem;
         width: 1.5rem;
     }
 
-    .whyus{
+    .whyus {
         padding: 1.5rem;
         flex-direction: column;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 1rem;
         flex-direction: row;
     }
@@ -2473,7 +2898,7 @@ ul li img{
         width: 14rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
@@ -2481,253 +2906,327 @@ ul li img{
     .profile {
         padding: 4rem 0rem 4rem 4rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.3rem;
     }
+
     .profile-container img {
         height: 13rem;
         width: 100%;
     }
-    .content-row{
+
+    .content-row {
         flex-wrap: nowrap;
     }
+
     .content-col img {
         height: 5rem;
         width: 5rem;
     }
-    .content-profile{
+
+    .content-profile {
         flex-wrap: wrap;
     }
-    .content1{
+
+    .content1 {
         width: 100%;
         gap: 1rem;
         line-height: 1.5rem;
         font-size: 1rem;
     }
 
-    .content1 h1{
+    .content1 h1 {
         line-height: 1.2;
         font-size: 1.6rem;
     }
 
-    .content2{
+    .content2 {
         width: 100%;
         gap: 1rem;
         line-height: 1.1;
     }
-    .structure{
+
+    .structure {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .structure-img{
+
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 20rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 32rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .door-whyus-img img{
+
+    .door-whyus-img img {
         width: 30rem;
     }
 
-    .col-door{
+    .col-door {
         width: 24rem;
         gap: 0.5rem;
     }
-    .col-door h1{
+
+    .col-door h1 {
         font-size: 1.2rem;
     }
+
     .floors {
         padding: 2rem 0rem 2rem 4rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 30rem;
         width: 25rem;
     }
-    .floors{
+
+    .floors {
         gap: 0.5rem;
     }
-    .q1 img{
+
+    .q1 img {
         height: 2.6rem;
         width: 2.6rem;
     }
-    .footer-logo img{
+
+    .footer-logo img {
         height: 3.2rem;
         width: 3.2rem;
     }
-    .footer-row{
+
+    .footer-row {
         gap: 0.8rem;
     }
-    .logo img{
+
+    .logo img {
         height: 6rem;
         width: 7rem;
     }
-    .main-q h1{
+
+    .main-q h1 {
         font-size: 2rem;
     }
 
-    .main-q p{
+    .main-q p {
         font-size: 1.2rem;
     }
-    .ourworkh1 h2{
+
+    .ourworkh1 h2 {
         font-size: 1.2rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .col-ourwork img {
         height: 8rem;
         width: 8rem;
     }
-    .rate-quote h1{
+
+    .productsh1 h2 {
+        font-size: 1rem;
+    }
+
+    .paragraph h1 {
         font-size: 1.2rem;
     }
-    .testimonals p {
-        font-size: 1rem;
+
+    .ourmissionh1 h1 {
+        font-size: 1.6rem;
     }
-    .rate-para h2{
-        font-size: 0.9rem;
-    }
-    .card-pro-para h3 {
-        font-size: 1rem;
-    }
-    .contactpara h1{
+
+    .rate-quote h1 {
         font-size: 1.1rem;
     }
-}
-@media only screen and (max-width: 490px){
 
-    .background{
+    footer h1 {
+        font-size: 1.1rem;
+    }
+
+    .profile h1 {
+        font-size: 1.2rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content-images2 img {
+        height: 15rem;
+        width: 15rem;
+        border-radius: 1rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+
+    .main-q h1 {
+        font-size: 1rem;
+    }
+
+    .aboutus h1 {
+        font-size: 1rem;
+    }
+
+    .contactpara h1 {
+        font-size: 1rem;
+    }
+
+    .background {
         height: 20rem;
         width: 100%;
         position: relative;
     }
-    
-    .background img{
+
+    .background img {
         height: 20rem;
         width: 100%;
     }
+
     .para {
         top: 1rem;
         left: 2rem;
         width: 20rem;
         height: 16rem;
     }
-    .nav{
+
+    .nav {
         background-color: rgba(0, 0, 0, 0.7);
         padding: 1rem;
         display: none;
-        border-bottom-left-radius:1.2rem;
+        border-bottom-left-radius: 1.2rem;
         border-bottom-right-radius: 1.2rem;
     }
 
-    .nav ul li{
+    .nav ul li {
         font-size: 1rem;
-     }
-    .nav ul{
+    }
+
+    .nav ul {
         gap: 1rem;
     }
 
-    .nav ul li a{
+    .nav ul li a {
         color: var(--color-white);
     }
-    .nav ul{
+
+    .nav ul {
         display: flex;
         flex-direction: column;
         justify-content: left;
         gap: 1.2rem;
     }
 
-    .nav ul li a:before{
+    .nav ul li a:before {
         background-color: rgb(117, 117, 117);
     }
-    
-    .nav ul li a:hover:before{
+
+    .nav ul li a:hover:before {
         width: 100%;
         background-color: #f7f6ff;
     }
 
-    .head-nav{
+    .head-nav {
         border-radius: 1rem;
         display: flex;
         justify-content: space-between;
         background-color: var(--color-black-shade);
         padding: 0.8rem;
     }
-    .head-nav button{
+
+    .head-nav button {
         border: 0;
         border-radius: 0.4rem;
         padding: 0.4rem;
         cursor: pointer;
     }
 
-    .head-nav img{
+    .head-nav img {
         height: 1.2rem;
         width: 1.5rem;
     }
+
     .footer-row {
         justify-content: center;
         gap: 1rem;
     }
 
-    .card2{
+    .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .card1{
+
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .img img{
+
+    .img img {
         height: 12rem;
         width: 12rem;
         padding: 0rem 1.8rem 0rem 0rem;
     }
-    
-    .card-body{
+
+    .card-body {
         text-align: center;
         line-height: 1rem;
     }
 
-    .card-body p{
+    .card-body p {
         font-size: 0.9rem;
     }
-    .card-head h1{
+
+    .card-head h1 {
         font-size: 1rem;
     }
-    .col-1{
+
+    .col-1 {
         width: 100%;
     }
-    
-    .col-2{
+
+    .col-2 {
         width: 100%;
     }
+
     .btn-learnmore {
         height: 1.3rem;
         width: 4.5rem;
@@ -2745,27 +3244,35 @@ ul li img{
         color: var(--color-black-shade);
         font-size: 0.8rem;
     }
+
     .content {
         flex-wrap: wrap;
-     }
-     .content img{
+    }
+
+    .content img {
         padding: 1rem 0rem 0rem 1rem;
         height: 28rem;
         width: 26rem;
     }
-     .content-col img {
+
+    .content-col img {
         height: 4rem;
         width: 4rem;
     }
-     .aboutus{
-         padding: 1rem;
-     }
-     .card-pro-para {
+
+    .aboutus {
+        padding: 1rem;
+    }
+
+    .card-pro-para {
+        line-height: 1.1rem;
+        text-align: justify;
         gap: 0.8rem;
     }
 
-    .card-pro{
+    .card-pro {
         gap: 1rem;
+        background-color: rgb(239, 239, 239);
         padding: 0rem 1rem 0rem 1rem;
     }
 
@@ -2774,19 +3281,22 @@ ul li img{
         width: 12rem;
     }
 
-    .card-pro-para h3{
+    .card-pro-para h3 {
         font-size: 1rem;
-    }
-    .card-pro-para p{
-        font-size: 0.9rem;
+        color: black;
     }
 
-    .whyus{
+    .card-pro-para p {
+        font-size: 0.9rem;
+        color: black;
+    }
+
+    .whyus {
         padding: 1rem;
         flex-direction: column;
     }
 
-    .whyus-img{
+    .whyus-img {
         gap: 0.6rem;
         flex-direction: row;
     }
@@ -2796,163 +3306,279 @@ ul li img{
         width: 12rem;
     }
 
-    .whyus-content{
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
+
     .profile {
         padding: 4rem 0rem 4rem 2rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.2rem;
     }
+
     .profile-container img {
         height: 12rem;
         width: 100%;
     }
 
-    .structure-img{
+    .structure-img {
         width: 100%;
     }
-    .structure-content{
+
+    .structure-content {
         width: 100%;
     }
+
     .structure-img img {
         height: 28rem;
         width: 100%;
     }
-    .structure-content h1{
+
+    .structure-content h1 {
         font-size: 1rem;
     }
-    .structure-content p{
+
+    .structure-content p {
         gap: 0.9rem;
         font-size: 0.9rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 26rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         line-height: 1.2;
     }
-    .door-whyus-img img{
+
+    .door-whyus-img img {
         width: 25rem;
     }
-    .col-door{
+
+    .col-door {
         width: 20rem;
         gap: 0.5rem;
     }
-    .col-door h1{
+
+    .col-door h1 {
         font-size: 1.2rem;
     }
+
     .floors {
         padding: 2rem 0rem 2rem 3rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 28rem;
         width: 24rem;
     }
-    .floors{
+
+    .floors {
         gap: 0.5rem;
     }
-    .q1 img{
-        height: 2.1rem;
-        width: 2.1rem;
+
+    .q1 img {
+        height: 2rem;
+        width: 2rem;
     }
-    .q1 h2{
-        font-size: 0.9rem;
-    }
-    .footer-logo img{
+
+    .footer-logo img {
         height: 3.2rem;
         width: 3.2rem;
     }
-    .footer-row{
+
+    .footer-row {
         gap: 0.8rem;
     }
-    .logo img{
+
+    .logo img {
         height: 4rem;
         width: 5rem;
     }
-    .main-q h1{
+
+    .main-q h1 {
         font-size: 2.4rem;
     }
 
-    .main-q p{
+    .main-q p {
         font-size: 1.1rem;
     }
-    .ourworkh1 h2{
+
+    .ourworkh1 h2 {
         font-size: 1.2rem;
     }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-    }    
+    }
+
     .col-ourwork img {
         height: 8rem;
         width: 8rem;
-    }
-    
-    .paragraph h1 {
-        font-size: 1rem;
-    }
-    .ourmissionh1 h1 {
-        color: var(--color-white);
-        font-size: 0.9rem;
-        padding: 2rem;
-    }
-    .rate-quote h1{
-        font-size: 1.1rem;
-    }
-    .rate-para h2{
-        font-size: 0.9rem;
-    }
-    .head {
-        padding: 0.2rem 0.8rem 0.2rem 0rem;
-        gap: 1.2rem;
     }
 
     .productsh1 h2 {
         font-size: 1rem;
     }
-    .card-pro-para h3 {
-        font-size: 0.9rem;
+
+    .paragraph h1 {
+        font-size: 1.1rem;
     }
 
-    .contactpara h1{
+    .ourmissionh1 h1 {
+        font-size: 1.3rem;
+    }
+
+    .rate-quote h1 {
+        font-size: 1.1rem;
+    }
+
+    footer h1 {
         font-size: 1rem;
     }
-    .contactpara p{
-        font-size: 0.9rem;
-    }
-}
-@media only screen and (max-width: 400px){
-    
-    .background{
+
+    .pvcprofile {
         height: 20rem;
         width: 100%;
         position: relative;
     }
+
+    .pvcprofile img {
+        height: 20rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pvcfloors {
+        height: 20rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .pvcfloors img {
+        height: 20rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .profile {
+        gap: 1rem;
+    }
+
+    .profile h1 {
+        font-size: 1.2rem;
+    }
+
+    .content1 ul {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content-images2 img {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 1rem;
+    }
+
+    .head p {
+        font-size: 0.9rem;
+    }
+
+    .q1 h2 {
+        font-size: 0.9rem;
+    }
+
+    .q1 p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
     
-    .background img{
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .content-images2 img {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 1rem;
+    }
+
+    .door-whyus-img img {
+        width: 24rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-q h1 {
+        font-size: 0.9rem;
+    }
+
+    .aboutus h1 {
+        font-size: 1rem;
+    }
+
+    .contactpara h1 {
+        font-size: 1.1rem;
+    }
+
+    .background {
+        height: 20rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .background img {
         height: 20rem;
         width: 100%;
     }
+
     .para {
         top: 1rem;
         left: 1rem;
         width: 20rem;
         height: 18rem;
     }
-    .para h1, p{
+
+    .para h1, p {
         font-size: 1rem;
     }
+
     .footer-row {
         justify-content: center;
         gap: 1rem;
     }
 
-    .content img{
+    .content img {
         padding: 1rem 0rem 0rem 1rem;
         height: 26rem;
         width: 24rem;
@@ -2966,44 +3592,49 @@ ul li img{
         padding: 1.4rem 0rem 1.2rem 1rem;
     }
 
-    .card2{
+    .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .card1{
+
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
         padding: 1rem;
     }
-    .img img{
+
+    .img img {
         height: 10rem;
         width: 10rem;
         padding: 0rem 1rem 0rem 0rem;
     }
-    
-    .card-body{
+
+    .card-body {
         text-align: center;
         line-height: 1rem;
     }
 
-    .card-body p{
+    .card-body p {
         font-size: 0.9rem;
     }
-    .card-head h1{
+
+    .card-head h1 {
         font-size: 1rem;
     }
-    .col-1{
+
+    .col-1 {
         width: 100%;
     }
-    
-    .col-2{
+
+    .col-2 {
         width: 100%;
     }
+
     .btn-learnmore {
         height: 1.4rem;
         width: 4.6rem;
@@ -3012,340 +3643,524 @@ ul li img{
         color: var(--color-white);
         font-size: 0.7rem;
     }
+
+    .btn-read-more {
+        height: 1.5rem;
+        width: 5rem;
+        font-size: 0.7rem;
+        background-color: rgb(41, 41, 41);
+    }
+
     .content {
         flex-wrap: wrap;
-     }
-     .aboutus{
-         padding: 1rem;
-     }
-     .card-pro-para {
+    }
+
+    .aboutus {
+        padding: 1rem;
+    }
+
+    .card-pro-para {
+        line-height: 1.1rem;
+        text-align: justify;
         gap: 0.8rem;
     }
-    .card-pro{
+
+    .card-pro {
         gap: 1rem;
-        padding: 0rem 0.5rem 0rem 0.5rem;
+        background-color: rgb(239, 239, 239);
+        padding: 0rem 1rem 0rem 1rem;
     }
+
     .card-pro img {
         height: 12rem;
         width: 10rem;
     }
-    .card-pro-para h3{
+
+    .card-pro-para h3 {
         font-size: 1.1rem;
+        color: black;
     }
-    .card-pro-para p{
+
+    .card-pro-para p {
         font-size: 0.9rem;
+        color: black;
     }
+
     .quality {
         gap: 1rem;
         justify-content: center;
     }
+
     .q1 {
         text-align: center;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 0.9rem;
     }
-    .q1 p{
+
+    .q1 p {
         font-size: 0.8rem;
     }
-    .whyus{
+
+    .whyus {
         padding: 1rem;
         flex-direction: column;
     }
-    .whyus-img{
+
+    .whyus-img {
         gap: 0.6rem;
         flex-direction: row;
     }
+
     .whyus-img img {
         height: 8rem;
         width: 10rem;
     }
-    .whyus-content{
+
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
+
     .profile {
         padding: 4rem 0rem 4rem 1.5rem;
     }
-    .profile-row{
+
+    .profile-row {
         gap: 0.8rem;
     }
 
-    .col-profile1{
+    .col-profile1 {
         gap: 0.6rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.1rem;
     }
+
     .profile-container img {
         height: 11rem;
         width: 100%;
     }
-    .content1 h2{
+
+    .content1 h2 {
         font-size: 1rem;
-    } 
-    .content2 h2{
+    }
+
+    .content2 h2 {
         font-size: 1.2rem;
-    }   
+    }
+
     .content-col img {
         height: 3.4rem;
         width: 3.4rem;
     }
 
-    .structure-img img{
+    .structure-img img {
         height: 16rem;
     }
-    .door-img img{
+
+    .door-img img {
         width: 22rem;
         height: 10rem;
     }
-    .content1 h1{
+
+    .content1 h1 {
         font-size: 1.2rem;
         line-height: 1.2;
     }
-    .door-whyus-img img{
-        width: 21rem;
+
+    .door-whyus-img img {
+        width: 22rem;
     }
-    .col-door{
+
+    .col-door {
         width: 16rem;
         gap: 0.2rem;
     }
-    .col-door h1{
-        font-size: 0.8rem;
+
+    .col-door h1 {
+        font-size: 0.7rem;
     }
-    .col-door p{
-        font-size: 0.9rem;
+
+    .col-door p {
+        font-size: 0.7rem;
     }
+
     .floors {
         padding: 2rem 0rem 2rem 1rem;
         font-size: 0.8rem;
     }
-    .content-images img{
+
+    .content-images img {
         height: 26rem;
         width: 22rem;
     }
-    .floors{
+
+    .floors {
         gap: 0.2rem;
     }
-    .q1 img{
+
+    .q1 img {
         height: 2.1rem;
         width: 2.1rem;
     }
-    .footer-logo img{
+
+    .footer-logo img {
         height: 3.2rem;
         width: 3.2rem;
     }
-    .footer-row{
+
+    .footer-row {
         gap: 0.8rem;
     }
-    .logo img{
+
+    .logo img {
         height: 4rem;
         width: 5rem;
     }
-    .main-q h1{
+
+    .main-q h1 {
+        font-size: 2rem;
+    }
+
+    .main-q p {
         font-size: 0.9rem;
     }
 
-    .main-q p{
-        font-size: 0.9rem;
+    .ourworkh1 h2 {
+        font-size: 1.1rem;
     }
-    .ourworkh1 h2{
-        font-size: 1rem;
-    }
-    .row-ourwork{
+
+    .row-ourwork {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
         flex-direction: column;
-    }    
+    }
+
     .col-ourwork img {
         height: 20rem;
         width: 20rem;
     }
 
-    .paragraph h1 {
-        font-size: 0.9rem;
-    }
-
-    .ourmissionh1 h1 {
-        color: var(--color-white);
-        font-size: 1rem;
-        padding: 2rem;
-    }
-    .rate-quote h1{
-        font-size: 1.1rem;
-    }
-    .testimonals p {
-        font-size: 1rem;
-    }
-    .head {
-        padding: 0.2rem 0.7rem 0.2rem 0rem;
-        gap: 1.2rem;
-    }
     .productsh1 h2 {
         font-size: 1rem;
     }
-    .card-pro-para h3 {
-        font-size: 0.9rem;
-    }
-    .contactpara h1{
+
+    .paragraph h1 {
         font-size: 1rem;
     }
-    .contactpara p{
+
+    .ourmissionh1 h1 {
+        font-size: 1.1rem;
+    }
+
+    .rate-quote h1 {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.1rem;
+    }
+
+    .pvcprofile {
+        height: 20rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .pvcprofile img {
+        height: 20rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pvcfloors {
+        height: 20rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .pvcfloors img {
+        height: 20rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .profile h1 {
+        font-size: 1.1rem;
+    }
+
+    .content1 ul {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+    .content1 h1 {
+        font-size: 1rem;
+    }
+
+    .content1 p {
         font-size: 0.9rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .content-images2 img {
+        height: 11rem;
+        width: 11rem;
+        border-radius: 1rem;
+    }
+
+    .head p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    .content img {
+        padding: 1rem 0rem 0rem 1rem;
+        height: 25rem;
+        width: 23rem;
+    }
+    .head p {
+        font-size: 0.9rem;
+    }
+
+    .q1 h2 {
+        font-size: 0.9rem;
+    }
+
+    .q1 p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
     }
 }
 
-@media only screen and (max-width: 370px){
-    .img img{
+@media only screen and (max-width: 370px) {
+    .main-q h1 {
+        font-size: 0.9rem;
+    }
+
+    .aboutus h1 {
+        font-size: 1rem;
+    }
+
+    .contactpara h1 {
+        font-size: 1rem;
+    }
+
+    .img img {
         height: 10rem;
         width: 10rem;
         padding: 0rem 0.8rem 0rem 0rem;
     }
-    .aboutus{
+
+    .aboutus {
         padding: 1rem;
     }
 
-    .aboutus h1{
+    .aboutus h1 {
         font-size: 1rem;
     }
 
-    .aboutus p{
-       font-size: 0.9rem;
-    }
-    .card-body p{
+    .aboutus p {
         font-size: 0.9rem;
     }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
     .content {
         flex-wrap: wrap;
-     }
+    }
+
     .content img {
-         padding: 2rem 0rem 0rem 1rem;
-         height: 24rem;
-         width: 21.5rem;
-     }
-     .aboutus{
-         padding: 1rem;
-         font-size: 1.1rem;
-     }
-     .rate-quote {
+        padding: 2rem 0rem 0rem 1rem;
+        height: 24rem;
+        width: 21.5rem;
+    }
+
+    .aboutus {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .rate-quote {
         padding: 1rem;
     }
-    .rate-quote h1{
+
+    .rate-quote h1 {
         font-size: 1.2rem;
     }
+
     .ourmissionh1 h1 {
         color: var(--color-white);
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         padding: 2rem;
     }
+
     .card-pro-para {
+        line-height: 1.1rem;
+        text-align: justify;
         gap: 0.8rem;
     }
-    .card-pro{
+
+    .card-pro {
         gap: 1rem;
-        padding: 0rem 0.5rem 0rem 0.5rem;
+        background-color: rgb(239, 239, 239);
+        padding: 0rem 1rem 0rem 1rem;
     }
+
     .card-pro img {
         height: 12rem;
         width: 10rem;
     }
-    .card-pro-para h3{
+
+    .card-pro-para h3 {
         font-size: 0.9rem;
+        color: black;
     }
-    .card-pro-para p{
+
+    .card-pro-para p {
         font-size: 0.8rem;
+        line-height: 1.2rem;
+        color: black;
     }
+
     .quality {
         gap: 1rem;
         justify-content: center;
     }
+
     .q1 {
         text-align: center;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 0.8rem;
     }
 
-    .q1 p{
+    .q1 p {
         font-size: 0.8rem;
     }
-    .whyus{
+
+    .whyus {
         padding: 1rem;
         flex-direction: column;
     }
-    .whyus-img{
+
+    .whyus-img {
         gap: 0.6rem;
         flex-direction: row;
     }
+
     .whyus-img img {
         height: 8rem;
         width: 10rem;
     }
-    .whyus-content{
+
+    .whyus-content {
         font-size: 0.9rem;
         gap: 0.8rem;
     }
+
+    .door-whyus-img img {
+        width: 20.5rem;
+    }
+
     .profile {
         padding: 1rem 0rem 4rem 1rem;
     }
+
     .col-profile1 h1 {
         font-size: 1rem;
     }
+
     .profile-container img {
         height: 10rem;
         width: 100%;
     }
-    .content-images img{
+
+    .content-images img {
         height: 24rem;
         width: 20rem;
     }
-    .content2 h1{
+
+    .content2 h1 {
         font-size: 1.2rem;
     }
-    .content2 p a{
+
+    .content2 p a {
         text-decoration: none;
         color: rgb(25, 149, 25);
     }
-    .q1 img{
+
+    .q1 img {
         height: 2rem;
         width: 2rem;
     }
-    .footer-logo img{
+
+    .footer-logo img {
         height: 3rem;
         width: 3rem;
     }
-    .footer-row{
+
+    .footer-row {
         gap: 0.8rem;
     }
-    .logo img{
+
+    .logo img {
         height: 4rem;
         width: 5rem;
     }
 
-    .footer-ul ul li{
+    .footer-ul ul li {
         font-size: 0.7rem;
     }
 
-    .door-row{
+    .door-row {
         padding: 0rem 0rem 0rem 3rem;
     }
-    .col-door h4{
+
+    .col-door h4 {
         font-size: 1rem;
     }
-    .col-door p{
+
+    .col-door p {
         font-size: 0.8rem;
     }
 
-    .col-profile1 h4{
+    .col-profile1 h4 {
         font-size: 1rem;
     }
-    .col-profile1 p{
+
+    .col-profile1 p {
         font-size: 0.8rem;
     }
 
-    .col-profile2 p, a{
+    .col-profile2 p,
+    a {
         font-size: 0.9rem;
     }
 
@@ -3353,61 +4168,111 @@ ul li img{
         padding: 1.5rem 3rem 1.5rem 3rem;
     }
 
-    .main-q h1{
+    .main-q h1 {
+        font-size: 2rem;
+    }
+
+    .main-q p {
         font-size: 0.9rem;
     }
 
-    .main-q p{
-        font-size: 0.9rem;
+    .ourworkh1 h2 {
+        font-size: 1.1rem;
     }
-    .ourworkh1 h2{
-        font-size: 0.9rem;
-    }
+
     .btn-read-more {
         height: 1.5rem;
         width: 5rem;
         font-size: 0.7rem;
+        background-color: rgb(41, 40, 40);
     }
+
     .btn-read-more a {
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 0.7rem;
         text-decoration: none;
     }
-    .paragraph h1 {
-        font-size: 0.9rem;
-    }
-    .rate-quote h1{
-        font-size: 1rem;
-    }
-    .testimonals p {
-        font-size: 0.9rem;
-    }
-    .rate-para h2{
-        font-size: 0.9rem;
-    }
-    footer h1{
-        padding: 1rem 0rem 1rem 1.8rem;
+
+    .productsh1 h2 {
         font-size: 0.9rem;
     }
 
-    .footer-ul h2, li{
+    .paragraph h1 {
+        font-size: 1rem;
+    }
+
+    .ourmissionh1 h1 {
+        font-size: 1rem;
+    }
+
+    .rate-quote h1 {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.1rem;
+    }
+
+    .pvcprofile {
+        height: 13rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .pvcprofile img {
+        height: 13rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pvcfloors {
+        height: 13em;
+        width: 100%;
+        position: relative;
+    }
+
+    .pvcfloors img {
+        height: 13rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .profile h1 {
+        font-size: 1.1rem;
+    }
+
+    .content1 ul {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .content-images2 img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 1rem;
+    }
+
+    .head p {
         font-size: 0.8rem;
-    }
-    .head {
-        padding: 0.2rem 0.5rem 0.2rem 0rem;
-        gap: 1.2rem;
-    }
-    .productsh1 h2 {
-        font-size: 1rem;
-    }
-    .card-pro-para h3 {
-        font-size: 0.9rem;
-    }
-    .contactpara h1{
-        font-size: 1rem;
     }
     .contactpara p{
         font-size: 0.9rem;
     }
+    .footerSec-row h6 {
+        font-size: 0.8rem;
+    }
+    
+    .footerSec-row h5 {
+        font-size: 0.8rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+    }
 }
-
