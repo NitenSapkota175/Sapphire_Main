@@ -663,7 +663,7 @@ form textarea {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.767);
     height: 100%;
     width: 100%;
     display: flex;
@@ -800,7 +800,7 @@ form textarea {
 }
 
 .whyus {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
     display: flex;
     padding: 4rem;
     gap: 2rem;
@@ -922,7 +922,7 @@ form textarea {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.767);
     height: 100%;
     width: 100%;
     display: flex;
@@ -3219,7 +3219,7 @@ ul li img {
     }
 
     .whyus {
-        padding: 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         flex-direction: column;
     }
 
@@ -3463,6 +3463,12 @@ ul li img {
     .rate-col-1 {
         width: 18rem;
     }
+    .q1{
+        gap: 0.6rem;
+    }
+    .whyus{
+        padding: 1rem 1rem 2rem 1rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -3629,8 +3635,8 @@ ul li img {
     .q1 p {
         font-size: 0.8rem;
     }
-    .whyus {
-        padding: 1rem;
+    .whyus{
+        padding: 1rem 1rem 2rem 1rem;
         flex-direction: column;
     }
     .whyus-img {
@@ -3706,6 +3712,9 @@ ul li img {
     .floors {
         gap: 0.2rem;
     }
+    .q1{
+        gap: 0.6rem;
+    }
     .q1 img {
         height: 1.9rem;
         width: 1.9rem;
@@ -3741,85 +3750,71 @@ ul li img {
         height: 20rem;
         width: 20rem;
     }
-
     .productsh1 h2 {
         font-size: 1rem;
     }
-
     .paragraph h1 {
         font-size: 1rem;
     }
-
     .ourmissionh1 h1 {
         font-size: 1.1rem;
     }
-
     .rate-quote h1 {
         font-size: 1rem;
     }
-
     footer h1 {
         font-size: 1.1rem;
     }
-
     .pvcprofile {
         height: 20rem;
         width: 100%;
         position: relative;
     }
-
     .pvcprofile img {
         height: 20rem;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
     }
-
     .pvcfloors {
         height: 20rem;
         width: 100%;
         position: relative;
     }
-
     .pvcfloors img {
         height: 20rem;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
     }
-
     .profile h1 {
         font-size: 1.1rem;
     }
-
     .content1 ul {
         padding: 0rem 0rem 0rem 1rem;
     }
-
     .content1 h1 {
         font-size: 1rem;
     }
-
     .content1 p {
         font-size: 0.9rem;
     }
-
     .content-images2 {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
     }
-
     .content-images2 img {
         height: 11rem;
         width: 11rem;
         border-radius: 1rem;
     }
-
     .head p {
         font-size: 0.8rem;
     }
-
+    .q1{
+        gap: 0.5rem;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -3832,6 +3827,9 @@ ul li img {
         font-size: 0.9rem;
     }
 
+    .q1{
+        gap: 0.5rem;
+    }
     .q1 h2 {
         font-size: 0.9rem;
     }
@@ -3867,6 +3865,9 @@ ul li img {
         padding: 0rem 0rem 0rem 1.5rem ;
         gap: 1rem;
     }
+    .whyus{
+        padding: 1rem 1rem 2rem 1rem;
+    }
 }
 
 @media only screen and (max-width: 376px)
@@ -3876,8 +3877,8 @@ ul li img {
         height: 25rem;
         width: 22.5rem;
     }
-    .q1 {
-        padding: 0.5rem;
+    .q1{
+        gap: 0.5rem;
     }
     .q1 img{
         height: 1.5rem;
@@ -3903,6 +3904,9 @@ ul li img {
     .whyus-content {
         font-size: 0.9rem;
         gap: 0.5rem;
+    }
+    .whyus{
+        padding: 1rem 1rem 2rem 1rem;
     }
 }
 
@@ -3983,18 +3987,14 @@ ul li img {
         gap: 0.5rem;
         justify-content: center;
     }
-    .q1 {
-        padding: 0.4rem;
-        text-align: center;
-    }
     .q1 h2 {
         font-size: 0.7rem;
     }
     .q1 p {
         font-size: 0.7rem;
     }
-    .whyus {
-        padding: 1rem;
+    .whyus{
+        padding: 1rem 1rem 2rem 1rem;
         flex-direction: column;
     }
     .whyus-img {
