@@ -8,18 +8,22 @@
         {%for ourwork in Our_works%}
         <div class="row-ourwork">
             
+            {%if ourwork.Image1%}
             <div class="col-ourwork">
                 <img src="{{ourwork.Image1.url}}" alt="">
             </div>
+            {%endif%}
 
+            {%if ourwork.Image2 %}
             <div class="col-ourwork">
                 <img src="{{ourwork.Image2.url}}" alt="">
             </div>
-
+            {%endif%}
+            {%if ourwork.Image3%}
             <div class="col-ourwork">
                 <img src="{{ourwork.Image3.url}}" alt="">
             </div>
-         
+         {%endif%}
         </div>
         {%endfor%}
 

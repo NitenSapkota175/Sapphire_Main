@@ -1,4 +1,5 @@
 {%extends 'main.html'%}
+{%load static%}
 {%block content %}
 
 
@@ -8,6 +9,9 @@
     <div class="profile">
         <h1>{{product1.Product_Name}}</h1>
         <p>{{product1.Product_Short_Description_1}}</p>
+        {%if product1.Website_Link%}
+        <button class="btn-more">{{product2.Website_Link}}</button>
+        {%endif%}
     </div>
 </section>
 
@@ -47,7 +51,7 @@
         </div>
         <ul>
         {% for Assurance in product1.product_type1_assurances_set.all%}   
-         <li><img src="" alt="">{{Assurance.ProductType1_Assurance }}</li>
+         <li><img src="{%static 'images/tick.png' %}" alt="">{{Assurance.ProductType1_Assurance }}</li>
         {% endfor %} 
         <ul>
 

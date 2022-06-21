@@ -1,8 +1,11 @@
+from email.headerregistry import Group
 from django.contrib import admin
 from . models import Contact, End_Section_Of_Products, Home,Settings,About,Testimonial,Our_Works,Product_Type_1,Product_Type_2,Product_Type1_Features,Product_Type1_Assurances,Product_Type1_Structure,Product_Type2_Assurance,Product_Type2_Features  
 from django.utils.html import format_html
 from django.contrib import admin
 from django.contrib import admin
+from django.contrib.auth.models import Group
+
 class SingleInstanceAdminMixin(object):
    
     def has_add_permission(self, request):
@@ -100,8 +103,6 @@ class Product_Type_2Admin(admin.ModelAdmin):
     'Introduction_Section_Image','Why_Us_image1','Why_Us_image2']
 
 
-
-
 admin.site.register(Settings,SettingsAdmin)
 admin.site.register(Home,HomeAdmin)
 admin.site.register(About,AboutAdmin)
@@ -111,4 +112,7 @@ admin.site.register(Product_Type_1 , Product_Type_1Admin)
 admin.site.register(Product_Type_2,Product_Type_2Admin)
 admin.site.register(Contact,ContactAdmin)
 admin.site.register(End_Section_Of_Products,End_Section_Of_ProductsAdmin)
+
+# Remove Groups
+admin.site.unregister(Group)
 

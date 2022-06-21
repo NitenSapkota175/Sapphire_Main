@@ -1,11 +1,13 @@
 from ast import Return
 from cgitb import Hook
+from email import message
 from multiprocessing import context
 from django.conf import settings
 from django.shortcuts import render
 from django.http  import HttpResponse
 from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings
 from django.db.models import Q
+from django.core.mail import send_mail
 
 from Sapphire import models
 # Create your views here.
@@ -66,8 +68,23 @@ def EndSectionOfProduct(request):
 
 def Contactus(request):
 
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        number = request.POST.get('Number')
+        message = request.POST.get('help')
+
+        send_mail(
+                name, #subject
+                message, #message
+                email, #from email
+                ['sapphireupvcwindows@gmail.com'], #To email
+
+        )
+
+
     contactus = Contact.objects.all()
     settings = Settings.objects.all()
-    context = {'contactus' : contactus , 'settings' : settings}
+    context = {'contactus' : contactus , 'settings' : settings }
     return render(request,'Sapphire/Contactus.html',context)
 
