@@ -46,11 +46,11 @@ class ContactAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
 
 class End_Section_Of_ProductsAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
     model = End_Section_Of_Products
-    fields = ['Logo1' , 'logo1' , 'Title1', 'Description1' ,'Logo2' , 'logo2' , 'Title2', 'Description2',
+    fields = ['Background_image','Background_Image','Logo1' , 'logo1' , 'Title1', 'Description1' ,'Logo2' , 'logo2' , 'Title2', 'Description2',
         'Logo3' , 'logo3' , 'Title3', 'Description3'
      ]
 
-    readonly_fields = ['Logo1' , 'Logo2' , 'Logo3']
+    readonly_fields = ['Background_image', 'Logo1' , 'Logo2' , 'Logo3']
 
 
 

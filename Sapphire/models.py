@@ -72,7 +72,7 @@ class Settings(SingleInstanceMixin,models.Model):
             return 'Settings'
     
     class Meta:
-        verbose_name_plural = "Settings"
+        verbose_name_plural = "        Settings"
 
 
 class Home(SingleInstanceMixin,models.Model):
@@ -91,7 +91,7 @@ class Home(SingleInstanceMixin,models.Model):
         return mark_safe('<img src="{}" width="100" />'.format(self.Home_Top_Background_Image.url))
 
     class Meta:
-        verbose_name_plural = "Home"  
+        verbose_name_plural = "       Home"  
 
         
               
@@ -126,7 +126,7 @@ class About(SingleInstanceMixin,models.Model):
     def __str__(self):
             return 'About Us'
     class Meta:
-        verbose_name_plural = "About"
+        verbose_name_plural = "      About"
 
       
 
@@ -143,14 +143,15 @@ class Testimonial(models.Model):
 
     class Meta:
      ordering = ['-updated', '-created']
+     verbose_name_plural = "     Testimonials"
 
 
 class Our_Works(models.Model):
         
-        Image1 = models.ImageField()
-        Image2 = models.ImageField()
-        Image3 = models.ImageField()
-        
+        Image1 = models.ImageField(blank=True,null=True)
+        Image2 = models.ImageField(blank=True,null=True)
+        Image3 = models.ImageField(blank=True,null=True)
+
         def image1(self):
                 return mark_safe('<img src="{}" width="100" />'.format(self.Image1.url))
 
@@ -160,10 +161,10 @@ class Our_Works(models.Model):
         def image3(self):
                 return mark_safe('<img src="{}" width="100" />'.format(self.Image3.url))
 
-     
+        
 
         class Meta:
-            verbose_name_plural = "Our_Works"
+            verbose_name_plural = "  Our_Works"
 
     
 
@@ -221,7 +222,7 @@ class Product_Type_1(models.Model):
     def __str__(self):
             return self.Product_Name
     class Meta:
-         verbose_name_plural = "Product_Type_1"    
+         verbose_name_plural = "    Product_Type_1"    
 
 
 class Product_Type1_Structure(models.Model):
@@ -287,7 +288,7 @@ class Product_Type_2(models.Model):
     def __str__(self):
             return self.Product_Name
     class Meta:
-         verbose_name_plural = "Product_Type_2"
+         verbose_name_plural = "   Product_Type_2"
 
 
 
@@ -324,6 +325,9 @@ class End_Section_Of_Products(SingleInstanceMixin,models.Model):
     def Logo3(self):
         return mark_safe('<img src="{}" width="100" />'.format(self.logo3.url))
 
+    def Background_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Background_Image.url))
+
  
 
     def __str__(self):
@@ -346,7 +350,7 @@ class Contact(SingleInstanceMixin,models.Model):
             return 'Contact Us'
     
     class Meta:
-         verbose_name_plural = "Contact Us"
+         verbose_name_plural = " Contact Us"
 
 
 
