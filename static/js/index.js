@@ -3,15 +3,26 @@ const Open = document.getElementById('navBarOpen');
 const navbar = document.getElementById('navBar');
 
 Open.addEventListener("click", () => {
-    if(navbar.style.display == "none")
-    {
+    if (navbar.style.display == "none") {
         navbar.style.display = "block";
         navbar.style.transition = "0.3s linear";
         headNav.style.borderRadius = "0rem";
         headNav.style.transition = "0.3s linear";
     }
-    else{
+    else {
         navbar.style.display = "none";
-       headNav.style.borderRadius = "1.2rem";
+        headNav.style.borderRadius = "1.2rem";
     }
 });
+
+
+// var map;
+// function loadMap() {
+//     map = new Mappls.Map('map', { center: [28.544, 77.5454] });
+//     map.addListener('load', function () {
+//         var marker = new Mappls.Marker({
+//             map: map,
+//             position: { "lat": 28.544, "lng": 77.5454 }
+//         });
+//     });
+// }
