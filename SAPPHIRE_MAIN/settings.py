@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'SAPPHIRE_MAIN.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Sapphire_Main',
+        'NAME': 'sapphire_main',
         'USER' : 'nitensapkota1705',
         'PASSWORD' : 'nitensapkota10101111',
         'HOST' : 'localhost',
