@@ -87,8 +87,8 @@ DATABASES = {
         'NAME': 'Sapphire_Main',
         'USER' : 'nitensapkota1705',
         'PASSWORD' : 'nitensapkota10101111',
-        'HOST' : 'database-1.cffz4bxhc8ow.us-east-1.rds.amazonaws.com',
-        'PORT' : '5432',
+        'HOST' : 'localhost',
+        'PORT' : '',
 }
 }
 
