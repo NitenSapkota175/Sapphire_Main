@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
 
     path('admin/',include('admin_honeypot.urls',namespace='admin_honey')),
-    path('secret/', admin.site.urls),
+    path('sapphire_main_secret_10101111/', admin.site.urls),
     path('',include('Sapphire.urls')),
 ]
 urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
