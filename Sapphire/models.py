@@ -6,11 +6,6 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
 from django.utils.safestring import mark_safe
-
-
-
-
-
 class SingleInstanceMixin(object):
     
 

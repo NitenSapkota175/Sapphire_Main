@@ -16,7 +16,7 @@ class SingleInstanceAdminMixin(object):
 
 class HomeAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
     model = Home
-    fields = ['Home_Top_Background_image','Home_Top_Background_Image','Welcome_Title','What_We_Offer_Title','What_We_Offer_Description']
+    fields = ['Home_Top_Background_image','Home_Top_Background_Image','Welcome_Title','Welcome_Description' ,'What_We_Offer_Title','What_We_Offer_Description']
     readonly_fields = ['Home_Top_Background_image']
    
 class OurWorkAdmin(admin.ModelAdmin):
