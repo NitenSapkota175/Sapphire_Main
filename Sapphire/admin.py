@@ -53,7 +53,7 @@ class End_Section_Of_ProductsAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
         'Logo3' , 'logo3' , 'Title3', 'Description3'
      ]
 
-    readonly_fields = ['Background_image', 'Logo1' , 'Logo2' , 'Logo3']
+    readonly_fields = [ 'Logo1' , 'Logo2' , 'Logo3']
 
 
 
