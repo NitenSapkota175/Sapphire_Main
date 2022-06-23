@@ -22,6 +22,6 @@ urlpatterns = [
 
     path('admin/',include('admin_honeypot.urls',namespace='admin_honey')),
     path('sapphire_main_secret_10101111/', admin.site.urls),
-    path('www.sapphirecommotrade.com',include('Sapphire.urls')),
+    path('',include('Sapphire.urls')),
 ]
 urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
