@@ -88,7 +88,7 @@ DATABASES = {
         'USER' : 'nitensapkota1705',
         'PASSWORD' : 'nitensapkota10101111',
         'HOST' : 'www.sapphirecommotrade.com',
-        'PORT' : '',
+        'PORT' : 'localhost',
 }
 }
 
@@ -135,7 +135,7 @@ MEDIA_URL = '/images/'
 
 
 STATICFILES_DIRS =  [
-        os.path.join(BASE_DIR , 'staic_env')
+        os.path.join(BASE_DIR , 'static_in_env')
     ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR , 'static/images')
@@ -171,11 +171,11 @@ JAZZMIN_SETTINGS = {
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
     "site_brand": "Sapphire",
 
-    "site_logo": "images/Sapphire_uPVC_Window_Solutions_1.png",
+    "site_logo": "images/_1.png",
 
 
         # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": "images/Sapphire_uPVC_Window_Solutions_1.png" ,
+    "login_logo": "images/SAPPHIRE COMMOTRADE FINAL Logo.png" ,
 
     # Logo to use for login form in dark themes (defaults to login_logo)
     "login_logo_dark": None,
@@ -186,15 +186,13 @@ JAZZMIN_SETTINGS = {
     "site_logo_dark" : None,
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon":"images/Sapphire_uPVC_Window_Solutions_1.png" ,
+    "site_icon":"images/SAPPHIRE COMMOTRADE FINAL Logo.png" ,
 
     # Welcome text on the login screen
     "welcome_sign": "Welcome to the Sapphire Admin",
 
     # Copyright on the footer
-   "show_Footer" : False,
-
-   "footer_small_text": True,
+    "copyright" : "Sapphire"
 
    
 
