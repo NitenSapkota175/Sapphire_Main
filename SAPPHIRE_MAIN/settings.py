@@ -87,8 +87,8 @@ DATABASES = {
         'NAME': 'sapphire_main',
         'USER' : 'nitensapkota1705',
         'PASSWORD' : 'nitensapkota10101111',
-        'HOST' : 'www.sapphirecommotrade.com',
-        'PORT' : 'localhost',
+        'HOST' : 'localhost',
+        'PORT' : '',
 }
 }
 
