@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'sapphire_main',
         'USER' : 'nitensapkota1705',
         'PASSWORD' : 'nitensapkota10101111',
-        'HOST' : 'localhost',
+        'HOST' : 'www.sapphirecommotrade.com',
         'PORT' : '',
 }
 }
@@ -135,7 +135,7 @@ MEDIA_URL = '/images/'
 STATICFILES_DIRS =  [
     os.path.join(BASE_DIR , 'static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR , 'static/images')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
