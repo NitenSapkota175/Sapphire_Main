@@ -132,9 +132,11 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
-STATICFILES_DIRS =  [
-    os.path.join(BASE_DIR , 'static')
-]
+
+if DEBUG:
+    STATICFILES_DIRS =  [
+        os.path.join(BASE_DIR , 'static_in_env')
+    ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR , 'static/images')
 # Default primary key field type
