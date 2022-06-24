@@ -269,9 +269,6 @@ class Product_Type_2(models.Model):
     def Introduction_Section_image(self):
         return mark_safe('<img src="{}" width="100" />'.format(self.Introduction_Section_Image.url))
 
-    def Introduction_Section_image2(self):
-        return mark_safe('<img src="{}" width="100" />'.format(self.Introduction_Section_Image2.url))
-
     def Why_Us_image1(self):
         return mark_safe('<img src="{}" width="100" />'.format(self.Why_Us_Image1.url))
 

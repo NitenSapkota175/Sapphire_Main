@@ -100,7 +100,7 @@ class Product_Type_2Admin(admin.ModelAdmin):
   ]
 
     readonly_fields = ['Product_Top_Background_image','Product_Middle_image','Introduction_Section_image',
-    'Introduction_Section_Image','Why_Us_image1','Why_Us_image2']
+    'Why_Us_image1','Why_Us_image2']
 
 
 admin.site.register(Settings,SettingsAdmin)
