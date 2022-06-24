@@ -20,9 +20,9 @@
                 <p>{{product2.Product_ProductPage_Description}}</p>
                 <button class="btn-read-more"><a href="{%url 'ProductType2' product2.id %}">READ MORE</a></button>
             </div>
-
+        {%endfor%}
         </div>
-    {%endfor%}
+    
     {%for product1 in Product1%}
         <div class="card-pro">
             <img src="{{product1.Why_Us_Image2.url}}" alt="">

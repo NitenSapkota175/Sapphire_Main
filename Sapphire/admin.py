@@ -38,7 +38,7 @@ class SettingsAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
 
 class AboutAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
     model = About
-    fields = ['About_Us_Top_Background_image','About_Us_Top_Background_Image','About_Us_Title','About_Us_Description','OurStory_Title','Where_It_All_Began_Title','Where_It_All_Began_Description','Where_It_All_Began_image','Where_It_All_Began_Image','Our_Mission_Title','Testimonial_Title','What_People_Are_Saying_Title']
+    fields = ['About_Us_Top_Background_image','About_Us_Top_Background_Image','About_Us_Title','About_Us_Description','OurStory_Title','Where_It_All_Began_Title','Where_It_All_Began_Description','Where_It_All_Began_image','Where_It_All_Began_Image','Our_Mission_Title', 'Our_Mission_Description' ,'Testimonial_Title','What_People_Are_Saying_Title']
     readonly_fields = ['About_Us_Top_Background_image','Where_It_All_Began_image']
    
 class ContactAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
@@ -53,7 +53,7 @@ class End_Section_Of_ProductsAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
         'Logo3' , 'logo3' , 'Title3', 'Description3'
      ]
 
-    readonly_fields = [ 'Logo1' , 'Logo2' , 'Logo3']
+    readonly_fields = [ 'Background_image','Logo1' , 'Logo2' , 'Logo3']
 
 
 
