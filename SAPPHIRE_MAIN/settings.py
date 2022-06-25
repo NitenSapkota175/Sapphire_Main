@@ -149,12 +149,16 @@ AWS_S3_CUSTOM_DOMAIN = 'static.sapphirecommotrade.com'
 AWS_LOCATION = 'open-sapphiremain-spaces'
 AWS_DEFAULT_ACL = 'public-read'
 
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.StaticRootS3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.MediaRootS3BotoStorage'
 
 
+AWS_MEDIA_LOCATION = 'media'
+PUBLIC_MEDIA_LOCATION = 'media'
+
 STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN,AWS_LOCATION)
 
+MEDIA_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN,AWS_LOCATION)
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
