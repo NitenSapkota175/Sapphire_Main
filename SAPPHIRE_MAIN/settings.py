@@ -150,7 +150,7 @@ AWS_LOCATION = 'open-sapphiremain-spaces'
 AWS_DEFAULT_ACL = 'public-read'
 
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.MediaRootS3BotoStorage'
 
 
 STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN,AWS_LOCATION)
@@ -187,11 +187,11 @@ JAZZMIN_SETTINGS = {
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
     "site_brand": "Sapphire",
 
-    "site_logo": "SAPPHIRE_COMMOTRADE_FINAL_Logo2.png",
+    "site_logo": "img/SAPPHIRE_COMMOTRADE_FINAL_Logo2.png",
 
 
         # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": "SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
+    "login_logo": "img/SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
 
     # Logo to use for login form in dark themes (defaults to login_logo)
     "login_logo_dark": None,
@@ -202,7 +202,7 @@ JAZZMIN_SETTINGS = {
     "site_logo_dark" : None,
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon":"SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
+    "site_icon":"img/SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
 
     # Welcome text on the login screen
     "welcome_sign": "Welcome to the Sapphire Admin",
