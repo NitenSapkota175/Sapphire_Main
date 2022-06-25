@@ -2,6 +2,7 @@ from ctypes import Structure
 from dataclasses import fields
 from email.mime import image
 from pyexpat import model
+from unittest.util import _MAX_LENGTH
 from django.db import models
 from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
@@ -167,7 +168,9 @@ class Product_Type_1(models.Model):
     Product_Short_Description_1 = models.CharField(max_length=225)
     Product_Top_Background_Image = models.ImageField()
     Product_Short_Description_2 = models.CharField(max_length=225)
+    Product_HomePage_Image = models.ImageField(null=True,blank=True)
     Product_HomePage_Description = models.TextField(null=True , blank=True)
+    Product_ProductPage_Image  =  models.ImageField(null=True,blank=True) 
     Product_ProductPage_Description = models.TextField(null=True,blank=True)
     Product_Middle_Image = models.ImageField()
     Visit_Our_Website_Title = models.CharField(max_length=225,default="Visit our website",null=True,blank=True)
@@ -185,6 +188,12 @@ class Product_Type_1(models.Model):
     Why_Us_Image3 = models.ImageField()
     
     Product_Structure_Image = models.ImageField()
+    
+    def Product_ProductPage_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_ProductPage_Image.url))
+
+    def Product_HomePage_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_HomePage_Image.url))
     
     def Product_Top_Background_image(self):
         return mark_safe('<img src="{}" width="100" />'.format(self.Product_Top_Background_Image.url))
@@ -244,7 +253,10 @@ class Product_Type_2(models.Model):
     Product_Short_Description_1 = models.CharField(max_length=225)
     Product_Top_Background_Image = models.ImageField()
     Product_Short_Description_2 = models.CharField(max_length=225)
+    Product_HomePage_Image = models.ImageField(null=True,blank=True) 
     Product_HomePage_Description = models.TextField(null=True , blank=True)
+   
+    Product_ProductPage_Image  =  models.ImageField(null=True,blank=True) 
     Product_ProductPage_Description = models.TextField(null=True,blank=True)
     Product_Middle_Image = models.ImageField()
     Visit_Our_Website_Title = models.CharField(max_length=225,default="Visit our website",null=True,blank=True)
@@ -262,6 +274,17 @@ class Product_Type_2(models.Model):
 
     def Product_Top_Background_image(self):
         return mark_safe('<img src="{}" width="100" />'.format(self.Product_Top_Background_Image.url))
+
+    def Product_ProductPage_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_ProductPage_Image.url))
+
+
+
+    def Product_HomePage_image(self):
+        return mark_safe('<img src="{}" width="100" />'.format(self.Product_HomePage_Image.url))
+
+
+
 
     def Product_Middle_image(self):
         return mark_safe('<img src="{}" width="100" />'.format(self.Product_Middle_Image.url))

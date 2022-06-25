@@ -19,7 +19,7 @@
                 <img src="{%static 'images/Facebook - Negative.png'%}" alt="">
                 <img src="{% static 'images/Instagram - Negative.png' %}" alt="">
             </div>
-           <form action="" method = "POST">
+           <form action="{%url 'contactus' %}" method = "POST">
                 {% csrf_token %}
              <input type="text" name="name" placeholder="Name">
              <input type="email" name="email" placeholder="Email">

@@ -72,14 +72,14 @@ class Product_Type_1Admin(admin.ModelAdmin):
     inlines = [Product_Type1_StructureInline, Product_Type1_FeaturesInline,Product_Type1_AssurancesInline]
     
     fields = ['Product_Name', 'Product_Short_Description_1','Product_Top_Background_image','Product_Top_Background_Image',
-    'Product_Short_Description_2','Product_HomePage_Description','Product_ProductPage_Description','Product_Middle_image',
+    'Product_Short_Description_2','Product_HomePage_image','Product_HomePage_Image' ,'Product_HomePage_Description', 'Product_ProductPage_image','Product_ProductPage_Image','Product_ProductPage_Description','Product_Middle_image',
     'Product_Middle_Image','Visit_Our_Website_Title','Website_Link','To_Know_More_Visit_Our_Website',
     'Introduction_Section_Title' , 'Introduction_Section_Description','Introduction_Section_image1',
     'Introduction_Section_Image1','Introduction_Section_image2','Introduction_Section_Image2','Why_Us_Title',
     'Why_Us_Description','Why_Us_image1','Why_Us_Image1','Why_Us_image2','Why_Us_Image2','Why_Us_image3',
     'Why_Us_Image3','Product_Structure_image','Product_Structure_Image']
 
-    readonly_fields = ['Product_Top_Background_image','Product_Middle_image','Introduction_Section_image1',
+    readonly_fields = ['Product_Top_Background_image','Product_Middle_image','Product_HomePage_image','Product_ProductPage_image','Introduction_Section_image1',
     'Introduction_Section_image2','Why_Us_image1','Why_Us_image2','Why_Us_image3','Product_Structure_image']
 
 
@@ -92,14 +92,14 @@ class Product_Type2_AssuranceInline(admin.StackedInline):
 class Product_Type_2Admin(admin.ModelAdmin):
     inlines = [ Product_Type2_FeaturesInline,Product_Type2_AssuranceInline]
     fields = ['Product_Name', 'Product_Short_Description_1','Product_Top_Background_image','Product_Top_Background_Image',
-    'Product_Short_Description_2','Product_HomePage_Description','Product_ProductPage_Description','Product_Middle_image',
+    'Product_Short_Description_2','Product_HomePage_image','Product_HomePage_Image' ,'Product_HomePage_Description', 'Product_ProductPage_image','Product_ProductPage_Image'  ,'Product_ProductPage_Description','Product_Middle_image',
     'Product_Middle_Image','Visit_Our_Website_Title','Website_Link','To_Know_More_Visit_Our_Website',
     'Introduction_Section_Title' , 'Introduction_Section_Description','Introduction_Section_image',
     'Introduction_Section_Image','Why_Us_Title',
     'Why_Us_Description','Why_Us_image1','Why_Us_Image1','Why_Us_image2','Why_Us_Image2',
   ]
 
-    readonly_fields = ['Product_Top_Background_image','Product_Middle_image','Introduction_Section_image',
+    readonly_fields = ['Product_Top_Background_image','Product_Middle_image','Product_HomePage_image', 'Product_ProductPage_image','Introduction_Section_image',
     'Why_Us_image1','Why_Us_image2']
 
 
