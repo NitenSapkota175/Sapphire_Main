@@ -31,7 +31,7 @@
 <div class="content-profile">
     <div class="content1">
         <h1>{{product2.Introduction_Section_Title}}</h1>
-
+ 
         <p>{{ product2.Introduction_Section_Description|linebreaksbr}}</p>
 
             
@@ -51,13 +51,13 @@
 
             </div>
             <div class="content-images">
-                <img src="{{product2.Introduction_Section_Image.url }}" alt="">
+                <img src="{{product2.Introduction_Section_Image.url}}" alt="">
             </div>
 
 
             <ul>
                 {% for Assurance in product2.product_type2_assurance_set.all%}   
-                <li><img src="{%static '/images/check.png' %}" alt="">{{Assurance.ProductType2_Assurance }}</li>
+                <li><img src="{%static '/images/check.png' %}" alt="">{{Assurance.ProductType2_Assurance}}</li>
                 {% endfor %} 
             </ul>
        
