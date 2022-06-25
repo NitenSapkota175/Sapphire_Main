@@ -149,8 +149,8 @@ AWS_S3_CUSTOM_DOMAIN = 'static.sapphirecommotrade.com'
 AWS_LOCATION = 'open-sapphiremain-spaces'
 AWS_DEFAULT_ACL = 'public-read'
 
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3BotoStorage'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3BotoStorage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
 
