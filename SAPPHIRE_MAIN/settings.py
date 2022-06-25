@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7hljt!*b3j*)g%o5zt+ql!3mg$q$xk(ocd=_ex5a1atx-!$)@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
 
@@ -162,11 +162,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email settings 
 
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = '1025'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASWORD = ''
-EMAIL_USE_TLS = FALSE
+EMAIL_HOST = 'stmp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'sapphireupvcwindows@gmail.com'
+EMAIL_HOST_PASWORD = 'hxtb iphp aifi ibob'
+EMAIL_USE_TLS = True
 #EMAIL_USE_TLS = FALSE
 
 

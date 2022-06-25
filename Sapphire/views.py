@@ -68,6 +68,11 @@ def EndSectionOfProduct(request):
 
 def Contactus(request):
 
+    contactus = Contact.objects.all()
+    settings = Settings.objects.all()
+    context = {'contactus' : contactus , 'settings' : settings }
+
+
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')
@@ -76,15 +81,13 @@ def Contactus(request):
 
         send_mail(
                 name, #subject
-                message, #message
+                message  +" you can contact me at "+number, #message
                 email, #from email
                 ['sapphireupvcwindows@gmail.com'], #To email
 
         )
+        context = {'contactus' : contactus , 'settings' : settings , 'name' : name}
+        return render(request,'Sapphire/Contactus.html',context)
 
-
-    contactus = Contact.objects.all()
-    settings = Settings.objects.all()
-    context = {'contactus' : contactus , 'settings' : settings }
     return render(request,'Sapphire/Contactus.html',context)
 
