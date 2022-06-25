@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7hljt!*b3j*)g%o5zt+ql!3mg$q$xk(ocd=_ex5a1atx-!$)@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
 
@@ -187,11 +187,11 @@ JAZZMIN_SETTINGS = {
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
     "site_brand": "Sapphire",
 
-    "site_logo": "static/SAPPHIRE_COMMOTRADE_FINAL_Logo2.png",
+    "site_logo": "SAPPHIRE_COMMOTRADE_FINAL_Logo2.png",
 
 
         # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": "static/SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
+    "login_logo": "SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
 
     # Logo to use for login form in dark themes (defaults to login_logo)
     "login_logo_dark": None,
@@ -202,7 +202,7 @@ JAZZMIN_SETTINGS = {
     "site_logo_dark" : None,
 
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    "site_icon":"static/SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
+    "site_icon":"SAPPHIRE_COMMOTRADE_FINAL_Logo2.png" ,
 
     # Welcome text on the login screen
     "welcome_sign": "Welcome to the Sapphire Admin",
