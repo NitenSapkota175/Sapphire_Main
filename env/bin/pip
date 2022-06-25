@@ -1,4 +1,4 @@
-#!/home/nitensapkota/SAPPHIRE/SAPPHIRE_MAIN/env/bin/python3
+#!/home/nitensapkota/Sapphire/Sapphire_Main/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
