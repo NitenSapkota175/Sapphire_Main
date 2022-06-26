@@ -3,7 +3,7 @@ from cgitb import Hook
 from email import message
 from multiprocessing import context
 from django.conf import settings
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http  import HttpResponse
 from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings
 from django.db.models import Q
@@ -76,7 +76,7 @@ def Contactus(request):
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')
-        number = request.POST.get('Number')
+        number = request.POST.get('phoneno')
         message = request.POST.get('help')
 
         send_mail(
@@ -86,8 +86,7 @@ def Contactus(request):
                 ['sapphireupvcwindows@gmail.com'], #To email
 
         )
-        context = {'contactus' : contactus , 'settings' : settings , 'name' : name}
-        return render(request,'Sapphire/Contactus.html',context)
+        return redirect('Home')
 
     return render(request,'Sapphire/Contactus.html',context)
 
