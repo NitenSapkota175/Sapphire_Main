@@ -68,9 +68,6 @@ def EndSectionOfProduct(request):
 
 def Contactus(request):
 
-    contactus = Contact.objects.all()
-    settings = Settings.objects.all()
-    context = {'contactus' : contactus , 'settings' : settings }
 
 
     if request.method == 'POST':
@@ -87,6 +84,12 @@ def Contactus(request):
 
         )
         return redirect('Home')
+    
+    
+    contactus = Contact.objects.all()
+    settings = Settings.objects.all()
+    context = {'contactus' : contactus , 'settings' : settings }
+
 
     return render(request,'Sapphire/Contactus.html',context)
 
