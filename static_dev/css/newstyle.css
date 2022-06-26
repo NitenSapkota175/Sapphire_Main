@@ -207,7 +207,6 @@
     width: 6rem;
     background-color: #000;
     border-radius: 0.5rem;
-    color: var(--color-white);
     }
 
     .btn-learnmore a{
@@ -219,7 +218,6 @@
     width: 6rem;
     background-color: rgb(255, 255, 255);
     border-radius: 0.5rem;
-    color: var(--color-black-shade);
     }   
 
     .btn-learnmore2 a{
