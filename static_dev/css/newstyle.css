@@ -207,6 +207,7 @@
     width: 6rem;
     background-color: #000;
     border-radius: 0.5rem;
+    color: white;    
     }
 
     .btn-learnmore a{
@@ -218,6 +219,7 @@
     width: 6rem;
     background-color: rgb(255, 255, 255);
     border-radius: 0.5rem;
+    color: black;   
     }   
 
     .btn-learnmore2 a{
@@ -337,7 +339,7 @@
     .rate-para {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
     align-items: center;
     text-align: justify;
     } 
@@ -885,9 +887,9 @@
     }
     
     .door-whyus-img img {
-    height: 12rem;
-    width: 34rem;
-    gap: 1rem;
+    height: 8rem;
+    width: 20rem;
+    gap: 0.7rem;
     }
     
     .structure {
@@ -901,8 +903,8 @@
     }
     
     .structure-img img {
-    height: 40rem;
-    width: 38rem;
+       height: 30rem;
+       width: 26rem;
     }
     
     .structure-content {
@@ -4314,6 +4316,9 @@
     flex-direction: column;
     gap: 1.4rem;
     }
+    ..btn-learnmore a {
+    font-size: 0.7rem;
+    }    
 
     }
     
