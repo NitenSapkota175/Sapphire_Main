@@ -163,9 +163,9 @@ STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN,AWS_LOCATION)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email settings 
-
-EMAIL_HOST = 'stmp.gmail.com'
-EMAIL_PORT = '587'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
 EMAIL_HOST_USER = 'sapphireupvcwindows@gmail.com'
 EMAIL_HOST_PASWORD = 'hxtb iphp aifi ibob'
 EMAIL_USE_TLS = True

@@ -7,8 +7,7 @@ from django.shortcuts import redirect, render
 from django.http  import HttpResponse
 from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings
 from django.db.models import Q
-from django.core.mail import send_mail
-
+from django.core.mail import send_mail,BadHeaderError
 from Sapphire import models
 # Create your views here.
 def HomePage(request):
@@ -74,18 +73,21 @@ def Contactus(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         number = request.POST.get('phoneno')
-        message = request.POST.get('help')
-
-        send_mail(
-                name, #subject
-                message  +" you can contact me at "+number, #message
-                email, #from email
-                ['sapphireupvcwindows@gmail.com'], #To email
-
-        )
-        return redirect('Home')
+        message_body = request.POST.get('help')
+        
+        if name and email and message_body and number:
+            try:
+                send_mail(message_body, email, ['sapphireupvcwindows@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('Home')
+        else:
+    
+            return HttpResponse('Make sure all fields are entered and valid.')
     
     
+    
+        
     contactus = Contact.objects.all()
     settings = Settings.objects.all()
     context = {'contactus' : contactus , 'settings' : settings }
