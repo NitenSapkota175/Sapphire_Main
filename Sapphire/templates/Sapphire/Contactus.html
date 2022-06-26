@@ -26,7 +26,7 @@ background-position: center;
                 <a href="#"><img src="{%static 'images/Facebook - Negative.png'%}" alt=""></a>
                 <a href="#"><img src="{% static 'images/Instagram - Negative.png' %}" alt=""></a>
             </div>
-           <form action="{%url 'contactus' %}" method = "POST">
+           <form action="" method = "POST">
                 {% csrf_token %}
              <input type="text" name="full_name" placeholder="Name">
              <input type="email" name="email" placeholder="Email">
