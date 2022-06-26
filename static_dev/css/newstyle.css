@@ -130,7 +130,7 @@
     }
     /* main */
     main {
-    background-color: var(--color-main);
+    background-color: rgb(47 100 73 / 53%);
     color: var(--color-white);
     }
     .main-q {
