@@ -133,7 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATICFILES_DIRS = [
-    os.join.path('static'),
+   os.path.join(BASE_DIR,'static')
 ]
 
 AWS_ACCESS_KEY_ID = "3RWENTXA6CAUUYKFTV7O"
