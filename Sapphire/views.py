@@ -70,14 +70,14 @@ def Contactus(request):
 
 
     if request.method == 'POST':
-        name = request.POST.get('name')
+        name = request.POST.get('full_name')
         email = request.POST.get('email')
         number = request.POST.get('phoneno')
         message_body = request.POST.get('help')
         
         if name and email and message_body and number:
             try:
-                send_mail(message_body, email, ['sapphireupvcwindows@gmail.com'])
+                send_mail(message_body, name, email, ['sapphireupvcwindows@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('Home')
