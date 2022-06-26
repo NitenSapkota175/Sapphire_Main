@@ -341,7 +341,7 @@
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
-    text-align: justify;
+    text-align: center;
     } 
     .rate-para h2 {
     font-size: 1.2rem;
