@@ -181,8 +181,8 @@ EMAIL_USE_TLS = True
 JAZZMIN_SETTINGS = {
     "site_title": "Sapphire",
     "site_header": "Sapphire",
-    "site_brand": "your_site_brand",
-    "site_icon": "images/favicon.png",
+    "site_brand": "Sapphire",
+    "site_icon": 'images/SAPPHIRE_COMMOTRADE_FINAL_Logo_2.png',
     # Add your own branding here
     "site_logo": 'images/SAPPHIRE_COMMOTRADE_FINAL_Logo_2.png',
     "welcome_sign": "Welcome to the your_site_name",
