@@ -6,7 +6,6 @@ from django.conf import settings
 from django.shortcuts import redirect, render
 from django.http  import HttpResponse
 from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings
-from django.db.models import Q
 from django.core.mail import send_mail,BadHeaderError
 from Sapphire import models
 # Create your views here.

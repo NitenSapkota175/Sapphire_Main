@@ -184,10 +184,10 @@ JAZZMIN_SETTINGS = {
     "site_brand": "your_site_brand",
     "site_icon": "images/favicon.png",
     # Add your own branding here
-    "site_logo": None,
+    "site_logo": 'images / SAPPHIRE_COMMOTRADE_FINAL_Logo_2.png',
     "welcome_sign": "Welcome to the your_site_name",
     # Copyright on the footer
-    "copyright": "your_site_name",
+    "copyright": "Sapphire",
     "user_avatar": None,
     ############
     # Top Menu #
