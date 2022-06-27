@@ -79,7 +79,7 @@ def Contactus(request):
                 send_mail(name,message_body,email,['sappire.upvc@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-            return redirect('Home')
+            return redirect('contactus')
         else:
     
             return HttpResponse('Make sure all fields are entered and valid.')
