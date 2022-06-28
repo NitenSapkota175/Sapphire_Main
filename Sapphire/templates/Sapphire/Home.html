@@ -5,8 +5,16 @@
 {%for obj in Home_obj %}  
     
 <section>
-    <div class="background">
-        <img src="{{obj.Home_Top_Background_Image.url}}" alt="img">
+    <div class="background"
+    style="width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url('/images/pp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;"
+    >
+        <!-- <img src="{{obj.Home_Top_Background_Image.url}}" alt="img"> -->
         <div class="para">
             <h1>{{obj.Welcome_Title}}</h1>
             <p>{{obj.Welcome_Description}}</p>
