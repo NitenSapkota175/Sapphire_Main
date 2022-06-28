@@ -15,6 +15,7 @@ import os
 from pathlib import Path
 
 from pickle import FALSE
+from socket import if_nameindex
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,10 +28,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7hljt!*b3j*)g%o5zt+ql!3mg$q$xk(ocd=_ex5a1atx-!$)@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
-
+if DEBUG == FALSE:
+    ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
+else:
+    ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -44,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'phonenumber_field',
     'storages',
-    'admin_honeypot',
+    #'admin_honeypot',
     'Sapphire.apps.SapphireConfig',
 
 ]
@@ -84,17 +87,29 @@ WSGI_APPLICATION = 'SAPPHIRE_MAIN.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+if DEBUG == False:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'sapphire_main',
+            'USER' : 'nitensapkota1705',
+            'PASSWORD' : 'nitensapkota10101111',
+            'HOST' : 'localhost',
+            'PORT' : '',
+    }
+    }
+else:
+        DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'Sapphire_Main',
+            'USER' : 'nitensapkota1705',
+            'PASSWORD' : 'nitensapkota10101111',
+            'HOST' : 'database-1.cffz4bxhc8ow.us-east-1.rds.amazonaws.com',
+            'PORT' : '5432',
+    }
+    }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sapphire_main',
-        'USER' : 'nitensapkota1705',
-        'PASSWORD' : 'nitensapkota10101111',
-        'HOST' : 'localhost',
-        'PORT' : '',
-}
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
