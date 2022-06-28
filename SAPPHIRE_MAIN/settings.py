@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'phonenumber_field',
-    'storages',
+   # 'storages',
     #'admin_honeypot',
     'Sapphire.apps.SapphireConfig',
 
@@ -147,31 +147,46 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATICFILES_DIRS = [
-   os.path.join(BASE_DIR,'static')
-]
 
-AWS_ACCESS_KEY_ID = "3RWENTXA6CAUUYKFTV7O"
-AWS_SECRET_ACCESS_KEY = "aVwwmmEcR2XUccrORbzCD/GsR8hQoEhEhtsWJre/Rg4" 
-AWS_STORAGE_BUCKET_NAME = "open-sapphiremain-spaces"
-AWS3_S3_OBJECT_PARAMETERS = {
-    'CacheControl' : 'max-age=86400',
-} 
+if DEBUG == False:
+    STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+    ]
 
-AWS_S3_ENDPOINT_URL = 'https://fra1.digitaloceanspaces.com'
-AWS_S3_CUSTOM_DOMAIN = 'static.sapphirecommotrade.com'
-AWS_LOCATION = 'open-sapphiremain-spaces'
-AWS_DEFAULT_ACL = 'public-read'
+    AWS_ACCESS_KEY_ID = "3RWENTXA6CAUUYKFTV7O"
+    AWS_SECRET_ACCESS_KEY = "aVwwmmEcR2XUccrORbzCD/GsR8hQoEhEhtsWJre/Rg4" 
+    AWS_STORAGE_BUCKET_NAME = "open-sapphiremain-spaces"
+    AWS3_S3_OBJECT_PARAMETERS = {
+        'CacheControl' : 'max-age=86400',
+    } 
 
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    AWS_S3_ENDPOINT_URL = 'https://fra1.digitaloceanspaces.com'
+    AWS_S3_CUSTOM_DOMAIN = 'static.sapphirecommotrade.com'
+    AWS_LOCATION = 'open-sapphiremain-spaces'
+    AWS_DEFAULT_ACL = 'public-read'
 
-
-
-
-STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN,AWS_LOCATION)
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
+
+
+    STATIC_URL = '{}/{}/'.format(AWS_S3_CUSTOM_DOMAIN,AWS_LOCATION)
+
+
+else:
+
+    STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+    ]
+
+    STATIC_URL = '/static/'
+
+    MEDIA_URL = '/images/'
+
+
+
+    MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
