@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7hljt!*b3j*)g%o5zt+ql!3mg$q$xk(ocd=_ex5a1atx-!$)@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 if DEBUG == False:
     ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
@@ -77,7 +77,12 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'Sapphire.context_processors.Sapphire_Settings', #user define context processor
-                'Sapphire.context_processors.Sapphire_About_us'
+                'Sapphire.context_processors.Sapphire_About_us',
+                'Sapphire.context_processors.Sapphire_Home_image',
+                'Sapphire.context_processors.Sapphire_Product2',
+                'Sapphire.context_processors.Sapphire_contactus',
+                'Sapphire.context_processors.Sapphire_Product1',
+            
             ],
         },
     },
@@ -196,11 +201,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Email settings 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'sapphireupvcwindows@gmail.com'
-EMAIL_HOST_PASWORD = 'hxtbiphpaifiibob'
-#EMAIL_USE_SSL = True
-EMAIL_USE_TLS = True
+EMAIL_PORT = 443
+EMAIL_HOST_USER = 'sapphire.upvc@gmail.com'
+EMAIL_HOST_PASSWORD = 'hxtbiphpaifiibob'
+EMAIL_USE_SSL = True
+#EMAIL_USE_TLS = True
 
 
 
