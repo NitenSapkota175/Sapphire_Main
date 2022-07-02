@@ -76,7 +76,7 @@ def Contactus(request):
         
         if name and email and message_body and number:
             try:
-                send_mail(name,message_body,email,['sapphire.upvc@gmail.com'],fail_silently=False)
+                send_mail(name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('Home')
