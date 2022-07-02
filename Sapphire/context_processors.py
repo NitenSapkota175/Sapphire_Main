@@ -1,6 +1,6 @@
 from django.conf import settings
-from . models import Settings
-from . models import Home , Product_Type_2,About,Contact,Product_Type_1
+from . models import End_Section_Of_Products, Settings
+from . models import Home , Product_Type_2,About,Contact,Product_Type_1,End_Section_Of_Products
 
 def Sapphire_Settings(request):
     settings = Settings.objects.all()
@@ -48,3 +48,10 @@ def Sapphire_Product1(request):
 
 
     return {'prod1_img1' : prod1_img1,'prod1_img2' : prod1_img2 }
+
+
+def Sapphire_EndSectionOfProduct(request):
+    End_Section = End_Section_Of_Products.objects.all()
+    for End in End_Section:
+        End_sec_img = End.Background_Image
+    return {'End_sec_img' : End_sec_img}
