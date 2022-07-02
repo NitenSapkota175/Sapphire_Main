@@ -1184,6 +1184,68 @@ ul li img {
     width: 0.8rem;
 }
 
+@media only screen and (max-width: 1921px) {
+    .content1 p {
+        font-size: 1.4rem;
+        text-align: justify;
+        line-height: 1.4;
+    }
+
+    .content2 ul li {
+        font-size: 1.4rem;
+        list-style-type: none;
+        /* gap: 0.2rem; */
+    }
+
+    .whyus-content p {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .whyus-content {
+        width: 50%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 8rem 0rem 0rem;
+    }
+
+    .para h1 {
+        font-size: 2rem;
+    }
+
+    .card-head h1 {
+        font-size: 2rem;
+    }
+
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.5rem;
+        letter-spacing: 0.01rem;
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+
+    .aboutus p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .ourmissionpara p {
+        color: var(--color-white);
+        font-size: 1.5rem;
+        padding: 1rem 20rem 2rem 20rem;
+        text-align: center;
+        line-height: 1.6;
+        word-spacing: 0.1rem;
+    }
+
+    .rate-para p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+}
 
 @media only screen and (max-width: 1800px) {
     .card-pro-para {
@@ -1252,8 +1314,14 @@ ul li img {
         font-size: 1.7rem;
     }
 
-    .contactinfo li {
+    .content1 p {
         font-size: 1.3rem;
+        text-align: justify;
+        line-height: 1.4;
+    }
+
+    .contactinfo li {
+        font-size: 1.2rem;
         list-style-type: none;
         padding: 0.5rem 0rem 0rem 1rem;
     }
@@ -1266,11 +1334,11 @@ ul li img {
 
     .footer-row ul li {
         list-style: none;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .footer-row .footer-ul h4 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
     }
 
@@ -1294,15 +1362,15 @@ ul li img {
     }
 
     .floors h1 {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
 
     .profile p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .profile p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .profile-container img {
@@ -1317,7 +1385,7 @@ ul li img {
     }
 
     .whyus-content h1 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
 
     .content-images2 {
@@ -1332,39 +1400,39 @@ ul li img {
     }
 
     .aboutus p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         line-height: 1.4;
     }
 
     .ourmissionpara p {
         padding: 2rem 10rem 2rem 10rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         line-height: 1.4;
     }
 
     .rate-para h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .rate-para p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 1.4;
     }
 
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .card-body p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         line-height: 1.4;
     }
 
@@ -1377,7 +1445,7 @@ ul li img {
     }
 
     .card-head h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -1390,28 +1458,13 @@ ul li img {
         padding: 0rem 0rem 0rem 2rem;
     }
 
-    .card-body {
-        padding: 0rem 1rem 0rem 1rem;
-        text-align: center;
-        line-height: 1.4rem;
-    }
-
-    .ourmission {
-        padding: 2rem;
-        background-color: var(--color-black-shade);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .para {
         position: absolute;
         left: 16rem;
-        top: 3rem;
-        height: 80%;
-        width: 35rem;
-        font-size: 1.5rem;
+        top: 7rem;
+        height: 66%;
+        width: 30rem;
+        font-size: 1.3rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1425,158 +1478,93 @@ ul li img {
         text-align: justify;
     }
 
-    .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 1rem;
-    }
-
     .card-body p {
-        font-size: 1.2rem;
-    }
-
-    .para h1 {
-        font-size: 1.9rem;
+        font-size: 1.1rem;
     }
 
     .card-head h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .btn-learnmore a {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--color-white);
     }
 
     .btn-learnmore {
-        height: 2.5rem;
-        width: 7rem;
+        height: 2rem;
+        width: 6rem;
         background-color: #000;
         border-radius: 0.5rem;
         color: white;
     }
 
-    .btn-learnmore a {
-        font-size: 1rem;
-        text-decoration: none;
-        color: var(--color-white);
-    }
-
-    .btn-learnmore2 {
-        height: 2.5rem;
-        width: 7rem;
-        background-color: rgb(248, 248, 248);
-        border-radius: 0.5rem;
-        color: rgb(0, 0, 0);
-    }
-
-    .btn-learnmore2 a {
-        font-size: 1rems;
-        text-decoration: none;
-        color: var(--color-black-shade);
-    }
-
-    .card-body {
-        padding: 0rem 4rem 0rem 4rem;
-        text-align: center;
-        line-height: 1.4rem;
-    }
-
-    .card-body p {
-        font-size: 1.2rem;
-    }
-
-    footer,
-    footer h1 {
-        background-color: var(--color-black-shade);
-        color: rgb(39, 234, 39);
-        font-size: 1.4rem;
-    }
-
-    footer h1 {
-        padding: 1.4rem 0rem 1.4rem 1.8rem;
-    }
-
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 2rem;
-        color: var(--color-white);
-    }
-
-    .footer-row .footer-ul h4 {
-        font-size: 1.3rem;
-        padding: 0.4rem 0rem 0.4rem 0rem;
-    }
-
-    .footer-row ul li {
-        list-style: none;
-        font-size: 1.1rem;
-        line-height: 1.4;
-    }
-
-    .footerSec-row {
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-        padding: 0.9rem;
-        align-items: center;
-        justify-content: center;
-        color: white;
-    }
-
-    .footerSec-row h6 img {
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
-        height: 0.8rem;
-        width: 0.8rem;
-    }
-
-    .footerSec-row h5 img {
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
-        height: 0.8rem;
-        width: 0.8rem;
-    }
-
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
-    .footerLast p {
-        color: var(--color-white);
+    .footer-row ul li {
+        list-style: none;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .btn-learnmore2 a {
         font-size: 0.9rem;
-        padding: 1.4rem 0rem 1.2rem 1.8rem;
+        text-decoration: none;
+        color: var(--color-black-shade);
+    }
+
+    .btn-learnmore2 {
+        height: 2rem;
+        width: 6rem;
+        background-color: rgb(248, 248, 248);
+        border-radius: 0.5rem;
+        color: rgb(0, 0, 0);
     }
 
     .main-q p {
+        font-size: 1.2rem;
+    }
+
+    .paragraph p {
+        line-height: 1.5;
         font-size: 1.3rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
     }
 
-    .card-head h1 {
-        font-size: 1.9rem;
+    .content img {
+        padding: 1.5rem 0rem 1.5rem 5rem;
+        height: 45rem;
+        width: 38rem;
     }
 
-    .card-head h1 {
-        font-size: 1.8rem;
+    .ourmission {
+        padding: 1rem;
+        background-color: var(--color-black-shade);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .ourmissionpara p {
-        padding: 2rem 10rem 2rem 10rem;
-        font-size: 1.4rem;
-        line-height: 1.3;
+    .rate-para h2 {
+        font-size: 1.3rem;
     }
 
     .rate-para p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.3;
     }
 
@@ -1584,85 +1572,601 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         text-justify: inter-word;
     }
 
     .btn-read-more {
-        height: 2.8rem;
+        height: 2.5rem;
         width: 7rem;
     }
 
-    .floors h1 {
-        font-size: 2.2rem;
+    .content1 p {
+        font-size: 1.3rem;
+        text-align: justify;
+        line-height: 1.5;
     }
 
-    .content-images img {
-        height: 46rem;
-        width: 35rem;
-    }
-
-    .door-whyus-img img {
-        height: 16rem;
-        width: 30rem;
-        gap: 0.7rem;
+    .whyus-content p {
+        font-size: 1.3rem;
+        line-height: 1.4;
     }
 
     .profile-container img {
-        height: 36rem;
+        height: 32rem;
         width: 90%;
     }
 
-    .content1 {
+    .floors h1 {
+        font-size: 2rem;
+    }
+
+    .floors p {
+        font-size: 1.2rem;
+    }
+
+    .content-profile {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        line-height: 1.2;
-        gap: 1.5rem;
-        width: 50%;
-        text-justify: inter-word;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+        color: black;
     }
 
-    .content-images2 {
-        display: flex;
-        flex-direction: column;
-        gap: 1.8rem;
+    .content1 p {
+        font-size: 1.3rem;
+        text-align: justify;
+        line-height: 1.5;
     }
 
-    .structure-img img {
-        height: 50rem;
-        width: 40rem;
+    .content2 ul li {
+        font-size: 1.2rem;
+        list-style-type: none;
     }
 
-    .col-door h4 {
-        font-size: 1.4rem;
+    .content1 ul li {
+        font-size: 1.2rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
     }
 
     .structure-content p {
-        font-size: 1.3rem;
-        line-height: 1.2;
+        font-size: 1.2rem;
+        line-height: 1.3;
     }
 
-    .row-ourwork {
+    .profile-container img {
+        height: 30rem;
+        width: 90%;
+    }
+    .para {
+        position: absolute;
+        left: 16rem;
+        top: 3rem;
+        height: 80%;
+        width: 35rem;
+        font-size: 1.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1.5rem;
-    }
-
-    .col-ourwork img {
-        height: 20rem;
-        width: 28rem;
-    }
-
-    .contactform {
-        padding: 2rem 4rem 2rem 4rem;
-        display: flex;
-        gap: 2rem;
-        width: 50%;
-        align-items: left;
+        gap: 1rem;
         flex-direction: column;
+        background-color: rgb(247, 247, 247);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: var(--color-white);
+        background-color: rgba(0, 0, 0, 0.72);
+        text-align: justify;
     }
+    
+   .paragraph p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    letter-spacing: 0.01rem;
+    text-align: justify;
+    padding: 0rem 0rem 0rem 0rem;
+    }
+    .ourstory:before {
+        content: " ";
+        position: absolute;
+        height: 0.2rem;
+        width: 8%;
+        justify-content: center;
+        background-color: rgb(183, 144, 45);
+        border-radius: 0.3rem;
+        top: 100%;
+        left: 6%;
+    }
+    .rate-para p {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    .rate-para h2 {
+        font-size: 1.2rem;
+    }
+    .profile-container img {
+        height: 30rem;
+        width: 90%;
+    }
+    .content1 p {
+        font-size: 1.3rem;
+        text-align: justify;
+        line-height: 1.4;
+    }
+    .content1 ul li {
+        font-size: 1.2rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+    .content2 ul li {
+        font-size: 1.2rem;
+        list-style-type: none;
+        /* gap: 0.2rem; */
+    }
+    .structure-content p {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    .whyus-content p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .footerSec-row h6 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 1rem;
+    }
+    .footerSec-row h5 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1470px) {
+    .para {
+        position: absolute;
+        left: 16rem;
+        top: 7rem;
+        height: 66%;
+        width: 30rem;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: rgb(247, 247, 247);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: var(--color-white);
+        background-color: rgba(0, 0, 0, 0.72);
+        text-align: justify;
+    }
+
+    .card-body p {
+        font-size: 1.1rem;
+    }
+
+    .card-head h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-learnmore a {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--color-white);
+    }
+
+    .btn-learnmore {
+        height: 2rem;
+        width: 6rem;
+        background-color: #000;
+        border-radius: 0.5rem;
+        color: white;
+    }
+
+    .footerSec-row h6 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .footerSec-row h5 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-row ul li {
+        list-style: none;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .btn-learnmore2 a {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--color-black-shade);
+    }
+
+    .btn-learnmore2 {
+        height: 2rem;
+        width: 6rem;
+        background-color: rgb(248, 248, 248);
+        border-radius: 0.5rem;
+        color: rgb(0, 0, 0);
+    }
+
+    .main-q p {
+        font-size: 1.2rem;
+    }
+
+    .paragraph p {
+        line-height: 1.5;
+        font-size: 1.3rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+
+    .content img {
+        padding: 1.5rem 0rem 1.5rem 5rem;
+        height: 45rem;
+        width: 38rem;
+    }
+
+    .ourmission {
+        padding: 1rem;
+        background-color: var(--color-black-shade);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rate-para h2 {
+        font-size: 1.3rem;
+    }
+
+    .rate-para p {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    .productsh1 h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        text-justify: inter-word;
+    }
+
+    .btn-read-more {
+        height: 2.5rem;
+        width: 7rem;
+    }
+
+    .content1 p {
+        font-size: 1.3rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .whyus-content p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    .profile-container img {
+        height: 32rem;
+        width: 90%;
+    }
+
+    .floors h1 {
+        font-size: 2rem;
+    }
+
+    .floors p {
+        font-size: 1.2rem;
+    }
+
+    .content-profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+        color: black;
+    }
+
+    .content1 p {
+        font-size: 1.3rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .content2 ul li {
+        font-size: 1.2rem;
+        list-style-type: none;
+    }
+
+    .content1 ul li {
+        font-size: 1.2rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+
+    .structure-content p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .profile-container img {
+        height: 30rem;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .profile-container img {
+        height: 28rem;
+        width: 90%;
+    }
+
+    .content-profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+        color: black;
+    }
+
+    .content1 p {
+        font-size: 1.3rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .content2 ul li {
+        font-size: 1.2rem;
+        list-style-type: none;
+    }
+    .content1 ul li {
+        font-size: 1.2rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+    .whyus-content p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+    .footerSec-row h5 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .footer-row ul li {
+        list-style: none;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: rgb(209, 207, 207);
+        width: 50rem;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .col-door h4 {
+        font-size: 1.3rem;
+    }
+    .col-door p {
+        font-size: 1.1rem;
+    }
+    .footer-row ul li {
+        list-style: none;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 1420px)
+{
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .btn-learnmore2 a {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--color-black-shade);
+    }
+    .btn-learnmore2 {
+        height: 2rem;
+        width: 6rem;
+        background-color: rgb(248, 248, 248);
+        border-radius: 0.5rem;
+        color: rgb(0, 0, 0);
+    }
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .card-head h1 {
+        font-size: 1.6rem;
+    }
+    .btn-learnmore a {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--color-white);
+    }
+    .btn-learnmore {
+        height: 2rem;
+        width: 6rem;
+        background-color: #000;
+        border-radius: 0.5rem;
+        color: white;
+    }
+    .footerSec-row h6 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .footerSec-row h5 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .footer-row ul li {
+        list-style: none;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .main-q p {
+        font-size: 1.2rem;
+    }
+    .aboutus p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+    .paragraph p {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.01rem;
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    .rate-para p {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    .ourmissionpara p {
+        padding: 2rem 10rem 2rem 10rem;
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+    .productsh1 h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        text-justify: inter-word;
+    }
+    .btn-read-more {
+        height: 2.2rem;
+        width: 6.5rem;
+    }
+    .btn-read-more a {
+        font-size: 0.9rem;
+        color: black;
+        text-decoration: none;
+    }
+    .card-pro-para {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .content1 p {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .content2 ul li {
+        font-size: 1rem;
+        list-style-type: none;
+    }
+    .content1 ul li {
+        font-size: 1.1rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+    .profile {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.767);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 8rem;
+        gap: 2rem;
+        color: white;
+    }
+    .profile h1 {
+        font-size: 1.6rem;
+    }
+    .profile p {
+        font-size: 1.1rem;
+    }
+    .col-door h4 {
+        font-size: 1rem;
+    }
+    .col-door p {
+        font-size: 0.9rem;
+    }
+
+    .profile-container {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .content1 h1{
+        font-size: 1.6rem;
+    }
+    .structure-content h4 {
+        font-size: 1.4rem;
+    }
+    .structure-content p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    .whyus-content p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .card-pro-para {
+        gap: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    .contactpara h1 {
+        font-size: 1.8rem;
+    }
+    .icons img {
+        height: 2rem;
+        width: 2rem;
+        -webkit-filter: invert();
+    }
+    form input {
+        height: 2.5rem;
+        padding: 1.5rem;
+        background-color: var(--color-white);
+        border: 0;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    .btn-contact {
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.9rem;
+        background-color: black;
+        color: var(--color-white);
+        float: right;
+        border: 1px solid var(--color-white);
+        border-radius: 0.4rem;
+    }    
+
 }
 
 @media only screen and (max-width: 1400px) {
@@ -2107,6 +2611,31 @@ ul li img {
     .contactinfo h1 {
         font-size: 1.5rem;
     }
+    .whyus-content {
+        width: 50%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 5rem 0rem 0rem;
+    }
+    .whyus-content p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .rate-para p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .col-ourwork img {
+        height: 20rem;
+        width: 24rem;
+    }
+    .content1 p {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.4;
+    }        
 
 }
 
@@ -2187,7 +2716,31 @@ ul li img {
         font-size: 1.3rem;
         line-height: 1.3;
     }
-
+    .whyus-content {
+        width: 50%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 5rem 0rem 0rem;
+    }
+    .whyus-content p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .q1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .q1 h2{
+        font-size: 1.2rem;
+    }
+    .q1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }    
 }
 
 @media only screen and (max-width: 1160px) {
@@ -2314,6 +2867,19 @@ ul li img {
         height: 15rem;
         width: 20rem;
     }
+    .q1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .q1 h2{
+        font-size: 1.2rem;
+    }
+    .q1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
 }
 
 @media only screen and (max-width: 1098px) {
@@ -2342,10 +2908,14 @@ ul li img {
 
     .paragraph p {
         line-height: 1.4;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         /* letter-spacing: 0.01rem; */
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
+    }
+    .paragraph h1 {
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.6rem;
     }
 
     .content img {
@@ -2356,8 +2926,17 @@ ul li img {
 
     .ourmissionpara p {
         padding: 1rem 6rem 2rem 6rem;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 1.3;
+    }
+    .rate-para p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    .footer-row ul li {
+        list-style: none;
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 
     .rate-col-1 {
@@ -2377,7 +2956,7 @@ ul li img {
     }
 
     .floors h1 {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
 
     .content1 h1 {
@@ -2398,7 +2977,20 @@ ul li img {
     }
 
     .contactpara h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .q1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .q1 h2{
+        font-size: 1.2rem;
+    }
+    .q1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
     }
 
 }
@@ -2429,6 +3021,45 @@ ul li img {
 
     .phone {
         padding: 0rem 0rem 0rem 0rem;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.2rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    .paragraph h1 {
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.5rem;
+    }
+    .contactpara h1 {
+        font-size: 1.5rem;
+    }
+    .content1 h1 {
+        font-size: 1.6rem;
+    }
+    .rate-para p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    .footer-row ul li {
+        list-style: none;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    .q1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .q1 h2{
+        font-size: 1.2rem;
+    }
+    .q1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
     }
 }
 
@@ -2501,6 +3132,109 @@ ul li img {
         gap: 1rem;
         width: 100%;
         align-items: center;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.2rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    .paragraph h1 {
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.5rem;
+    }
+    .contactpara h1 {
+        font-size: 1.5rem;
+    }
+    .content1 h1 {
+        font-size: 1.6rem;
+    }
+    .rate-para p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    .footer-row ul li {
+        list-style: none;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    .btn-read-more {
+        height: 2rem;
+        width: 7rem;
+    }
+    .content1 p {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.3;
+    }
+    .content1 ul li {
+        font-size: 1.1rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+    .content2 ul li {
+        font-size: 1rem;
+        list-style-type: none;
+    }
+    .whyus-content p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .profile h1 {
+        font-size: 1.5rem;
+    }
+    .profile p {
+        font-size: 1.1rem;
+        padding: 0rem 3rem 0rem 0rem;
+    }
+    .structure {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(6, 6, 6);
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        color: var(--color-white);
+    }
+    .structure-img img {
+        height: 40rem;
+        width: 36rem;
+    }
+    .whyus-content {
+        width: 50%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 2rem 0rem 0rem;
+    }    
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 2.8rem;
+    }
+    .nav ul li {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-black-shade);
+        font-size: 1.4rem;
+        font-weight: bold;
+        position: relative;
+    }
+    .q1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .q1 h2{
+        font-size: 1.2rem;
+    }
+    .q1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
     }
 }
 
@@ -2667,6 +3401,29 @@ ul li img {
     }
 }
 
+@media only screen and (max-width: 915px)
+{
+    .nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .contactform {
+        padding: 0rem 5rem 1rem 5rem;
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        align-items: left;
+        flex-direction: column;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+}
+
 @media only screen and (max-width: 880px)
 {
     .card-body {
@@ -2706,20 +3463,47 @@ ul li img {
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .contactform {
-        padding: 0rem 8rem 1rem 8rem;
-        display: flex;
-        gap: 1rem;
-        width: 100%;
-        align-items: left;
-        flex-direction: column;
-    }
-
+@media only screen and (max-width: 821px) {
     .nav ul li a {
         text-decoration: none;
         color: var(--color-black-shade);
         font-size: 1.1rem;
+    }
+    .content-images2 img {
+        height: 16rem;
+        width: 22rem;
+        border-radius: 1rem;
+    }
+    .whyus-content {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .whyus-content {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 0rem 0rem 0rem;
+        text-justify: inter-word;
+    }
+    .content-images2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1.8rem;
     }
 
     .door-whyus-img img {
@@ -2967,13 +3751,12 @@ ul li img {
         height: 10rem;
         width: 12rem;
     }
-
     .contactform {
-        padding: 0rem 8rem 1rem 8rem;
+        padding: 0rem 5rem 1rem 5rem;
         display: flex;
-        gap: 1.2rem;
+        gap: 2rem;
         width: 100%;
-        align-items: left;
+        /* align-items: left; */
         flex-direction: column;
     }
 
@@ -3002,6 +3785,163 @@ ul li img {
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
     }
+    .ourwork {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .quality {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(255, 251, 251, 0.638);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.9rem;
+    }
+    .profile-container img {
+        height: 18rem;
+        width: 92%;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        background-color: rgb(209, 207, 207);
+        width: 42rem;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 769px)
+{
+    .ourwork {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .col-ourwork img {
+        height: 10rem;
+        width: 14rem;
+    }
+    .contactform {
+        padding: 0rem 4rem 1rem 4rem;
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        align-items: left;
+        flex-direction: column;
+    }
+    .col-ourwork img {
+        height: 10rem;
+        width: 14rem;
+    }
+    .door-whyus-img img {
+        height: 22rem;
+        width: 36rem;
+        gap: 0.7rem;
+    }
+    .quality {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(255, 251, 251, 0.638);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        padding: 1rem;
+    }
+    .aboutus p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.1rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: left;
+        padding: 1rem 1rem 0rem 0rem;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.1rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: left;
+        padding: 1rem 1rem 0rem 0rem;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: rgb(209, 207, 207);
+        width: 38rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 0rem 0rem 0rem;
+        text-justify: inter-word;
+    }
+    .whyus-content {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 3rem 0rem 3rem;
+    }
+    .quality {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(255, 251, 251, 0.638);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: rgb(209, 207, 207);
+        width: 40rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    .whyus-content {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 3rem 0rem 3rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -3142,6 +4082,32 @@ ul li img {
         background-color: #000;
         border-radius: 0.5rem;
         color: white;
+    }
+    .q1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        /* justify-content: center; */
+        text-align: center;
+    }
+    .q1 h2 {
+        font-size: 1rem;
+    }
+    .q1 p{
+        font-size: 0.9rem;
+    }
+    .quality {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(255, 251, 251, 0.638);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 }
 
@@ -3687,6 +4653,19 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
+    .quality {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(255, 251, 251, 0.638);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
 }
 
 @media only screen and (max-width: 590px) {
@@ -3860,7 +4839,59 @@ ul li img {
         border-bottom-left-radius: 1.2rem;
         border-bottom-right-radius: 1.2rem;
     }
-
+    .profile-container img {
+        height: 12rem;
+        width: 95%;
+    }
+    .aboutus p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .icons img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .content-profile {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0rem 0rem 1rem 0rem;
+        color: black;
+    }
+    .content1 p {
+        font-size: 1.1rem;
+        text-align: justify;
+        line-height: 1.3;
+    }
+    .structure-content p {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+    .whyus-content p {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    .whyus {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        padding: 1rem;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .door-whyus-img img {
+        height: 14rem;
+        width: 28rem;
+        gap: 0.7rem;
+    }
+    .head-nav h2 {
+        color: white;
+        font-size: 1.1rem;
+        padding: 0.3rem;
+    }
+    .q1 p {
+        font-size: 0.8rem;
+    }
     .nav ul li {
         font-size: 1rem;
     }
@@ -4022,6 +5053,19 @@ ul li img {
         width: 24rem;
         height: 20rem;
     }
+    .quality {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(255, 251, 251, 0.638);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
 }
 
 @media only screen and (max-width: 490px)
@@ -4068,7 +5112,155 @@ ul li img {
         color: #070707;
         text-decoration: none;
     }
-    
+    .content-images2 img {
+        height: 11rem;
+        width: 11rem;
+        border-radius: 1rem;
+    }
+    .door-whyus-img img {
+        height: 12rem;
+        width: 23rem;
+        gap: 0.7rem;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: rgb(209, 207, 207);
+        width: 18rem;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .col-door p {
+        font-size: 0.8rem;
+    }
+    .profile {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.767);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 1rem;
+        gap: 1rem;
+        color: white;
+    }
+    .profile p {
+        font-size: 0.9rem;
+        padding: 0rem 3rem 0rem 0rem;
+    }
+    .btn-more {
+        font-size: 0.8rem;
+        width: 17rem;
+        height: 1.5rem;
+        background-color: rgb(54, 201, 208);
+        color: black;
+        border: 0;
+        border-radius: 0.6rem;
+        letter-spacing: 0.1rem;
+    }
+    .content-images img {
+        height: 30rem;
+        width: 22rem;
+    }
+    .content2 ul li {
+        font-size: 0.9rem;
+        list-style-type: none;
+    }
+    .profile-container img {
+        height: 12rem;
+        width: 90%;
+    }
+    .floors {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.767);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 1rem 0rem 2rem;
+        gap: 0.5rem;
+        color: white;
+    }
+    .head p {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.8rem;
+    }
+    .head-nav h2 {
+        color: white;
+        padding: 0.2rem 0rem 0rem 0.3rem;
+        font-size: 1.1rem;
+    }
+    .contactpara h1 {
+        font-size: 1.2rem;
+    }
+    .contactpara p {
+        font-size: 0.9rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .col-ourwork img {
+        height: 16rem;
+        width: 22rem;
+    }
+    .aboutus p {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    .ourmissionpara p {
+        padding: 1rem 1rem 2rem 1rem;
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    .rate-col-1 {
+        width: 22rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .card-body p {
+        font-size: 0.9rem;
+    }
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+        padding: 0.3rem;
+    }
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        padding: 0.3rem;
+    }
+    .para h1 {
+        font-size: 1.4rem;
+    }
+    .q1 h2 {
+        font-size: 0.9rem;
+    } 
 }
 
 @media only screen and (max-width: 460px)
@@ -4161,16 +5353,170 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
+    .whyus-content p {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (max-width: 415px)
+{
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        padding: 0.5rem;
+    }
+    .img img {
+        height: 13rem;
+        width: 12rem;
+        padding: 0rem 1rem 0rem 0rem;
+    }
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0rem;
+        /* text-align: left; */
+    }
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    .head p {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.7rem;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 0.9rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: justify;
+        padding: 1rem 0rem 0rem 0rem;
+    }
+    .rate-quote {
+        padding: 1rem;
+    }
+    
+    .card-pro {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+    }
+    .card-pro-para {
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    .content1 p {
+        font-size: 0.9rem;
+        text-align: justify;
+        line-height: 1.3;
+    }
+    .content1 ul li {
+        font-size: 0.9rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+    .content2-head h2{
+        font-size: 1rem;
+    }
+    .door-whyus-img img {
+        height: 12rem;
+        width: 22rem;
+        gap: 0.7rem;
+    }
+    .structure-content {
+        width: 100%;
+        gap: 0.6rem;
+        padding: 0.5rem;
+    }
+    .structure-content p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+    .icons img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    form textarea {
+        height: 6rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        background-color: var(--color-white);
+        border: 0;
+        border-radius: 0.8rem;
+    }
+    .btn-contact {
+        width: 5rem;
+        height: 1.8rem;
+        font-size: 0.9rem;
+        background-color: black;
+        color: var(--color-white);
+        float: right;
+        border: 1px solid var(--color-white);
+        border-radius: 0.4rem;
+    } 
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0rem;
+        color: var(--color-white);
+    }
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 1rem 0rem 1rem;
+        text-justify: inter-word;
+    }
+    .card-body p {
+        font-size: 0.9rem;
+        padding: 0rem 0rem 0rem 0.2rem;
+    }
+    .footerSec-row h6 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.9rem;
+        width: 0.9rem;
+    }
+    .footerSec-row h5 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.9rem;
+        width: 0.9rem;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
     .main-q h1 {
         font-size: 0.9rem;
     }
+    .head {
+        background-color: var(--color-head);
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 0.2rem 1rem 0.2rem 0rem;
+        gap: 0rem;
+    }
     .aboutus h1 {
         font-size: 1rem;
     }
-  .contactpara h1 {
+    .contactpara h1 {
         font-size: 1rem;
     }
     .para {
@@ -4205,6 +5551,23 @@ ul li img {
     .footer-row .footer-ul h4 {
         font-size: 0.9rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
+    }
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0rem;
+        color: var(--color-white);
+    }
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 1rem 0rem 1rem;
+        text-justify: inter-word;
     }
     .card2 {
         display: flex;
@@ -4280,8 +5643,8 @@ ul li img {
     }
     .card-pro {
         gap: 1rem;
-        background-color: rgb(255, 255, 255);
-        padding: 0rem 1rem 0rem 1rem;
+        background-color: rgb(249 247 247);
+        padding: 1rem 1rem 1rem 1rem;
     }
     .card-pro img {
         height: 12rem;
@@ -4422,8 +5785,16 @@ ul li img {
         flex-direction: column;
     }
     .col-ourwork img {
-        height: 18rem;
-        width: 20rem;
+        height: 16rem;
+        width: 22rem;
+    }
+    .head img {
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    .card-body p {
+        font-size: 0.9rem;
+        padding: 0rem 0rem 0rem 0.2rem;
     }
 
     .productsh1 h2 {
@@ -4441,11 +5812,6 @@ ul li img {
     .rate-quote h1 {
         font-size: 1rem;
     }
-
-    footer h1 {
-        font-size: 1.1rem;
-    }
-
     .profile h1 {
         font-size: 1.1rem;
     }
@@ -4512,6 +5878,29 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
+    footer h1 {
+        font-size: 1rem;
+    }
+    .footer-ul ul li {
+        font-size: 0.8rem;
+    }
+    .footerSec-row h6 {
+        font-size: 0.7rem;
+    }
+    .footerSec-row h5 {
+        font-size: 0.7rem;
+    }
+    .footerLast p {
+        color: var(--color-white);
+        font-size: 0.6rem;
+        padding: 1.4rem 0rem 1.2rem 1.8rem;
+    }
+    .q1 h2 {
+        font-size: 0.7rem;
+    }
+    .footer-ul ul li {
+        font-size: 0.7rem;
+    }        
 }
 
 @media only screen and (max-width: 390px) {
@@ -4606,6 +5995,23 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
+    footer h1 {
+        font-size: 1rem;
+    }
+    .footer-ul ul li {
+        font-size: 0.8rem;
+    }
+    .footerSec-row h6 {
+        font-size: 0.7rem;
+    }
+    .footerSec-row h5 {
+        font-size: 0.7rem;
+    }
+    .footerLast p {
+        color: var(--color-white);
+        font-size: 0.6rem;
+        padding: 1.4rem 0rem 1.2rem 1.8rem;
+    }
 }
 
 @media only screen and (max-width: 376px) {
@@ -4663,6 +6069,204 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
+    footer h1 {
+        font-size: 1rem;
+    }
+    .footer-ul ul li {
+        font-size: 0.8rem;
+    }
+    .footerSec-row h6 {
+        font-size: 0.7rem;
+    }
+    .footerSec-row h5 {
+        font-size: 0.7rem;
+    }
+    .footerLast p {
+        color: var(--color-white);
+        font-size: 0.6rem;
+        padding: 1.4rem 0rem 1.2rem 1.8rem;
+    }
+    .footerSec-row h6 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    .footerSec-row h5 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 376px)
+{
+    .para {
+        top: 1rem;
+        left: 1rem;
+        width: 20.5rem;
+        height: 18rem;
+    }
+    .head p {
+        font-size: 0.5rem;
+    }
+    .head img {
+        height: 0.6rem;
+        width: 0.6rem;
+    }
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+    .btn-learnmore {
+        height: 1.6rem;
+        width: 4.8rem;
+        background-color: #000;
+        border-radius: 0.5rem;
+        color: var(--color-white);
+        font-size: 0.7rem;
+    }
+    .col-2 {
+        width: 100%;
+        height: 90%;
+    }
+    .btn-learnmore {
+        height: 1.8rem;
+        width: 5rem;
+        background-color: #000;
+        border-radius: 0.5rem;
+        color: var(--color-white);
+        font-size: 0.7rem;
+    }
+    .head p {
+        font-size: 0.7rem;
+    }
+    .card-pro-para p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        color: black;
+        text-align: left;
+    }
+    .profile-container img {
+        height: 10rem;
+        width: 91%;
+    }
+    .structure-content p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+    .structure-content h4 {
+        font-size: 1.1rem;
+    }
+    .door-whyus-img img {
+        width: 20rem;
+    }
+    .whyus-content {
+        font-size: 1rem;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    .btn-more {
+        font-size: 0.6rem;
+        width: 12rem;
+        height: 1.5rem;
+        background-color: rgb(54, 201, 208);
+        color: black;
+        border: 0;
+        border-radius: 0.6rem;
+        letter-spacing: 0.1rem;
+    }
+    .col-ourwork img {
+        height: 14rem;
+        width: 20rem;
+    }
+    .icons img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .contactpara p {
+        font-size: 0.8rem;
+    }
+    .btn-contact {
+        width: 5rem;
+        height: 2rem;
+        font-size: 0.9rem;
+        background-color: black;
+        color: var(--color-white);
+        float: right;
+        border: 1px solid var(--color-white);
+        border-radius: 0.4rem;
+    }
+    form textarea {
+        height: 6rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        background-color: var(--color-white);
+        border: 0;
+        border-radius: 0.8rem;
+    }
+    .main-q h1 {
+        font-size: 1.2rem;
+    }
+    footer h1 {
+        font-size: 1rem;
+    }
+    .footer-ul ul li {
+        font-size: 0.7rem;
+    }
+    .footerSec-row h6 {
+        font-size: 0.7rem;
+    }
+    .footerSec-row h5 {
+        font-size: 0.7rem;
+    }
+    .footerLast p {
+        color: var(--color-white);
+        font-size: 0.6rem;
+        padding: 1.4rem 0rem 1.2rem 1.8rem;
+    }
+    .card-pro {
+        gap: 1rem;
+        background-color: rgb(255, 255, 255);
+        padding: 0rem 2rem 0rem 2rem;
+        flex-direction: column;
+        text-align: justify;
+    }
+    .card-pro img {
+        height: 14rem;
+        width: 21rem;
+    }    
+    .footerSec-row h6 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    .footerSec-row h5 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.8rem;
+        width: 0.8rem;
+    }   
+    .footer-row {
+        gap: 0rem;
+    }
+    .rate-col-1 {
+        width: 20rem;
+    }
+    .head {
+        background-color: var(--color-head);
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 0.2rem 1rem 0.2rem 0rem;
+        gap: 0.3rem;
+    }
+        
 }
 
 @media only screen and (max-width: 370px) {
@@ -4681,6 +6285,16 @@ ul li img {
         font-size: 1rem;
     }
 
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 1rem 0rem 1rem;
+        text-justify: inter-word;
+    }
     .img img {
         height: 8rem;
         width: 8rem;
@@ -4750,8 +6364,8 @@ ul li img {
     }
 
     .card-pro img {
-        height: 12rem;
-        width: 10rem;
+        height: 14rem;
+        width: 21rem;
     }
 
     .card-pro-para h3 {
@@ -4773,10 +6387,6 @@ ul li img {
     }
     .q1 p {
         font-size: 0.7rem;
-    }
-    .whyus {
-        padding: 1rem 1rem 2rem 1rem;
-        flex-direction: column;
     }
     .whyus-img {
         gap: 0.6rem;
@@ -4985,9 +6595,223 @@ ul li img {
         gap: 0.6rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+    footer h1 {
+        font-size: 1rem;
+    }
+    .footer-ul ul li {
+        font-size: 0.7rem;
+    }
+    .footerSec-row h6 {
+        font-size: 0.7rem;
+    }
+    .footerSec-row h5 {
+        font-size: 0.7rem;
+    }
+    .footerLast p {
+        color: var(--color-white);
+        font-size: 0.6rem;
+        padding: 1.4rem 0rem 1.2rem 1.8rem;
+    }
+    .whyus {
+        padding: 1rem 0rem 2rem 0rem;
+        flex-direction: column;
+    }    
 }
 
+@media only screen and (max-width: 368px)
+{
+    .head {
+        background-color: var(--color-head);
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 0.2rem 1rem 0.2rem 0rem;
+        gap: 0.3rem;
+    }
+    .whyus {
+        padding: 1rem 0rem 2rem 0rem;
+        flex-direction: column;
+    }
+    .card-pro img {
+        height: 14rem;
+        width: 21rem;
+    }    
+    .footer-row {
+        gap: 0rem;
+    }
+    .footerSec-row h6 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    .footerSec-row h5 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    .profile-container img {
+        height: 18rem;
+        width: 92%;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        background-color: rgb(209, 207, 207);
+        width: 42rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    .card-pro {
+        gap: 1rem;
+        background-color: rgb(239 237 237);
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .paragraph {
+        padding: 1rem;
+    }
+    .rate-col-1 {
+        width: 19rem;
+    }    
+}
+
+@media only screen and (max-width: 321px)
+{
+    .main-q h1 {
+        font-size: 1.3rem;
+    }
+    .para p {
+        font-size: 0.9rem;
+    }
+    .para {
+        top: 1rem;
+        left: 1rem;
+        width: 18rem;
+        height: 17rem;
+    }
+    .footer-ul ul li {
+        font-size: 0.6rem;
+    }
+    .footerSec-row h6 {
+        font-size: 0.6rem;
+    }
+    .footerSec-row h5 {
+        font-size: 0.6rem;
+    }
+    .footerLast p {
+        color: var(--color-white);
+        font-size: 0.5rem;
+        padding: 1.4rem 0rem 1.2rem 1.8rem;
+    }
+    footer h1 {
+        font-size: 1rem;
+    }
+    .content img {
+        padding: 1rem 0rem 0rem 1rem;
+        height: 22rem;
+        width: 19rem;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 0.8rem;
+        /* letter-spacing: 0.01rem; */
+        text-align: justify;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .ourmissionpara p {
+        padding: 0rem 1rem 1rem 1rem;
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    .testimonals p {
+        color: rgb(177, 177, 177);
+        font-size: 0.9rem;
+        padding: 1.2rem;
+    }
+    .rate-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .rate-para p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    .card-pro {
+        flex-direction: column;
+        gap: 1rem;
+        background-color: rgb(255, 255, 255);
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .card-pro img {
+        height: 12rem;
+        width: 18rem;
+    }
+    .card-pro-para p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        color: black;
+        text-align: start;
+    }
+    .door-whyus-img img {
+        width: 18rem;
+    }
+    .whyus-content {
+        font-size: 0.9rem;
+        gap: 0.5rem;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    .whyus-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    .col-door h4 {
+        font-size: 0.8rem;
+    }
+    .col-door {
+        width: 14rem;
+        gap: 0.2rem;
+    }
+    .col-door p {
+        font-size: 0.7rem;
+    }
+    .content-profile {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0rem 1rem 1rem 1rem;
+        color: black;
+    }
+    .content-images2 img {
+        height: 9rem;
+        width: 9rem;
+        border-radius: 1rem;
+    }
+    .content2 ul li {
+        font-size: 0.8rem;
+        list-style-type: none;
+    }
+    .col-ourwork img {
+        height: 12rem;
+        width: 18rem;
+    }
+    form input {
+        height: 1.5rem;
+        padding: 1rem;
+      background-color: var(--color-white);
+        border: 0;
+       border-radius: 0.8rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+    }
+}
+/* 6813 */
 iframe {
     width: 100%;
-    height: 24rem;
+    height: 25rem;
 }
