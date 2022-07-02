@@ -767,6 +767,18 @@ form textarea {
 }
 
 /* pvc profile--------------------------------- */
+.pvcprofile {
+    height: 30rem;
+    width: 100%;
+    position: relative;
+}
+
+.pvcprofile img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .profile {
     position: absolute;
     top: 0%;
@@ -921,7 +933,7 @@ form textarea {
 .whyus {
     background-color: rgb(255, 255, 255);
     display: flex;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     gap: 2rem;
 }
 
@@ -1049,7 +1061,18 @@ form textarea {
     border-radius: 0.6rem;
     letter-spacing: 0.1rem;
 }
+.pvcfloors {
+    height: 30rem;
+    width: 100%;
+    position: relative;
+}
 
+.pvcfloors img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .floors {
     position: absolute;
     top: 0%;
@@ -1197,9 +1220,16 @@ ul li img {
         /* gap: 0.2rem; */
     }
 
+    .whyus {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        padding: 2rem 12rem 2rem 12rem;
+        gap: 2rem;
+    }
+
     .whyus-content p {
-        font-size: 1.5rem;
-        line-height: 1.3;
+        font-size: 1.4rem;
+        line-height: 1.4;
     }
 
     .whyus-content {
@@ -1208,9 +1238,9 @@ ul li img {
         gap: 1rem;
         flex-direction: column;
         text-align: justify;
-        padding: 0rem 8rem 0rem 0rem;
+        padding: 0rem 10rem 0rem 0rem;
+        line-height: 1.4;
     }
-
     .para h1 {
         font-size: 2rem;
     }
@@ -1245,9 +1275,35 @@ ul li img {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+    .card-body {
+        padding: 0rem 12rem 0rem 12rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .ourstory:before {
+        content: " ";
+        position: absolute;
+        height: 0.2rem;
+        width: 8%;
+        justify-content: center;
+        background-color: rgb(183, 144, 45);
+        border-radius: 0.3rem;
+        top: 100%;
+        left: 2%;
+    }
+    .rate-para h2 {
+        font-size: 1.3rem;
+    }    
+            
 }
 
 @media only screen and (max-width: 1800px) {
+    .whyus {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        padding: 2rem 8rem 2rem 8rem;
+        gap: 2rem;
+    }
     .card-pro-para {
         font-size: 1.3rem;
         line-height: 1.2;
@@ -1447,6 +1503,183 @@ ul li img {
     .card-head h1 {
         font-size: 1.6rem;
     }
+}
+
+@media only screen and (max-width: 1550px)
+{
+    .footerLast p{
+        font-size: 1rem;
+    }
+    .footerSec-row h6 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 1rem;
+        width: 1rem;
+    }
+    .footerSec-row h5 img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        height: 1rem;
+        width: 1rem;
+    }    
+    footer h1 {
+        font-size: 1.2rem;
+        padding: 1.4rem 0rem 1.4rem 1.8rem;
+    }
+    .card-body p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .btn-learnmore a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--color-white);
+    }
+    .btn-learnmore {
+        height: 2.2rem;
+        width: 6.5rem;
+    }
+    .btn-learnmore2 {
+        height: 2.2rem;
+        width: 6.5rem;
+    }
+    .btn-learnmore2 a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--color-black-shade);
+    }
+    .img img {
+        height: 18rem;
+        width: 20rem;
+        padding: 0rem 3rem 0rem 0rem;
+    }
+    .main-q p {
+        font-size: 1.2rem;
+    }
+    .para {
+        position: absolute;
+        left: 16rem;
+        top: 3rem;
+        height: 80%;
+        width: 34rem;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: rgb(247, 247, 247);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: var(--color-white);
+        background-color: rgba(0, 0, 0, 0.72);
+        text-align: justify;
+    }
+    .footerSec-row h6 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .footerSec-row h5 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .content img {
+        padding: 1.5rem 0rem 1.5rem 5rem;
+        height: 45rem;
+        width: 39rem;
+    }
+    .ourstory:before {
+        content: " ";
+        position: absolute;
+        height: 0.2rem;
+        width: 8%;
+        justify-content: center;
+        background-color: rgb(183, 144, 45);
+        border-radius: 0.3rem;
+        top: 100%;
+        left: 5%;
+    }
+    .rate-para h2 {
+        font-size: 1.1rem;
+    }
+    .footerSec-row h6 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .rate-quote h1{
+        font-size: 1.6rem;
+    }    
+    .ourmission {
+        padding: 2rem;
+        background-color: var(--color-black-shade);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.3rem;
+        letter-spacing: 0.01rem;
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    .paragraph h1 {
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.8rem;
+    }
+    .floors h1 {
+        font-size: 1.8rem;
+    }
+    .floors p {
+        font-size: 1.2rem;
+    }
+    .col-door h4 {
+        font-size: 1.3rem;
+    }
+    .col-door p {
+        font-size: 1rem;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        background-color: rgb(209, 207, 207);
+        width: 50rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    .content1 p {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.4;
+    }
+    .content1 ul li {
+        font-size: 1.1rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+    .content2 ul li {
+        font-size: 1.1rem;
+        list-style-type: none;
+        /* gap: 0.2rem; */
+    }
+    .whyus-content p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+    .q1 h2{
+        font-size: 1.2rem;
+    }           
+    .whyus {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        padding: 2rem 2rem 2rem 2rem;
+        gap: 2rem;
+    }    
 }
 
 @media only screen and (max-width: 1500px) {
@@ -2400,6 +2633,17 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         text-align: justify;
     }
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    
 }
 
 
@@ -2496,7 +2740,7 @@ ul li img {
     }
 
     .rate-para h2 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .card-pro img {
@@ -2635,8 +2879,69 @@ ul li img {
         font-size: 1.2rem;
         text-align: justify;
         line-height: 1.4;
-    }        
-
+    }  
+    .footer-row ul li {
+        list-style: none;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    .footerLast p {
+        font-size: 0.8rem;
+    }
+    .ourmissionpara p {
+        padding: 1rem 8rem 2rem 8rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.2rem;
+        letter-spacing: 0.01rem;
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    .paragraph h1 {
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.6rem;
+    }
+    .nav ul li {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-black-shade);
+        font-size: 1.4rem;
+        font-weight: bold;
+        position: relative;
+    }
+    .nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .card-head h1 {
+        font-size: 1.5rem;
+    }
+    .card-pro-para {
+        gap: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    .q1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .q1 h2{
+        font-size: 1.2rem;
+    }  
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }      
 }
 
 @media only screen and (max-width: 1230px) {
@@ -2741,6 +3046,17 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }    
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 1160px) {
@@ -2880,6 +3196,15 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }    
 }
 
 @media only screen and (max-width: 1098px) {
@@ -2992,7 +3317,15 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
-
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }    
 }
 
 @media only screen and (max-width: 1050px) {
@@ -3061,6 +3394,15 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }    
 }
 
 
@@ -3236,6 +3578,15 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }    
 }
 
 @media only screen and (max-width: 996px) {
@@ -3337,6 +3688,15 @@ ul li img {
         height: 32rem;
         width: 28rem;
     }
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }    
 }
 
 @media only screen and (max-width: 960px) {
@@ -3399,6 +3759,16 @@ ul li img {
         width: 45rem;
         gap: 0.7rem;
     }
+    .pvcprofile {
+        height: 20rem;
+        width: 100%;
+        position: relative;
+    }
+    .pvcfloors {
+        height: 20rem;
+        width: 100%;
+        position: relative;
+    }    
 }
 
 @media only screen and (max-width: 915px)
@@ -3422,6 +3792,15 @@ ul li img {
         flex-direction: column;
         gap: 1.6rem;
     }
+    .main-q {
+        padding: 1.5rem 10rem 1.5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }    
 }
 
 @media only screen and (max-width: 880px)
@@ -3464,6 +3843,24 @@ ul li img {
 }
 
 @media only screen and (max-width: 821px) {
+    .main-q {
+        padding: 1.5rem 5rem 1.5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }    
+    .main-q p {
+        font-size: 1.1rem;
+    }
+    .card-body p {
+        font-size: 1.1rem;
+    }
+    .para p{
+        font-size: 1.3rem;
+    }  
     .nav ul li a {
         text-decoration: none;
         color: var(--color-black-shade);
@@ -3575,31 +3972,52 @@ ul li img {
         font-size: 1.2rem;
         line-height: 1.3;
     }
-
     .ourmissionh1 h1 {
         color: var(--color-white);
         font-size: 1.6rem;
         padding: 2rem;
     }
-
     .rate-quote h1 {
         font-size: 1.4rem;
     }
-
     .rate-para p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
-
     .rate-col-1 {
-        width: 18rem;
+        width: 22rem;
         height: auto;
         color: var(--color-black-shade);
         background-color: rgb(235, 232, 232);
         border-radius: 1rem;
         padding: 1rem;
     }
-
+    .card-pro-para {
+        gap: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    .btn-read-more {
+        height: 2rem;
+        width: 6rem;
+    }
+    .btn-read-more a {
+        font-size: 0.8rem;
+        color: black;
+        text-decoration: none;
+    }
+    .col-door h4 {
+        font-size: 1rem;
+    }
+    
+    .col-door p {
+        font-size: 0.9rem;
+    }
+    .content1 p {
+        font-size: 1.1rem;
+        text-align: justify;
+        line-height: 1.3;
+    }            
     .footer-row .footer-ul h4 {
         font-size: 1.2rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
@@ -3640,23 +4058,19 @@ ul li img {
         font-size: 1.5rem;
         text-justify: inter-word;
     }
-
     .card-pro img {
         height: 18rem;
         width: 18rem;
     }
-
     .card-pro-para {
         gap: 1rem;
         font-size: 1.2rem;
         line-height: 1.3;
     }
-
     .btn-read-more {
         height: 2.2rem;
         width: 7rem;
     }
-
     .floors {
         position: absolute;
         top: 0%;
@@ -3671,7 +4085,6 @@ ul li img {
         gap: 2rem;
         color: white;
     }
-
     .floors h1 {
         font-size: 1.6rem;
     }
@@ -3826,6 +4239,17 @@ ul li img {
         gap: 3rem;
         padding: 2rem 2rem 2rem 2rem;
     }
+    .ourstory:before {
+        content: " ";
+        position: absolute;
+        height: 0.2rem;
+        width: 22%;
+        justify-content: center;
+        background-color: rgb(183, 144, 45);
+        border-radius: 0.3rem;
+        top: 100%;
+        left: 9%;
+    }
     .col-ourwork img {
         height: 10rem;
         width: 14rem;
@@ -3940,7 +4364,147 @@ ul li img {
         text-align: justify;
         padding: 0rem 3rem 0rem 3rem;
     }
+    .content img {
+        padding: 1.5rem 0rem 1.5rem 4rem;
+        height: 32rem;
+        width: 26rem;
+    }
+    .testimonals p {
+        color: rgb(177, 177, 177);
+        font-size: 0.8rem;
+        padding: 1.2rem;
+    }
+    .ourmissionpara p {
+        padding: 1rem 4rem 2rem 4rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .rate-para p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .para p{
+        font-size: 1.2rem;
+    }
+    .main-q {
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    .main-q p {
+        font-size: 1.1rem;
+    }
+    .card-body p {
+        font-size: 1rem;
+    }
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    .rate-col-1 {
+        width: 20rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .card-pro-para {
+        gap: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    .content1 h1{
+        font-size: 1.4rem;
+    }
+    .content1 p {
+        font-size: 1.1rem;
+        text-align: justify;
+        line-height: 1.3;
+    }
+    .whyus-content p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    .col-door h4 {
+        font-size: 0.9rem;
+    }
+    .col-door p {
+        font-size: 0.8rem;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        background-color: rgb(209, 207, 207);
+        width: 40rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    .content1 ul li {
+        font-size: 1rem;
+        list-style-type: square;
+        color: rgb(30, 171, 30);
+    }
+    .structure-content p {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+    .door-whyus-img img {
+        height: 22rem;
+        width: 38rem;
+        gap: 0.7rem;
+    }
+    .head p{
+        font-size: 0.9rem;
+    }
+    .btn-more {
+        font-size: 0.8rem;
+        width: 15rem;
+        height: 1.3rem;
+        background-color: rgb(54, 201, 208);
+        color: black;
+        border: 0;
+        border-radius: 0.6rem;
+        letter-spacing: 0.1rem;
+    }
+    .btn-contact {
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+        background-color: black;
+        color: var(--color-white);
+        float: right;
+        border: 1px solid var(--color-white);
+        border-radius: 0.4rem;
+    }
+    form textarea {
+        height: 6rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        background-color: var(--color-white);
+        border: 0;
+        border-radius: 0.8rem;
+    }
+    form input {
+        height: 2.5rem;
+        padding: 1.5rem;
+        background-color: var(--color-white);
+        border: 0;
+        border-radius: 0.8rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+    }
+        
 
+    
 
 }
 
@@ -4051,14 +4615,14 @@ ul li img {
     }
 
     .contactform {
-        padding: 0rem 5rem 1rem 5rem;
+        padding: 1rem 4rem 1rem 4rem;
         display: flex;
         gap: 1.2rem;
         width: 100%;
         align-items: left;
         flex-direction: column;
     }
-
+    
     .card-head h1 {
         font-size: 1.2rem;
         text-align: center;
@@ -5261,6 +5825,16 @@ ul li img {
     .q1 h2 {
         font-size: 0.9rem;
     } 
+    .content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    gap: 1rem;
+    width: 100%;
+    padding: 0rem 2rem 0rem 2rem;
+    text-justify: inter-word;
+   }
 }
 
 @media only screen and (max-width: 460px)
