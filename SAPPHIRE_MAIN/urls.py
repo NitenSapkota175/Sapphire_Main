@@ -25,4 +25,5 @@ urlpatterns = [
     path('sapphire_main_secret_10101111/', admin.site.urls),
     path('',include('Sapphire.urls')),
 ]
-urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+if settings.DEBUG == True:
+    urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
