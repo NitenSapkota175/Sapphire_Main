@@ -82,6 +82,7 @@ TEMPLATES = [
                 'Sapphire.context_processors.Sapphire_Product2',
                 'Sapphire.context_processors.Sapphire_contactus',
                 'Sapphire.context_processors.Sapphire_Product1',
+                'Sapphire.context_processors.Sapphire_EndSectionOfProduct',
             
             ],
         },
