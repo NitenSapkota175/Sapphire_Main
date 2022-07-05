@@ -1284,10 +1284,6 @@ ul li img {
     .rate-para h2 {
         font-size: 1.3rem;
     }    
-    .emailus ul {
-        font-size: 1.1rem;
-        padding: 0rem 0rem 0rem 2rem;
-    }
     .contactinfo h1 {
         font-size: 1.8rem;
         padding: 0rem 0rem 0rem 1rem;
@@ -1296,12 +1292,12 @@ ul li img {
         display: flex;
         align-items: center;
         gap: 0.3rem;
-        font-size: 1.2rem;
+        font-size: 1.1em;
     }
     .head img {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
+        height: 1rem;
+        width: 1rem;
+    }    
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
@@ -1320,9 +1316,9 @@ ul li img {
         font-size: 1.1rem;
     }
     .profile-container img {
-        height: 30rem;
-        width: 90%;
-    }  
+        height: 34rem;
+        width: 80%;
+    }     
     .whyus-content {
         width: 50%;
         display: flex;
@@ -1342,7 +1338,21 @@ ul li img {
     }
     .rate-para h2 {
         font-size: 1.1rem;
-    }    
+    } 
+    .phone {
+        padding: 0rem 0rem 0rem 4rem;
+    }
+    .emailus {
+        padding: 0rem 1rem 0rem 0rem;
+    }
+    .contactpara h1 {
+        font-size: 2.4rem;
+    }
+    .icons img {
+        height: 2rem;
+        width: 2rem;
+        -webkit-filter: invert();
+    }
 }
 
 @media only screen and (max-width: 1800px) {
@@ -1365,6 +1375,25 @@ ul li img {
     .ourmissionpara p {
         font-size: 1.4rem;
         line-height: 1.5;
+    }
+    .rate-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .profile-container img {
+        height: 32rem;
+        width: 80%;
+    } 
+    .contactpara h1 {
+        font-size: 2.4rem;
+    }
+    .icons img {
+        height: 2rem;
+        width: 2rem;
+        -webkit-filter: invert();
     }
 }
 
@@ -1410,6 +1439,25 @@ ul li img {
 
     .profile p {
         font-size: 1.4rem;
+    }
+    .rate-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .profile-container img {
+        height: 32rem;
+        width: 80%;
+    } 
+    .contactpara h1 {
+        font-size: 2.3rem;
+    }
+    .icons img {
+        height: 2rem;
+        width: 2rem;
+        -webkit-filter: invert();
     }
 }
 
@@ -1559,6 +1607,14 @@ ul li img {
     .profile-container img {
         height: 30rem;
         width: 90%;
+    }
+    .contactpara h1 {
+        font-size: 2.2rem;
+    }
+    .icons img {
+        height: 2rem;
+        width: 2rem;
+        -webkit-filter: invert();
     }
 }
 
@@ -1779,18 +1835,23 @@ ul li img {
         width: 100%;
         position: relative;
     }
-
+    .contactpara h1 {
+        font-size: 2.1rem;
+    }
+    .icons img {
+        height: 1.8rem;
+        width: 1.8rem;
+        -webkit-filter: invert();
+    }
 }
 
 @media only screen and (max-width: 1500px) {
     .phone {
-        padding: 0rem 0rem 0rem 2rem;
+    padding: 0rem 0rem 0rem 5rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 2rem;
+        padding: 0rem 0rem 0rem 1rem;
     }
-
     .para {
         position: absolute;
         left: 16rem;
@@ -2054,6 +2115,14 @@ ul li img {
         gap: 0.4rem;
         font-size: 1rem;
     }
+    .rate-col-1 {
+        width: 26rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 1470px) {
@@ -2130,11 +2199,9 @@ ul li img {
         border-radius: 0.5rem;
         color: rgb(0, 0, 0);
     }
-
     .main-q p {
         font-size: 1.2rem;
     }
-
     .paragraph p {
         line-height: 1.5;
         font-size: 1.3rem;
@@ -2142,13 +2209,11 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
-
     .content img {
         padding: 1.5rem 0rem 1.5rem 5rem;
         height: 45rem;
         width: 38rem;
     }
-
     .ourmission {
         padding: 1rem;
         background-color: var(--color-black-shade);
@@ -2157,7 +2222,6 @@ ul li img {
         align-items: center;
         justify-content: center;
     }
-
     .rate-para h2 {
         font-size: 1.3rem;
     }
@@ -2238,10 +2302,26 @@ ul li img {
         height: 30rem;
         width: 90%;
     }
+    .rate-col-1 {
+        width: 26rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 1450px) {
 
+    .rate-col-1 {
+        width: 26rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
     .content-profile {
         display: flex;
         align-items: center;
@@ -2571,10 +2651,9 @@ ul li img {
 
     .content img {
         padding: 1.5rem 0rem 1.5rem 5rem;
-        height: 48rem;
+        height: 40rem;
         width: 40rem;
     }
-
     .productsh1 h2 {
         display: flex;
         align-items: center;
@@ -2632,15 +2711,12 @@ ul li img {
         font-size: 1.2rem;
         line-height: 1.2;
     }
-
     .structure-content h4 {
         font-size: 1.5rem;
     }
-
     .profile h1 {
         font-size: 1.9rem;
     }
-
     .content-profile {
         display: flex;
         align-items: center;
@@ -2648,12 +2724,10 @@ ul li img {
         padding: 3rem 5rem 3rem 5rem;
         color: black;
     }
-
     .col-ourwork img {
         height: 18rem;
         width: 25rem;
     }
-
     .contactform {
         padding: 1.5rem 4rem 1.5rem 4rem;
         display: flex;
@@ -2662,21 +2736,21 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
-
     .phone {
-        padding: 0rem 0rem 0rem 2rem;
-    }
+        padding: 0rem 0rem 0rem 5rem;
+    }    
 
     .emailus {
-        padding: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 1rem;
     }
-
     .contactpara {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
-
+    .contactpara p{
+        font-size: 0.8rem;
+    }
     .contactinfo {
         display: flex;
         width: 50%;
@@ -2686,10 +2760,9 @@ ul li img {
         gap: 4rem;
         padding: 4rem 0rem 4rem 0rem;
     }
-
     .icons img {
-        height: 2rem;
-        width: 2rem;
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     .btn-contact {
@@ -2710,13 +2783,11 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
-
     .ourmissionpara p {
         padding: 2rem 8rem 2rem 8rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 1.3;
     }
-
     .rate-para p {
         font-size: 1rem;
         line-height: 1.4;
@@ -2741,7 +2812,75 @@ ul li img {
         gap: 2rem;
         padding: 1rem;
         flex-wrap: wrap;
-    }   
+    }
+    .para p{
+        font-size: 1.4rem;
+    }
+    .footerLast p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 1370px)
+{
+    .head img {
+        height: 1rem;
+        width: 1rem;
+    }
+    .ourmissionpara p {
+        padding: 2rem 8rem 2rem 8rem;
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }    
+    .rate-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .rate-para h2 {
+        font-size: 1rem;
+    }
+    .rate-para p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .rate-col-1 {
+        width: 24rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .head img {
+        height: 1rem;
+        width: 1rem;
+    }    
+    .paragraph p {
+        line-height: 1.4;
+        font-size: 1.3rem;
+        letter-spacing: 0.01rem;
+        text-align: justify;
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    .para p{
+        font-size: 1.4rem;
+    }
+    .footerLast p {
+        font-size: 0.8rem;
+    }
+    .nav ul li {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-black-shade);
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: relative;
+    }
+
 }
 
 @media only screen and (max-width: 1355px) {
@@ -2751,13 +2890,11 @@ ul li img {
         line-height: 1.3;
     }    
     .phone {
-        padding: 0rem 0rem 0rem 2rem;
-    }
-
+        padding: 0rem 0rem 0rem 5rem;
+    }    
     .emailus {
-        padding: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 1rem;
     }
-
     .contactinfo {
         display: flex;
         width: 50%;
@@ -2830,6 +2967,14 @@ ul li img {
         background-color: rgb(235, 232, 232);
         border-radius: 1rem;
         padding: 1rem;
+    }
+    .nav ul li {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-black-shade);
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: relative;
     }
 }
 
@@ -3011,8 +3156,8 @@ ul li img {
         padding: 4rem 0rem 4rem 0rem;
     }
     .phone {
-        padding: 0rem 0rem 0rem 1rem;
-    }
+        padding: 0rem 0rem 0rem 3rem;
+    }    
     .content2 ul li {
         font-size: 1.2rem;
         list-style-type: none;
@@ -3139,6 +3284,14 @@ ul li img {
         padding: 2rem;
         flex-wrap: wrap;
     }  
+    .nav ul li {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-black-shade);
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 1230px) {
@@ -3263,6 +3416,14 @@ ul li img {
         width: 30rem;
         gap: 0.7rem;
     }    
+    .nav ul li {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-black-shade);
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 1160px) {
@@ -3432,9 +3593,8 @@ ul li img {
     }
 
     .phone {
-        padding: 0rem 0rem 0rem 6rem;
+        padding: 0rem 0rem 0rem 3rem;
     }
-
     .card-body {
         padding: 0rem 0rem 0rem 0rem;
         text-align: center;
@@ -3510,11 +3670,6 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
-
-    .phone {
-        padding: 0rem 0rem 0rem 1rem;
-    }
-
     .contactpara h1 {
         font-size: 1.5rem;
     }
@@ -3565,10 +3720,9 @@ ul li img {
         height: 16rem;
         width: 18rem;
     }
-
     .phone {
-        padding: 0rem 0rem 0rem 0rem;
-    }
+        padding: 0rem 0rem 0rem 3rem;
+    }    
     .paragraph p {
         line-height: 1.4;
         font-size: 1.2rem;
@@ -3724,7 +3878,7 @@ ul li img {
     }
     .paragraph p {
         line-height: 1.4;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         /* letter-spacing: 0.01rem; */
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
@@ -3862,6 +4016,20 @@ ul li img {
         height: 18rem;
         width: 20rem;
     }
+    .rate-col-1 {
+        width: 18rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .content img {
+        padding: 1.5rem 0rem 1.5rem 1rem;
+        height: 32rem;
+        width: 24rem;
+    }
+    
 
 }
 
@@ -3982,7 +4150,21 @@ ul li img {
     }
     .card-body p {
         font-size: 1rem;
-    }     
+    }  
+    .rate-col-1 {
+        width: 18rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .content img {
+        padding: 1.5rem 0rem 1.5rem 1rem;
+        height: 32rem;
+        width: 24rem;
+    }
+       
 }
 
 @media only screen and (max-width: 960px) {
@@ -4378,17 +4560,15 @@ ul li img {
         flex-direction: column;
         justify-content: center;
         padding: 0rem 0rem 0rem 4rem;
-        gap: 2rem;
+        gap: 1rem;
         color: white;
     }
     .floors h1 {
         font-size: 1.6rem;
     }
-
     .floors p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
-
     .col-door h4 {
         font-size: 1.2rem;
     }
@@ -4530,6 +4710,37 @@ ul li img {
         width: 17rem;
         padding: 0rem 1rem 0rem 0rem;
     }
+    .profile-container img {
+        height: 18rem;
+        width: 80%;
+    }
+    .whyus-content h1 {
+        font-size: 1.2rem;
+    }
+    .q1 p{
+        font-size: 0.9rem;
+    }
+    .q1 h2 {
+        font-size: 1.1rem;
+    }    
+    .footerSec-row h6 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .footerSec-row h5 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+    .structure-content h4 {
+        font-size: 1.2rem;
+    }
+    .profile p {
+        font-size: 1rem;
+        padding: 0rem 3rem 0rem 0rem;
+    }
+        
 }
 
 @media only screen and (max-width: 769px)
@@ -4807,6 +5018,29 @@ ul li img {
         border-radius: 0.8rem;
         font-size: 0.9rem;
         letter-spacing: 0.2rem;
+    }
+    .profile-container img {
+        height: 18rem;
+        width: 80%;
+    }
+    .whyus-content h1 {
+        font-size: 1.2rem;
+    }
+    .q1 p{
+        font-size: 0.8rem;
+    }
+    .q1 h2 {
+        font-size: 1.1rem;
+    }    
+    .footerSec-row h6 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.8rem;
+    }
+    .footerSec-row h5 {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -5916,14 +6150,13 @@ ul li img {
     }
 
     .rate-col-1 {
-        width: 14rem;
+        width: 28rem;
         height: auto;
         color: var(--color-black-shade);
         background-color: rgb(235, 232, 232);
         border-radius: 1rem;
         padding: 1rem;
     }
-
     .card-pro {
         display: flex;
         align-items: center;
@@ -7263,7 +7496,9 @@ ul li img {
         padding: 0.2rem 1rem 0.2rem 0rem;
         gap: 0.3rem;
     }
-        
+    .head p {
+        font-size: 0.6rem;
+    }        
 }
 
 @media only screen and (max-width: 370px) {
@@ -7273,7 +7508,15 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
-
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        background-color: rgb(209, 207, 207);
+        width: 17rem;
+        align-items: center;
+        padding: 1rem;
+    }
     .aboutus h1 {
         font-size: 1rem;
     }
@@ -7292,6 +7535,10 @@ ul li img {
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
+    .content1 p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }    
     .img img {
         height: 9rem;
         width: 9rem;
@@ -7411,7 +7658,7 @@ ul li img {
         font-size: 1rem;
     }
     .profile-container img {
-        height: 10rem;
+        height: 8rem;
         width: 100%;
     }
     .content-images img {
@@ -7447,10 +7694,7 @@ ul li img {
         padding: 0rem 0rem 0rem 3rem;
     }
     .col-door h4 {
-        font-size: 1rem;
-    }
-    .col-door p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .col-profile1 h4 {
         font-size: 1rem;
@@ -7531,7 +7775,7 @@ ul li img {
     }
 
     .head p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .contactpara p {
@@ -7612,11 +7856,28 @@ ul li img {
     .whyus {
         padding: 1rem 0rem 2rem 0rem;
         flex-direction: column;
-    }    
+    } 
+    .col-door p {
+        font-size: 0.6rem;
+    }       
 }
 
 @media only screen and (max-width: 368px)
 {
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.4;
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 2rem 0rem 2rem;
+        text-justify: inter-word;
+    }
+    .content1 p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
     .head {
         background-color: var(--color-head);
         display: flex;
@@ -7649,17 +7910,8 @@ ul li img {
         width: 0.8rem;
     }
     .profile-container img {
-        height: 18rem;
+        height: 8rem;
         width: 92%;
-    }
-    .col-door {
-        display: flex;
-        flex-direction: column;
-        gap: 0.2rem;
-        background-color: rgb(209, 207, 207);
-        width: 42rem;
-        align-items: center;
-        padding: 1rem;
     }
     .card-pro {
         gap: 1rem;
@@ -7671,6 +7923,12 @@ ul li img {
     }
     .rate-col-1 {
         width: 19rem;
+    }   
+    .col-door p {
+        font-size: 0.6rem;
+    }
+    .head p {
+        font-size: 0.6rem;
     }    
 }
 
@@ -7822,8 +8080,8 @@ ul li img {
        font-size: 0.9rem;
         text-align: center;
     }
-    .head p {
-       font-size: 0.7rem;
+   .head p {
+      font-size: 0.7rem;
     }
 }
 /* 6813 */
