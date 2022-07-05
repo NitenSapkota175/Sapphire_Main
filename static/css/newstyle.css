@@ -5537,7 +5537,40 @@ ul li img {
         justify-content: center;
         gap: 1.5rem;
     }
+    .profile-container img {
+        height: 12rem;
+        width: 90%;
+    }
+    .col-door p {
+        font-size: 0.7rem;
+    }
+    .content2-head h2{
+        font-size: 1.2rem;
+    }
+    .content2-head p{
+        font-size: 0.9rem;
+    }
+    
+}
 
+@media only screen and (max-width: 602px)
+{
+    .profile-container img {
+        height: 12rem;
+        width: 90%;
+    }
+    .col-door {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: rgb(209, 207, 207);
+        width: 27rem;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .col-door p {
+        font-size: 0.7rem;
+    }    
 }
 
 @media only screen and (max-width: 590px) {
@@ -7786,7 +7819,7 @@ ul li img {
         padding: 0rem;
     }
     .card-head h1 {
-        font-size: 0.9rem;
+       font-size: 0.9rem;
         text-align: center;
     }
     .head p {
