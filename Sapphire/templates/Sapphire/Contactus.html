@@ -39,7 +39,10 @@ background-position: center;
         <div class="contactinfo">
             {%for setting in settings %}
             <div class="address">
-                <h1>{{setting.Office_Address_Title}}</h1>
+                <div class="addressicon">
+                    <img src="/static/images/pin.png" alt="">
+                    <h1>{{setting.Office_Address_Title}}</h1>
+                </div>
                 <ul>
                     <li>{{setting.Office_Address1}}</li>
                     <li>{{setting.Office_Address2}}</li>
@@ -48,7 +51,10 @@ background-position: center;
             </div>
 
             <div class="Factoryaddress">
-                <h1>{{setting.Factory_Address_Title}}</h1>
+                <div class="factoryaddressicon">
+                    <img src="/static/images/pin.png" alt="">
+                    <h1>{{setting.Factory_Address_Title}}</h1>
+                </div>
                 <ul>
                     <li>{{setting.Factory_Address1}}</li>
                     <li>{{setting.Factory_Address2}}</li>
@@ -57,7 +63,10 @@ background-position: center;
             </div>
 
             <div class="phone">
-                <h1>{{setting.Contact_Title}}</h1>
+                <div class="phoneicon">
+                    <img src="/static/images/phone-call.png" alt="">
+                    <h1>{{setting.Contact_Title}}</h1>
+                </div>
                 <ul>
                     <li>{{setting.Contact_Number_1 }}</li>
                     <li>{{setting.Contact_Number_2 }}</li>
@@ -66,7 +75,10 @@ background-position: center;
             </div>
 
             <div class="emailus">
-                <h1>{{setting.Email_Title}}</h1>
+                <div class="emailusicon">
+                    <img src="/static/images/email.png" alt="">
+                    <h1>{{setting.Email_Title}}</h1>
+                </div>    
                 <ul>
                    {{setting.Offical_Email_Id }}
                 </ul>
