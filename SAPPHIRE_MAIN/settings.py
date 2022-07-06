@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7hljt!*b3j*)g%o5zt+ql!3mg$q$xk(ocd=_ex5a1atx-!$)@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 if DEBUG == False:
     ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'phonenumber_field',
-    #'storages',
-    #'admin_honeypot',
+    'storages',
+    'admin_honeypot',
     'Sapphire.apps.SapphireConfig',
 
 ]
@@ -230,12 +230,7 @@ JAZZMIN_SETTINGS = {
     # Top Menu #
     ############
     # Links to put along the top menu
-    "topmenu_links": [
-        # Url that gets reversed (Permissions can be added)
-        {"name": "Sapphire", "www.sapphirecommotrade.com": "home", "permissions": ["auth.view_user"]},
-        # model admin to link to (Permissions checked against model)
-        {"model": "auth.User"},
-    ],
+ 
     #############
     # Side Menu #
     #############
@@ -256,7 +251,7 @@ JAZZMIN_SETTINGS = {
     
     # # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
-    "default_icon_children": "fas fa-arrow-circle-right",
+    "default_icon_children": "fas fa-circle",
     #################
     # Related Modal #
     #################
