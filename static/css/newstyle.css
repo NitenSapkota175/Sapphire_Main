@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 :root {
@@ -12,13 +13,13 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
 }
 
 .head {
-    background-color: var(--color-head);
+    background-color: #DBD8CC;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -68,16 +69,14 @@ nav {
     justify-content: center;
     gap: 7rem;
 }
-
 .nav ul li {
     text-decoration: none;
     list-style: none;
     color: var(--color-black-shade);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     position: relative;
 }
-
 .nav ul li a {
     text-decoration: none;
     color: var(--color-black-shade);
@@ -123,59 +122,64 @@ nav {
     height: 100%;
     width: 100%;
     } */
-    .para {
-        position: absolute;
-        left: 16rem;
-        top: 6rem;
-        height: 70%;
-        width: 35rem;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
-        border-radius: 0.5rem;
-        color: var(--color-white);
-        background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
-    }
-
-.para h1 {
-    font-size: 1.8rem;
+.para {
+    position: absolute;
+    left: 16rem;
+    top: 6rem;
+    height: 70%;
+    width: 35rem;
+    font-size: 1.5rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* gap: 1rem; */
+    /* flex-direction: column; */
+    /* background-color: rgb(247, 247, 247); */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, 0.72);
+    /* text-align: justify; */
 }
 
+.para h1{
+    padding: 3rem 0rem 0rem 0rem;
+    font-size: 2.4rem;
+}
+
+.para p{
+    font-size: 1.6rem;
+    padding: 1rem 0rem 0rem 0rem;
+    line-height: 1.4;
+}
 /* main */
 main {
-    background-color: rgb(47 100 73 / 53%);
+    background-color: #BABDBC;
     color: var(--color-white);
 }
-
 .main-q {
-    padding: 1.5rem 20rem 1.5rem 20rem;
+    padding: 1.5rem 10rem 1.5rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 1rem;
+    color: rgb(21, 20, 20);
 }
-
 .main-q p {
     font-size: 1.5rem;
+    color: rgb(26, 26, 26);
 }
-
 .row-l {
     width: 100%;
     height: 25rem;
     margin: 1rem 0rem 1rem 0rem;
     padding: 1rem 0rem 1rem 0rem;
 }
-
-.row-l:last-child{
+.row-l:last-child {
     margin: 1rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 2rem 0rem;
 }
 .col-1 {
     display: flex;
@@ -184,12 +188,11 @@ main {
     gap: 1rem;
     width: 70%;
     height: 100%;
-    background-color: var(--color-white);
+    background-color: rgb(255 255 255);
     border-top-right-radius: 4rem;
     border-bottom-right-radius: 4rem;
     color: var(--color-black-shade);
 }
-
 .img img {
     height: 16rem;
     width: 18rem;
@@ -218,7 +221,6 @@ main {
     font-size: 1.4rem;
     line-height: 1.6rem;
 }
-
 .col-2 {
     float: right;
     display: flex;
@@ -227,11 +229,11 @@ main {
     gap: 1rem;
     width: 70%;
     height: 100%;
-    background-color: #000;
+    background-color: #fbfbfb;
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
+    color: black;
 }
-
 .card2 {
     display: flex;
     flex-direction: column;
@@ -239,33 +241,31 @@ main {
     gap: 2rem;
     padding: 2rem;
 }
-
 .btn-learnmore {
     height: 3rem;
     width: 8rem;
-    background-color: #000;
+    background-color: #fcfcfc;
     border-radius: 0.5rem;
-    color: white;
+    color: black;
+    border: 3px solid black;
 }
-
 .btn-learnmore a {
     font-size: 1.2rem;
     text-decoration: none;
-    color: var(--color-white);
+    color: black;
 }
-
 .btn-learnmore2 {
     height: 3rem;
     width: 8rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #fcfcfc;
     border-radius: 0.5rem;
     color: black;
-}
-
+    border: 3px solid black;
+}   
 .btn-learnmore2 a {
     font-size: 1.2rem;
     text-decoration: none;
-    color: var(--color-black-shade);
+    color: black;
 }
 
 /* about us ------------------------ */
@@ -288,13 +288,14 @@ main {
 }
 
 .aboutus h1 {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     padding: 2rem 0rem 2rem 0rem;
 }
 
 .aboutus p {
     font-size: 1.5rem;
     line-height: 1.3;
+    color: #eaeaea;
 }
 
 .main-frame {
@@ -350,7 +351,7 @@ main {
 }
 
 .ourmissionpara p {
-    color: var(--color-white);
+    color: #cecece;
     font-size: 1.4rem;
     padding: 1rem 20rem 2rem 20rem;
     text-align: center;
@@ -361,12 +362,12 @@ main {
 .ourmissionh1:before {
     content: " ";
     position: absolute;
-    height: 0.2rem;
-    width: 100%;
+    height: 0.1rem;
+    width: 21%;
     background-color: rgb(213, 164, 41);
     border-radius: 0.3rem;
     top: 80%;
-    left: 0;
+    left: 39%;
 }
 
 /* ratings style */
@@ -387,7 +388,7 @@ main {
 }
 
 .rate-col-1 {
-    width: 30rem;
+    width: 22rem;
     height: auto;
     color: var(--color-black-shade);
     background-color: rgb(235, 232, 232);
@@ -419,44 +420,43 @@ main {
 
 .testimonals p {
     color: rgb(177, 177, 177);
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     padding: 1.2rem;
 }
-
 .testimonals:before {
     content: " ";
     position: absolute;
-    height: 0.2rem;
-    width: 10%;
+    height: 0.1rem;
+    width: 4%;
     justify-content: center;
     background-color: rgb(213, 164, 41);
     border-radius: 0.3rem;
     top: 80%;
-    left: 45%;
+    left: 48%;
 }
-
 .ourstory {
     position: relative;
 }
-
 .ourstory:before {
     content: " ";
     position: absolute;
-    height: 0.2rem;
-    width: 8%;
+    height: 0.1rem;
+    width: 9%;
     justify-content: center;
     background-color: rgb(183, 144, 45);
     border-radius: 0.3rem;
-    top: 80%;
-    left: 2%;
+    top: 94%;
+    left: 5%;
 }
-
 .ourstory p {
     color: rgb(177, 177, 177);
     font-size: 1.2rem;
     padding: 1rem 0rem 1rem 0rem;
 }
 
+.card-pro-para p {
+    color: #636363;
+}
 /* ratings ends */
 /* products-------------------- */
 .productsh1 {
@@ -468,10 +468,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     text-justify: inter-word;
 }
-
 .productsh1 h2:before {
     content: '';
     position: absolute;
@@ -479,9 +478,8 @@ main {
     top: 75%;
     width: 10%;
     height: 0.2rem;
-    background-color: #000;
+    background-color: #198227;
 }
-
 .product-card {
     display: flex;
     flex-direction: column;
@@ -519,7 +517,8 @@ main {
     background-color: transparent;
     color: black;
     border: 0.2rem solid black;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
+    font-weight: bold;
 }
 
 .btn-read-more a {
@@ -591,19 +590,17 @@ main {
     align-items: left;
     flex-direction: column;
 }
-
 form {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
 }
-
 form input {
     height: 3.5rem;
     padding: 1.5rem;
     background-color: var(--color-white);
     border: 0;
-    border-radius: 0.8rem;
+    /* border-radius: 0.8rem; */
     font-size: 1rem;
     letter-spacing: 0.2rem;
 }
@@ -613,7 +610,7 @@ form textarea {
     padding: 0.5rem;
     background-color: var(--color-white);
     border: 0;
-    border-radius: 0.8rem;
+    /* border-radius: 0.8rem; */
 }
 
 .btn-contact {
@@ -624,19 +621,19 @@ form textarea {
     color: var(--color-white);
     float: right;
     border: 1px solid var(--color-white);
-    border-radius: 0.4rem;
+    /* border-radius: 0.4rem; */
 }
-
 .contactpara {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-
 .contactpara h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
-
+.contactpara p{
+    font-size: 1.3rem;
+}
 .icons {
     display: flex;
     align-items: center;
@@ -646,9 +643,8 @@ form textarea {
 .icons img {
     height: 2.5rem;
     width: 2.5rem;
-    -webkit-filter: invert();
+    /* -webkit-filter: invert(); */
 }
-
 .contactlist {
     height: 40rem;
     width: 100%;
@@ -661,7 +657,6 @@ form textarea {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .contact {
     position: absolute;
     top: 0%;
@@ -671,51 +666,61 @@ form textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
     display: flex;
     gap: 1rem;
-    color: var(--color-white);
+    color: rgb(8 7 7);
 }
-
 .contactinfo {
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2.8rem;
     padding: 4rem 0rem 4rem 0rem;
 }
-
 .contactinfo h1 {
     font-size: 1.8rem;
 }
-
 .contactinfo li {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     list-style-type: none;
     padding: 0.5rem 0rem 0rem 1rem;
+    color: #424141;
 }
-
 .address {
-    padding: 0rem 0rem 0rem 3rem;
+    padding: 0rem 0rem 0rem 4rem;
+}
+.address ul{
+    padding: 0rem 0rem 0rem 2.8rem;
 }
 
 .Factoryaddress {
     padding: 0rem 0rem 0rem 0rem;
 }
 
+.Factoryaddress ul{
+    padding: 0rem 0rem 0rem 2.8rem;
+}
+
 .phone {
     padding: 0rem 0rem 0rem 1rem;
+}
+
+.phone ul{
+    padding: 0rem 0rem 0rem 2.2rem;
 }
 
 .emailus {
     padding: 0rem 0rem 0rem 1rem;
 }
+
 .emailus ul {
     font-size: 1.1rem;
-    padding: 0rem 0rem 0rem 1rem;
+    padding: 0rem 0rem 0rem 3rem;
 }
+
 /* ourwork--------------------------- */
 
 .ourwork1 {
@@ -767,17 +772,17 @@ form textarea {
 
 /* pvc profile--------------------------------- */
 .pvcprofile {
-    height: 30rem;
+    height: 36rem;
     width: 100%;
     position: relative;
 }
-
 .pvcprofile img {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .profile {
     position: absolute;
     top: 0%;
@@ -788,19 +793,20 @@ form textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0rem 0rem 0rem 15rem;
+    padding: 0rem 0rem 0rem 10rem;
     gap: 2rem;
     color: white;
 }
 
 .profile h1 {
-    font-size: 2rem;
+    font-size: 4rem;
+    line-break: strict;
 }
-
 .profile p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    /* line-height: 1.2; */
 }
-
 .profile-row {
     display: flex;
     gap: 2rem;
@@ -833,27 +839,23 @@ form textarea {
     text-decoration: none;
     color: rgb(21, 127, 21);
 }
-
 .profile-container {
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
 }
-
 .profile-container img {
     height: 38rem;
     width: 95%;
 }
-
 .content-profile {
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 5rem;
+    padding: 2rem 6rem 2rem 12rem;
     color: black;
 }
-
 .content1 {
     display: flex;
     flex-direction: column;
@@ -873,11 +875,12 @@ form textarea {
 .content1 ul li {
     font-size: 1.3rem;
     list-style-type: square;
-    color: rgb(30, 171, 30);
+    color: rgb(45 162 45);
 }
 
 .content1 ul {
     padding: 0rem 0rem 0rem 1rem;
+    margin: 2rem 0rem 0rem 0rem;
 }
 
 .content2 {
@@ -910,9 +913,8 @@ form textarea {
 }
 
 .content-images2 img {
-    height: 20rem;
-    width: 24rem;
-    border-radius: 1rem;
+    height: 22rem;
+    width: 30rem;
 }
 
 .content2 ul li {
@@ -930,7 +932,8 @@ form textarea {
 }
 
 .whyus {
-    background-color: rgb(255, 255, 255);
+    margin: 2rem 0rem 0rem 0rem;
+    background-color: rgb(242 241 241);
     display: flex;
     padding: 2rem 2rem 2rem 2rem;
     gap: 2rem;
@@ -965,14 +968,13 @@ form textarea {
     line-height: 1.2;
 }
 
-
 /* pvc Door & Windows --------------------------- */
 
 .door-row {
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 0rem 0rem 0rem 5rem;
+    padding: 0rem 0rem 0rem 14rem;
 }
 
 .col-door {
@@ -984,13 +986,13 @@ form textarea {
     align-items: center;
     padding: 1rem;
 }
-
 .col-door h4 {
     font-size: 1.5rem;
+    color: #464545;
 }
-
 .col-door p {
     font-size: 1.2rem;
+    color: #464545;
 }
 
 .door-img {
@@ -1060,8 +1062,9 @@ form textarea {
     border-radius: 0.6rem;
     letter-spacing: 0.1rem;
 }
+
 .pvcfloors {
-    height: 30rem;
+    height: 36rem;
     width: 100%;
     position: relative;
 }
@@ -1076,7 +1079,7 @@ form textarea {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgb(43 42 42 / 36%);
     height: 100%;
     width: 100%;
     display: flex;
@@ -1086,11 +1089,9 @@ form textarea {
     gap: 2rem;
     color: white;
 }
-
 .floors h1 {
-    font-size: 2.4rem;
+    font-size: 4rem;
 }
-
 .floors p {
     font-size: 1.5rem;
 }
@@ -1106,13 +1107,11 @@ form textarea {
 }
 
 /* footer style */
-footer,
-footer h1 {
-    background-color: var(--color-black-shade);
-    color: rgb(39, 234, 39);
+footer, footer h1 {
+    background-color:#000;
+    color: #06b45d;
     font-size: 1.6rem;
 }
-
 footer h1 {
     padding: 1.4rem 0rem 1.4rem 1.8rem;
 }
@@ -1120,8 +1119,8 @@ footer h1 {
 .footer-row {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40rem;
+    justify-content: space-around;
+    gap: 36rem;
     color: var(--color-white);
 }
 
@@ -1186,7 +1185,6 @@ footer h1 {
     display: none;
 }
 
-
 /* rate icon */
 .rate-icons {
     display: flex;
@@ -1202,8 +1200,9 @@ footer h1 {
 }
 
 ul li img {
-    height: 0.8rem;
-    width: 0.8rem;
+    height: 1rem;
+    width: 1.5rem;
+    padding: 0rem 0.5rem 0rem 0rem;
 }
 
 @media only screen and (max-width: 1921px) {
@@ -1212,23 +1211,52 @@ ul li img {
         text-align: justify;
         line-height: 1.4;
     }
+
     .content2 ul li {
         font-size: 1.4rem;
         list-style-type: none;
         /* gap: 0.2rem; */
     }
+
     .whyus {
-        background-color: rgb(255, 255, 255);
+        margin: 2rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         display: flex;
         padding: 2rem 12rem 2rem 12rem;
         gap: 2rem;
     }
-   .whyus-content p {
+
+    .whyus-content p {
         font-size: 1.4rem;
         line-height: 1.4;
     }
-    .para h1 {
-        font-size: 2rem;
+
+    .para {
+        position: absolute;
+        left: 15rem;
+        top: 6rem;
+        height: 70%;
+        width: 35rem;
+        font-size: 1.5rem;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        background-color: rgb(247, 247, 247);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: var(--color-white);
+        background-color: rgba(0, 0, 0, 0.72);
+        /* text-align: justify; */
+    }  
+    .para h1{
+        padding: 3rem 0rem 0rem 0rem;
+        font-size: 2.2rem;
+    } 
+    .para p{
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
     }
     .card-head h1 {
         font-size: 2rem;
@@ -1270,7 +1298,7 @@ ul li img {
     }
     .rate-para h2 {
         font-size: 1.3rem;
-    }    
+    }
     .head p {
         display: flex;
         align-items: center;
@@ -1280,12 +1308,12 @@ ul li img {
     .head img {
         height: 1rem;
         width: 1rem;
-    }    
+    }
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 4rem;
+        gap: 37rem;
         color: var(--color-white);
     }
     .footerSec-row h6 img {
@@ -1299,7 +1327,7 @@ ul li img {
         filter: invert(100%);
         height: 1.3rem;
         width: 1.3rem;
-    }        
+    }
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
@@ -1308,7 +1336,7 @@ ul li img {
     .profile-container img {
         height: 34rem;
         width: 80%;
-    }     
+    }
     .whyus-content {
         width: 50%;
         display: flex;
@@ -1317,7 +1345,7 @@ ul li img {
         text-align: justify;
         padding: 4rem 10rem 0rem 0rem;
         line-height: 1.4;
-    }  
+    }
     .footer-row ul li {
         list-style: none;
         font-size: 1.3rem;
@@ -1328,74 +1356,81 @@ ul li img {
     }
     .rate-para h2 {
         font-size: 1.1rem;
-    } 
+    }
+    .address {
+        padding: 0rem 0rem 0rem 4.5rem;
+    }   
     .phone {
-        padding: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 4rem;
+    }
+    .Factoryaddress {
+        padding: 0rem 0rem 0rem 0.6rem;
     }
     .emailus {
-        padding: 0rem 0rem 0rem 1rem;
-    }
+        padding: 0rem 0rem 0rem 1.5rem;
+    }    
     .contactinfo h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         padding: 0rem 0rem 0rem 0rem;
-    }
+    }    
     .contactpara h1 {
         font-size: 2.4rem;
     }
+
     .icons img {
         height: 2rem;
         width: 2rem;
-        -webkit-filter: invert();
+        /* -webkit-filter: invert(); */
+    }
+    .rate-col-1 {
+        width: 20rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1890px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 35rem;
+        color: var(--color-white);
     }
     .para {
-        position: absolute;
-        left: 16rem;
-        top: 6rem;
-        height: 70%;
-        width: 35rem;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
-        border-radius: 0.5rem;
-        color: var(--color-white);
-        background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
+        /* position: absolute; */
+        left: 14rem;
     }
 }
 
-@media only screen and (max-width: 1890px)
-{
+@media only screen and (max-width: 1820px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 39rem;
+        gap: 38.5rem;
         color: var(--color-white);
-    }
-}
-
-@media only screen and (max-width: 1850px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 37rem;
-        color: var(--color-white);
-    }
+    }    
 }
 
 @media only screen and (max-width: 1800px) {
     .whyus {
-        background-color: rgb(255, 255, 255);
+        margin: 2rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         display: flex;
         padding: 2rem 8rem 2rem 8rem;
         gap: 2rem;
+    }
+    .rate-col-1 {
+        width: 18rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
     }
     .card-pro-para {
         font-size: 1.3rem;
@@ -1411,6 +1446,7 @@ ul li img {
         font-size: 1.4rem;
         line-height: 1.5;
     }
+
     .rate-row {
         display: flex;
         justify-content: space-around;
@@ -1418,39 +1454,54 @@ ul li img {
         padding: 1rem;
         flex-wrap: wrap;
     }
+
     .profile-container img {
         height: 32rem;
         width: 80%;
-    } 
+    }
+
     .contactpara h1 {
         font-size: 2.4rem;
     }
     .icons img {
         height: 2rem;
         width: 2rem;
-        -webkit-filter: invert();
+        /* -webkit-filter: invert(); */
     }
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 36rem;
-        color: var(--color-white);
-    }
-}
-@media only screen and (max-width: 1795px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 36rem;
+        gap: 37.5rem;
         color: var(--color-white);
     }
 }
 
-@media only screen and (max-width: 1770px)
-{
+@media only screen and (max-width: 1795px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 37rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 1770px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 36rem;
+        color: var(--color-white);
+    }
+    .para {
+        /* position: absolute; */
+        left: 12rem;
+    }
+}
+
+@media only screen and (max-width: 1750px) {
     .footer-row {
         display: flex;
         align-items: center;
@@ -1458,26 +1509,18 @@ ul li img {
         gap: 35rem;
         color: var(--color-white);
     }
+    .para {
+        /* position: absolute; */
+        left: 11rem;
+    }
 }
 
-@media only screen and (max-width: 1750px)
-{
+@media only screen and (max-width: 1720px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 34rem;
-        color: var(--color-white);
-    }
-}
-
-@media only screen and (max-width: 1720px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 33rem;
         color: var(--color-white);
     }
 }
@@ -1535,17 +1578,17 @@ ul li img {
     .profile-container img {
         height: 32rem;
         width: 80%;
-    } 
+    }
     .contactpara h1 {
         font-size: 2.3rem;
     }
     .icons img {
         height: 2rem;
         width: 2rem;
-        -webkit-filter: invert();
+        /* -webkit-filter: invert(); */
     }
     .phone {
-        padding: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 3.5rem;
     }
     .emailus {
         padding: 0rem 0rem 0rem 2rem;
@@ -1554,39 +1597,50 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 32rem;
+        gap: 34.5rem;
+        color: var(--color-white);
+    }
+    .para {
+        /* position: absolute; */
+        left: 10rem;
+    }
+}
+@media only screen and (max-width: 1675px)
+{
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 33.5rem;
+        color: var(--color-white);
+    }
+}
+@media only screen and (max-width: 1655px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 33rem;
         color: var(--color-white);
     }
 }
 
-@media only screen and (max-width: 1655px)
-{
+@media only screen and (max-width: 1630px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 31rem;
-        color: var(--color-white);
-    }
-}
-@media only screen and (max-width: 1630px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30rem;
+        gap: 32.5rem;
         color: var(--color-white);
     }
 }
 
-@media only screen and (max-width: 1610px)
-{
+@media only screen and (max-width: 1610px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 30rem;
+        gap: 31.5rem;
         color: var(--color-white);
     }
 }
@@ -1601,6 +1655,7 @@ ul li img {
         text-align: center;
         line-height: 1.5;
     }
+
     .content1 p {
         font-size: 1.3rem;
         text-align: justify;
@@ -1647,11 +1702,9 @@ ul li img {
     .floors p {
         font-size: 1.4rem;
     }
-
     .floors h1 {
-        font-size: 2.1rem;
+        font-size: 4rem;
     }
-
     .profile p {
         font-size: 1.2rem;
     }
@@ -1665,51 +1718,63 @@ ul li img {
         flex-direction: column;
         gap: 0.9rem;
     }
+
     .whyus-content h1 {
         font-size: 1.7rem;
     }
+
     .content-images2 {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
     }
+
     .whyus-content p {
         font-size: 1.4rem;
         line-height: 1.4;
     }
+
     .aboutus p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .ourmissionpara p {
         padding: 2rem 10rem 2rem 10rem;
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .rate-para h2 {
         font-size: 1.3rem;
     }
+
     .rate-para p {
         font-size: 1.2rem;
         line-height: 1.4;
     }
+
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 1rem;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 1rem;
     }
+
     .card-body p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .card-head h1 {
         font-size: 1.6rem;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
@@ -1717,6 +1782,7 @@ ul li img {
         gap: 0.7rem;
         padding: 2rem;
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
@@ -1724,64 +1790,94 @@ ul li img {
         gap: 0.7rem;
         padding: 2rem;
     }
+
     .head p {
         display: flex;
         align-items: center;
         gap: 0.3rem;
         font-size: 1.1rem;
     }
+
     .head img {
         height: 1.4rem;
         width: 1.4rem;
     }
+
     .profile-container img {
         height: 30rem;
         width: 90%;
     }
+
     .contactpara h1 {
         font-size: 2.2rem;
     }
+
     .icons img {
         height: 2rem;
         width: 2rem;
-        -webkit-filter: invert();
+        /* -webkit-filter: invert(); */
     }
+
     .phone {
         padding: 0rem 0rem 0rem 3rem;
     }
     .emailus {
-        padding: 0rem 0rem 0rem 4rem;
-    }
+        padding: 0rem 0rem 0rem 5.2rem;
+    }    
     .Factoryaddress {
-        padding: 0rem 0rem 0rem 2rem;
+        padding: 0rem 0rem 0rem 1.2rem;
     }
     .phone {
-        padding: 0rem 0rem 0rem 5rem;
+        padding: 0rem 0rem 0rem 4.5rem;
     }
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 33rem;
+        gap: 34rem;
         color: var(--color-white);
     }
 }
 
-@media only screen and (max-width: 1570px)
-{
+@media only screen and (max-width: 1578px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 32rem;
+        gap: 33.8rem;
+        color: var(--color-white);
+    }
+    .rate-col-1 {
+        width: 16rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1570px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 33.5rem;
         color: var(--color-white);
     }
 }
 
-@media only screen and (max-width: 1550px)
-{
-    .footerLast p{
+@media only screen and (max-width: 1550px) {
+    .footerLast p {
         font-size: 1rem;
+    }
+    .rate-col-1 {
+        width: 15.8rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
     }
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
@@ -1789,80 +1885,103 @@ ul li img {
         height: 1rem;
         width: 1rem;
     }
+
     .footerSec-row h5 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 1rem;
         width: 1rem;
-    }    
+    }
+
     footer h1 {
         font-size: 1.2rem;
-        padding: 1.4rem 0rem 1.4rem 1.8rem;
+        padding: 1.4rem 0rem 1.4rem 1.5rem;
     }
+
     .card-body p {
         font-size: 1.2rem;
         line-height: 1.4;
     }
+
     .btn-learnmore a {
         font-size: 1rem;
         text-decoration: none;
         color: var(--color-white);
     }
+
     .btn-learnmore {
         height: 2.2rem;
         width: 6.5rem;
     }
+
     .btn-learnmore2 {
         height: 2.2rem;
         width: 6.5rem;
     }
+
     .btn-learnmore2 a {
         font-size: 1rem;
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: var(--color-white);
     }
+
     .img img {
         height: 18rem;
         width: 20rem;
         padding: 0rem 3rem 0rem 0rem;
     }
+
     .main-q p {
         font-size: 1.2rem;
     }
+
     .para {
         position: absolute;
-        left: 14rem;
+        left: 9rem;
         top: 6rem;
-        height: 70%;
+        height: 65%;
         width: 35rem;
         font-size: 1.5rem;
-        display: flex;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        /* background-color: rgb(247, 247, 247); */
+        padding: 2rem;
         border-radius: 0.5rem;
         color: var(--color-white);
         background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
+        /* text-align: justify; */
     }
+    .para h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 2.5rem;
+    }
+    .para p{
+        font-size: 1.6rem;
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
+    }
+
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .content img {
         padding: 1.5rem 0rem 1.5rem 5rem;
         height: 45rem;
         width: 39rem;
     }
+
     .ourstory:before {
         content: " ";
         position: absolute;
@@ -1874,24 +1993,30 @@ ul li img {
         top: 100%;
         left: 5%;
     }
+
     .rate-para h2 {
         font-size: 1.1rem;
     }
+
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
-    .rate-quote h1{
+
+    .rate-quote h1 {
         font-size: 1.6rem;
-    }   
+    }
+
     .rate-para p {
         font-size: 1rem;
         line-height: 1.4;
     }
+
     .rate-para h2 {
         font-size: 1.1rem;
-    } 
+    }
+
     .ourmission {
         padding: 2rem;
         background-color: var(--color-black-shade);
@@ -1900,6 +2025,7 @@ ul li img {
         align-items: center;
         justify-content: center;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1.3rem;
@@ -1907,22 +2033,26 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
+
     .paragraph h1 {
         padding: 1rem 0rem 1rem 0rem;
         font-size: 1.8rem;
     }
     .floors h1 {
-        font-size: 1.8rem;
-    }
+        font-size: 3.8rem;
+    }    
     .floors p {
         font-size: 1.2rem;
     }
+
     .col-door h4 {
         font-size: 1.3rem;
     }
+
     .col-door p {
         font-size: 1rem;
     }
+
     .col-door {
         display: flex;
         flex-direction: column;
@@ -1932,39 +2062,48 @@ ul li img {
         align-items: center;
         padding: 1rem;
     }
+
     .content1 p {
         font-size: 1.2rem;
         text-align: justify;
         line-height: 1.4;
     }
+
     .content1 ul li {
         font-size: 1.1rem;
         list-style-type: square;
         color: rgb(30, 171, 30);
     }
+
     .content2 ul li {
         font-size: 1.1rem;
         list-style-type: none;
         /* gap: 0.2rem; */
     }
+
     .whyus-content p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 1.2rem;
-    }           
+    }
+
     .whyus {
-        background-color: rgb(255, 255, 255);
+        margin: 2rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         display: flex;
         padding: 2rem 2rem 2rem 2rem;
         gap: 2rem;
-    }   
+    }
+
     .card-body {
         padding: 0rem 6rem 0rem 6rem;
         text-align: center;
         line-height: 1.5;
-    } 
+    }
+
     .card2 {
         display: flex;
         flex-direction: column;
@@ -1972,43 +2111,72 @@ ul li img {
         gap: 1rem;
         padding: 2rem;
     }
+
     .head p {
         display: flex;
         align-items: center;
         gap: 0.3rem;
         font-size: 1rem;
     }
+
     .head img {
         height: 1.3rem;
         width: 1.3rem;
     }
+
     .profile-container img {
         height: 30rem;
         width: 90%;
-    }.pvcfloors {
-        height: 20rem;
+    }
+
+    .pvcfloors {
+        height: 32rem;
         width: 100%;
         position: relative;
     }
     .pvcprofile {
-        height: 20rem;
+        height: 32rem;
         width: 100%;
         position: relative;
     }
     .contactpara h1 {
         font-size: 2.1rem;
     }
+
     .icons img {
         height: 1.8rem;
         width: 1.8rem;
-        -webkit-filter: invert();
+        /* -webkit-filter: invert(); */
     }
+
     .phone {
         padding: 0rem 0rem 0rem 5rem;
     }
+
     .emailus {
         padding: 0rem 0rem 0rem 5rem;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 33.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 1532px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 1510px) {
     .footer-row {
         display: flex;
         align-items: center;
@@ -2018,55 +2186,53 @@ ul li img {
     }
 }
 
-@media only screen and (max-width: 1532px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 31rem;
-        color: var(--color-white);
-    }
-}
-
-@media only screen and (max-width: 1510px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30rem;
-        color: var(--color-white);
-    }
-}
 @media only screen and (max-width: 1500px) {
     .emailus {
         padding: 0rem 0rem 0rem 4rem;
     }
+
     .Factoryaddress {
         padding: 0rem 0rem 0rem 1rem;
     }
+
     .phone {
         padding: 0rem 0rem 0rem 4rem;
     }
+    .rate-col-1 {
+        width: 15rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
     .para {
         position: absolute;
-        left: 14rem;
+        left: 9rem;
         top: 6rem;
         height: 70%;
         width: 35rem;
-        font-size: 1.4rem;
-        display: flex;
+        font-size: 1.5rem;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        /* background-color: rgb(247, 247, 247); */
+        padding: 2rem;
         border-radius: 0.5rem;
         color: var(--color-white);
         background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
+        /* text-align: justify; */
+    }  
+    .para h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 2.5rem;
+    }
+    .para p{
+        font-size: 1.6rem;
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
     }
     .card-body p {
         font-size: 1.1rem;
@@ -2077,14 +2243,15 @@ ul li img {
     .btn-learnmore a {
         font-size: 0.9rem;
         text-decoration: none;
-        color: var(--color-white);
+        color: black;
     }
     .btn-learnmore {
-        height: 2rem;
-        width: 6rem;
-        background-color: #000;
+        height: 3rem;
+        width: 8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: white;
+        color: black;
+        border: 3px solid black;
     }
     .footerSec-row h6 {
         display: flex;
@@ -2101,18 +2268,18 @@ ul li img {
         font-size: 1rem;
         line-height: 1.4;
     }
-
     .btn-learnmore2 a {
         font-size: 0.9rem;
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: black;
     }
     .btn-learnmore2 {
-        height: 2rem;
-        width: 6rem;
-        background-color: rgb(248, 248, 248);
+        height: 3rem;
+        width: 8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: rgb(0, 0, 0);
+        color: black;
+        border: 3px solid black;
     }
     .main-q p {
         font-size: 1.2rem;
@@ -2164,13 +2331,22 @@ ul li img {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+    .whyus-content {
+        width: 50%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 9rem 0rem 0rem;
+        line-height: 1.4;
+    }
     .profile-container img {
         height: 32rem;
         width: 90%;
     }
     .floors h1 {
-        font-size: 2rem;
-    }
+        font-size: 3.5rem;
+    }   
     .floors p {
         font-size: 1.2rem;
     }
@@ -2203,32 +2379,12 @@ ul li img {
         height: 30rem;
         width: 90%;
     }
-    .para {
-        position: absolute;
-        left: 14rem;
-        top: 6rem;
-        height: 70%;
-        width: 35rem;
-        font-size: 1.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
-        border-radius: 0.5rem;
-        color: var(--color-white);
-        background-color: rgba(0, 0, 0, 0.72);
+    .paragraph p {
+        line-height: 1.5;
+        font-size: 1.3rem;
+        letter-spacing: 0.01rem;
         text-align: justify;
-    }
-    
-   .paragraph p {
-    line-height: 1.5;
-    font-size: 1.3rem;
-    letter-spacing: 0.01rem;
-    text-align: justify;
-    padding: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
     }
     .ourstory:before {
         content: " ";
@@ -2280,7 +2436,7 @@ ul li img {
         gap: 0.4rem;
         font-size: 1rem;
     }
-    .footerSec-row h5 {
+   .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 1rem;
@@ -2297,90 +2453,117 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 30rem;
+        gap: 31.5rem;
         color: var(--color-white);
-    }
+    }    
 }
 
-@media only screen and (max-width: 1480px)
-{
+@media only screen and (max-width: 1480px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 29.5rem;
+        gap: 30.5rem;
         color: var(--color-white);
-    }
+    }  
 }
 
 @media only screen and (max-width: 1470px) {
+    .rate-col-1 {
+        width: 18rem;
+        height: auto;
+        color: var(--color-black-shade);
+        background-color: rgb(235, 232, 232);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
     .para {
         position: absolute;
-        left: 12rem;
-        top: 8rem;
-        height: 55%;
-        width: 30rem;
-        font-size: 1.3rem;
-        display: flex;
+        left: 9rem;
+        top: 6rem;
+        height: 70%;
+        width: 35rem;
+        font-size: 1.5rem;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        /* background-color: rgb(247, 247, 247); */
+        padding: 2rem;
         border-radius: 0.5rem;
         color: var(--color-white);
         background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
+        /* text-align: justify; */
+    }
+    .para h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 2.4rem;
+    }
+    .para p{
+        font-size: 1.5rem;
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
     }
     .card-body p {
         font-size: 1.1rem;
     }
+
     .card-head h1 {
         font-size: 1.5rem;
     }
+
     .btn-learnmore a {
         font-size: 0.9rem;
         text-decoration: none;
-        color: var(--color-white);
+        color: black;
     }
+
     .btn-learnmore {
-        height: 2rem;
-        width: 6rem;
-        background-color: #000;
+        height: 3rem;
+        width: 8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: white;
+        color: black;
+        border: 3px solid black;
     }
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .footer-row ul li {
         list-style: none;
         font-size: 1rem;
         line-height: 1.4;
     }
+
     .btn-learnmore2 a {
         font-size: 0.9rem;
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: black;
     }
+
     .btn-learnmore2 {
-        height: 2rem;
-        width: 6rem;
-        background-color: rgb(248, 248, 248);
+        height: 3rem;
+        width: 8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: rgb(0, 0, 0);
+        color: black;
+        border: 3px solid black;
     }
+
     .main-q p {
         font-size: 1.2rem;
     }
+
     .paragraph p {
         line-height: 1.5;
         font-size: 1.3rem;
@@ -2388,11 +2571,13 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
+
     .content img {
         padding: 1.5rem 0rem 1.5rem 5rem;
         height: 45rem;
         width: 38rem;
     }
+
     .ourmission {
         padding: 1rem;
         background-color: var(--color-black-shade);
@@ -2401,13 +2586,16 @@ ul li img {
         align-items: center;
         justify-content: center;
     }
+
     .rate-para h2 {
         font-size: 1.3rem;
     }
+
     .rate-para p {
         font-size: 1.1rem;
         line-height: 1.3;
     }
+
     .productsh1 h2 {
         display: flex;
         align-items: center;
@@ -2415,29 +2603,34 @@ ul li img {
         font-size: 1.6rem;
         text-justify: inter-word;
     }
+
     .btn-read-more {
         height: 2.5rem;
         width: 7rem;
     }
+
     .content1 p {
         font-size: 1.3rem;
         text-align: justify;
         line-height: 1.5;
     }
+
     .whyus-content p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .profile-container img {
         height: 32rem;
         width: 90%;
     }
     .floors h1 {
-        font-size: 2rem;
+        font-size: 3.4rem;
     }
     .floors p {
         font-size: 1.2rem;
     }
+
     .content-profile {
         display: flex;
         align-items: center;
@@ -2445,28 +2638,34 @@ ul li img {
         padding: 4rem;
         color: black;
     }
+
     .content1 p {
         font-size: 1.3rem;
         text-align: justify;
         line-height: 1.5;
     }
+
     .content2 ul li {
         font-size: 1.2rem;
         list-style-type: none;
     }
+
     .content1 ul li {
         font-size: 1.2rem;
         list-style-type: square;
         color: rgb(30, 171, 30);
     }
+
     .structure-content p {
         font-size: 1.2rem;
         line-height: 1.3;
     }
+
     .profile-container img {
         height: 30rem;
         width: 90%;
     }
+
     .rate-col-1 {
         width: 26rem;
         height: auto;
@@ -2476,7 +2675,7 @@ ul li img {
         padding: 1rem;
     }
     .phone {
-        padding: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 4.5rem;
     }
     .emailus {
         padding: 0rem 0rem 0rem 5rem;
@@ -2485,7 +2684,7 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 29rem;
+        gap: 30.5rem;
         color: var(--color-white);
     }
 }
@@ -2493,7 +2692,7 @@ ul li img {
 @media only screen and (max-width: 1450px) {
 
     .rate-col-1 {
-        width: 26rem;
+        width: 18rem;
         height: auto;
         color: var(--color-black-shade);
         background-color: rgb(235, 232, 232);
@@ -2507,29 +2706,35 @@ ul li img {
         padding: 4rem;
         color: black;
     }
+
     .content1 p {
         font-size: 1.3rem;
         text-align: justify;
         line-height: 1.5;
     }
+
     .content2 ul li {
         font-size: 1.2rem;
         list-style-type: none;
     }
+
     .content1 ul li {
         font-size: 1.2rem;
         list-style-type: square;
         color: rgb(30, 171, 30);
     }
+
     .whyus-content p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .footer-row ul li {
         list-style: none;
         font-size: 1rem;
@@ -2540,49 +2745,54 @@ ul li img {
         flex-direction: column;
         gap: 0.5rem;
         background-color: rgb(209, 207, 207);
-        width: 50rem;
+        width: 40rem;
         align-items: center;
         padding: 0.5rem;
     }
     .col-door h4 {
         font-size: 1.3rem;
     }
+
     .col-door p {
         font-size: 1.1rem;
     }
+
     .footer-row ul li {
         list-style: none;
         font-size: 1rem;
         line-height: 1.4;
     }
+
     .profile-container img {
         height: 28rem;
         width: 90%;
-    }  
+    }
+
     .rate-para p {
         font-size: 1rem;
         line-height: 1.4;
     }
+
     .rate-para h2 {
         font-size: 1.1rem;
-    } 
+    }
+
     .phone {
         padding: 0rem 0rem 0rem 4rem;
     }
     .emailus {
         padding: 0rem 0rem 0rem 5rem;
-    } 
+    }
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 28rem;
+        gap: 30rem;
         color: var(--color-white);
     }
 }
 
-@media only screen and (max-width: 1420px)
-{
+@media only screen and (max-width: 1420px) {
     .card2 {
         display: flex;
         flex-direction: column;
@@ -2590,17 +2800,19 @@ ul li img {
         gap: 1rem;
         padding: 2rem;
     }
+
     .btn-learnmore2 a {
         font-size: 0.9rem;
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: black;
     }
     .btn-learnmore2 {
-        height: 2rem;
-        width: 6rem;
-        background-color: rgb(248, 248, 248);
+        height: 3rem;
+        width: 8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: rgb(0, 0, 0);
+        color: black;
+        border: 3px solid black;
     }
     .card1 {
         display: flex;
@@ -2609,43 +2821,51 @@ ul li img {
         gap: 1rem;
         padding: 2rem;
     }
+
     .card-head h1 {
         font-size: 1.6rem;
     }
+
     .btn-learnmore a {
         font-size: 0.9rem;
         text-decoration: none;
-        color: var(--color-white);
+        color: black;
     }
     .btn-learnmore {
-        height: 2rem;
-        width: 6rem;
-        background-color: #000;
+        height: 3rem;
+        width: 8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: white;
+        color: black;
+        border: 3px solid black;
     }
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .footer-row ul li {
         list-style: none;
         font-size: 1rem;
         line-height: 1.4;
     }
+
     .main-q p {
         font-size: 1.2rem;
     }
+
     .aboutus p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .paragraph p {
         line-height: 2rem;
         font-size: 1.2rem;
@@ -2653,15 +2873,18 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
+
     .rate-para p {
         font-size: 1.1rem;
         line-height: 1.3;
     }
+
     .ourmissionpara p {
         padding: 2rem 10rem 2rem 10rem;
         font-size: 1.3rem;
         line-height: 1.3;
     }
+
     .productsh1 h2 {
         display: flex;
         align-items: center;
@@ -2669,33 +2892,40 @@ ul li img {
         font-size: 1.7rem;
         text-justify: inter-word;
     }
+
     .btn-read-more {
         height: 2.2rem;
         width: 6.5rem;
     }
+
     .btn-read-more a {
         font-size: 0.9rem;
         color: black;
         text-decoration: none;
     }
+
     .card-pro-para {
         font-size: 1.2rem;
         line-height: 1.4;
     }
+
     .content1 p {
         font-size: 1.2rem;
         text-align: justify;
         line-height: 1.5;
     }
+
     .content2 ul li {
         font-size: 1rem;
         list-style-type: none;
     }
+
     .content1 ul li {
         font-size: 1.1rem;
         list-style-type: square;
         color: rgb(30, 171, 30);
     }
+
     .profile {
         position: absolute;
         top: 0%;
@@ -2711,14 +2941,16 @@ ul li img {
         color: white;
     }
     .profile h1 {
-        font-size: 1.6rem;
+        font-size: 3.4rem;
     }
     .profile p {
         font-size: 1.1rem;
     }
+
     .col-door h4 {
         font-size: 1rem;
     }
+
     .col-door p {
         font-size: 0.9rem;
     }
@@ -2729,97 +2961,116 @@ ul li img {
         align-items: center;
         justify-content: center;
     }
+
     .profile-container img {
         height: 26rem;
         width: 90%;
-    }    
-    .content1 h1{
+    }
+
+    .content1 h1 {
         font-size: 1.6rem;
     }
+
     .structure-content h4 {
         font-size: 1.4rem;
     }
+
     .structure-content p {
         font-size: 1.1rem;
         line-height: 1.4;
     }
+
     .whyus-content p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .card-pro-para {
         gap: 1.5rem;
         font-size: 1.1rem;
         line-height: 1.4;
     }
+
     .contactpara h1 {
         font-size: 1.8rem;
     }
+
     .icons img {
         height: 2rem;
         width: 2rem;
-        -webkit-filter: invert();
+        /* -webkit-filter: invert(); */
     }
+
     form input {
         height: 2.5rem;
         padding: 1.5rem;
         background-color: var(--color-white);
         border: 0;
-        border-radius: 0.8rem;
+        /* border-radius: 0.8rem; */
         font-size: 1rem;
         letter-spacing: 0.2rem;
     }
     .btn-contact {
-        width: 6rem;
-        height: 2rem;
+        width: 7rem;
+        height: 3rem;
         font-size: 0.9rem;
         background-color: black;
         color: var(--color-white);
         float: right;
         border: 1px solid var(--color-white);
-        border-radius: 0.4rem;
-    } 
+        /* border-radius: 0.4rem; */
+    }
     .rate-para p {
         font-size: 1rem;
         line-height: 1.4;
     }
+
     .rate-para h2 {
         font-size: 1.1rem;
-    }   
+    }
     .phone {
-        padding: 0rem 0rem 0rem 4rem;
+        padding: 0rem 0rem 0rem 5rem;
     }
     .emailus {
-        padding: 0rem 0rem 0rem 4rem;
-    }
+        padding: 0rem 0rem 0rem 5.5rem;
+    }    
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 27rem;
+        gap: 29rem;
         color: var(--color-white);
-    }
+    }    
 }
 
 @media only screen and (max-width: 1400px) {
     .para {
         position: absolute;
-        left: 10rem;
-        top: 8rem;
-        height: 56%;
-        width: 34rem;
+        left: 9rem;
+        top: 6rem;
+        height: 70%;
+        width: 35rem;
         font-size: 1.5rem;
-        display: flex;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        /* background-color: rgb(247, 247, 247); */
+        padding: 2rem;
         border-radius: 0.5rem;
         color: var(--color-white);
         background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
+        /* text-align: justify; */
+    }
+    .para h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 2.5rem;
+    }
+    .para p{
+        font-size: 1.5rem;
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
     }
     .rate-row {
         display: flex;
@@ -2829,28 +3080,24 @@ ul li img {
         flex-wrap: wrap;
     }
     .rate-col-1 {
-        width: 36rem;
+        width: 15rem;
         height: auto;
         color: var(--color-black-shade);
         background-color: rgb(235, 232, 232);
         border-radius: 1rem;
         padding: 1rem;
     }
-
     .card-head h1 {
         font-size: 1.7rem;
     }
-
     .btn-learnmore2 a {
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: rgb(246 244 244);
         font-size: 1rem;
     }
-
     .card-body p {
         font-size: 1.2rem;
     }
-
     .content img {
         padding: 1.5rem 0rem 1.5rem 5rem;
         height: 40rem;
@@ -2863,7 +3110,6 @@ ul li img {
         font-size: 1.7rem;
         text-justify: inter-word;
     }
-
     .card-pro-para {
         gap: 0.7rem;
         font-size: 1.2rem;
@@ -2953,7 +3199,7 @@ ul li img {
         flex-direction: column;
         gap: 1rem;
     }
-    .contactpara p{
+    .contactpara p {
         font-size: 0.8rem;
     }
     .contactinfo {
@@ -2962,14 +3208,13 @@ ul li img {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 4rem;
+        gap: 1.5rem;
         padding: 4rem 0rem 4rem 0rem;
     }
     .icons img {
         height: 1.5rem;
         width: 1.5rem;
     }
-
     .btn-contact {
         width: 8rem;
         height: 3rem;
@@ -2980,7 +3225,6 @@ ul li img {
         border: 1px solid var(--color-white);
         border-radius: 0.4rem;
     }
-
     .paragraph p {
         line-height: 1.4;
         font-size: 1.5rem;
@@ -3000,7 +3244,6 @@ ul li img {
     .rate-para h2 {
         font-size: 1.1rem;
     }
-
     form {
         display: flex;
         flex-direction: column;
@@ -3018,9 +3261,6 @@ ul li img {
         padding: 1rem;
         flex-wrap: wrap;
     }
-    .para p{
-        font-size: 1.4rem;
-    }
     .footerLast p {
         font-size: 0.8rem;
     }
@@ -3028,24 +3268,22 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 26.5rem;
+        gap: 28.5rem;
         color: var(--color-white);
-    }
+    }    
 }
 
-@media only screen and (max-width: 1385px)
-{
+@media only screen and (max-width: 1385px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 26.5rem;
+        gap: 28rem;
         color: var(--color-white);
-    }
+    }    
 }
 
-@media only screen and (max-width: 1370px)
-{
+@media only screen and (max-width: 1370px) {
     .head img {
         height: 1rem;
         width: 1rem;
@@ -3054,7 +3292,7 @@ ul li img {
         padding: 2rem 8rem 2rem 8rem;
         font-size: 1.3rem;
         line-height: 1.3;
-    }    
+    }
     .rate-row {
         display: flex;
         justify-content: space-around;
@@ -3070,7 +3308,7 @@ ul li img {
         line-height: 1.4;
     }
     .rate-col-1 {
-        width: 24rem;
+        width: 18rem;
         height: auto;
         color: var(--color-black-shade);
         background-color: rgb(235, 232, 232);
@@ -3080,16 +3318,13 @@ ul li img {
     .head img {
         height: 1rem;
         width: 1rem;
-    }    
+    }
     .paragraph p {
         line-height: 1.4;
         font-size: 1.3rem;
         letter-spacing: 0.01rem;
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
-    }
-    .para p{
-        font-size: 1.4rem;
     }
     .footerLast p {
         font-size: 0.8rem;
@@ -3106,7 +3341,7 @@ ul li img {
         padding: 0rem 0rem 0rem 4rem;
     }
     .emailus {
-        padding: 0rem 0rem 0rem 4rem;
+        padding: 0rem 0rem 0rem 4.5rem;
     }
     .structure-img img {
         height: 48rem;
@@ -3140,7 +3375,7 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 25.5rem;
+        gap: 27.5rem;
         color: var(--color-white);
     }
 }
@@ -3150,12 +3385,12 @@ ul li img {
         gap: 1rem;
         font-size: 1.2rem;
         line-height: 1.3;
-    }    
+    }
     .phone {
-        padding: 0rem 0rem 0rem 4rem;
+        padding: 0rem 0rem 0rem 4.5rem;
     }
     .emailus {
-        padding: 0rem 0rem 0rem 4rem;
+        padding: 0rem 0rem 0rem 5rem;
     }
     .contactinfo {
         display: flex;
@@ -3168,22 +3403,31 @@ ul li img {
     }
     .para {
         position: absolute;
-        left: 10rem;
-        top: 9rem;
-        height: 52%;
-        width: 30rem;
-        font-size: 1.4rem;
-        display: flex;
+        left: 9rem;
+        top: 6rem;
+        height: 66%;
+        width: 35rem;
+        font-size: 1.5rem;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        /* background-color: rgb(247, 247, 247); */
+        padding: 2rem;
         border-radius: 0.5rem;
         color: var(--color-white);
         background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
+        /* text-align: justify; */
+    }
+    .para h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 2.5rem;
+    }
+    .para p{
+        font-size: 1.5rem;
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
     }
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
@@ -3197,7 +3441,7 @@ ul li img {
     .profile-container img {
         height: 24rem;
         width: 90%;
-    }    
+    }
     .door-whyus-img img {
         height: 15rem;
         width: 30rem;
@@ -3222,7 +3466,7 @@ ul li img {
         flex-wrap: wrap;
     }
     .rate-col-1 {
-        width: 36rem;
+        width: 18rem;
         height: auto;
         color: var(--color-black-shade);
         background-color: rgb(235, 232, 232);
@@ -3241,49 +3485,59 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 25rem;
+        gap: 27rem;
         color: var(--color-white);
     }
 }
-@media only screen and (max-width: 1340px)
-{
+
+@media only screen and (max-width: 1340px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 24.5rem;
+        gap: 26.5rem;
         color: var(--color-white);
     }
 }
-@media only screen and (max-width: 1318px)
-{
+
+@media only screen and (max-width: 1318px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 24rem;
+        gap: 26rem;
         color: var(--color-white);
     }
 }
+
 @media only screen and (max-width: 1300px) {
     .para {
         position: absolute;
-        left: 10rem;
-        top: 9rem;
-        height: 52%;
-        width: 30rem;
-        font-size: 1.4rem;
-        display: flex;
+        left: 9rem;
+        top: 6rem;
+        height: 70%;
+        width: 35rem;
+        font-size: 1.5rem;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        flex-direction: column;
-        background-color: rgb(247, 247, 247);
-        padding: 1rem;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        /* background-color: rgb(247, 247, 247); */
+        padding: 2rem;
         border-radius: 0.5rem;
         color: var(--color-white);
         background-color: rgba(0, 0, 0, 0.72);
-        text-align: justify;
+        /* text-align: justify; */
+    }
+    .para h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 2.5rem;
+    }
+    .para p{
+        font-size: 1.6rem;
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
     }
     .card2 {
         display: flex;
@@ -3345,8 +3599,8 @@ ul li img {
     .ourstory:before {
         content: " ";
         position: absolute;
-        height: 0.2rem;
-        width: 13%;
+        height: 0.1rem;
+        width: 9%;
         justify-content: center;
         background-color: rgb(183, 144, 45);
         border-radius: 0.3rem;
@@ -3420,7 +3674,7 @@ ul li img {
         padding: 1.5rem;
         background-color: var(--color-white);
         border: 0;
-        border-radius: 0.8rem;
+        /* border-radius: 0.8rem; */
         font-size: 1rem;
         letter-spacing: 0.2rem;
     }
@@ -3430,7 +3684,7 @@ ul li img {
         padding: 0.5rem;
         background-color: var(--color-white);
         border: 0;
-        border-radius: 0.8rem;
+        /* border-radius: 0.8rem; */
     }
     .contactinfo {
         display: flex;
@@ -3443,13 +3697,16 @@ ul li img {
     }
     .phone {
         padding: 0rem 0rem 0rem 2rem;
-    }    
+    }
     .emailus {
         padding: 0rem 0rem 0rem 4rem;
-    }    
+    }
     .Factoryaddress {
         padding: 0rem 0rem 0rem 0rem;
-    }    
+    }
+    .address {
+        padding: 0rem 0rem 0rem 3.2rem;
+    }
     .contactinfo {
         display: flex;
         width: 50%;
@@ -3458,7 +3715,7 @@ ul li img {
         flex-direction: column;
         gap: 2rem;
         padding: 4rem 0rem 4rem 0rem;
-    }  
+    }
     .content2 ul li {
         font-size: 1.2rem;
         list-style-type: none;
@@ -3495,7 +3752,7 @@ ul li img {
         font-size: 1.2rem;
         text-align: justify;
         line-height: 1.4;
-    }  
+    }
     .footer-row ul li {
         list-style: none;
         font-size: 0.9rem;
@@ -3546,9 +3803,9 @@ ul li img {
         height: 3rem;
         width: 3rem;
     }
-    .q1 h2{
+    .q1 h2 {
         font-size: 1.2rem;
-    }  
+    }
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
@@ -3557,34 +3814,34 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    } 
+    }
     .profile-container img {
         height: 24rem;
         width: 90%;
-    } 
+    }
     .door-whyus-img img {
         height: 15rem;
         width: 30rem;
         gap: 0.7rem;
-    } 
+    }
     .btn-read-more {
         height: 2rem;
         width: 6.5rem;
-    }    
+    }
     .rate-para p {
         font-size: 1rem;
         line-height: 1.4;
     }
     .rate-para h2 {
         font-size: 1.1rem;
-    } 
+    }
     .rate-row {
         display: flex;
         justify-content: space-around;
         gap: 2rem;
         padding: 2rem;
         flex-wrap: wrap;
-    }  
+    }
     .nav ul li {
         text-decoration: none;
         list-style: none;
@@ -3597,43 +3854,47 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 26rem;
+        color: var(--color-white);
+    }
+    .door-row {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0rem 0rem 0rem 6rem;
+    }    
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 25rem;
         color: var(--color-white);
     }
 }
 
-@media only screen and (max-width: 1280px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 24rem;
-        color: var(--color-white);
-    }
-}
-
-@media only screen and (max-width: 1260px)
-{
-    .footer-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 23.5rem;
-        color: var(--color-white);
-    }
-}
-
-@media only screen and (max-width: 1240px)
-{
+@media only screen and (max-width: 1240px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 18rem;
+        gap: 21rem;
         color: var(--color-white);
-    }
+    }    
 }
+
 @media only screen and (max-width: 1230px) {
     .contactform {
         padding: 1.5rem 1rem 1.5rem 4rem;
@@ -3678,7 +3939,7 @@ ul li img {
         line-height: 1.3;
     }
     .profile h1 {
-        font-size: 1.7rem;
+        font-size: 3.2rem;
     }
     .col-door h4 {
         font-size: 1.3rem;
@@ -3693,7 +3954,8 @@ ul li img {
         color: var(--color-white);
     }
     .whyus {
-        background-color: rgb(255, 255, 255);
+        margin: 2rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         display: flex;
         padding: 2rem 2rem 2rem 2rem;
         gap: 4rem;
@@ -3706,12 +3968,12 @@ ul li img {
         line-height: 1.3;
     }
     .whyus-content {
-       width: 50%;
-       display: flex;
-       gap: 1rem;
-       flex-direction: column;
-       text-align: justify;
-       padding: 0rem 1rem 0rem 0rem;
+        width: 50%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0rem 1rem 0rem 0rem;
     }
     .whyus-content p {
         font-size: 1.2rem;
@@ -3721,7 +3983,7 @@ ul li img {
         height: 3rem;
         width: 3rem;
     }
-    .q1 h2{
+    .q1 h2 {
         font-size: 1.2rem;
     }
     .q1 {
@@ -3729,7 +3991,7 @@ ul li img {
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
-    }    
+    }
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
@@ -3738,12 +4000,12 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    }  
+    }
     .door-whyus-img img {
         height: 15rem;
         width: 30rem;
         gap: 0.7rem;
-    }    
+    }
     .nav ul li {
         text-decoration: none;
         list-style: none;
@@ -3756,17 +4018,40 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 18rem;
+        gap: 20rem;
         color: var(--color-white);
-    }
+    }    
 }
 
 @media only screen and (max-width: 1160px) {
     .para {
-        left: 8rem;
-        width: 30rem;
+        position: absolute;
+        left: 9rem;
+        top: 6rem;
+        height: 65%;
+        width: 35rem;
+        font-size: 1.5rem;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        /* gap: 1rem; */
+        /* flex-direction: column; */
+        /* background-color: rgb(247, 247, 247); */
+        padding: 2rem;
+        border-radius: 0.5rem;
+        color: var(--color-white);
+        background-color: rgba(0, 0, 0, 0.72);
+        /* text-align: justify; */
     }
-
+    .para h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 2.4rem;
+    }
+    .para p{
+        font-size: 1.5rem;
+        padding: 1rem 0rem 0rem 0rem;
+        line-height: 1.4;
+    }
     .card1 {
         display: flex;
         flex-direction: column;
@@ -3841,7 +4126,7 @@ ul li img {
         position: absolute;
         top: 0%;
         left: 0%;
-        background-color: rgba(0, 0, 0, 0.767);
+        background-color: rgb(43 42 42 / 36%);
         height: 100%;
         width: 100%;
         display: flex;
@@ -3893,19 +4178,23 @@ ul li img {
         height: 15rem;
         width: 20rem;
     }
+
     .q1 img {
         height: 3rem;
         width: 3rem;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 1.2rem;
     }
+
     .q1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
     }
+
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
@@ -3914,7 +4203,24 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    } 
+    }
+    .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 19rem;
+    color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 18.5rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 1098px) {
@@ -3926,13 +4232,13 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
-
     .phone {
-        padding: 0rem 0rem 0rem 1rem;
+        padding: 0rem 0rem 0rem 2rem;
     }
     .emailus {
         padding: 0rem 0rem 0rem 5rem;
     }
+
     .card-body {
         padding: 0rem 0rem 0rem 0rem;
         text-align: center;
@@ -3950,6 +4256,7 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
+
     .paragraph h1 {
         padding: 1rem 0rem 1rem 0rem;
         font-size: 1.6rem;
@@ -3963,13 +4270,15 @@ ul li img {
 
     .ourmissionpara p {
         padding: 1rem 6rem 2rem 6rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.3;
+        color: #bcb9b9;
     }
     .rate-para p {
         font-size: 1.1rem;
         line-height: 1.4;
     }
+
     .footer-row ul li {
         list-style: none;
         font-size: 0.9rem;
@@ -4015,7 +4324,7 @@ ul li img {
         height: 3rem;
         width: 3rem;
     }
-    .q1 h2{
+    .q1 h2 {
         font-size: 1.2rem;
     }
     .q1 {
@@ -4032,7 +4341,24 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
+    }
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 16.5rem;
+        color: var(--color-white);
     }    
+}
+
+@media only screen and (max-width: 1070px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 14rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -4050,7 +4376,7 @@ ul li img {
     }
 
     .aboutus h1 {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         padding: 0rem 0rem 0rem 0rem;
     }
 
@@ -4059,8 +4385,8 @@ ul li img {
         width: 18rem;
     }
     .phone {
-        padding: 0rem 0rem 0rem 1rem;
-    }   
+        padding: 0rem 0rem 0rem 2rem;
+    }
     .paragraph p {
         line-height: 1.4;
         font-size: 1.2rem;
@@ -4068,38 +4394,47 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
+
     .paragraph h1 {
         padding: 1rem 0rem 1rem 0rem;
         font-size: 1.5rem;
     }
+
     .contactpara h1 {
         font-size: 1.5rem;
     }
+
     .content1 h1 {
         font-size: 1.6rem;
     }
+
     .rate-para p {
         font-size: 1.1rem;
         line-height: 1.4;
     }
+
     .footer-row ul li {
         list-style: none;
         font-size: 0.9rem;
         line-height: 1.4;
     }
+
     .q1 img {
         height: 3rem;
         width: 3rem;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 1.2rem;
     }
+
     .q1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
     }
+
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
@@ -4108,15 +4443,35 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    }    
+    }
+
     .card-body p {
         font-size: 1rem;
-    }  
+    }
+
     .door-whyus-img img {
         height: 15rem;
         width: 28rem;
         gap: 0.7rem;
-    }  
+    }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 13.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 12.5rem;
+        color: var(--color-white);
+    }
 }
 
 
@@ -4125,16 +4480,19 @@ ul li img {
         height: 1rem;
         width: 1rem;
     }
+
     .head p {
         display: flex;
         align-items: center;
         gap: 0.3rem;
         font-size: 0.9rem;
-    } 
+    }
+
     .profile-container img {
         height: 20rem;
         width: 90%;
     }
+
     .profile {
         position: absolute;
         top: 0%;
@@ -4148,7 +4506,8 @@ ul li img {
         padding: 0rem 0rem 0rem 5rem;
         gap: 1rem;
         color: white;
-    }       
+    }
+
     .para {
         left: 4rem;
         width: 29rem;
@@ -4166,6 +4525,7 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
@@ -4173,6 +4533,7 @@ ul li img {
         gap: 0.5rem;
         padding: 1rem;
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
@@ -4180,6 +4541,7 @@ ul li img {
         gap: 0.5rem;
         padding: 1rem;
     }
+
     .card-pro {
         display: flex;
         align-items: center;
@@ -4214,6 +4576,7 @@ ul li img {
         width: 100%;
         align-items: center;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1.1rem;
@@ -4221,54 +4584,65 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
+
     .paragraph h1 {
         padding: 1rem 0rem 1rem 0rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
+
     .contactpara h1 {
         font-size: 1.5rem;
     }
+
     .content1 h1 {
         font-size: 1.6rem;
     }
+
     .rate-para p {
         font-size: 1.1rem;
         line-height: 1.4;
     }
+
     .footer-row ul li {
         list-style: none;
         font-size: 0.9rem;
         line-height: 1.4;
     }
+
     .btn-read-more {
         height: 2rem;
         width: 7rem;
     }
+
     .content1 p {
         font-size: 1.2rem;
         text-align: justify;
         line-height: 1.3;
     }
+
     .content1 ul li {
         font-size: 1.1rem;
         list-style-type: square;
         color: rgb(30, 171, 30);
     }
+
     .content2 ul li {
         font-size: 1rem;
         list-style-type: none;
     }
+
     .whyus-content p {
         font-size: 1.2rem;
         line-height: 1.3;
     }
     .profile h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
     .profile p {
         font-size: 1.1rem;
         padding: 0rem 3rem 0rem 0rem;
     }
+
     .structure {
         display: flex;
         flex-direction: column;
@@ -4278,12 +4652,14 @@ ul li img {
         justify-content: center;
         padding: 3rem;
         color: var(--color-white);
-    }    
+    }
+
     .structure-img img {
         height: 32rem;
         width: 32rem;
         display: none;
-    }    
+    }
+
     .whyus-content {
         width: 50%;
         display: flex;
@@ -4291,12 +4667,17 @@ ul li img {
         flex-direction: column;
         text-align: justify;
         padding: 0rem 2rem 0rem 0rem;
-    }    
+    }
+
     .content-images2 {
         display: flex;
         flex-direction: row;
         gap: 2.8rem;
     }
+    .content-images2 img {
+        height: 20rem;
+        width: 26rem;
+    }    
     .nav ul li {
         text-decoration: none;
         list-style: none;
@@ -4305,19 +4686,23 @@ ul li img {
         font-weight: bold;
         position: relative;
     }
+
     .q1 img {
         height: 3rem;
         width: 3rem;
     }
-    .q1 h2{
+
+    .q1 h2 {
         font-size: 1.2rem;
     }
+
     .q1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
     }
+
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
@@ -4326,18 +4711,22 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    }  
+    }
+
     .card-body p {
         font-size: 1rem;
-    }  
+    }
+
     .door-whyus-img img {
         height: 15rem;
         width: 28rem;
         gap: 0.7rem;
     }
+
     .structure-content h4 {
         font-size: 1.3rem;
     }
+
     .col-door h4 {
         font-size: 1.1rem;
     }
@@ -4346,7 +4735,7 @@ ul li img {
         flex-direction: column;
         gap: 0.1rem;
         background-color: rgb(209, 207, 207);
-        width: 50rem;
+        width: 30rem;
         align-items: center;
         padding: 0.5rem;
     }
@@ -4354,7 +4743,7 @@ ul li img {
         height: 18rem;
         width: 20rem;
     }
-    .rate-col-1 {
+   .rate-col-1 {
         width: 18rem;
         height: auto;
         color: var(--color-black-shade);
@@ -4363,12 +4752,17 @@ ul li img {
         padding: 1rem;
     }
     .content img {
-        padding: 1.5rem 0rem 1.5rem 1rem;
+        padding: 1.5rem 0rem 1.5rem 3rem;
         height: 32rem;
         width: 24rem;
     }
-    
-
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 13rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 996px) {
@@ -4470,6 +4864,7 @@ ul li img {
         height: 32rem;
         width: 28rem;
     }
+
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
@@ -4478,7 +4873,8 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    }  
+    }
+
     .productsh1 h2 {
         display: flex;
         align-items: center;
@@ -4486,9 +4882,11 @@ ul li img {
         font-size: 1.4rem;
         text-justify: inter-word;
     }
+
     .card-body p {
         font-size: 1rem;
-    }  
+    }
+
     .rate-col-1 {
         width: 18rem;
         height: auto;
@@ -4497,17 +4895,26 @@ ul li img {
         border-radius: 1rem;
         padding: 1rem;
     }
+
     .content img {
         padding: 1.5rem 0rem 1.5rem 1rem;
         height: 32rem;
         width: 24rem;
     }
-       
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 12rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 960px) {
     .whyus {
-        background-color: rgb(255, 255, 255);
+        margin: 0rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         display: flex;
         padding: 2rem;
         gap: 2rem;
@@ -4565,36 +4972,58 @@ ul li img {
         width: 45rem;
         gap: 0.7rem;
     }
+
     .pvcprofile {
-        height: 20rem;
+        height: 22rem;
         width: 100%;
         position: relative;
     }
+
     .pvcfloors {
-        height: 20rem;
+        height: 22rem;
         width: 100%;
         position: relative;
-    } 
+    }
+
     .productsh1 h2 {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1.4rem;
         text-justify: inter-word;
-    }  
+    }
+
     .card-body p {
         font-size: 1rem;
-    }         
+    }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 11rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 915px)
-{
+@media only screen and (max-width: 930px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 915px) {
     .nav ul {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3rem;
     }
+
     .contactform {
         padding: 0rem 5rem 1rem 5rem;
         display: flex;
@@ -4603,11 +5032,13 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
+
     form {
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
     }
+
     .main-q {
         padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
@@ -4616,11 +5047,28 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    }    
+    }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 9.5rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 880px)
-{
+@media only screen and (max-width: 890px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 9rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 880px) {
     .card-body {
         padding: 0rem 1rem 0rem 1rem;
         text-align: center;
@@ -4634,9 +5082,10 @@ ul li img {
         gap: 1rem;
         width: 82%;
         height: 100%;
-        background-color: #000;
+        background-color: #fff;
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
+        color: black;
     }
     .col-1 {
         display: flex;
@@ -4645,16 +5094,45 @@ ul li img {
         gap: 1rem;
         width: 82%;
         height: 100%;
-        background-color: var(--color-white);
+        background-color: #fff;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
+
     .nav ul {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3rem;
+    }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 9rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 8rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 7.5rem;
+        color: var(--color-white);
     }
 }
 
@@ -4667,16 +5145,16 @@ ul li img {
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    }    
+    }
     .main-q p {
         font-size: 1.1rem;
     }
     .card-body p {
         font-size: 1.1rem;
     }
-    .para p{
-        font-size: 1.3rem;
-    }  
+    .para p {
+        font-size: 1.4rem;
+    }
     .nav ul li a {
         text-decoration: none;
         color: var(--color-black-shade);
@@ -4686,14 +5164,6 @@ ul li img {
         height: 16rem;
         width: 22rem;
         border-radius: 1rem;
-    }
-    .whyus-content {
-        width: 100%;
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        text-align: justify;
-        padding: 0rem 1rem 0rem 1rem;
     }
     .whyus-content {
         width: 100%;
@@ -4718,18 +5188,15 @@ ul li img {
         flex-direction: row;
         gap: 1.8rem;
     }
-
     .door-whyus-img img {
         height: 23rem;
         width: 38rem;
         gap: 0.7rem;
     }
-
     .profile-container img {
         height: 20rem;
         width: 90%;
     }
-
     .col-door {
         display: flex;
         flex-direction: column;
@@ -4739,36 +5206,30 @@ ul li img {
         align-items: center;
         padding: 1rem;
     }
-
     .content-images2 {
         display: flex;
         flex-direction: row;
         gap: 0.8rem;
     }
-
     .content-images2 img {
         height: 18rem;
         width: 20rem;
         border-radius: 1rem;
     }
-
     .card-pro {
         display: flex;
         align-items: center;
         gap: 2rem;
         padding: 0rem 4rem 0rem 4rem;
     }
-
     .aboutus p {
         font-size: 1.4rem;
         line-height: 1.3;
     }
-
     .paragraph h1 {
         padding: 1rem 0rem 0rem 0rem;
         font-size: 1.5rem;
     }
-
     .paragraph p {
         line-height: 1.4;
         font-size: 1.1rem;
@@ -4776,13 +5237,11 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
-
     .content img {
         padding: 1.5rem 0rem 1.5rem 4rem;
         height: 35rem;
         width: 28rem;
     }
-
     .ourmissionpara p {
         padding: 1rem 6rem 2rem 6rem;
         font-size: 1.2rem;
@@ -4801,7 +5260,7 @@ ul li img {
         line-height: 1.4;
     }
     .rate-col-1 {
-        width: 22rem;
+        width: 20rem;
         height: auto;
         color: var(--color-black-shade);
         background-color: rgb(235, 232, 232);
@@ -4825,7 +5284,6 @@ ul li img {
     .col-door h4 {
         font-size: 1rem;
     }
-    
     .col-door p {
         font-size: 0.9rem;
     }
@@ -4833,40 +5291,34 @@ ul li img {
         font-size: 1.1rem;
         text-align: justify;
         line-height: 1.3;
-    }            
+    }
     .footer-row .footer-ul h4 {
         font-size: 1.2rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
     }
-
     .footer-row ul li {
         list-style: none;
         font-size: 1rem;
         line-height: 1.4;
     }
-
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 1rem;
     }
-
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 1rem;
     }
-
     .aboutus h1 {
         font-size: 2rem;
         padding: 0rem 0rem 0rem 0rem;
     }
-
     .aboutus p {
         font-size: 1.3rem;
         line-height: 1.3;
     }
-
     .productsh1 h2 {
         display: flex;
         align-items: center;
@@ -4891,7 +5343,7 @@ ul li img {
         position: absolute;
         top: 0%;
         left: 0%;
-        background-color: rgba(0, 0, 0, 0.767);
+        background-color: rgb(43 42 42 / 36%);
         height: 100%;
         width: 100%;
         display: flex;
@@ -4910,16 +5362,13 @@ ul li img {
     .col-door h4 {
         font-size: 1.2rem;
     }
-
-    .col-door p {
+   .col-door p {
         font-size: 1.1rem;
     }
-
     .profile-container img {
         height: 18rem;
         width: 88%;
     }
-
     .content-profile {
         flex-direction: column;
         display: flex;
@@ -4928,11 +5377,9 @@ ul li img {
         padding: 1rem 3rem 1rem 3rem;
         color: black;
     }
-
     .content1 h1 {
         font-size: 1.7rem;
     }
-
     .quality {
         position: absolute;
         top: 0%;
@@ -4994,12 +5441,11 @@ ul li img {
         gap: 1rem;
         width: 80%;
         height: 100%;
-        background-color: var(--color-white);
+        background-color: #fff;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
-
     .col-2 {
         float: right;
         display: flex;
@@ -5008,9 +5454,10 @@ ul li img {
         gap: 1rem;
         width: 80%;
         height: 100%;
-        background-color: #000;
+        background-color: #fff;
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
+        color: black;
     }
     .ourwork {
         display: flex;
@@ -5034,66 +5481,102 @@ ul li img {
         height: 18rem;
         width: 92%;
     }
-    .col-door {
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-        background-color: rgb(209, 207, 207);
-        width: 42rem;
-        align-items: center;
-        padding: 1rem;
+   .col-door {
+     display: flex;
+     flex-direction: column;
+     gap: 0.3rem;
+     background-color: rgb(209, 207, 207);
+     width: 30rem;
+     align-items: center;
+     padding: 0.5rem; 
     }
     .img img {
         height: 18rem;
         width: 17rem;
         padding: 0rem 1rem 0rem 0rem;
     }
+
     .profile-container img {
         height: 18rem;
         width: 80%;
     }
+
     .whyus-content h1 {
         font-size: 1.2rem;
     }
-    .q1 p{
+
+    .q1 p {
         font-size: 0.9rem;
     }
+
     .q1 h2 {
         font-size: 1.1rem;
-    }    
+    }
+
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.9rem;
     }
+
     .structure-content h4 {
         font-size: 1.2rem;
     }
+
     .profile p {
         font-size: 1rem;
         padding: 0rem 3rem 0rem 0rem;
     }
-        
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 6rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 769px)
-{
+@media only screen and (max-width: 800px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 4.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 769px) {
     .img img {
         height: 18rem;
         width: 17rem;
         padding: 0rem 1rem 0rem 0rem;
     }
+
     .ourwork {
         display: flex;
         flex-direction: column;
         gap: 3rem;
         padding: 2rem 2rem 2rem 2rem;
     }
+
     .ourstory:before {
         content: " ";
         position: absolute;
@@ -5105,10 +5588,12 @@ ul li img {
         top: 100%;
         left: 9%;
     }
+
     .col-ourwork img {
         height: 10rem;
         width: 14rem;
     }
+
     .contactform {
         padding: 0rem 4rem 1rem 4rem;
         display: flex;
@@ -5117,15 +5602,18 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
+
     .col-ourwork img {
         height: 10rem;
         width: 14rem;
     }
+
     .door-whyus-img img {
         height: 22rem;
         width: 36rem;
         gap: 0.7rem;
     }
+
     .quality {
         position: absolute;
         top: 0%;
@@ -5138,6 +5626,7 @@ ul li img {
         justify-content: center;
         gap: 0.8rem;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
@@ -5145,10 +5634,12 @@ ul li img {
         gap: 0.2rem;
         padding: 1rem;
     }
+
     .aboutus p {
         font-size: 1.3rem;
         line-height: 1.4;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1.1rem;
@@ -5156,6 +5647,7 @@ ul li img {
         text-align: left;
         padding: 1rem 1rem 0rem 0rem;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1.1rem;
@@ -5163,6 +5655,7 @@ ul li img {
         text-align: left;
         padding: 1rem 1rem 0rem 0rem;
     }
+
     .col-door {
         display: flex;
         flex-direction: column;
@@ -5172,6 +5665,7 @@ ul li img {
         align-items: center;
         padding: 1rem;
     }
+
     .content1 {
         display: flex;
         flex-direction: column;
@@ -5182,14 +5676,7 @@ ul li img {
         padding: 0rem 0rem 0rem 0rem;
         text-justify: inter-word;
     }
-    .whyus-content {
-        width: 100%;
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        text-align: justify;
-        padding: 0rem 3rem 0rem 3rem;
-    }
+
     .quality {
         position: absolute;
         top: 0%;
@@ -5202,6 +5689,7 @@ ul li img {
         justify-content: center;
         gap: 0.8rem;
     }
+
     .col-door {
         display: flex;
         flex-direction: column;
@@ -5211,6 +5699,7 @@ ul li img {
         align-items: center;
         padding: 1rem;
     }
+
     .whyus-content {
         width: 100%;
         display: flex;
@@ -5219,28 +5708,34 @@ ul li img {
         text-align: justify;
         padding: 0rem 3rem 0rem 3rem;
     }
+
     .content img {
         padding: 1.5rem 0rem 1.5rem 4rem;
         height: 32rem;
         width: 26rem;
     }
+
     .testimonals p {
         color: rgb(177, 177, 177);
         font-size: 0.8rem;
         padding: 1.2rem;
     }
+
     .ourmissionpara p {
         padding: 1rem 4rem 2rem 4rem;
         font-size: 1.2rem;
         line-height: 1.3;
     }
+
     .rate-para p {
         font-size: 1rem;
         line-height: 1.4;
     }
-    .para p{
-        font-size: 1.2rem;
+
+    .para p {
+        font-size: 1.4rem;
     }
+
     .main-q {
         padding: 1.5rem 3rem 1.5rem 3rem;
         display: flex;
@@ -5250,12 +5745,15 @@ ul li img {
         text-align: center;
         gap: 1rem;
     }
+
     .main-q p {
         font-size: 1.1rem;
     }
+
     .card-body p {
         font-size: 1rem;
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
@@ -5263,6 +5761,7 @@ ul li img {
         gap: 0.5rem;
         padding: 1rem;
     }
+
     .rate-col-1 {
         width: 20rem;
         height: auto;
@@ -5271,26 +5770,32 @@ ul li img {
         border-radius: 1rem;
         padding: 1rem;
     }
+
     .card-pro-para {
         gap: 1rem;
         font-size: 1.1rem;
         line-height: 1.4;
     }
-    .content1 h1{
+
+    .content1 h1 {
         font-size: 1.4rem;
     }
+
     .content1 p {
         font-size: 1.1rem;
         text-align: justify;
         line-height: 1.3;
     }
+
     .whyus-content p {
         font-size: 1.1rem;
         line-height: 1.4;
     }
+
     .col-door h4 {
         font-size: 0.9rem;
     }
+
     .col-door p {
         font-size: 0.8rem;
     }
@@ -5299,27 +5804,31 @@ ul li img {
         flex-direction: column;
         gap: 0.3rem;
         background-color: rgb(209, 207, 207);
-        width: 40rem;
+        width: 26rem;
         align-items: center;
-        padding: 1rem;
+        padding: 0.5rem;
     }
     .content1 ul li {
         font-size: 1rem;
         list-style-type: square;
         color: rgb(30, 171, 30);
     }
+
     .structure-content p {
         font-size: 1.1rem;
         line-height: 1.2;
     }
+
     .door-whyus-img img {
         height: 22rem;
         width: 38rem;
         gap: 0.7rem;
     }
-    .head p{
+
+    .head p {
         font-size: 0.9rem;
     }
+
     .btn-more {
         font-size: 0.8rem;
         width: 15rem;
@@ -5331,14 +5840,14 @@ ul li img {
         letter-spacing: 0.1rem;
     }
     .btn-contact {
-        width: 6rem;
-        height: 2rem;
+        width: 7rem;
+        height: 3rem;
         font-size: 1rem;
         background-color: black;
         color: var(--color-white);
         float: right;
         border: 1px solid var(--color-white);
-        border-radius: 0.4rem;
+        /* border-radius: 0.4rem; */
     }
     form textarea {
         height: 6rem;
@@ -5346,39 +5855,54 @@ ul li img {
         padding: 0.5rem;
         background-color: var(--color-white);
         border: 0;
-        border-radius: 0.8rem;
+        /* border-radius: 0.8rem; */
     }
+
     form input {
         height: 2.5rem;
         padding: 1.5rem;
         background-color: var(--color-white);
         border: 0;
-        border-radius: 0.8rem;
+        /* border-radius: 0.8rem; */
         font-size: 0.9rem;
         letter-spacing: 0.2rem;
     }
+
     .profile-container img {
         height: 18rem;
         width: 80%;
     }
+
     .whyus-content h1 {
         font-size: 1.2rem;
     }
-    .q1 p{
+
+    .q1 p {
         font-size: 0.8rem;
     }
+
     .q1 h2 {
         font-size: 1.1rem;
-    }    
+    }
+
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.8rem;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.8rem;
+    }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 4rem;
+        color: var(--color-white);
     }
 }
 
@@ -5389,14 +5913,11 @@ ul li img {
         width: 100%;
         height: 400px;
     }
-
     .para {
         left: 5rem;
         width: 29rem;
-        height: 27rem;
-        font-size: 1.2rem;
+        height: 64%;
     }
-
     .col-1 {
         display: flex;
         flex-direction: row;
@@ -5404,12 +5925,11 @@ ul li img {
         gap: 1rem;
         width: 80%;
         height: 100%;
-        background-color: var(--color-white);
+        background-color: #fff;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
-
     .col-2 {
         float: right;
         display: flex;
@@ -5418,11 +5938,11 @@ ul li img {
         gap: 1rem;
         width: 80%;
         height: 100%;
-        background-color: #000;
+        background-color: #fff;
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
+        color: black;
     }
-
     .main-q {
         padding: 1.5rem 4rem 1.5rem 4rem;
         display: flex;
@@ -5434,7 +5954,7 @@ ul li img {
     }
 
     .para p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .content {
@@ -5457,19 +5977,17 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
-
     .ourstory:before {
         content: " ";
         position: absolute;
-        height: 0.2rem;
-        width: 13%;
+        height: 0.1rem;
+        width: 9%;
         justify-content: center;
         background-color: rgb(183, 144, 45);
         border-radius: 0.3rem;
         top: 98%;
-        left: 2%;
+        left: 6%;
     }
-
     .ourmissionpara p {
         padding: 1rem 3rem 2rem 2rem;
         font-size: 1.2rem;
@@ -5496,30 +6014,28 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
-    
     .card-head h1 {
         font-size: 1.2rem;
         text-align: center;
     }
-
     .card-body p {
         font-size: 1.1rem;
     }
-
     .btn-learnmore2 {
         height: 2.2rem;
         width: 7rem;
-        background-color: rgb(248, 248, 248);
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: rgb(0, 0, 0);
+        color: black;
+        border: 3px solid black;
     }
-
     .btn-learnmore {
         height: 2.2rem;
         width: 7rem;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: white;
+        color: black;
+        border: 3px solid black;
     }
     .q1 {
         display: flex;
@@ -5529,12 +6045,15 @@ ul li img {
         /* justify-content: center; */
         text-align: center;
     }
+
     .q1 h2 {
         font-size: 1rem;
     }
-    .q1 p{
+
+    .q1 p {
         font-size: 0.9rem;
     }
+
     .quality {
         position: absolute;
         top: 0%;
@@ -5547,19 +6066,40 @@ ul li img {
         justify-content: center;
         gap: 1rem;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 700px) {
     .main-q p {
         font-size: 1.1rem;
     }
+
     .head p {
         font-size: 0.8rem;
     }
+
     .head img {
         height: 1rem;
         width: 1rem;
     }
+
     .col-1 {
         display: flex;
         flex-direction: row;
@@ -5567,12 +6107,11 @@ ul li img {
         gap: 1rem;
         width: 90%;
         height: 100%;
-        background-color: var(--color-white);
+        background-color: #fff;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
-
     .col-2 {
         float: right;
         display: flex;
@@ -5581,24 +6120,19 @@ ul li img {
         gap: 1rem;
         width: 90%;
         height: 100%;
-        background-color: #000;
+        background-color: #fff;
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
     }
-
     .para h1 {
         font-size: 1.8rem;
     }
 
-    .para p {
-        font-size: 1.1rem;
-    }
-
     .para {
         left: 5rem;
-        width: 25rem;
-        height: 24rem;
-        font-size: 1.2rem;
+        width: 30rem;
+        height: 62%;
+        font-size: 1rem;
     }
 
     .content img {
@@ -5690,7 +6224,7 @@ ul li img {
 
     footer,
     footer h1 {
-        background-color: var(--color-black-shade);
+        background-color:#000;
         color: rgb(39, 234, 39);
         font-size: 1.2rem;
     }
@@ -5710,7 +6244,7 @@ ul li img {
         font-size: 0.9rem;
         color: #070707;
         text-decoration: none;
-    }    
+    }
 
     .productsh1 h2 {
         display: flex;
@@ -5719,12 +6253,11 @@ ul li img {
         font-size: 1.3rem;
         text-justify: inter-word;
     }
-
     .floors {
         position: absolute;
         top: 0%;
         left: 0%;
-        background-color: rgba(0, 0, 0, 0.767);
+        background-color: rgb(43 42 42 / 36%);
         height: 100%;
         width: 100%;
         display: flex;
@@ -5734,7 +6267,6 @@ ul li img {
         gap: 0.5rem;
         color: white;
     }
-
     .floors h1 {
         font-size: 1.2rem;
     }
@@ -5851,17 +6383,15 @@ ul li img {
         font-size: 1.1rem;
         padding: 0rem 3rem 0rem 0rem;
     }
-
     .col-door {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         background-color: rgb(209, 207, 207);
-        width: 33rem;
+        width: 25rem;
         align-items: center;
         padding: 0.5rem;
     }
-
     .content1 p {
         font-size: 1rem;
         text-align: justify;
@@ -5871,25 +6401,30 @@ ul li img {
     .structure-content h4 {
         font-size: 1.2rem;
     }
+
     .structure-content p {
         font-size: 1rem;
         line-height: 1.2;
     }
+
     .contactpara h1 {
         font-size: 1.4rem;
     }
+
     .contactpara p {
         font-size: 1.1rem;
     }
+
     form input {
         height: 1.5rem;
         padding: 1rem;
         background-color: var(--color-white);
         border: 0;
-        border-radius: 0.8rem;
+        /* border-radius: 0.8rem; */
         font-size: 0.8rem;
         letter-spacing: 0.2rem;
     }
+
     .btn-contact {
         width: 6rem;
         height: 2rem;
@@ -5900,69 +6435,117 @@ ul li img {
         border: 1px solid var(--color-white);
         border-radius: 0.4rem;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 4.5rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 4rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 630px) {
     .para {
-        top: 2rem;
-        left: 4rem;
+        left: 5rem;
         width: 28rem;
-        height: 20rem;
+        height: 62%;
+        font-size: 1rem;
     }
+
     .card-body p {
         font-size: 1rem;
     }
+
     .card-body {
         padding: 0rem 0rem 0rem 0rem;
         text-align: center;
         line-height: 1.4rem;
     }
+
     .btn-learnmore2 a {
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: black;
         font-size: 0.9rem;
     }
     .btn-learnmore2 {
         height: 2rem;
-        width: 5.5rem;
-        background-color: rgb(248, 248, 248);
+        width: 5.8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: rgb(0, 0, 0);
+        color: black;
+        border: 3px solid black;
     }
     .btn-learnmore a {
         font-size: 0.9rem;
         text-decoration: none;
-        color: var(--color-white);
+        color:black;
     }
     .btn-learnmore {
         height: 2rem;
-        width: 5.5rem;
-        background-color: #000;
+        width: 5.8rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: white;
+        color: black;
+        border: 3px solid black;
     }
     .footerSec-row h6 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.7rem;
     }
+
     .footerSec-row h5 {
         display: flex;
         gap: 0.4rem;
         font-size: 0.7rem;
     }
+
     .nav ul li a {
         text-decoration: none;
         color: var(--color-black-shade);
         font-size: 1rem;
     }
+
     .logo img {
         height: 6rem;
         width: 6rem;
     }
+
     .para h1 {
         font-size: 1.6rem;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1rem;
@@ -6066,6 +6649,7 @@ ul li img {
     .whyus-content h1 {
         font-size: 1.2rem;
     }
+
     .contactform {
         padding: 1rem 2rem 1rem 2rem;
         display: flex;
@@ -6074,6 +6658,7 @@ ul li img {
         align-items: left;
         flex-direction: column;
     }
+
     .quality {
         position: absolute;
         top: 0%;
@@ -6086,38 +6671,51 @@ ul li img {
         justify-content: center;
         gap: 1.5rem;
     }
+
     .profile-container img {
         height: 12rem;
         width: 90%;
     }
+
     .col-door p {
         font-size: 0.7rem;
     }
-    .content2-head h2{
+
+    .content2-head h2 {
         font-size: 1.2rem;
     }
-    .content2-head p{
+
+    .content2-head p {
         font-size: 0.9rem;
     }
+
     .content img {
         padding: 1.5rem 0rem 0.5rem 2rem;
         height: 35rem;
         width: 37rem;
     }
-    
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2.5rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 602px)
-{
+@media only screen and (max-width: 602px) {
     .content img {
         padding: 1.5rem 0rem 0.5rem 2rem;
         height: 35rem;
         width: 36rem;
-    }    
+    }
+
     .profile-container img {
         height: 12rem;
         width: 90%;
     }
+
     .col-door {
         display: flex;
         flex-direction: column;
@@ -6127,20 +6725,24 @@ ul li img {
         align-items: center;
         padding: 0.5rem;
     }
+
     .col-door p {
         font-size: 0.7rem;
-    } 
+    }
+
     .structure-content {
         display: flex;
         flex-direction: column;
         gap: 0.9rem;
         padding: 1rem 1rem 1rem 1rem;
-    }   
+    }
+
     .door-whyus-img img {
         height: 16rem;
         width: 32rem;
         gap: 0.7rem;
     }
+
     .whyus-content {
         width: 100%;
         display: flex;
@@ -6149,16 +6751,29 @@ ul li img {
         text-align: justify;
         padding: 0rem 1rem 0rem 1rem;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        color: var(--color-white);
+    }
+    .door-row {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0rem 0rem 0rem 3.5rem;
+    }
 }
 
 @media only screen and (max-width: 590px) {
     .para {
-        top: 2rem;
-        left: 4rem;
-        width: 25rem;
-        height: 20rem;
+        left: 3rem;
+        width: 28rem;
+        height: 63%;
+        font-size: 1rem;
     }
-
     .main-q {
         padding: 1.5rem 1rem 1.5rem 1rem;
         display: flex;
@@ -6180,12 +6795,11 @@ ul li img {
         gap: 1rem;
         width: 90%;
         height: 90%;
-        background-color: var(--color-white);
+        background-color: #fff;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
-
     .col-2 {
         float: right;
         display: flex;
@@ -6194,11 +6808,10 @@ ul li img {
         gap: 1rem;
         width: 90%;
         height: 90%;
-        background-color: #000;
+        background-color: #fff;
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
     }
-
     .img img {
         height: 16rem;
         width: 14rem;
@@ -6229,22 +6842,25 @@ ul li img {
         gap: 1rem;
         padding: 0rem 3rem 0rem 3rem;
     }
-
     .col-door {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         background-color: rgb(209, 207, 207);
-        width: 27rem;
+        width: 19rem;
         align-items: center;
         padding: 0.5rem;
     }
-
     .profile-container img {
         height: 12rem;
         width: 88%;
     }
-
+    .door-row {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0rem 0rem 0rem 3rem;
+    }
     .content-profile {
         flex-direction: column;
         display: flex;
@@ -6303,6 +6919,7 @@ ul li img {
         height: 20rem;
         width: 30rem;
     }
+
     .contactform {
         padding: 1rem 2rem 1rem 2rem;
         display: flex;
@@ -6312,6 +6929,13 @@ ul li img {
         flex-direction: column;
     }
 
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1.5rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -6322,18 +6946,22 @@ ul li img {
         border-bottom-left-radius: 1.2rem;
         border-bottom-right-radius: 1.2rem;
     }
+
     .profile-container img {
         height: 12rem;
         width: 95%;
     }
+
     .aboutus p {
         font-size: 1.2rem;
         line-height: 1.3;
     }
+
     .icons img {
         height: 1.5rem;
         width: 1.5rem;
     }
+
     .content-profile {
         flex-direction: column;
         display: flex;
@@ -6342,11 +6970,13 @@ ul li img {
         padding: 0rem 0rem 1rem 0rem;
         color: black;
     }
+
     .content1 p {
         font-size: 1.1rem;
         text-align: justify;
         line-height: 1.3;
     }
+
     .structure-content p {
         font-size: 1.1rem;
         line-height: 1.2;
@@ -6356,7 +6986,8 @@ ul li img {
         line-height: 1.3;
     }
     .whyus {
-        background-color: rgb(255, 255, 255);
+        margin: 0rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         display: flex;
         padding: 1rem;
         gap: 2rem;
@@ -6378,31 +7009,25 @@ ul li img {
     .nav ul li {
         font-size: 1rem;
     }
-
     .nav ul {
         gap: 1rem;
     }
-
     .nav ul li a {
         color: var(--color-white);
     }
-
     .nav ul {
         display: flex;
         flex-direction: column;
         justify-content: left;
         gap: 1.2rem;
     }
-
     .nav ul li a:before {
         background-color: rgb(117, 117, 117);
     }
-
     .nav ul li a:hover:before {
         width: 100%;
         background-color: #f7f6ff;
     }
-
     .head-nav {
         border-radius: 1rem;
         display: flex;
@@ -6410,54 +7035,49 @@ ul li img {
         background-color: var(--color-black-shade);
         padding: 0.8rem;
     }
-
     .head-nav button {
         border: 0;
         border-radius: 0.4rem;
         padding: 0.4rem;
         cursor: pointer;
     }
-
     .head-nav img {
         height: 1.2rem;
         width: 1.5rem;
     }
-
     .card-head h1 {
         font-size: 1rem;
         text-align: center;
     }
-
     .card-body p {
         font-size: 0.9rem;
     }
-
     .btn-learnmore {
         height: 1.8rem;
-        width: 5rem;
-        background-color: #000;
+        width: 4.4rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: white;
-    }
-
-    .btn-learnmore a {
+        color: black;
+        border: 3px solid black;
+    }   .btn-learnmore a {
         font-size: 0.8rem;
         text-decoration: none;
         color: var(--color-white);
     }
 
-    .btn-learnmore2 {
+    .btn-learnmore {
         height: 1.8rem;
-        width: 5rem;
-        background-color: rgb(255, 255, 255);
+        width: 4.4rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: rgb(10, 10, 10);
+        color: black;
+        border: 3px solid black;
     }
 
     .btn-learnmore2 a {
         font-size: 0.8rem;
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: black;
     }
 
     .col-1 {
@@ -6472,6 +7092,7 @@ ul li img {
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1.1rem;
@@ -6494,6 +7115,7 @@ ul li img {
         border-radius: 1rem;
         padding: 1rem;
     }
+
     .card-pro {
         display: flex;
         align-items: center;
@@ -6523,10 +7145,11 @@ ul li img {
         gap: 0.7rem;
     }
     .para {
-        top: 2rem;
         left: 2rem;
-        width: 24rem;
-        height: 20rem;
+        width: 22rem;
+        height: 78%;
+        font-size: 0.8rem;
+        top: 2rem;
     }
     .quality {
         position: absolute;
@@ -6540,6 +7163,7 @@ ul li img {
         justify-content: center;
         gap: 1rem;
     }
+
     .content1 {
         display: flex;
         flex-direction: column;
@@ -6550,36 +7174,43 @@ ul li img {
         padding: 0rem 2rem 0rem 2rem;
         text-justify: inter-word;
     }
+
     .structure-content {
         display: flex;
         flex-direction: column;
         gap: 0.9rem;
         padding: 1rem 1rem 1rem 1rem;
     }
+
     .structure-content p {
         font-size: 1rem;
         line-height: 1.2;
-    }    
+    }
+
     .footerSec-row h5 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.9rem;
         width: 0.9rem;
     }
+
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.9rem;
         width: 0.9rem;
     }
+
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 1.8rem;
     }
+
     .col-door p {
         font-size: 0.7rem;
     }
+
     .profile {
         position: absolute;
         top: 0%;
@@ -6606,16 +7237,33 @@ ul li img {
         padding: 1.5rem 0rem 0.5rem 2rem;
         height: 32rem;
         width: 30rem;
-    }    
+    }
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1.2rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 490px)
-{
+@media only screen and (max-width: 520px) {
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 490px) {
     .content img {
         padding: 1.5rem 0rem 0.5rem 2rem;
         height: 31rem;
         width: 28rem;
     }
+
     .col-1 {
         display: flex;
         flex-direction: row;
@@ -6623,7 +7271,7 @@ ul li img {
         gap: 0.6rem;
         width: 100%;
         height: 80%;
-        background-color: var(--color-white);
+        background-color: #fff;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
@@ -6636,33 +7284,39 @@ ul li img {
         gap: 1rem;
         width: 100%;
         height: 90%;
-        background-color: #000;
+        background-color: #fff;
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
+        color: black;
     }
     .card-pro img {
         height: 12rem;
         width: 12rem;
     }
+
     .btn-read-more {
         height: 1.8rem;
         width: 6rem;
     }
+
     .btn-read-more a {
         font-size: 0.7rem;
         color: #070707;
         text-decoration: none;
     }
+
     .content-images2 img {
         height: 11rem;
         width: 11rem;
         border-radius: 1rem;
     }
+
     .door-whyus-img img {
         height: 12rem;
         width: 23rem;
         gap: 0.7rem;
     }
+
     .col-door {
         display: flex;
         flex-direction: column;
@@ -6672,9 +7326,11 @@ ul li img {
         align-items: center;
         padding: 0.5rem;
     }
+
     .col-door p {
         font-size: 0.8rem;
     }
+
     .profile {
         position: absolute;
         top: 0%;
@@ -6689,10 +7345,12 @@ ul li img {
         gap: 1rem;
         color: white;
     }
+
     .profile p {
         font-size: 0.9rem;
         padding: 0rem 3rem 0rem 0rem;
     }
+
     .btn-more {
         font-size: 0.8rem;
         width: 17rem;
@@ -6703,14 +7361,17 @@ ul li img {
         border-radius: 0.6rem;
         letter-spacing: 0.1rem;
     }
+
     .content-images img {
         height: 30rem;
         width: 22rem;
     }
+
     .content2 ul li {
         font-size: 0.9rem;
         list-style-type: none;
     }
+
     .profile-container img {
         height: 10rem;
         width: 90%;
@@ -6719,7 +7380,7 @@ ul li img {
         position: absolute;
         top: 0%;
         left: 0%;
-        background-color: rgba(0, 0, 0, 0.767);
+        background-color: rgba(44, 43, 43, 0.53);
         height: 100%;
         width: 100%;
         display: flex;
@@ -6735,35 +7396,43 @@ ul li img {
         gap: 0.3rem;
         font-size: 0.8rem;
     }
+
     .head-nav h2 {
         color: white;
         padding: 0.2rem 0rem 0rem 0.3rem;
         font-size: 1.1rem;
     }
+
     .contactpara h1 {
         font-size: 1.2rem;
     }
+
     .contactpara p {
         font-size: 0.9rem;
     }
+
     form {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
     }
+
     .col-ourwork img {
         height: 16rem;
         width: 22rem;
     }
+
     .aboutus p {
         font-size: 1rem;
         line-height: 1.3;
     }
+
     .ourmissionpara p {
         padding: 1rem 1rem 2rem 1rem;
         font-size: 1rem;
         line-height: 1.3;
     }
+
     .rate-col-1 {
         width: 22rem;
         height: auto;
@@ -6786,34 +7455,44 @@ ul li img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.2rem;
+        gap: 0.4rem;
         padding: 0.3rem;
-    }
+    }    
     .para h1 {
+        padding: 0rem 0rem 0rem 0rem;
         font-size: 1.4rem;
     }
-    .q1 h2 {
+       .q1 h2 {
         font-size: 0.9rem;
-    } 
+    }
+
     .content1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.2;
-    gap: 1rem;
-    width: 100%;
-    padding: 0rem 2rem 0rem 2rem;
-    text-justify: inter-word;
-   }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 2rem 0rem 2rem;
+        text-justify: inter-word;
+    }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.6rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 460px)
-{
+@media only screen and (max-width: 460px) {
     .content img {
         padding: 1.5rem 0rem 0.5rem 2rem;
         height: 30rem;
         width: 26rem;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1rem;
@@ -6821,64 +7500,83 @@ ul li img {
         text-align: justify;
         padding: 1rem 0rem 0rem 0rem;
     }
+
     .card-pro-para {
         gap: 0.5rem;
         font-size: 0.9rem;
         line-height: 1.3;
     }
+
     .card-pro img {
         height: 12rem;
         width: 12rem;
     }
+
     .btn-read-more {
         height: 1.8rem;
         width: 6rem;
     }
+
     .btn-read-more a {
         font-size: 0.7rem;
         color: #070707;
         text-decoration: none;
     }
+
     .whyus-content {
         font-size: 1rem;
         gap: 0.5rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     .structure-content {
         width: 100%;
         gap: 1rem;
         padding: 0.5rem;
     }
-    
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.4rem;
+        color: var(--color-white);
+    }
 }
-@media only screen and (max-width: 430px)
-{
+
+@media only screen and (max-width: 430px) {
     .content img {
         padding: 1.5rem 0rem 0.5rem 2rem;
         height: 28rem;
         width: 24rem;
     }
+
     .para {
         top: 2rem;
-        left: 2rem;
+        left: 1rem;
         width: 22rem;
         height: 18rem;
+        font-size: 1rem;
     }
+
     .card-body p {
         font-size: 0.8rem;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0rem;
         padding: 0rem;
-    }  
+    }
+
     .card-pro-para {
         gap: 0.5rem;
         font-size: 0.8rem;
         line-height: 1.3;
     }
+
     .content1 {
         display: flex;
         flex-direction: column;
@@ -6888,23 +7586,33 @@ ul li img {
         width: 100%;
         padding: 0rem 0rem 0rem 0rem;
         text-justify: inter-word;
-    }  
+    }
+
     .whyus-content {
         font-size: 1rem;
         gap: 0.5rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     .col-door h4 {
         font-size: 0.9rem;
     }
+
     .whyus-content p {
         font-size: 1rem;
         line-height: 1.3;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.4rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 415px)
-{
+@media only screen and (max-width: 415px) {
     .card1 {
         display: flex;
         flex-direction: column;
@@ -6912,11 +7620,13 @@ ul li img {
         gap: 0.2rem;
         padding: 0.5rem;
     }
+
     .img img {
         height: 13rem;
         width: 12rem;
         padding: 0rem 1rem 0rem 0rem;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
@@ -6925,6 +7635,7 @@ ul li img {
         padding: 0rem;
         /* text-align: left; */
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
@@ -6932,12 +7643,14 @@ ul li img {
         gap: 0.5rem;
         padding: 0.5rem;
     }
+
     .head p {
         display: flex;
         align-items: center;
         gap: 0.3rem;
         font-size: 0.7rem;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 0.9rem;
@@ -6945,60 +7658,71 @@ ul li img {
         text-align: justify;
         padding: 1rem 0rem 0rem 0rem;
     }
+
     .rate-quote {
         padding: 1rem;
     }
-    
+
     .card-pro {
         display: flex;
         align-items: center;
         gap: 1rem;
         padding: 0rem 0.5rem 0rem 0.5rem;
     }
+
     .card-pro-para {
         gap: 0.5rem;
         font-size: 0.9rem;
         line-height: 1.3;
     }
+
     .content1 p {
         font-size: 0.9rem;
         text-align: justify;
         line-height: 1.3;
     }
+
     .content1 ul li {
         font-size: 0.9rem;
         list-style-type: square;
         color: rgb(30, 171, 30);
     }
-    .content2-head h2{
+
+    .content2-head h2 {
         font-size: 1rem;
     }
+
     .door-whyus-img img {
         height: 12rem;
         width: 22rem;
         gap: 0.7rem;
     }
+
     .structure-content {
         width: 100%;
         gap: 0.6rem;
         padding: 0.5rem;
     }
+
     .structure-content p {
         font-size: 0.9rem;
         line-height: 1.2;
     }
+
     .icons img {
         height: 1.5rem;
         width: 1.5rem;
     }
+
     form textarea {
         height: 6rem;
         font-size: 0.9rem;
         padding: 0.5rem;
         background-color: var(--color-white);
         border: 0;
-        border-radius: 0.8rem;
+        /* border-radius: 0.8rem; */
     }
+
     .btn-contact {
         width: 5rem;
         height: 1.8rem;
@@ -7008,14 +7732,16 @@ ul li img {
         float: right;
         border: 1px solid var(--color-white);
         border-radius: 0.4rem;
-    } 
+    }
+
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 0rem;
+        gap: 0.2rem;
         color: var(--color-white);
     }
+
     .content1 {
         display: flex;
         flex-direction: column;
@@ -7026,76 +7752,93 @@ ul li img {
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
+
     .card-body p {
         font-size: 0.9rem;
         padding: 0rem 0rem 0rem 0.2rem;
     }
+
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.9rem;
         width: 0.9rem;
     }
+
     .footerSec-row h5 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.9rem;
         width: 0.9rem;
     }
-
 }
 
 @media only screen and (max-width: 400px) {
     .main-q h1 {
         font-size: 0.9rem;
     }
+
     .head {
-        background-color: var(--color-head);
+        background-color: #DBD8CC;
         display: flex;
         align-items: center;
         justify-content: right;
         padding: 0.2rem 1rem 0.2rem 0rem;
         gap: 0rem;
     }
+
     .aboutus h1 {
         font-size: 1rem;
     }
+
     .contactpara h1 {
         font-size: 1rem;
     }
+
     .para {
         top: 1rem;
         left: 1rem;
         width: 22rem;
         height: 18rem;
     }
+
     .para p {
         font-size: 1rem;
     }
+
     .footer-row {
-        justify-content: center;
-        gap: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.1rem;
+        color: var(--color-white);
     }
+
     .content img {
         padding: 1rem 0rem 0rem 1rem;
         height: 26rem;
         width: 24rem;
     }
+
     .structure-content {
         width: 100%;
         gap: 1rem;
         padding: 0.5rem;
     }
+
     footer h1 {
         padding: 1.4rem 0rem 1.4rem 1rem;
     }
+
     .footerLast p {
         padding: 1.4rem 0rem 1.2rem 1rem;
     }
+
     .footer-row .footer-ul h4 {
         font-size: 0.9rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
     }
+
     .footer-row {
         display: flex;
         align-items: center;
@@ -7103,6 +7846,7 @@ ul li img {
         gap: 0rem;
         color: var(--color-white);
     }
+
     .content1 {
         display: flex;
         flex-direction: column;
@@ -7113,6 +7857,7 @@ ul li img {
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
@@ -7120,27 +7865,33 @@ ul li img {
         gap: 0rem;
         padding: 0rem;
     }
+
     .img img {
         height: 10rem;
         width: 10rem;
         padding: 0rem 1rem 0rem 0rem;
     }
+
     .card-body {
         text-align: center;
         line-height: 1rem;
         padding: 0.5rem;
     }
+
     .card-body p {
         font-size: 0.9rem;
     }
+
     .card-head h1 {
         font-size: 1rem;
         text-align: center;
     }
+
     .col-1 {
         width: 100%;
         height: 85%;
     }
+
     .content1 {
         display: flex;
         flex-direction: column;
@@ -7151,22 +7902,24 @@ ul li img {
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
+
     .whyus-content {
         font-size: 1rem;
         gap: 0.5rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     .col-2 {
         width: 100%;
         height: 85%;
     }
     .btn-learnmore {
-        height: 1.4rem;
+        height: 1.5rem;
         width: 4.6rem;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: var(--color-white);
-        font-size: 0.7rem;
+        color: black;
+        border: 3px solid black;
     }
     .btn-read-more {
         height: 1.5rem;
@@ -7174,122 +7927,155 @@ ul li img {
         font-size: 0.7rem;
         background-color: rgb(41, 41, 41);
     }
+
     .content {
         flex-wrap: wrap;
     }
+
     .aboutus {
         padding: 1rem;
     }
+
     .card-pro-para {
         line-height: 1.1rem;
         text-align: justify;
         gap: 0.8rem;
     }
+
     .card-pro {
         gap: 1rem;
         background-color: rgb(249 247 247);
         padding: 1rem 1rem 1rem 1rem;
     }
+
     .card-pro img {
         height: 12rem;
         width: 10rem;
     }
+
     .card-pro-para h3 {
         font-size: 1.1rem;
         color: black;
     }
+
     .card-pro-para p {
         font-size: 0.9rem;
         color: black;
     }
+
     .quality {
         gap: 0.6rem;
         justify-content: center;
     }
+
     .q1 {
         padding: 0.5rem;
         text-align: center;
     }
+
     .q1 h2 {
         font-size: 0.8rem;
     }
+
     .q1 p {
         font-size: 0.8rem;
     }
+
     .whyus {
         padding: 1rem 1rem 2rem 1rem;
         flex-direction: column;
     }
+
     .whyus-img {
         gap: 0.6rem;
         flex-direction: row;
     }
+
     .whyus-img img {
         height: 8rem;
         width: 10rem;
     }
+
     .whyus-content {
         font-size: 0.8rem;
         gap: 0.8rem;
     }
+
     .profile {
         padding: 4rem 0rem 4rem 1.5rem;
     }
+
     .profile-row {
         gap: 0.8rem;
     }
+
     .col-profile1 {
         gap: 0.6rem;
     }
+
     .col-profile1 h1 {
         font-size: 1.1rem;
     }
+
     .profile-container img {
         height: 10rem;
         width: 100%;
     }
+
     .content1 h2 {
         font-size: 1rem;
     }
+
     .content2 h2 {
         font-size: 1.2rem;
     }
+
     .content-col img {
         height: 3.4rem;
         width: 3.4rem;
     }
+
     .structure-img img {
         height: 16rem;
     }
+
     .door-img img {
         width: 22rem;
         height: 10rem;
     }
+
     .content1 h1 {
         font-size: 1.2rem;
         line-height: 1.2;
     }
+
     .door-whyus-img img {
         width: 22rem;
     }
+
     .col-door {
         width: 16rem;
         gap: 0.2rem;
     }
+
     .col-door h1 {
         font-size: 0.7rem;
     }
+
     .col-door p {
         font-size: 0.7rem;
     }
+
     .floors {
-      padding: 2rem 0rem 2rem 1rem;
-      font-size: 0.8rem;
+        padding: 2rem 0rem 2rem 1rem;
+        font-size: 0.8rem;
     }
+
     .content-images img {
         height: 22rem;
         width: 20rem;
     }
+
     .floors {
         gap: 0.2rem;
     }
@@ -7297,30 +8083,38 @@ ul li img {
     .q1 {
         gap: 0.6rem;
     }
+
     .q1 img {
         height: 1.9rem;
         width: 1.9rem;
     }
+
     .footer-logo img {
         height: 3.2rem;
         width: 3.2rem;
     }
+
     .footer-row {
         gap: 0.8rem;
     }
+
     .logo img {
         height: 5rem;
         width: 5rem;
     }
+
     .main-q h1 {
         font-size: 1.5rem;
     }
+
     .main-q p {
         font-size: 1rem;
     }
+
     .ourworkh1 h2 {
         font-size: 1.1rem;
     }
+
     .row-ourwork {
         display: flex;
         align-items: center;
@@ -7328,14 +8122,17 @@ ul li img {
         gap: 1rem;
         flex-direction: column;
     }
+
     .col-ourwork img {
         height: 16rem;
         width: 22rem;
     }
+
     .head img {
         height: 0.8rem;
         width: 0.8rem;
     }
+
     .card-body p {
         font-size: 0.9rem;
         padding: 0rem 0rem 0rem 0.2rem;
@@ -7356,6 +8153,7 @@ ul li img {
     .rate-quote h1 {
         font-size: 1rem;
     }
+
     .profile h1 {
         font-size: 1.1rem;
     }
@@ -7414,37 +8212,46 @@ ul li img {
         gap: 0.6rem;
         padding: 2rem 0rem 2rem 0rem;
     }
+
     .btn-read-more a {
         font-size: 0.7rem;
         color: white;
         text-decoration: none;
     }
+
     .col-door h4 {
         font-size: 0.9rem;
     }
+
     footer h1 {
         font-size: 1rem;
     }
+
     .footer-ul ul li {
         font-size: 0.8rem;
     }
+
     .footerSec-row h6 {
         font-size: 0.7rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.7rem;
     }
+
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 1.8rem;
     }
+
     .q1 h2 {
         font-size: 0.7rem;
     }
+
     .footer-ul ul li {
         font-size: 0.7rem;
-    }        
+    }
 }
 
 @media only screen and (max-width: 392px) {
@@ -7453,55 +8260,70 @@ ul li img {
         height: 25rem;
         width: 23rem;
     }
+
     .profile-container img {
         height: 8rem;
         width: 90%;
     }
+
     .head p {
         font-size: 0.9rem;
     }
+
     .structure-content {
         width: 100%;
         gap: 1rem;
         padding: 0.5rem;
     }
+
     .q1 {
         gap: 0.5rem;
     }
+
     .q1 h2 {
         font-size: 0.9rem;
     }
+
     .q1 p {
         font-size: 0.8rem;
         text-align: center;
     }
+
     .footerSec-row h6 {
         font-size: 0.8rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.8rem;
     }
+
     .rate-col-1 {
         width: 18rem;
     }
+
     .structure-content {
         width: 100%;
         gap: 1rem;
     }
+
     .whyus-content {
         font-size: 0.9rem;
         gap: 0.5rem;
     }
+
     .floors {
         padding: 0rem 0rem 0rem 1.5rem;
         gap: 1rem;
     }
+
     .profile {
         padding: 0rem 0rem 0rem 1.5rem;
         gap: 1rem;
     }
 
     .whyus {
+        margin: 2rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         padding: 1rem 1rem 2rem 1rem;
     }
 
@@ -7510,10 +8332,12 @@ ul li img {
         line-height: 1rem;
         color: black;
     }
+
     .col-ourwork img {
         height: 18rem;
         width: 20rem;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 1rem;
@@ -7527,34 +8351,42 @@ ul li img {
         font-size: 1rem;
         line-height: 1.3;
     }
+
     .para {
         top: 1rem;
         left: 1rem;
         width: 20rem;
         height: 18rem;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0rem;
+        gap: 0.3rem;
         padding: 0rem;
     }
+
     .col-door h4 {
         font-size: 0.9rem;
     }
+
     footer h1 {
         font-size: 1rem;
     }
+
     .footer-ul ul li {
         font-size: 0.8rem;
     }
+
     .footerSec-row h6 {
         font-size: 0.7rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.7rem;
     }
+
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
@@ -7563,26 +8395,37 @@ ul li img {
     .btn-learnmore2 {
         height: 1.6rem;
         width: 4.5rem;
-        background-color: rgb(255, 255, 255);
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: rgb(10, 10, 10);
+        color: black;
+        border: 3px solid black;
     }
     .btn-learnmore2 a {
         font-size: 0.7rem;
         text-decoration: none;
-        color: var(--color-black-shade);
+        color: black;
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.3rem;
         padding: 2rem 0rem 2rem 0rem;
-    }  
+    }
+
     .col-1 {
         width: 100%;
         height: 85%;
-    }  
+    }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.1rem;
+        color: var(--color-white);
+    }
 }
 
 @media only screen and (max-width: 376px) {
@@ -7591,95 +8434,127 @@ ul li img {
         height: 25rem;
         width: 22.5rem;
     }
+
     .q1 {
         gap: 0.5rem;
     }
+
     .q1 img {
         height: 1.5rem;
         width: 1.5rem;
     }
+
     .q1 h2 {
         font-size: 0.7rem;
     }
+
     .q1 p {
         font-size: 0.7rem;
     }
+
     .quality {
         gap: 0.6rem;
         justify-content: center;
     }
+
     .door-whyus-img img {
         width: 21.5rem;
-    }    .structure-content {
+    }
+
+    .structure-content {
         width: 100%;
         gap: 1rem;
         padding: 0.5rem;
     }
+
     .whyus-content {
         font-size: 1rem;
         gap: 0.5rem;
         padding: 0.5rem;
     }
+
     .whyus {
+        margin: 2rem 0rem 0rem 0rem;
+        background-color: rgb(242 241 241);
         padding: 1rem 1rem 2rem 1rem;
     }
+
     .row-l:last-child {
         margin: 0rem 0rem 0rem 0rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     .col-door h4 {
         font-size: 0.9rem;
     }
+
     footer h1 {
         font-size: 1rem;
     }
+
     .footer-ul ul li {
         font-size: 0.6rem;
     }
+
     .footerSec-row h6 {
         font-size: 0.6rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.6rem;
     }
+
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 1.8rem;
     }
+
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.8rem;
         width: 0.8rem;
     }
+
     .footerSec-row h5 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.8rem;
         width: 0.8rem;
     }
+
     .col-1 {
         width: 100%;
         height: 85%;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 376px)
-{
+@media only screen and (max-width: 376px) {
     .para {
         top: 1rem;
         left: 1rem;
         width: 20.5rem;
         height: 18rem;
     }
+
     .head p {
         font-size: 0.5rem;
     }
+
     .head img {
         height: 0.6rem;
         width: 0.6rem;
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
@@ -7687,54 +8562,61 @@ ul li img {
         gap: 0.5rem;
         padding: 2rem 0rem 2rem 0rem;
     }
-    .btn-learnmore {
-        height: 1.6rem;
-        width: 4.8rem;
-        background-color: #000;
+    .btn-learnmore2 {
+        height: 1.8rem;
+        width: 5rem;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: var(--color-white);
-        font-size: 0.7rem;
+        color: black;
+        border: 3px solid black;
     }
     .col-2 {
         width: 100%;
         height: 95%;
-    }    
+    }
     .btn-learnmore {
         height: 1.8rem;
         width: 5rem;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 0.5rem;
-        color: var(--color-white);
-        font-size: 0.7rem;
+        color: black;
+        border: 3px solid black;
     }
     .head p {
         font-size: 0.7rem;
     }
+
     .card-pro-para p {
         font-size: 0.9rem;
         line-height: 1.2;
         color: black;
         text-align: left;
     }
+
     .profile-container img {
         height: 8rem;
         width: 90%;
     }
+
     .structure-content p {
         font-size: 0.9rem;
         line-height: 1.2;
     }
+
     .structure-content h4 {
         font-size: 1.1rem;
     }
+
     .door-whyus-img img {
         width: 20rem;
     }
+
     .whyus-content {
         font-size: 1rem;
         gap: 0.5rem;
         padding: 1rem;
     }
+
     .btn-more {
         font-size: 0.6rem;
         width: 12rem;
@@ -7745,17 +8627,21 @@ ul li img {
         border-radius: 0.6rem;
         letter-spacing: 0.1rem;
     }
+
     .col-ourwork img {
         height: 14rem;
         width: 20rem;
     }
+
     .icons img {
         height: 1.5rem;
         width: 1.5rem;
     }
+
     .contactpara p {
         font-size: 0.8rem;
     }
+
     .btn-contact {
         width: 5rem;
         height: 2rem;
@@ -7766,6 +8652,7 @@ ul li img {
         border: 1px solid var(--color-white);
         border-radius: 0.4rem;
     }
+
     form textarea {
         height: 6rem;
         font-size: 0.9rem;
@@ -7774,18 +8661,23 @@ ul li img {
         border: 0;
         border-radius: 0.8rem;
     }
+
     .main-q h1 {
         font-size: 1.2rem;
     }
+
     footer h1 {
         font-size: 1rem;
     }
+
     .footer-ul ul li {
         font-size: 0.6rem;
     }
+
     .footerSec-row h6 {
         font-size: 0.6rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.6rem;
     }
@@ -7804,7 +8696,7 @@ ul li img {
     .card-pro img {
         height: 14rem;
         width: 21rem;
-    }    
+    }
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
@@ -7816,33 +8708,41 @@ ul li img {
         filter: invert(100%);
         height: 0.8rem;
         width: 0.8rem;
-    }   
+    }
     .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         gap: 0rem;
+        color: var(--color-white);
     }
     .rate-col-1 {
         width: 20rem;
     }
+
     .head {
-        background-color: var(--color-head);
+        background-color: #DBD8CC;
         display: flex;
         align-items: center;
         justify-content: right;
         padding: 0.2rem 1rem 0.2rem 0rem;
         gap: 0.3rem;
     }
+
     .head p {
         font-size: 0.6rem;
-    }        
+    }
 }
 
 @media only screen and (max-width: 370px) {
     .main-q h1 {
         font-size: 0.9rem;
     }
+
     .col-door h4 {
         font-size: 0.9rem;
     }
+
     .col-door {
         display: flex;
         flex-direction: column;
@@ -7852,6 +8752,7 @@ ul li img {
         align-items: center;
         padding: 1rem;
     }
+
     .aboutus h1 {
         font-size: 1rem;
     }
@@ -7870,15 +8771,18 @@ ul li img {
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
+
     .content1 p {
         font-size: 0.9rem;
         line-height: 1.4;
-    }    
+    }
+
     .img img {
         height: 9rem;
         width: 9rem;
         padding: 0rem 0.4rem 0rem 0rem;
-    }    
+    }
+
     .row-l {
         width: 100%;
         height: 26rem;
@@ -7901,6 +8805,7 @@ ul li img {
     .card-body p {
         font-size: 0.8rem;
     }
+
     .content {
         flex-wrap: wrap;
     }
@@ -7957,93 +8862,123 @@ ul li img {
         line-height: 1.2rem;
         color: black;
     }
+
     .quality {
         gap: 0.5rem;
         justify-content: center;
     }
+
     .q1 h2 {
         font-size: 0.7rem;
     }
+
     .q1 p {
         font-size: 0.7rem;
     }
+
     .whyus-img {
         gap: 0.6rem;
         flex-direction: row;
     }
+
     .whyus-img img {
         height: 8rem;
         width: 10rem;
     }
+
     .whyus-content {
         font-size: 0.8rem;
         gap: 0.8rem;
     }
+
     .whyus-content p {
         font-size: 0.8rem;
         line-height: 1.5rem;
     }
+
     .door-whyus-img img {
         width: 20.5rem;
     }
+
     .profile {
         padding: 1rem 0rem 4rem 1rem;
     }
+
     .col-profile1 h1 {
         font-size: 1rem;
     }
+
     .profile-container img {
         height: 8rem;
         width: 90%;
     }
+
     .content-images img {
         height: 22rem;
         width: 20rem;
     }
+
     .content2 h1 {
         font-size: 1.2rem;
     }
+
     .content2 p a {
         text-decoration: none;
         color: rgb(25, 149, 25);
     }
+
     .q1 img {
         height: 1.5rem;
         width: 1.5rem;
     }
+
     .footer-logo img {
         height: 3rem;
         width: 3rem;
     }
+
     .footer-row {
-        gap: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0rem;
+        color: var(--color-white);
     }
+
     .logo img {
         height: 5rem;
         width: 5rem;
     }
+
     .footer-ul ul li {
         font-size: 0.7rem;
     }
+
     .door-row {
         padding: 0rem 0rem 0rem 3rem;
     }
+
     .col-door h4 {
         font-size: 0.4rem;
     }
+
     .col-profile1 h4 {
         font-size: 1rem;
     }
+
     .col-profile1 p {
         font-size: 0.8rem;
     }
+
     .col-profile2 p,
     a {
         font-size: 0.9rem;
     }
+
     .main-q {
         padding: 1.5rem 2rem 1.5rem 2rem;
     }
+
     .main-q h1 {
         font-size: 2rem;
     }
@@ -8160,10 +9095,12 @@ ul li img {
         gap: 0rem;
         padding: 2rem 0rem 2rem 0rem;
     }
+
     .row-l:last-child {
         margin: 0rem 0rem 0rem 0rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
@@ -8171,42 +9108,50 @@ ul li img {
         gap: 0.6rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     footer h1 {
         font-size: 1rem;
     }
+
     .footer-ul ul li {
         font-size: 0.6rem;
     }
+
     .footerSec-row h6 {
         font-size: 0.6rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.6rem;
     }
+
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 1.8rem;
     }
+
     .whyus {
         padding: 1rem 0rem 2rem 0rem;
         flex-direction: column;
-    } 
+    }
+
     .col-door p {
         font-size: 0.6rem;
-    } 
+    }
+
     .testimonals p {
         color: rgb(177, 177, 177);
         font-size: 0.6rem;
         padding: 1.2rem;
-    }      
+    }
+
     .floors p {
         font-size: 0.7rem;
     }
 }
 
-@media only screen and (max-width: 368px)
-{
+@media only screen and (max-width: 368px) {
     .content1 {
         display: flex;
         flex-direction: column;
@@ -8217,12 +9162,14 @@ ul li img {
         padding: 0rem 2rem 0rem 2rem;
         text-justify: inter-word;
     }
+
     .content1 p {
         font-size: 0.9rem;
         line-height: 1.4;
     }
+
     .head {
-        background-color: var(--color-head);
+        background-color: #DBD8CC;
         display: flex;
         align-items: center;
         justify-content: right;
@@ -8230,63 +9177,82 @@ ul li img {
         gap: 0.3rem;
     }
     .whyus {
+        margin: 0rem 0rem 0rem 0rem;
         padding: 1rem 0rem 2rem 0rem;
         flex-direction: column;
     }
     .card-pro img {
         height: 14rem;
         width: 21rem;
-    }    
-    .footer-row {
-        gap: 0rem;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0rem;
+        color: var(--color-white);
+    }
+
     .floors p {
         font-size: 0.7rem;
     }
+
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.8rem;
         width: 0.8rem;
     }
+
     .footerSec-row h5 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
         height: 0.8rem;
         width: 0.8rem;
     }
+
     .profile-container img {
         height: 8rem;
         width: 90%;
     }
+
     .card-pro {
         gap: 1rem;
         background-color: rgb(239 237 237);
         padding: 1rem 1rem 1rem 1rem;
     }
+
     .paragraph {
         padding: 1rem;
     }
+
     .rate-col-1 {
         width: 19rem;
-    }   
+    }
+
     .col-door p {
         font-size: 0.6rem;
     }
+
     .footerSec-row h6 {
         font-size: 0.6rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.6rem;
-    }    
+    }
+
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 0.5rem;
     }
+
     .head p {
         font-size: 0.6rem;
     }
+
     .testimonals p {
         color: rgb(177, 177, 177);
         font-size: 0.6rem;
@@ -8294,16 +9260,22 @@ ul li img {
     }
 }
 
-@media only screen and (max-width: 360px)
-{
+@media only screen and (max-width: 360px) {
     .profile-container img {
         height: 8rem;
         width: 90%;
     }
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0rem;
+        color: var(--color-white);
+    }
 }
 
-@media only screen and (max-width: 321px)
-{
+@media only screen and (max-width: 321px) {
     .content1 {
         display: flex;
         flex-direction: column;
@@ -8314,40 +9286,50 @@ ul li img {
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
+
     .main-q h1 {
         font-size: 1.3rem;
     }
+
     .para p {
         font-size: 0.9rem;
     }
+
     .para {
         top: 1rem;
         left: 1rem;
         width: 18rem;
         height: 17rem;
     }
+
     .footer-ul ul li {
         font-size: 0.6rem;
     }
+
     .footerSec-row h6 {
         font-size: 0.6rem;
     }
+
     .footerSec-row h5 {
         font-size: 0.6rem;
     }
+
     .footerLast p {
         color: var(--color-white);
         font-size: 0.5rem;
         padding: 1.4rem 0rem 1.2rem 1.8rem;
     }
+
     footer h1 {
         font-size: 1rem;
     }
+
     .content img {
         padding: 1rem 0rem 0rem 1rem;
         height: 22rem;
         width: 19rem;
     }
+
     .paragraph p {
         line-height: 1.4;
         font-size: 0.8rem;
@@ -8355,16 +9337,19 @@ ul li img {
         text-align: justify;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     .ourmissionpara p {
         padding: 0rem 1rem 1rem 1rem;
         font-size: 0.9rem;
         line-height: 1.3;
     }
+
     .testimonals p {
         color: rgb(177, 177, 177);
         font-size: 0.9rem;
         padding: 1.2rem;
     }
+
     .rate-row {
         display: flex;
         justify-content: space-around;
@@ -8372,47 +9357,58 @@ ul li img {
         padding: 1rem;
         flex-wrap: wrap;
     }
+
     .rate-para p {
         font-size: 0.8rem;
         line-height: 1.4;
     }
+
     .card-pro {
         flex-direction: column;
         gap: 1rem;
         background-color: rgb(255, 255, 255);
         padding: 0rem 1rem 0rem 1rem;
     }
+
     .card-pro img {
         height: 12rem;
         width: 18rem;
     }
+
     .card-pro-para p {
         font-size: 0.9rem;
         line-height: 1.2rem;
         color: black;
         text-align: start;
     }
+
     .door-whyus-img img {
         width: 18rem;
     }
+
     .content-images img {
         height: 20rem;
         width: 18rem;
     }
+
     .whyus-content p {
         font-size: 0.9rem;
         line-height: 1.4;
     }
+
     .col-door h4 {
         font-size: 0.8rem;
     }
+
     .col-door {
         width: 14rem;
         gap: 0.2rem;
     }
+
     .col-door p {
         font-size: 0.7rem;
     }
+
     .content-profile {
         flex-direction: column;
         display: flex;
@@ -8421,28 +9417,33 @@ ul li img {
         padding: 0rem 1rem 1rem 1rem;
         color: black;
     }
+
     .content-images2 img {
         height: 9rem;
         width: 9rem;
         border-radius: 1rem;
     }
+
     .content2 ul li {
         font-size: 0.8rem;
         list-style-type: none;
     }
+
     .col-ourwork img {
         height: 12rem;
         width: 18rem;
     }
+
     form input {
         height: 1.5rem;
         padding: 1rem;
-      background-color: var(--color-white);
+        background-color: var(--color-white);
         border: 0;
-      border-radius: 0.8rem;
+        border-radius: 0.8rem;
         font-size: 0.7rem;
         letter-spacing: 0.2rem;
     }
+
     .card2 {
         display: flex;
         flex-direction: column;
@@ -8450,28 +9451,34 @@ ul li img {
         gap: 0.8rem;
         padding: 0rem;
     }
+
     .testimonals p {
         color: rgb(177, 177, 177);
         font-size: 0.6rem;
         padding: 1.2rem;
     }
+
     .card-body {
         text-align: center;
         line-height: 1rem;
         padding: 0rem;
     }
+
     .card-head h1 {
-       font-size: 0.9rem;
+        font-size: 0.9rem;
         text-align: center;
     }
+
     .head p {
         font-size: 0.6rem;
     }
+
     .whyus-content {
         font-size: 0.9rem;
         gap: 0.5rem;
         padding: 1rem 1rem 1rem 1rem;
     }
+
     .card1 {
         display: flex;
         flex-direction: column;
@@ -8479,6 +9486,7 @@ ul li img {
         gap: 0.6rem;
         padding: 0rem 0rem 0rem 0rem;
     }
+
     .footerSec-row {
         display: flex;
         flex-direction: column;
@@ -8488,8 +9496,16 @@ ul li img {
         justify-content: center;
         color: white;
     }
-    
+
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0rem;
+        color: var(--color-white);
+    }
 }
+
 /* 6813 */
 iframe {
     width: 100%;
@@ -8497,23 +9513,25 @@ iframe {
 }
 
 /* contact us icons */
-.addressicon{
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-.factoryaddressicon{
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-.phoneicon{
+.addressicon {
     display: flex;
     align-items: center;
     gap: 0.4rem;
 }
 
-.emailusicon{
+.factoryaddressicon {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.phoneicon {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.emailusicon {
     display: flex;
     align-items: center;
     gap: 0.4rem;
@@ -8522,21 +9540,28 @@ iframe {
 /* contact image icon style */
 .addressicon img {
     height: 1.5rem;
-    width: 1.5rem;
-    -webkit-filter: invert();
+    width: 2.5rem;
+    /* -webkit-filter: invert(); */
+    padding: 0rem 1rem 0rem 0rem;
 }
+
 .factoryaddressicon img {
     height: 1.5rem;
-    width: 1.5rem;
-    -webkit-filter: invert();
+    width: 2.5rem;
+    /* -webkit-filter: invert(); */
+    padding: 0rem 1rem 0rem 0rem;
 }
+
 .phoneicon img {
     height: 1.5rem;
-    width: 1.5rem;
-    -webkit-filter: invert();
+    width: 2.5rem;
+    /* -webkit-filter: invert(); */
+    padding: 0rem 1rem 0rem 0rem;
 }
+
 .emailusicon img {
     height: 1.5rem;
-    width: 1.5rem;
-    -webkit-filter: invert();
+    width: 2.5rem;
+    /* -webkit-filter: invert(); */
+    padding: 0rem 1rem 0rem 0rem;
 }
