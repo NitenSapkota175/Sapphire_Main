@@ -2080,8 +2080,8 @@ ul li img {
 @media only screen and (max-width: 1550px) {
     .footerLast p {
         font-size: 1rem;
+        padding: 1.2rem;
     }
-
     .rate-col-1 {
         width: 15.8rem;
         height: auto;
@@ -4319,11 +4319,10 @@ ul li img {
         font-size: 0.9rem;
         line-height: 1.4;
     }
-
     .footerLast p {
         font-size: 0.8rem;
+        padding: 1.3rem;
     }
-
     .ourmissionpara p {
         padding: 1rem 8rem 2rem 8rem;
         font-size: 1.2rem;
@@ -9651,17 +9650,14 @@ ul li img {
         width: 100%;
         gap: 1rem;
     }
-
     .whyus-content {
         font-size: 0.9rem;
         gap: 0.5rem;
     }
-
     .floors {
         padding: 0rem 0rem 0rem 1.5rem;
         gap: 1rem;
     }
-
     .profile {
         padding: 0rem 0rem 0rem 1.5rem;
         gap: 1rem;
