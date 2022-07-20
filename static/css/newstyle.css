@@ -7730,12 +7730,23 @@ ul li img {
     }
 }
 
+@media only screen and (max-width: 690px)
+{
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 6.3rem;
+        color: var(--color-white);
+    }
+}
+
 @media only screen and (max-width: 680px) {
     .footer-row {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 7rem;
+        gap: 6rem;
         color: var(--color-white);
     }
     .content img {
@@ -7757,7 +7768,7 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 6rem;
+        gap: 5.5rem;
         color: var(--color-white);
     }
     .content img {
@@ -7772,7 +7783,7 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 5.6rem;
+        gap: 5.2rem;
         color: var(--color-white);
     }
 }
@@ -9586,7 +9597,7 @@ ul li img {
         align-items: center;
         justify-content: right;
         padding: 0.2rem 1rem 0.2rem 0rem;
-        gap: 0rem;
+        gap: 0.2rem;
     }
 
     .aboutus h1 {
@@ -9875,11 +9886,9 @@ ul li img {
         height: 3.2rem;
         width: 3.2rem;
     }
-
     .footer-row {
-        gap: 0.8rem;
+        gap: 0.1rem;
     }
-
     .logo img {
         height: 5rem;
         width: 5rem;
@@ -10046,11 +10055,9 @@ ul li img {
         height: 8rem;
         width: 90%;
     }
-
     .head p {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
-
     .structure-content {
         width: 100%;
         gap: 1rem;
@@ -10134,9 +10141,9 @@ ul li img {
         top: 1rem;
         left: 1rem;
         width: 20rem;
-        height: 19rem;
+        height: 18rem;
+        padding: 1.5rem;
     }
-
     .card2 {
         display: flex;
         flex-direction: column;
@@ -10154,9 +10161,8 @@ ul li img {
     }
 
     .footer-ul ul li {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
-
     .footerSec-row h6 {
         font-size: 0.7rem;
     }
@@ -10164,11 +10170,10 @@ ul li img {
     .footerSec-row h5 {
         font-size: 0.7rem;
     }
-
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
-        padding: 1.4rem 0rem 1.2rem 1.8rem;
+        padding: 1.4rem 0rem 1.2rem 0.8rem;
     }
     .btn-learnmore {
         height: 1.7rem;
@@ -10217,6 +10222,21 @@ ul li img {
         justify-content: space-around;
         gap: 0.1rem;
         color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 386px)
+{
+    .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.3rem;
+        color: var(--color-white);
+    }
+    .card-body p {
+        font-size: 0.8rem;
+        padding: 0rem 0rem 0rem 0.2rem;
     }
 }
 
@@ -10334,10 +10354,9 @@ ul li img {
     .para {
         top: 1rem;
         left: 1rem;
-        width: 20.5rem;
-        height: 18rem;
+        width: 19.5rem;
+        height: 18.5rem;
     }
-
     .head p {
         font-size: 0.5rem;
     }
@@ -10477,13 +10496,11 @@ ul li img {
     .footerSec-row h5 {
         font-size: 0.6rem;
     }
-
     .footerLast p {
         color: var(--color-white);
         font-size: 0.6rem;
-        padding: 1.4rem 0rem 1.2rem 1.8rem;
+        padding: 1.4rem 0rem 1.2rem 0.8rem;
     }
-
     .card-pro {
         gap: 1rem;
         background-color: rgb(255, 255, 255);
@@ -10531,9 +10548,8 @@ ul li img {
         padding: 0.2rem 1rem 0.2rem 0rem;
         gap: 0.3rem;
     }
-
     .head p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -11048,11 +11064,9 @@ ul li img {
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 0.5rem;
     }
-
     .head p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
-
     .testimonals p {
         color: rgb(177, 177, 177);
         font-size: 0.6rem;
