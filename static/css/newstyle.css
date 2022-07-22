@@ -2222,7 +2222,7 @@ ul li img {
 
     footer h1 {
         font-size: 1.2rem;
-        padding: 1.4rem 0rem 1.4rem 1.5rem;
+        padding: 1.4rem 0rem 1.4rem 1.4rem;
     }
 
     .card-body p {
@@ -7323,6 +7323,19 @@ ul li img {
     .visitcommo p {
         font-size: 1rem;
     }
+    .col-2 {
+        float: right;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 84%;
+        height: 100%;
+        background-color: #fff;
+        border-top-left-radius: 4rem;
+        border-bottom-left-radius: 4rem;
+        color: black;
+    }
 }
 
 @media only screen and (max-width: 721px)
@@ -8106,7 +8119,6 @@ ul li img {
         /* align-items: center; */
         padding: 1rem 1rem 1rem 1rem;
     }
-
     .col-door p {
         font-size: 0.7rem;
     }
@@ -8356,6 +8368,12 @@ ul li img {
         gap: 4rem;
         color: var(--color-white);
     }
+    .row-l {
+        width: 100%;
+        height: 26rem;
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
 }
 @media only screen and (max-width: 570px)
 {
@@ -8579,13 +8597,24 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
         width: 90%;
-        height: 80%;
+        height: 84%;
         background-color: var(--color-white);
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
-
+    .col-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.6rem;
+        width: 90%;
+        height: 84%;
+        background-color: var(--color-white);
+        border-top-right-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+        color: var(--color-black-shade);
+    }
     .paragraph p {
         line-height: 1.4;
         font-size: 1.1rem;
@@ -8834,7 +8863,7 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
         width: 100%;
-        height: 80%;
+        height: 85%;
         background-color: #fff;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
@@ -8848,7 +8877,7 @@ ul li img {
         align-items: center;
         gap: 1rem;
         width: 100%;
-        height: 90%;
+        height: 85%;
         background-color: #fff;
         border-top-left-radius: 4rem;
         border-bottom-left-radius: 4rem;
@@ -10381,12 +10410,10 @@ ul li img {
         color: black;
         border: 3px solid black;
     }
-
     .col-2 {
         width: 100%;
-        height: 95%;
+        height: 85%;
     }
-
     .btn-learnmore {
         height: 1.8rem;
         width: 5.6rem;
