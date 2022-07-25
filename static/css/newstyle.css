@@ -7294,6 +7294,10 @@ ul li img {
         gap: 4rem;
         color: var(--color-white);
     }
+    .col-ourwork img {
+        height: 10rem;
+        width: 12.5rem;
+    }
 }
 
 @media only screen and (max-width: 728px) {
@@ -7336,6 +7340,10 @@ ul li img {
         border-bottom-left-radius: 4rem;
         color: black;
     }
+    .col-ourwork img {
+        height: 10rem;
+        width: 12.5rem;
+    }
 }
 
 @media only screen and (max-width: 721px)
@@ -7346,6 +7354,10 @@ ul li img {
         justify-content: space-around;
         gap: 3.2rem;
         color: var(--color-white);
+    }
+    .col-ourwork img {
+        height: 10rem;
+        width: 12.5rem;
     }
 }
 
@@ -7789,6 +7801,10 @@ ul li img {
         height: 45rem;
         width: 39rem;
     }
+    .col-ourwork img {
+        height: 8rem;
+        width: 11.5rem;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -8080,6 +8096,10 @@ ul li img {
         height: 4rem;
         width: 4rem;
     }
+    .col-ourwork img {
+        height: 8rem;
+        width: 11rem;
+    }
 }
 @media only screen and (max-width: 610px)
 {
@@ -8183,9 +8203,9 @@ ul li img {
     .para {
         left: 2rem;
         width: 30rem;
-        height: 88%;
+        height: 78%;
         font-size: 1rem;
-        top: 1rem;
+        top: 2.5rem;
     }
     .para p {
         font-size: 1.2rem;
@@ -8598,7 +8618,7 @@ ul li img {
         gap: 0.6rem;
         width: 90%;
         height: 84%;
-        background-color: var(--color-white);
+        background-color: white;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
@@ -8610,7 +8630,7 @@ ul li img {
         gap: 0.6rem;
         width: 90%;
         height: 84%;
-        background-color: var(--color-white);
+        background-color:  white;
         border-top-right-radius: 4rem;
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
@@ -8669,9 +8689,9 @@ ul li img {
     .para {
         left: 1rem;
         width: 29rem;
-        height: 88%;
+        height: 80%;
         font-size: 0.8rem;
-        top: 1rem;
+        top: 2.5rem;
     }
     .quality {
         position: absolute;
@@ -8803,6 +8823,10 @@ ul li img {
         /* align-items: center; */
         padding: 1rem 4rem 1rem 2rem;
     }
+    .col-ourwork img {
+        height: 20rem;
+        width: 27rem;
+    }
 }
 
 @media only screen and (max-width: 498px)
@@ -8822,6 +8846,10 @@ ul li img {
         color: var(--color-white);
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 0.6rem;
+    }
+    .col-ourwork img {
+        height: 20rem;
+        width: 27rem;
     }
 }
 
@@ -9128,6 +9156,15 @@ ul li img {
         gap: 1.8rem;
         color: var(--color-white);
     }
+    .paragraph h1 {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 1.4rem;
+    }
+    .ourmissionh1 h1 {
+        color: var(--color-white);
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
 }
 @media only screen and (max-width: 460px) {
     .content img {
@@ -9159,15 +9196,13 @@ ul li img {
         /* align-items: center; */
         padding: 1rem 4rem 1rem 2rem;
     }
-
     .paragraph p {
         line-height: 1.4;
-        font-size: 1rem;
+        font-size: 0.9rem;
         /* letter-spacing: 0.01rem; */
         text-align: justify;
         padding: 1rem 0rem 0rem 0rem;
     }
-
     .card-pro-para {
         gap: 0.5rem;
         font-size: 0.9rem;
@@ -9229,6 +9264,16 @@ ul li img {
     .main-q p {
         font-size: 1rem;
     }
+    .aboutus h1 {
+        font-size: 1.7rem;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .rate-quote {
+        padding: 0.2rem;
+    }
+    .rate-quote h1 {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 448px)
@@ -9263,9 +9308,9 @@ ul li img {
         top: 2rem;
         left: 1rem;
         width: 23rem;
-        height: 21rem;
+        height: 20rem;
         font-size: 1rem;
-      }
+    }
     .para p {
         font-size: 1.1rem;
     }
@@ -9364,7 +9409,7 @@ ul li img {
     footer h1 {
         background-color: #000;
         font-size: 1rem;
-        padding: 0.7rem;
+        padding: 0.5rem;
     }
     .footer-logo img {
         height: 3rem;
@@ -9582,10 +9627,10 @@ ul li img {
         width: 0.6rem;
     }
     .para {
-        top: 3rem;
+        top: 3.5rem;
         left: 1rem;
         width: 22rem;
-        height: 18rem;
+        height: 17.6rem;
         font-size: 1rem;
     }
     .para p {
@@ -9598,7 +9643,7 @@ ul li img {
     footer h1 {
         background-color: #000;
         font-size: 0.8rem;
-        padding: 0.4rem;
+        padding: 0.3rem;
     }
     .footerLast p {
         color: var(--color-white);
@@ -9640,9 +9685,8 @@ ul li img {
         top: 1rem;
         left: 1rem;
         width: 22rem;
-        height: 18rem;
+        height: 17.8rem;
     }
-
     .para p {
         font-size: 1rem;
     }
@@ -10145,12 +10189,10 @@ ul li img {
         line-height: 1rem;
         color: black;
     }
-
     .col-ourwork img {
-        height: 18rem;
+        height: 15rem;
         width: 20rem;
     }
-
     .paragraph p {
         line-height: 1.4;
         font-size: 1rem;
@@ -10169,7 +10211,7 @@ ul li img {
         top: 1rem;
         left: 1rem;
         width: 20rem;
-        height: 19.5rem;
+        height: 18.2rem;
         padding: 1.5rem;
     }
     .card2 {
@@ -10183,20 +10225,19 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
-
     footer h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding: 0.6rem;
     }
-
     .footer-ul ul li {
         font-size: 0.6rem;
     }
     .footerSec-row h6 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .footerSec-row h5 {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
     .footerLast p {
         color: var(--color-white);
@@ -10383,7 +10424,7 @@ ul li img {
         top: 1rem;
         left: 1rem;
         width: 19.5rem;
-        height: 19.4rem;
+        height: 18.3rem;
     }
     .head p {
         font-size: 0.5rem;
@@ -10506,21 +10547,20 @@ ul li img {
     .main-q h1 {
         font-size: 1.2rem;
     }
-
     footer h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding: 0.6rem;
     }
-
     .footer-ul ul li {
         font-size: 0.6rem;
     }
 
     .footerSec-row h6 {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .footerSec-row h5 {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     .footerLast p {
         color: var(--color-white);
@@ -10543,15 +10583,15 @@ ul li img {
     .footerSec-row h6 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
-        height: 0.8rem;
-        width: 0.8rem;
+        height: 0.6rem;
+        width: 0.6rem;
     }
 
     .footerSec-row h5 img {
         -webkit-filter: invert(100%);
         filter: invert(100%);
-        height: 0.8rem;
-        width: 0.8rem;
+        height: 0.6rem;
+        width: 0.6rem;
     }
 
     .footer-row {
@@ -10859,11 +10899,10 @@ ul li img {
     .rate-quote h1 {
         font-size: 1rem;
     }
-
     footer h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding: 0.6rem;
     }
-
     .profile h1 {
         font-size: 1.1rem;
     }
@@ -10948,12 +10987,6 @@ ul li img {
         gap: 0.6rem;
         padding: 0rem 0rem 0rem 0rem;
     }
-
-    footer h1 {
-        font-size: 0.8rem;
-        padding: 0.4rem;
-      }
-
     .footer-ul ul li {
         font-size: 0.6rem;
     }
