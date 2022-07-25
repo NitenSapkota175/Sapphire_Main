@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
 
     
-    #path('admin/',include('admin_honeypot.urls',namespace='admin_honey')),
+    path('admin/',include('admin_honeypot.urls',namespace='admin_honey')),
     path('sapphire_main_secret_10101111/', admin.site.urls),
     path('',include('Sapphire.urls')),
 ]
