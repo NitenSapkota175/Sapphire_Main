@@ -1,13 +1,8 @@
-from ast import Return
-from cgitb import Hook
-from email import message
-from multiprocessing import context
-from django.conf import settings
 from django.shortcuts import redirect, render
 from django.http  import HttpResponse
 from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings
 from django.core.mail import send_mail,BadHeaderError
-from Sapphire import models
+
 # Create your views here.
 def HomePage(request):
     Home_obj = Home.objects.all()

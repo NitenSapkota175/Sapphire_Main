@@ -7,9 +7,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapphire</title>
+    <meta name = "author" content = "SapphireMain">
+    {%if request.path == "/" %}
+
+        <title>Home | Sapphire</title>
+    {%else%}
+       <title> Sapphire | {% with name=request.path|slice:"1:"%} {{name|title}} {%endwith%} | SapphireMain</title>
+    {%endif%}
 
 
+    <meta name = "description" content="high quality windows, affordable, Siliguri, upvc,flooring profile, Gangtok, Darjeeling, toughen glass, windows, white windows, black windows, white windows, black windows, frames suppiler, window suppliers in Siliguri" >
+    <meta name="keywords" content="high quality windows, affordable, Siliguri, upvc,flooring profile, Gangtok, Darjeeling, toughen glass, windows, white windows, black windows, white windows, black windows, frames suppiler, window suppliers in Siliguri">
+    <link rel = "canonical" href="{{request.path}}"/>
+    <link rel="home" href = "{%url 'Home'%}"/> 
+    
+    <link rel = "shortcut icon" type = "image/png" href="{%static 'images/SAPPHIRE_COMMOTRADE_FINAL_Logo_2.png' %}" type="image/x-icon"> 
+    <link rel = "apple-touch-icon" type = "image/png" href="{%static 'images/SAPPHIRE_COMMOTRADE_FINAL_Logo_2.png' %}" type="image/x-icon"> 
+    
+    
+    
+    
+    <!-- Style Css   -->  
     <link rel="stylesheet" href="{% static 'css/newstyle.css' %}">
     <!-- profile page background image -->
     <style>
@@ -98,87 +116,6 @@
             }
         }
     </style>
-    
-    <!-- products2 background image -->
-    <!-- <style>
-        .pvcfloors {
-            width: 100%;
-            height: 300px;
-            position: relative;
-            background-image: url('../static/images/DSC00139_copy_1jhhjjhjh2.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-       @media only screen and (max-width: 700px) {
-            .pvcfloors {
-                width: 100%;
-                height: 290px;
-            }
-        }
-        @media only screen and (max-width: 600px) {
-            .pvcfloors {
-                width: 100%;
-                height: 260px;
-            }
-        }
-        @media only screen and (max-width: 500px) {
-            .pvcfloors {
-                width: 100%;
-                height: 255px;
-            }
-        }
-        @media only screen and (max-width: 400px) {
-            .pvcfloors {
-                width: 100%;
-                height: 250px;
-            }
-        }
-    </style>
-
-   
-    <style>
-        .pvcprofile {
-            width: 100%;
-            height: 300px;
-            position: relative;
-            background-image: url('../static/images/DSC00139_copy_1jhhjjhjh2.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .pvcprofile {
-                width: 100%;
-                height: 290px;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            .pvcprofile {
-                width: 100%;
-                height: 260px;
-            }
-        }
-
-        @media only screen and (max-width: 500px) {
-            .pvcprofile {
-                width: 100%;
-                height: 255px;
-            }
-        }
-
-        @media only screen and (max-width: 400px) {
-            .pvcprofile {
-                width: 100%;
-                height: 250px;
-            }
-        }
-    </style> -->
-    
-
-    <!-- contact page background image -->
     <style>
         .contactlist {
             width: 100%;

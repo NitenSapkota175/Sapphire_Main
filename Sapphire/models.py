@@ -1,7 +1,3 @@
-from ctypes import Structure
-from dataclasses import fields
-from email.mime import image
-from pyexpat import model
 from django.db import models
 from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField

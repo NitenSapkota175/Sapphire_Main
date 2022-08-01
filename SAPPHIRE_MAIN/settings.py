@@ -48,9 +48,13 @@ INSTALLED_APPS = [
     'phonenumber_field',
     #'storages',
     #'admin_honeypot',
+    
     'Sapphire.apps.SapphireConfig',
+    
+    'django.contrib.sitemaps'
 
 ]
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,6 +87,7 @@ TEMPLATES = [
                 'Sapphire.context_processors.Sapphire_contactus',
                 'Sapphire.context_processors.Sapphire_Product1',
                 'Sapphire.context_processors.Sapphire_EndSectionOfProduct',
+             
             
             ],
         },

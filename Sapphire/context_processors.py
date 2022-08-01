@@ -1,4 +1,3 @@
-from django.conf import settings
 from . models import End_Section_Of_Products, Settings
 from . models import Home , Product_Type_2,About,Contact,Product_Type_1,End_Section_Of_Products
 
