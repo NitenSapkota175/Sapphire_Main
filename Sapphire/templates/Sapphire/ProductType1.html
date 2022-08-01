@@ -10,7 +10,7 @@
 
     <!-- class here is different you are looking at product_type2 class even though it is product_type1-->
     <div class="profile">
-        <h1>{{product1.Product_Name}}</h1>
+        <h3>{{product1.Product_Name}}</h3>
         <p>{{product1.Product_Short_Description_1}}</p>
         {%if product1.Website_Link%}
         <button class="btn-more">{{product1.Website_Link}}</button>
@@ -33,7 +33,7 @@
 
 <div class="content-profile">
     <div class="content1">
-        <h1>{{product1.Introduction_Section_Title }}</h1>
+        <h3>{{product1.Introduction_Section_Title }}</h3>
 
         <p>{{product1.Introduction_Section_Description|linebreaksbr}}</p>
 
@@ -89,7 +89,7 @@
     </div>
 
     <div class="whyus-content">
-        <h1>{{product1.Why_Us_Title}}</h1>
+        <h3>{{product1.Why_Us_Title}}</h3>
         <p>{{product1.Why_Us_Description|linebreaksbr}}</p>
     </div>
 </section>
