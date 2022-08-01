@@ -38,9 +38,9 @@ body {
     width: 1rem;
 }
 
-.head-nav h2 {
+.head-nav h3 {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 /* navbar */
@@ -141,9 +141,9 @@ nav {
     /* text-align: justify; */
 }
 
-.para h1 {
+.para h3 {
     padding: 3rem 0rem 0rem 0rem;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
 }
 
 .para p {
@@ -157,7 +157,7 @@ main {
     color: var(--color-white);
 }
 .main-q {
-    padding: 1.5rem 30rem 1.5rem 30rem;
+    padding: 1.5rem 40rem 1.5rem 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,8 +210,8 @@ main {
     padding: 2rem;
 }
 
-.card-head h1 {
-    font-size: 2.2rem;
+.card-head h3 {
+    font-size: 2.4rem;
 }
 
 .card-body {
@@ -219,12 +219,11 @@ main {
     text-align: center;
     line-height: 1.4rem;
 }
-
 .card-body p {
     font-size: 1.4rem;
     line-height: 1.6rem;
+    text-align: left;
 }
-
 .col-2 {
     float: right;
     display: flex;
@@ -297,8 +296,8 @@ main {
     text-align: center;
 }
 
-.aboutus h1 {
-    font-size: 3.7rem;
+.aboutus h3 {
+    font-size: 3.8rem;
     padding: 0rem 0rem 0rem 0rem;
 }
 
@@ -327,9 +326,9 @@ main {
 .paragraph {
     padding: 5rem;
 }
-.paragraph h1 {
+.paragraph h3 {
     padding: 2rem 0rem 1rem 0rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .paragraph p {
     line-height: 2rem;
@@ -351,9 +350,9 @@ main {
 .ourmissionh1 {
     position: relative;
 }
-.ourmissionh1 h1 {
+.ourmissionh1 h3 {
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 1rem;
 }
 .ourmissionpara p {
@@ -409,8 +408,8 @@ main {
     text-align: center;
 }
 
-.rate-para h2 {
-    font-size: 1.5rem;
+.rate-para h3 {
+    font-size: 1.7rem;
 }
 
 .rate-para p {
@@ -473,15 +472,15 @@ main {
     padding: 3rem;
 }
 
-.productsh1 h2 {
+.productsh1 h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     text-justify: inter-word;
 }
 
-.productsh1 h2:before {
+.productsh1 h3:before {
     content: '';
     position: absolute;
     left: 45%;
@@ -643,7 +642,7 @@ form textarea {
     gap: 2rem;
 }
 
-.contactpara h1 {
+.contactpara h3 {
     font-size: 2.4rem;
 }
 
@@ -701,8 +700,8 @@ form textarea {
     padding: 4rem 0rem 4rem 0rem;
 }
 
-.contactinfo h1 {
-    font-size: 1.8rem;
+.contactinfo h3 {
+    font-size: 2rem;
 }
 
 .contactinfo li {
@@ -758,9 +757,9 @@ form textarea {
     position: relative;
 }
 
-.ourworkh1 h2 {
+.ourworkh1 h3 {
     color: var(--color-black-shade);
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 2rem;
 }
 
@@ -823,8 +822,8 @@ form textarea {
     color: white;
 }
 
-.profile h1 {
-    font-size: 4rem;
+.profile h3 {
+    font-size: 4.2rem;
     line-break: strict;
 }
 
@@ -952,8 +951,8 @@ form textarea {
     list-style-type: none;
     line-height: 1.4;
 }
-.content2 h1 {
-    font-size: 1.4rem;
+.content2 h3 {
+    font-size: 1.6rem;
 }
 
 .content2 p a {
@@ -989,8 +988,8 @@ form textarea {
     padding: 0rem 6rem 0rem 0rem;
 }
 
-.whyus-content h1 {
-    font-size: 2rem;
+.whyus-content h3 {
+    font-size: 2.2rem;
 }
 
 .whyus-content p {
@@ -1159,8 +1158,8 @@ form textarea {
     color: white;
 }
 
-.floors h1 {
-    font-size: 4rem;
+.floors h3 {
+    font-size: 4.2rem;
 }
 
 .floors p {
@@ -1179,12 +1178,12 @@ form textarea {
 
 /* footer style */
 footer,
-footer h1 {
+footer h3 {
     background-color: #000;
     color: #0642b4;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
-footer h1 {
+footer h3 {
     padding: 1.4rem 0rem 1.4rem 2rem;
 }
 .footer-row {
@@ -1315,17 +1314,17 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
-    .para h1{
+    .para h3{
         padding: 1.5rem 0rem 0rem 0rem;
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
     .para p {
         padding: 1rem 0rem 0rem 0rem;
         line-height: 1.4;
     }
 
-    .card-head h1 {
-        font-size: 2rem;
+    .card-head h3 {
+        font-size: 2.2rem;
     }
 
     .paragraph p {
@@ -1366,8 +1365,8 @@ ul li img {
         top: 100%;
         left: 2%;
     }
-    .rate-para h2 {
-        font-size: 1.3rem;
+    .rate-para h3 {
+        font-size: 1.5rem;
     }
 
     .head p {
@@ -1433,8 +1432,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
 
     .address {
@@ -1453,13 +1452,13 @@ ul li img {
         padding: 0rem 2rem 0rem 0rem;
     }
 
-    .contactinfo h1 {
-        font-size: 2rem;
+    .contactinfo h3 {
+        font-size: 2.2rem;
         padding: 0rem 0rem 0rem 0rem;
     }
 
-    .contactpara h1 {
-        font-size: 2.4rem;
+    .contactpara h3 {
+        font-size: 2.6rem;
     }
 
     .icons img {
@@ -1604,8 +1603,8 @@ ul li img {
         width: 80%;
     }
 
-    .contactpara h1 {
-        font-size: 2.4rem;
+    .contactpara h3 {
+        font-size: 2.6rem;
     }
 
     .icons img {
@@ -1630,6 +1629,16 @@ ul li img {
         gap: 36.7rem;
         color: var(--color-white);
     }
+    .main-q {
+    padding: 1.5rem 35rem 1.5rem 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    color: rgb(21, 20, 20);
+}
 }
 
 @media only screen and (max-width: 1778px) {
@@ -1701,7 +1710,7 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
-    footer h1 {
+    footer h3 {
         padding: 1.4rem 0rem 1.4rem 1.5rem;
     }
 }
@@ -1727,8 +1736,8 @@ ul li img {
 }
 
 @media only screen and (max-width: 1700px) {
-    .card-head h1 {
-        font-size: 2rem;
+    .card-head h3 {
+        font-size: 2.2rem;
     }
 
     .btn-learnmore {
@@ -1783,8 +1792,8 @@ ul li img {
         width: 80%;
     }
 
-    .contactpara h1 {
-        font-size: 2.3rem;
+    .contactpara h3 {
+        font-size: 2.5rem;
     }
 
     .icons img {
@@ -1824,7 +1833,7 @@ ul li img {
         /* text-align: justify; */
     }
     .main-q {
-        padding: 1.5rem 26rem 1.5rem 26rem;
+        padding: 1.5rem 30rem 1.5rem 30rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1935,8 +1944,8 @@ ul li img {
 }
 
 @media only screen and (max-width: 1600px) {
-    .contactinfo h1 {
-        font-size: 1.7rem;
+    .contactinfo h3 {
+        font-size: 1.8rem;
     }
     .rate-row {
         display: flex;
@@ -1986,11 +1995,11 @@ ul li img {
         gap: 3rem;
     }
 
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-justify: inter-word;
     }
 
@@ -1998,8 +2007,8 @@ ul li img {
         font-size: 1.4rem;
     }
 
-    .floors h1 {
-        font-size: 4rem;
+    .floors h3 {
+        font-size: 4.2rem;
     }
 
     .profile p {
@@ -2016,8 +2025,8 @@ ul li img {
         gap: 0.9rem;
     }
 
-    .whyus-content h1 {
-        font-size: 1.7rem;
+    .whyus-content h3 {
+        font-size: 1.9rem;
     }
 
     .content-images2 {
@@ -2040,8 +2049,8 @@ ul li img {
         font-size: 1.3rem;
         line-height: 1.4;
     }
-    .rate-para h2 {
-        font-size: 1.3rem;
+    .rate-para h3 {
+        font-size: 1.5rem;
     }
 
     .rate-para p {
@@ -2066,7 +2075,7 @@ ul li img {
         line-height: 1.4;
     }
     .main-q {
-        padding: 1.5rem 20rem 1.5rem 20rem;
+        padding: 1.5rem 26rem 1.5rem 26rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2075,8 +2084,8 @@ ul li img {
         gap: 1rem;
         color: rgb(21, 20, 20);
     }
-    .card-head h1 {
-        font-size: 1.6rem;
+    .card-head h3 {
+        font-size: 1.8rem;
     }
     .card2 {
         display: flex;
@@ -2109,8 +2118,8 @@ ul li img {
         width: 90%;
     }
 
-    .contactpara h1 {
-        font-size: 2.2rem;
+    .contactpara h3 {
+        font-size: 2.4rem;
     }
 
     .icons img {
@@ -2239,8 +2248,8 @@ ul li img {
         width: 1rem;
     }
 
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.4rem;
     }
 
@@ -2276,7 +2285,16 @@ ul li img {
         width: 20rem;
         padding: 0rem 3rem 0rem 0rem;
     }
-
+    .main-q {
+        padding: 1.5rem 30rem 1.5rem 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        color: rgb(21, 20, 20);
+    }
     .main-q p {
         font-size: 1.2rem;
     }
@@ -2296,9 +2314,9 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
-    .para h1 {
+    .para h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 
     .para p {
@@ -2335,8 +2353,8 @@ ul li img {
         top: 100%;
         left: 5%;
     }
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
 
     .footerSec-row h6 {
@@ -2345,8 +2363,8 @@ ul li img {
         font-size: 0.9rem;
     }
 
-    .rate-quote h1 {
-        font-size: 1.6rem;
+    .rate-quote h3 {
+        font-size: 1.8rem;
     }
 
     .rate-para p {
@@ -2354,8 +2372,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
 
     .ourmission {
@@ -2375,11 +2393,11 @@ ul li img {
         padding: 1rem 2rem 0rem 0rem;
     }
 
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1.5rem 0rem 1rem 0rem;
-        font-size: 1.8rem;
-    } .floors h1 {
-        font-size: 3.8rem;
+        font-size: 2rem;
+    } .floors h3 {
+        font-size: 4rem;
     }
 
     .floors p {
@@ -2428,8 +2446,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .q1 h2 {
-        font-size: 1.2rem;
+    .q1 h3 {
+        font-size: 1.4rem;
     }
 
     .whyus {
@@ -2481,8 +2499,8 @@ ul li img {
         position: relative;
     }
 
-    .contactpara h1 {
-        font-size: 2.1rem;
+    .contactpara h3 {
+        font-size: 2.3rem;
     }
 
     .icons img {
@@ -2617,9 +2635,9 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
-    .para h1 {
+    .para h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
 
     .para p {
@@ -2632,8 +2650,8 @@ ul li img {
         font-size: 1.1rem;
     }
 
-    .card-head h1 {
-        font-size: 1.5rem;
+    .card-head h3 {
+        font-size: 1.7rem;
     }
 
     .btn-learnmore a {
@@ -2711,8 +2729,8 @@ ul li img {
         justify-content: center;
     }
 
-    .rate-para h2 {
-        font-size: 1.3rem;
+    .rate-para h3 {
+        font-size: 1.5rem;
     }
 
     .rate-para p {
@@ -2720,11 +2738,11 @@ ul li img {
         line-height: 1.3;
     }
 
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         text-justify: inter-word;
     }
 
@@ -2759,8 +2777,8 @@ ul li img {
         width: 90%;
     }
 
-    .floors h1 {
-        font-size: 3.5rem;
+    .floors h3 {
+        font-size: 3.7rem;
     }
 
     .floors p {
@@ -2825,8 +2843,8 @@ ul li img {
         line-height: 1.3;
     }
 
-    .rate-para h2 {
-        font-size: 1.2rem;
+    .rate-para h3 {
+        font-size: 1.4rem;
     }
 
     .profile-container img {
@@ -2948,9 +2966,9 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
-    .para h1 {
+    .para h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
 
     .para p {
@@ -2963,8 +2981,8 @@ ul li img {
         font-size: 1.1rem;
     }
 
-    .card-head h1 {
-        font-size: 1.5rem;
+    .card-head h3 {
+        font-size: 1.7rem;
     }
 
     .btn-learnmore a {
@@ -3042,8 +3060,8 @@ ul li img {
         justify-content: center;
     }
 
-    .rate-para h2 {
-        font-size: 1.3rem;
+    .rate-para h3 {
+        font-size: 1.5rem;
     }
 
     .rate-para p {
@@ -3051,11 +3069,11 @@ ul li img {
         line-height: 1.3;
     }
 
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         text-justify: inter-word;
     }
 
@@ -3080,8 +3098,8 @@ ul li img {
         width: 90%;
     }
 
-    .floors h1 {
-        font-size: 3.4rem;
+    .floors h3 {
+        font-size: 3.6rem;
     }
 
     .floors p {
@@ -3255,8 +3273,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
 
     .phone {
@@ -3341,8 +3359,8 @@ ul li img {
         gap: 1.5rem;
         padding: 2rem;
     }
-    .card-head h1 {
-        font-size: 1.6rem;
+    .card-head h3 {
+        font-size: 1.8rem;
     }
 
     .btn-learnmore a {
@@ -3406,11 +3424,11 @@ ul li img {
         line-height: 1.3;
     }
 
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         text-justify: inter-word;
     }
 
@@ -3462,8 +3480,8 @@ ul li img {
         color: white;
     }
 
-    .profile h1 {
-        font-size: 3.4rem;
+    .profile h3 {
+        font-size: 3.6rem;
     }
 
     .profile p {
@@ -3490,8 +3508,8 @@ ul li img {
         width: 90%;
     }
 
-    .content1 h1 {
-        font-size: 1.6rem;
+    .content1 h3 {
+        font-size: 1.8rem;
     }
 
     .structure-content h4 {
@@ -3514,8 +3532,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .contactpara h1 {
-        font-size: 1.8rem;
+    .contactpara h3 {
+        font-size: 2rem;
     }
 
     .icons img {
@@ -3550,8 +3568,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
 
     .phone {
@@ -3601,9 +3619,9 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
-    .para h1 {
+    .para h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     .para p {
         font-size: 1.4rem;
@@ -3641,8 +3659,8 @@ ul li img {
         border-radius: 1rem;
         padding: 1rem;
     }
-    .card-head h1 {
-        font-size: 1.7rem;
+    .card-head h3 {
+        font-size: 1.9rem;
     }
     .btn-learnmore2 a {
         text-decoration: none;
@@ -3657,11 +3675,11 @@ ul li img {
         height: 40rem;
         width: 40rem;
     }
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         text-justify: inter-word;
     }
     .card-pro-para {
@@ -3725,8 +3743,8 @@ ul li img {
         width: 40rem;
     }
 
-    .profile h1 {
-        font-size: 1.9rem;
+    .profile h3 {
+        font-size: 2.1rem;
     }
 
     .content-profile {
@@ -3814,8 +3832,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
 
     form {
@@ -3841,8 +3859,8 @@ ul li img {
         font-size: 0.8rem;
         padding: 1.8rem;
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.8rem;
     }
     .footer-row {
@@ -3903,8 +3921,8 @@ ul li img {
         flex-wrap: wrap;
     }
 
-    .rate-para h2 {
-        font-size: 1rem;
+    .rate-para h3 {
+        font-size: 1.2rem;
     }
 
     .rate-para p {
@@ -3994,8 +4012,8 @@ ul li img {
         gap: 26.8rem;
         color: var(--color-white);
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.8rem;
     }
 }
@@ -4072,9 +4090,9 @@ ul li img {
         /* text-align: justify; */
     }
 
-    .para h1 {
+    .para h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
 
     .para p {
@@ -4082,9 +4100,8 @@ ul li img {
         padding: 1rem 0rem 0rem 0rem;
         line-height: 1.4;
     }
-
     .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
+        padding: 1.5rem 26rem 1.5rem 26rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4114,8 +4131,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
     .rate-row {
         display: flex;
@@ -4249,8 +4266,8 @@ ul li img {
         gap: 25.2rem;
         color: var(--color-white);
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.6rem;
     }
 }
@@ -4294,9 +4311,9 @@ ul li img {
         /* text-align: justify; */
     }
 
-    .para h1 {
+    .para h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     .para p {
         font-size: 1.4rem;
@@ -4379,8 +4396,8 @@ ul li img {
         left: 5%;
     }
 
-    .rate-para h2 {
-        font-size: 1rem;
+    .rate-para h3 {
+        font-size: 1.2rem;
     }
 
     .card-pro img {
@@ -4518,8 +4535,8 @@ ul li img {
         padding: 0.5rem 0rem 0rem 1rem;
     }
 
-    .contactinfo h1 {
-        font-size: 1.5rem;
+    .contactinfo h3 {
+        font-size: 1.7rem;
     }
 
     .whyus-content {
@@ -4574,9 +4591,9 @@ ul li img {
         text-align: justify;
         padding: 1rem 2rem 0rem 0rem;
     }
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1rem 0rem 0.7rem 0rem;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .nav ul li {
         text-decoration: none;
@@ -4594,8 +4611,8 @@ ul li img {
         gap: 5rem;
     }
 
-    .card-head h1 {
-        font-size: 1.5rem;
+    .card-head h3 {
+        font-size: 1.7rem;
     }
 
     .card-pro-para {
@@ -4609,12 +4626,11 @@ ul li img {
         width: 3rem;
     }
 
-    .q1 h2 {
-        font-size: 1.2rem;
+    .q1 h3 {
+        font-size: 1.4rem;
     }
-
     .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
+        padding: 1.5rem 24rem 1.5rem 24rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4622,7 +4638,6 @@ ul li img {
         text-align: center;
         gap: 1rem;
     }
-
     .profile-container img {
         height: 24rem;
         width: 90%;
@@ -4644,8 +4659,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .rate-para h2 {
-        font-size: 1.1rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
     .rate-row {
         display: flex;
@@ -4684,8 +4699,8 @@ ul li img {
         gap: 25.8rem;
         color: var(--color-white);
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.8rem;
     }
 }
@@ -4816,8 +4831,8 @@ ul li img {
         padding: 0rem 17rem 0rem 17rem;
     }
 
-    .floors h1 {
-        font-size: 2.1rem;
+    .floors h3 {
+        font-size: 2.3rem;
     }
 
     .profile-container img {
@@ -4839,8 +4854,8 @@ ul li img {
         line-height: 1.3;
     }
 
-    .profile h1 {
-        font-size: 3.2rem;
+    .profile h3 {
+        font-size: 3.4rem;
     }
 
     .col-door h4 {
@@ -4865,8 +4880,8 @@ ul li img {
         gap: 4rem;
     }
 
-    .whyus-content h1 {
-        font-size: 1.7rem;
+    .whyus-content h3 {
+        font-size: 1.9rem;
     }
 
     .whyus-content p {
@@ -4893,8 +4908,8 @@ ul li img {
         width: 3rem;
     }
 
-    .q1 h2 {
-        font-size: 1.2rem;
+    .q1 h3 {
+        font-size: 1.4rem;
     }
 
     .q1 {
@@ -4903,9 +4918,8 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
-
     .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
+        padding: 1.5rem 20rem 1.5rem 20rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4913,7 +4927,6 @@ ul li img {
         text-align: center;
         gap: 1rem;
     }
-
     .door-whyus-img img {
         height: 15rem;
         width: 30rem;
@@ -4950,8 +4963,8 @@ ul li img {
         font-size: 0.8rem;
         padding: 1.6rem;
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.5rem;
     }
 }
@@ -4998,9 +5011,9 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
-    .para h1 {
+    .para h3 {
         padding: 0rem 0rem 0rem 0rem;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
     .para p {
         font-size: 1.4rem;
@@ -5112,8 +5125,8 @@ ul li img {
         color: black;
     }
 
-    .floors h1 {
-        font-size: 2rem;
+    .floors h3 {
+        font-size: 2.2rem;
     }
 
     .profile p {
@@ -5141,8 +5154,8 @@ ul li img {
         width: 3rem;
     }
 
-    .q1 h2 {
-        font-size: 1.2rem;
+    .q1 h3 {
+        font-size: 1.4rem;
     }
 
     .q1 {
@@ -5151,9 +5164,8 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
-
     .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
+        padding: 1.5rem 20rem 1.5rem 20rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5161,7 +5173,6 @@ ul li img {
         text-align: center;
         gap: 1rem;
     }
-
     .footer-row {
         display: flex;
         align-items: center;
@@ -5298,8 +5309,8 @@ ul li img {
         text-align: center;
         line-height: 1.4rem;
     }
-    .card-head h1 {
-        font-size: 1.4rem;
+    .card-head h3 {
+        font-size: 1.6rem;
     }
     .paragraph p {
         line-height: 1.4;
@@ -5309,9 +5320,9 @@ ul li img {
         padding: 1rem 2rem 0rem 0rem;
     }
 
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1rem 0rem 1rem 0rem;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .content img {
@@ -5354,12 +5365,12 @@ ul li img {
         padding: 0rem 11rem 0rem 13rem;
     }
 
-    .floors h1 {
-        font-size: 1.6rem;
+    .floors h3 {
+        font-size: 1.8rem;
     }
 
-    .content1 h1 {
-        font-size: 1.9rem;
+    .content1 h3 {
+        font-size: 2rem;
     }
 
     .contactform {
@@ -5371,8 +5382,8 @@ ul li img {
         flex-direction: column;
     }
 
-    .contactpara h1 {
-        font-size: 1.5rem;
+    .contactpara h3 {
+        font-size: 1.7rem;
     }
 
     .q1 img {
@@ -5380,8 +5391,8 @@ ul li img {
         width: 3rem;
     }
 
-    .q1 h2 {
-        font-size: 1.2rem;
+    .q1 h3 {
+        font-size: 1.4rem;
     }
 
     .q1 {
@@ -5390,9 +5401,8 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
-
     .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
+        padding: 1.5rem 18rem 1.5rem 18rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5432,8 +5442,8 @@ ul li img {
         padding: 1rem;
     }
 
-    .aboutus h1 {
-        font-size: 2.7rem;
+    .aboutus h3 {
+        font-size: 2.9rem;
         padding: 0rem 0rem 0rem 0rem;
     }
 
@@ -5454,17 +5464,17 @@ ul li img {
         padding: 1rem 2rem 0rem 0rem;
     }
 
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1rem 0rem 1rem 0rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
-    .contactpara h1 {
-        font-size: 1.5rem;
+    .contactpara h3 {
+        font-size: 1.7rem;
     }
 
-    .content1 h1 {
-        font-size: 1.6rem;
+    .content1 h3 {
+        font-size: 1.8rem;
     }
 
     .rate-para p {
@@ -5483,8 +5493,8 @@ ul li img {
         width: 3rem;
     }
 
-    .q1 h2 {
-        font-size: 1.2rem;
+    .q1 h3 {
+        font-size: 1.4rem;
     }
 
     .q1 {
@@ -5493,9 +5503,8 @@ ul li img {
         align-items: center;
         gap: 0.6rem;
     }
-
     .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
+        padding: 1.5rem 17rem 1.5rem 17rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5503,7 +5512,6 @@ ul li img {
         text-align: center;
         gap: 1rem;
     }
-
     .card-body p {
         font-size: 1rem;
     }
@@ -5666,17 +5674,17 @@ ul li img {
         padding: 1rem 2rem 0rem 0rem;
     }
 
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1rem 0rem 1rem 0rem;
+        font-size: 2rem;
+    }
+
+    .contactpara h3 {
+        font-size: 1.7rem;
+    }
+
+    .content1 h3 {
         font-size: 1.8rem;
-    }
-
-    .contactpara h1 {
-        font-size: 1.5rem;
-    }
-
-    .content1 h1 {
-        font-size: 1.6rem;
     }
 
     .rate-para p {
@@ -5716,8 +5724,8 @@ ul li img {
         line-height: 1.3;
     }
 
-    .profile h1 {
-        font-size: 3rem;
+    .profile h3 {
+        font-size: 3.2rem;
     }
 
     .profile p {
@@ -5776,8 +5784,8 @@ ul li img {
         width: 3rem;
     }
 
-    .q1 h2 {
-        font-size: 1.2rem;
+    .q1 h3 {
+        font-size: 1.4rem;
     }
 
     .q1 {
@@ -5788,7 +5796,7 @@ ul li img {
     }
 
     .main-q {
-        padding: 1.5rem 10rem 1.5rem 10rem;
+        padding: 1.5rem 16rem 1.5rem 16rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5845,8 +5853,8 @@ ul li img {
         height: 32rem;
         width: 24rem;
     }
-    .card-head h1 {
-        font-size: 1.3rem;
+    .card-head h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -5859,16 +5867,16 @@ ul li img {
         gap: 13.2rem;
         color: var(--color-white);
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.7rem;
     }
     .footerLast p {
         font-size: 0.8rem;
         padding: 1.8rem;
     }
-    .card-head h1 {
-        font-size: 1.3rem;
+    .card-head h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -5972,8 +5980,8 @@ ul li img {
         padding: 1rem 0rem 1rem 0rem; */
     }
 
-    .card-head h1 {
-        font-size: 1.4rem;
+    .card-head h3 {
+        font-size: 1.6rem;
         text-align: center;
     }
 
@@ -5983,18 +5991,18 @@ ul li img {
         width: 28rem;
     }
     .main-q {
-        padding: 1.5rem 5rem 1.5rem 5rem;
+        padding: 1.5rem 15rem 1.5rem 15rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
         gap: 1rem;
-    }  .productsh1 h2 {
+    }  .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         text-justify: inter-word;
     }
 
@@ -6073,9 +6081,9 @@ ul li img {
         padding: 2rem;
     }
 
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .rate-col-1 {
@@ -6116,11 +6124,11 @@ ul li img {
         position: relative;
     }
 
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         text-justify: inter-word;
     }
 
@@ -6179,7 +6187,7 @@ ul li img {
         gap: 1.6rem;
     }
     .main-q {
-        padding: 1.5rem 8rem 1.5rem 8rem;
+        padding: 1.5rem 13rem 1.5rem 13rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -6207,8 +6215,8 @@ ul li img {
         font-size: 0.8rem;
         padding: 1.6rem;
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.5rem;
     }
 }
@@ -6291,7 +6299,7 @@ ul li img {
         color: var(--color-white);
     }
     .main-q {
-        padding: 1.5rem 6rem 1.5rem 6rem;
+        padding: 1.5rem 12rem 1.5rem 12rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -6313,7 +6321,7 @@ ul li img {
 
 @media only screen and (max-width: 821px) {
     .main-q {
-        padding: 1.5rem 5rem 1.5rem 5rem;
+        padding: 1.5rem 10rem 1.5rem 10rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -6418,9 +6426,9 @@ ul li img {
         line-height: 1.3;
     }
 
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .paragraph p {
@@ -6442,13 +6450,13 @@ ul li img {
         font-size: 1.2rem;
         line-height: 1.3;
     }
-    .ourmissionh1 h1 {
+    .ourmissionh1 h3 {
         color: var(--color-white);
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         padding: 1rem;
     }
-    .rate-quote h1 {
-        font-size: 1.4rem;
+    .rate-quote h3 {
+        font-size: 1.6rem;
     }
 
     .rate-para p {
@@ -6519,8 +6527,8 @@ ul li img {
         font-size: 1rem;
     }
 
-    .aboutus h1 {
-        font-size: 2rem;
+    .aboutus h3 {
+        font-size: 2.2rem;
         padding: 0rem 0rem 0rem 0rem;
     }
 
@@ -6529,11 +6537,11 @@ ul li img {
         line-height: 1.3;
     }
 
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         text-justify: inter-word;
     }
 
@@ -6568,8 +6576,8 @@ ul li img {
         color: white;
     }
 
-    .floors h1 {
-        font-size: 1.6rem;
+    .floors h3 {
+        font-size: 1.8rem;
     }
 
     .floors p {
@@ -6598,8 +6606,8 @@ ul li img {
         color: black;
     }
 
-    .content1 h1 {
-        font-size: 1.7rem;
+    .content1 h3 {
+        font-size: 1.9rem;
     }
 
     .quality {
@@ -6627,8 +6635,8 @@ ul li img {
         gap: 3rem;
     }
 
-    .profile h1 {
-        font-size: 1.5rem;
+    .profile h3 {
+        font-size: 1.7rem;
     }
 
     .profile p {
@@ -6731,16 +6739,16 @@ ul li img {
         width: 80%;
     }
 
-    .whyus-content h1 {
-        font-size: 1.2rem;
+    .whyus-content h3 {
+        font-size: 1.4rem;
     }
 
     .q1 p {
         font-size: 0.9rem;
     }
 
-    .q1 h2 {
-        font-size: 1.1rem;
+    .q1 h3 {
+        font-size: 1.3rem;
     }
 
     .footerSec-row h6 {
@@ -6992,7 +7000,7 @@ ul li img {
     }
 
     .main-q {
-        padding: 1.5rem 3rem 1.5rem 3rem;
+        padding: 1.5rem 9rem 1.5rem 9rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -7030,8 +7038,8 @@ ul li img {
         line-height: 1.4;
     }
 
-    .content1 h1 {
-        font-size: 1.4rem;
+    .content1 h3 {
+        font-size: 1.6rem;
     }
 
     .content1 p {
@@ -7139,16 +7147,16 @@ ul li img {
         width: 80%;
     }
 
-    .whyus-content h1 {
-        font-size: 1.2rem;
+    .whyus-content h3 {
+        font-size: 1.4rem;
     }
 
     .q1 p {
         font-size: 0.8rem;
     }
 
-    .q1 h2 {
-        font-size: 1.1rem;
+    .q1 h3 {
+        font-size: 1.3rem;
     }
 
     .footerSec-row h6 {
@@ -7212,7 +7220,7 @@ ul li img {
     }
 
     .main-q {
-        padding: 1.5rem 4rem 1.5rem 4rem;
+        padding: 1.5rem 8rem 1.5rem 8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -7283,8 +7291,8 @@ ul li img {
         flex-direction: column;
     }
 
-    .card-head h1 {
-        font-size: 1.2rem;
+    .card-head h3 {
+        font-size: 1.4rem;
         text-align: center;
     }
 
@@ -7319,8 +7327,8 @@ ul li img {
         text-align: center;
     }
 
-    .q1 h2 {
-        font-size: 1rem;
+    .q1 h3 {
+        font-size: 1.1rem;
     }
 
     .q1 p {
@@ -7459,8 +7467,8 @@ ul li img {
         gap: 0.5rem;
         padding: 1rem;
     }
-    footer h1 {
-        font-size: 1.1rem;
+    footer h3 {
+        font-size: 1.3rem;
         padding: 1.4rem 0rem 1.4rem 1.7rem;
     }
     .footerLast p {
@@ -7507,8 +7515,8 @@ ul li img {
         border-bottom-left-radius: 4rem;
     }
 
-    .para h1 {
-        font-size: 1.8rem;
+    .para h3 {
+        font-size: 2rem;
     }
     .para {
         left: 2rem;
@@ -7564,8 +7572,8 @@ ul li img {
         line-height: 1.3;
     }
 
-    .rate-para h2 {
-        font-size: 1.2rem;
+    .rate-para h3 {
+        font-size: 1.3rem;
     }
 
     .rate-para p {
@@ -7614,9 +7622,9 @@ ul li img {
         padding: 1.4rem 0rem 1.2rem 0.8rem;
     }
     footer,
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 0.6rem;
     }
 
@@ -7638,11 +7646,11 @@ ul li img {
         text-decoration: none;
     }
 
-    .productsh1 h2 {
+    .productsh1 h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-justify: inter-word;
     }
 
@@ -7661,8 +7669,8 @@ ul li img {
         color: white;
     }
 
-    .floors h1 {
-        font-size: 1.5rem;
+    .floors h3 {
+        font-size: 1.7rem;
     }
 
     .floors p {
@@ -7694,8 +7702,8 @@ ul li img {
         width: 88%;
     }
 
-    .content1 h1 {
-        font-size: 1.3rem;
+    .content1 h3 {
+        font-size: 1.5rem;
     }
 
     .content1 p {
@@ -7721,8 +7729,8 @@ ul li img {
         gap: 0.7rem;
     }
 
-    .whyus-content h1 {
-        font-size: 1.4rem;
+    .whyus-content h3 {
+        font-size: 1.6rem;
     }
 
     .whyus-content p {
@@ -7742,8 +7750,8 @@ ul li img {
         width: 2.5rem;
     }
 
-    .q1 h2 {
-        font-size: 1rem;
+    .q1 h3 {
+        font-size: 1.1rem;
     }
 
     .q1 p {
@@ -7770,8 +7778,8 @@ ul li img {
         color: white;
     }
 
-    .profile h1 {
-        font-size: 1.3rem;
+    .profile h3 {
+        font-size: 1.5rem;
     }
 
     .profile p {
@@ -7794,8 +7802,8 @@ ul li img {
         line-height: 1.2;
     }
 
-    .contactpara h1 {
-        font-size: 1.4rem;
+    .contactpara h3 {
+        font-size: 1.6rem;
     }
 
     .contactpara p {
@@ -7983,8 +7991,8 @@ ul li img {
         width: 6rem;
     }
 
-    .para h1 {
-        font-size: 1.6rem;
+    .para h3 {
+        font-size: 1.8rem;
     }
 
     .paragraph p {
@@ -8012,8 +8020,8 @@ ul li img {
         text-align: center;
     }
 
-    .rate-para h2 {
-        font-size: 1rem;
+    .rate-para h3 {
+        font-size: 1.1rem;
     }
 
     .rate-para p {
@@ -8033,7 +8041,7 @@ ul li img {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-justify: inter-word;
     }
 
@@ -8087,8 +8095,8 @@ ul li img {
         line-height: 1.3;
     }
 
-    .whyus-content h1 {
-        font-size: 1.2rem;
+    .whyus-content h3 {
+        font-size: 1.4rem;
     }
 
     .contactform {
@@ -8122,8 +8130,8 @@ ul li img {
         font-size: 0.7rem;
     }
 
-    .content2-head h2 {
-        font-size: 1.2rem;
+    .content2-head h3 {
+        font-size: 1.4rem;
     }
 
     .content2-head p {
@@ -8178,8 +8186,8 @@ ul li img {
         font-size: 1rem;
         top: 3rem;
     }
-    .main-q h1{
-        font-size: 1.5rem;
+    .main-q h3{
+        font-size: 1.7rem;
     }
 }
 
@@ -8220,9 +8228,9 @@ ul li img {
         gap: 4.5rem;
         color: var(--color-white);
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 0.8rem;
     }
 }
@@ -8330,8 +8338,8 @@ ul li img {
         gap: 1rem;
     }
 
-    .main-q h1 {
-        font-size: 1.5rem;
+    .main-q h3 {
+        font-size: 1.7rem;
     }
 
     .col-1 {
@@ -8438,8 +8446,8 @@ ul li img {
         gap: 1.5rem;
     }
 
-    .content1 h1 {
-        font-size: 1.1rem;
+    .content1 h3 {
+        font-size: 1.3rem;
     }
 
     .content-images2 img {
@@ -8627,9 +8635,9 @@ ul li img {
         gap: 0.7rem;
     }
 
-    .head-nav h2 {
+    .head-nav h3 {
         color: white;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding: 0.3rem;
     }
 
@@ -8686,8 +8694,8 @@ ul li img {
         width: 1.5rem;
     }
 
-    .card-head h1 {
-        font-size: 1rem;
+    .card-head h3 {
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -8904,9 +8912,9 @@ ul li img {
         gap: 3.6rem;
         color: var(--color-white);
     }
-    footer, footer h1 {
+    footer, footer h3 {
         background-color: #000;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 0.5rem;
     }
 }
@@ -8939,9 +8947,9 @@ ul li img {
         height: 20rem;
         width: 27rem;
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 0.7rem;
     }
     .footer-row .footer-ul h4 {
@@ -8965,9 +8973,9 @@ ul li img {
 
 @media only screen and (max-width: 510px)
 {
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 0.7rem;
     }
     .footer-row .footer-ul h4 {
@@ -9018,9 +9026,9 @@ ul li img {
         font-size: 1rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 0.6rem;
     }    
 }
@@ -9195,14 +9203,14 @@ ul li img {
         font-size: 0.8rem;
     }
 
-    .head-nav h2 {
+    .head-nav h3 {
         color: white;
         padding: 0.2rem 0rem 0rem 0.3rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
-    .contactpara h1 {
-        font-size: 1.2rem;
+    .contactpara h3 {
+        font-size: 1.4rem;
     }
 
     .contactpara p {
@@ -9239,11 +9247,10 @@ ul li img {
         border-radius: 1rem;
         padding: 1rem;
     }
-
     .card-body p {
         font-size: 0.9rem;
+        padding: 0rem 0rem 0rem 0.8rem;
     }
-
     .card1 {
         display: flex;
         flex-direction: column;
@@ -9260,13 +9267,13 @@ ul li img {
         padding: 0.3rem;
     }
 
-    .para h1 {
+    .para h3 {
         padding: 0rem 0rem 0rem 0rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
-    .q1 h2 {
-        font-size: 0.9rem;
+    .q1 h3 {
+        font-size: 1rem;
     }
 
     .content1 {
@@ -9346,18 +9353,18 @@ ul li img {
         gap: 1.8rem;
         color: var(--color-white);
     }
-    .paragraph h1 {
+    .paragraph h3 {
         padding: 1rem 0rem 0rem 0rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
-    .ourmissionh1 h1 {
+    .ourmissionh1 h3 {
         color: var(--color-white);
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 1rem;
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 0.7rem;
     }
     .footer-row .footer-ul h4 {
@@ -9379,9 +9386,9 @@ ul li img {
         font-size: 1rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.6rem;
     }   
     .para {
@@ -9491,23 +9498,23 @@ ul li img {
     .main-q p {
         font-size: 1rem;
     }
-    .aboutus h1 {
-        font-size: 1.7rem;
+    .aboutus h3 {
+        font-size: 1.9rem;
         padding: 0rem 0rem 0rem 0rem;
     }
     .rate-quote {
         padding: 0.2rem;
     }
-    .rate-quote h1 {
-        font-size: 1.2rem;
+    .rate-quote h3 {
+        font-size: 1.4rem;
     }
     .footer-row .footer-ul h4 {
         font-size: 0.9rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.7rem;
     }
 }
@@ -9548,18 +9555,18 @@ ul li img {
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 0.9rem;
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 442px)
 {
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.7rem;
     }
     .para {
@@ -9580,9 +9587,9 @@ ul li img {
         gap: 0.6rem;
         color: var(--color-white);
     }
-    footer, footer h1 {
+    footer, footer h3 {
         background-color: #000;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.7rem;
     }
     .para {
@@ -9610,16 +9617,15 @@ ul li img {
     .para p {
         font-size: 1.1rem;
     }
-
     .card-body p {
         font-size: 0.8rem;
-    }
-
+        padding: 0rem 0rem 0rem 0.6rem;
+    }    
     .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0rem;
+        gap: 0.5rem;
         padding: 0rem;
     }
 
@@ -9702,9 +9708,9 @@ ul li img {
         font-size: 0.8rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
     }
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0.7rem;
     }
     .footer-logo img {
@@ -9715,6 +9721,13 @@ ul li img {
         list-style: none;
         font-size: 0.6rem;
         line-height: 1.4;
+    }
+    .social-icons img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .social-icons {
+        gap: 1.5rem;
     }
 }
 
@@ -9752,9 +9765,9 @@ ul li img {
         font-size: 0.9rem;
         line-height: 1.3;
     }
-    .ourmissionh1 h1 {
+    .ourmissionh1 h3 {
         color: var(--color-white);
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 0.6rem;
     }
     .card2 {
@@ -9814,8 +9827,8 @@ ul li img {
         font-size: 0.8rem;
         line-height: 1.3;
     }
-    .q1 h2 {
-        font-size: 0.8rem;
+    .q1 h3 {
+        font-size: 0.9rem;
     }
     .q1 p {
         font-size: 0.7rem;
@@ -9848,8 +9861,8 @@ ul li img {
         color: rgb(30, 171, 30);
     }
 
-    .content2-head h2 {
-        font-size: 1rem;
+    .content2-head h3 {
+        font-size: 1.1rem;
     }
 
     .door-whyus-img img {
@@ -9912,7 +9925,7 @@ ul li img {
     }
     .card-body p {
         font-size: 0.8rem;
-        padding: 0rem 0rem 0rem 0.2rem;
+        padding: 0rem 0rem 0rem 0.8rem;
     }
     .col-door {
         width: 18rem;
@@ -9944,9 +9957,9 @@ ul li img {
 
 @media only screen and (max-width: 410px)
 {
-    footer h1 {
+    footer h3 {
         background-color: #000;
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 0.5rem;
     }
     .footerLast p {
@@ -9971,8 +9984,8 @@ ul li img {
 }
 
 @media only screen and (max-width: 400px) {
-    .main-q h1 {
-        font-size: 0.9rem;
+    .main-q h3 {
+        font-size: 1.1rem;
     }
 
     .head {
@@ -9984,12 +9997,12 @@ ul li img {
         gap: 0.2rem;
     }
 
-    .aboutus h1 {
-        font-size: 1rem;
+    .aboutus h3 {
+        font-size: 1.2rem;
     }
 
-    .contactpara h1 {
-        font-size: 1rem;
+    .contactpara h3 {
+        font-size: 1.2rem;
     }
     .para {
         top: 1.8rem;
@@ -10021,7 +10034,7 @@ ul li img {
         padding: 0.5rem;
     }
 
-    footer h1 {
+    footer h3 {
         padding: 1.4rem 0rem 1.4rem 0.4rem;
     }
 
@@ -10068,8 +10081,8 @@ ul li img {
         font-size: 0.9rem;
     }
 
-    .card-head h1 {
-        font-size: 1rem;
+    .card-head h3 {
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -10157,8 +10170,8 @@ ul li img {
         padding: 0.5rem;
         text-align: center;
     }
-    .q1 h2 {
-        font-size: 0.8rem;
+    .q1 h3 {
+        font-size: 0.9rem;
     }
     .q1 p {
         font-size: 0.8rem;
@@ -10188,18 +10201,18 @@ ul li img {
     .col-profile1 {
         gap: 0.6rem;
     }
-    .col-profile1 h1 {
-        font-size: 1.1rem;
+    .col-profile1 h3 {
+        font-size: 1.3rem;
     }
     .profile-container img {
         height: 10rem;
         width: 100%;
     }
-    .content1 h2 {
-        font-size: 1rem;
+    .content1 h3 {
+        font-size: 1.1rem;
     }
-    .content2 h2 {
-        font-size: 1.2rem;
+    .content2 h3 {
+        font-size: 1.3rem;
     }
     .content-col img {
         height: 3.4rem;
@@ -10212,8 +10225,8 @@ ul li img {
         width: 22rem;
         height: 10rem;
     }
-    .content1 h1 {
-        font-size: 1.2rem;
+    .content1 h3 {
+        font-size: 1.4rem;
         line-height: 1.2;
     }
     .door-whyus-img img {
@@ -10223,8 +10236,8 @@ ul li img {
         width: 18rem;
         gap: 0.2rem;
     }
-    .col-door h1 {
-        font-size: 0.7rem;
+    .col-door h3 {
+        font-size: 0.9rem;
     }
     .col-door p {
         font-size: 0.7rem;
@@ -10258,14 +10271,14 @@ ul li img {
         height: 5rem;
         width: 5rem;
     }
-    .main-q h1 {
-        font-size: 1.5rem;
+    .main-q h3 {
+        font-size: 1.7rem;
     }
     .main-q p {
         font-size: 1rem;
     }
-    .ourworkh1 h2 {
-        font-size: 1.1rem;
+    .ourworkh1 h3 {
+        font-size: 1.2rem;
     }
     .row-ourwork {
         display: flex;
@@ -10286,26 +10299,26 @@ ul li img {
         font-size: 0.9rem;
         padding: 0rem 0rem 0rem 0.2rem;
     }
-    .productsh1 h2 {
-        font-size: 1rem;
-    }
-    .paragraph h1 {
-        font-size: 1rem;
-    }
-    .ourmissionh1 h1 {
+    .productsh1 h3 {
         font-size: 1.1rem;
     }
-    .rate-quote h1 {
-        font-size: 1rem;
+    .paragraph h3 {
+        font-size: 1.2rem;
     }
-    .profile h1 {
-        font-size: 1.1rem;
+    .ourmissionh1 h3 {
+        font-size: 1.3rem;
+    }
+    .rate-quote h3 {
+        font-size: 1.3rem;
+    }
+    .profile h3 {
+        font-size: 1.3rem;
     }
     .content1 ul {
         padding: 0rem 0rem 0rem 1rem;
     }
-    .content1 h1 {
-        font-size: 1rem;
+    .content1 h3 {
+        font-size: 1.2rem;
     }
     .content1 p {
         font-size: 0.9rem;
@@ -10330,8 +10343,8 @@ ul li img {
         width: 100%;
         height: 12rem;
     }
-    .rate-para h2 {
-        font-size: 1rem;
+    .rate-para h3 {
+        font-size: 1.1rem;
     }
     .product-card {
         display: flex;
@@ -10353,8 +10366,8 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
-    footer h1 {
-        font-size: 1rem;
+    footer h3 {
+        font-size: 1.2rem;
         padding: 0.7rem;
     }
     .footer-ul ul li {
@@ -10371,14 +10384,14 @@ ul li img {
         font-size: 0.6rem;
         padding: 1.4rem 0rem 1.2rem 0.8rem;
     }
-    .q1 h2 {
-        font-size: 0.7rem;
+    .q1 h3 {
+        font-size: 0.8rem;
     }
     .footer-ul ul li {
         font-size: 0.7rem;
     }
-    .main-q h1{
-    font-size: 1.4rem;
+    .main-q h3{
+    font-size: 1.6rem;
     }
 }
 
@@ -10406,8 +10419,8 @@ ul li img {
         gap: 0.5rem;
     }
 
-    .q1 h2 {
-        font-size: 0.9rem;
+    .q1 h3 {
+        font-size: 1rem;
     }
 
     .q1 p {
@@ -10490,8 +10503,8 @@ ul li img {
     .col-door h4 {
         font-size: 0.9rem;
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 1rem;
     }
     .footer-ul ul li {
@@ -10576,8 +10589,8 @@ ul li img {
         font-size: 0.8rem;
         padding: 0rem 0rem 0rem 0.2rem;
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.8rem;
     }
     .para {
@@ -10591,8 +10604,8 @@ ul li img {
 
 @media only screen and (max-width: 382px)
 {
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.8rem;
     }
 }
@@ -10619,8 +10632,8 @@ ul li img {
         width: 1.5rem;
     }
 
-    .q1 h2 {
-        font-size: 0.7rem;
+    .q1 h3 {
+        font-size: 0.8rem;
     }
 
     .q1 p {
@@ -10818,11 +10831,11 @@ ul li img {
         border-radius: 0.8rem;
     }
 
-    .main-q h1 {
-        font-size: 1.2rem;
+    .main-q h3 {
+        font-size: 1.4rem;
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.8rem;
     }
     .footer-ul ul li {
@@ -10894,8 +10907,8 @@ ul li img {
 }
 
 @media only screen and (max-width: 370px) {
-    .main-q h1 {
-        font-size: 0.9rem;
+    .main-q h3 {
+        font-size: 1.1rem;
     }
 
     .col-door h4 {
@@ -10907,12 +10920,12 @@ ul li img {
         gap: 0.2rem;
     }
 
-    .aboutus h1 {
-        font-size: 1rem;
+    .aboutus h3 {
+        font-size: 1.2rem;
     }
 
-    .contactpara h1 {
-        font-size: 1rem;
+    .contactpara h3 {
+        font-size: 1.2rem;
     }
 
     .content1 {
@@ -10948,8 +10961,8 @@ ul li img {
         padding: 1rem;
     }
 
-    .aboutus h1 {
-        font-size: 1rem;
+    .aboutus h3 {
+        font-size: 1.2rem;
     }
 
     .aboutus p {
@@ -10979,13 +10992,13 @@ ul li img {
         padding: 1rem;
     }
 
-    .rate-quote h1 {
-        font-size: 1.2rem;
+    .rate-quote h3 {
+        font-size: 1.4rem;
     }
 
-    .ourmissionh1 h1 {
+    .ourmissionh1 h3 {
         color: var(--color-white);
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: 2rem;
     }
 
@@ -11022,8 +11035,8 @@ ul li img {
         justify-content: center;
     }
 
-    .q1 h2 {
-        font-size: 0.7rem;
+    .q1 h3 {
+        font-size: 0.8rem;
     }
 
     .q1 p {
@@ -11058,8 +11071,8 @@ ul li img {
         padding: 1rem 0rem 4rem 1rem;
     }
 
-    .col-profile1 h1 {
-        font-size: 1rem;
+    .col-profile1 h3 {
+        font-size: 1.2rem;
     }
 
     .profile-container img {
@@ -11072,8 +11085,8 @@ ul li img {
         width: 20rem;
     }
 
-    .content2 h1 {
-        font-size: 1.2rem;
+    .content2 h3 {
+        font-size: 1.4rem;
     }
 
     .content2 p a {
@@ -11133,16 +11146,16 @@ ul li img {
         padding: 1.5rem 2rem 1.5rem 2rem;
     }
 
-    .main-q h1 {
-        font-size: 2rem;
+    .main-q h3 {
+        font-size: 2.1rem;
     }
 
     .main-q p {
         font-size: 0.9rem;
     }
 
-    .ourworkh1 h2 {
-        font-size: 1.1rem;
+    .ourworkh1 h3 {
+        font-size: 1.2rem;
     }
 
     .btn-read-more {
@@ -11158,27 +11171,27 @@ ul li img {
         text-decoration: none;
     }
 
-    .productsh1 h2 {
-        font-size: 0.9rem;
-    }
-
-    .paragraph h1 {
+    .productsh1 h3 {
         font-size: 1rem;
     }
 
-    .ourmissionh1 h1 {
-        font-size: 1rem;
+    .paragraph h3 {
+        font-size: 1.2rem;
     }
 
-    .rate-quote h1 {
-        font-size: 1rem;
+    .ourmissionh1 h3 {
+        font-size: 1.2rem;
     }
-    footer h1 {
-        font-size: 0.8rem;
+
+    .rate-quote h3 {
+        font-size: 1.2rem;
+    }
+    footer h3 {
+        font-size: 1rem;
         padding: 0.8rem;
     }
-    .profile h1 {
-        font-size: 1.1rem;
+    .profile h3 {
+        font-size: 1.3rem;
     }
 
     .content1 ul {
@@ -11314,8 +11327,8 @@ ul li img {
         padding: 0rem 2rem 0rem 2rem;
         text-justify: inter-word;
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.8rem;
     }
     .content1 p {
@@ -11424,16 +11437,16 @@ ul li img {
         width: 20rem;
         height: 18.3rem;
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.7rem;
     }
 }
 
 @media only screen and (max-width: 358px)
 {
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.6rem;
     }
     .para {
@@ -11452,8 +11465,8 @@ ul li img {
         width: 19.2rem;
         height: 18.4rem;
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.5rem;
     }
 }
@@ -11472,8 +11485,8 @@ ul li img {
         border-top-right-radius: 3rem;
         border-bottom-right-radius: 3rem;
     }
-    .main-q h1 {
-        font-size: 1.5rem;
+    .main-q h3 {
+        font-size: 1.7rem;
     }
     .para {
         top: 2.6rem;
@@ -11481,8 +11494,8 @@ ul li img {
         width: 18.6rem;
         height: 19rem;
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.5rem;
     }
 }
@@ -11528,14 +11541,14 @@ ul li img {
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
-    .q1 h2 {
-        font-size: 0.6rem;
+    .q1 h3 {
+        font-size: 0.8rem;
     }
     .q1 p {
         font-size: 0.6rem;
     }
-    .main-q h1 {
-        font-size: 1.3rem;
+    .main-q h3 {
+        font-size: 1.5rem;
     }
 
     .para p {
@@ -11701,8 +11714,8 @@ ul li img {
         padding: 0rem;
     }
 
-    .card-head h1 {
-        font-size: 0.9rem;
+    .card-head h3 {
+        font-size: 1.1rem;
         text-align: center;
     }
 
@@ -11741,8 +11754,8 @@ ul li img {
         gap: 0rem;
         color: var(--color-white);
     }
-    footer h1 {
-        font-size: 0.8rem;
+    footer h3 {
+        font-size: 1rem;
         padding: 0.3rem;
     }
 }
@@ -11805,4 +11818,16 @@ iframe {
     width: 2.5rem;
     /* -webkit-filter: invert(); */
     padding: 0rem 1rem 0rem 0rem;
+}
+
+/* social media icons */
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.social-icons img{
+    height: 2rem;
+    width: 2rem;
 }
