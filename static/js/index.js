@@ -15,3 +15,4 @@ Open.addEventListener("click", () => {
        headNav.style.borderRadius = "1.2rem";
     }
 });
+
