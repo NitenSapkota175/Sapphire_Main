@@ -159,7 +159,7 @@ class Our_Works(models.Model):
     
 
 class Product_Type_1(models.Model):
-    Product_Name = models.CharField(max_length=225,null=True)  
+    Product_Name =models.CharField(max_length=225,null=True)
     Product_Short_Description_1 = models.CharField(max_length=225)
     Product_Top_Background_Image = models.ImageField()
     Product_Short_Description_2 = models.CharField(max_length=225)
@@ -244,7 +244,7 @@ class Product_Type1_Assurances(models.Model):
 class Product_Type_2(models.Model):
    
 
-    Product_Name = models.CharField(max_length=225,null=True)  
+    Product_Name = models.CharField(max_length=225,null=True)
     Product_Short_Description_1 = models.CharField(max_length=225)
     Product_Top_Background_Image = models.ImageField()
     Product_Short_Description_2 = models.CharField(max_length=225)
