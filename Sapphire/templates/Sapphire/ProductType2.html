@@ -10,7 +10,9 @@
 <img src="{{product2.Product_Top_Background_Image.url}}" alt="">
 
     <div class="floors">
-        <h3>{{product2.Product_Name | linebreaks}}</h3>
+        <!-- <h3>{{product2.Product_Name | linebreaks}}</h3> -->
+        <h3>uPVC</h3>
+        <h3>PROFILES</h3>
         <p>{{product2.Product_Short_Description_1}}</p>
        
     </div>
@@ -25,7 +27,6 @@
     <div class="visitcommo">
        
         {%if product2.Website_Link%}
-        <button class="btn-more">{{product1.Website_Link}}</button>
         <h5>{{product2.Visit_Our_Website_Title}}</h5>
         <p>{{product2.Website_Link}}</p>
         {%endif%}
