@@ -872,10 +872,10 @@ form textarea {
 
 .profile-container {
     display: flex;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0rem 0rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
 }
 
 .profile-container img {
@@ -1098,8 +1098,8 @@ form textarea {
     color: var(--color-white);
 }
 .structure-img img {
-    height: 45rem;
-    width: 44rem;
+    height: 40rem;
+    width: 40rem;
 }
 .structure-content {
     display: flex;
@@ -1271,6 +1271,31 @@ ul li img {
     width: 1.8rem;
     padding: 0rem 0.7rem 0rem 0rem;
 }
+/* social media icons */
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.social-icons img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+h1{
+    display: none;
+}
+
+h2{
+    display: none;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
 @media only screen and (max-width: 1921px) {
     .content1 p {
         font-size: 1.4rem;
@@ -1431,23 +1456,18 @@ ul li img {
     .rate-para h3 {
         font-size: 1.3rem;
     }
-
     .address {
         padding: 0rem 0rem 0rem 4.5rem;
     }
-
     .phone {
         padding: 0rem 0rem 0rem 4rem;
     }
-
     .Factoryaddress {
-        padding: 0rem 0rem 0rem 0.6rem;
+        padding: 0rem 0rem 0rem 0.8rem;
     }
-
     .emailus {
-        padding: 0rem 2rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0.5rem;
     }
-
     .contactinfo h3 {
         font-size: 2.2rem;
         padding: 0rem 0rem 0rem 0rem;
@@ -1471,6 +1491,9 @@ ul li img {
         border-radius: 1rem;
         padding: 1rem;
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 10rem;
+    }
 }
 
 @media only screen and (max-width: 1910px)
@@ -1482,6 +1505,9 @@ ul li img {
         gap: 35.6rem;
         color: var(--color-white);
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 9rem;
+    }
 }
 
 @media only screen and (max-width: 1890px) {
@@ -1492,7 +1518,9 @@ ul li img {
         gap: 35.5rem;
         color: var(--color-white);
     }
-
+    .structure-img{
+        padding: 0rem 0rem 0rem 8rem;
+    }
     .para {
         position: absolute;
         left: 14rem;
@@ -1615,6 +1643,9 @@ ul li img {
         gap: 36.9rem;
         color: var(--color-white);
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 7.5rem;
+    }
 }
 
 @media only screen and (max-width: 1795px) {
@@ -1670,6 +1701,9 @@ ul li img {
         background-color: rgba(0, 0, 0, 0.72);
         /* text-align: justify; */
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 7rem;
+    }
 }
 @media only screen and (max-width: 1760px)
 {
@@ -1708,6 +1742,9 @@ ul li img {
     }
     footer h3 {
         padding: 1.4rem 0rem 1.4rem 1.5rem;
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 6.5rem;
     }
 }
 @media only screen and (max-width: 1731px)
@@ -1799,11 +1836,10 @@ ul li img {
     }
 
     .phone {
-        padding: 0rem 0rem 0rem 3.5rem;
+        padding: 0rem 0rem 0rem 4.5rem;
     }
-
     .emailus {
-        padding: 0rem 2.5rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 1rem;
     }
     .footer-row {
         display: flex;
@@ -1838,6 +1874,9 @@ ul li img {
         gap: 1rem;
         color: rgb(21, 20, 20);
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 6rem;
+    }
 }
 
 @media only screen and (max-width: 1693px)
@@ -1848,6 +1887,9 @@ ul li img {
         justify-content: center;
         gap: 34rem;
         color: var(--color-white);
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 5.5rem;
     }
 }
 
@@ -1887,6 +1929,9 @@ ul li img {
         gap: 1rem;
         padding: 2rem;
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 5rem;
+    }
 }
 
 @media only screen and (max-width: 1640px)
@@ -1917,6 +1962,9 @@ ul li img {
         width: 40rem;
         /* align-items: center; */
         padding: 1rem 4rem 1rem 4rem;
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 4.5rem;
     }
 }
 
@@ -2127,11 +2175,9 @@ ul li img {
     .phone {
         padding: 0rem 0rem 0rem 3rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 1.2rem;
+        padding: 0rem 0rem 0rem 4rem;
     }
-
     .Factoryaddress {
         padding: 0rem 0rem 0rem 1.2rem;
     }
@@ -2152,6 +2198,9 @@ ul li img {
         justify-content: center;
         gap: 13rem;
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 4rem;
+    }
 }
 
 @media only screen and (max-width: 1590px)
@@ -2162,6 +2211,9 @@ ul li img {
         justify-content: center;
         gap: 33.9rem;
         color: var(--color-white);
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 3.5rem;
     }
 }
 
@@ -2202,6 +2254,9 @@ ul li img {
         justify-content: center;
         gap: 33.2rem;
         color: var(--color-white);
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 3rem;
     }
 }
 
@@ -2508,9 +2563,8 @@ ul li img {
     .phone {
         padding: 0rem 0rem 0rem 5rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 0.4rem;
+        padding: 0rem 0rem 0rem 4.2rem;
     }
     .footer-row{
         display: flex;
@@ -2557,6 +2611,9 @@ ul li img {
         gap: 32rem;
         color: var(--color-white);
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 3rem;
+    }
 }
 
 @media only screen and (max-width: 1522px)
@@ -2579,8 +2636,8 @@ ul li img {
         color: var(--color-white);
     }
     .emailus {
-        padding: 0rem 0rem 0rem 1rem;
-    }
+        padding: 0rem 0rem 0rem 4.5rem;
+    }    
 }
 
 @media only screen and (max-width: 1505px)
@@ -2903,6 +2960,9 @@ ul li img {
         gap: 31.2rem;
         color: var(--color-white);
     }
+    .structure-img{
+        padding: 0rem 0rem 0rem 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 1496px)
@@ -2913,6 +2973,9 @@ ul li img {
         justify-content: center;
         gap: 31rem;
         color: var(--color-white);
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 2rem;
     }
 }
 
@@ -3149,9 +3212,8 @@ ul li img {
     .phone {
         padding: 0rem 0rem 0rem 4.5rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 1rem;
+        padding: 0rem 0rem 0rem 4rem;
     }
     .footer-row {
         display: flex;
@@ -3179,6 +3241,9 @@ ul li img {
         justify-content: center;
         gap: 29.8rem;
         color: var(--color-white);
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 1.8rem;
     }
 }
 
@@ -3278,7 +3343,7 @@ ul li img {
     }
 
     .emailus {
-        padding: 0rem 0rem 0rem 1rem;
+        padding: 0rem 0rem 0rem 4.4rem;
     }
     .footer-row {
         display: flex;
@@ -3494,9 +3559,10 @@ ul li img {
 
     .profile-container {
         display: flex;
-        padding: 1rem;
+        padding: 0rem 0rem 1rem 0rem;
         align-items: center;
         justify-content: center;
+        margin: 0.8rem 0rem 0rem 0rem;
     }
 
     .profile-container img {
@@ -3573,7 +3639,7 @@ ul li img {
     }
 
     .emailus {
-        padding: 0rem 0rem 0rem 1.5rem;
+        padding: 0rem 0rem 0rem 4.5rem;
     }
     .footer-row {
         display: flex;
@@ -3581,6 +3647,9 @@ ul li img {
         justify-content: center;
         gap: 28.6rem;
         color: var(--color-white);
+    }
+    .structure-img{
+        padding: 0rem 0rem 0rem 1rem;
     }
 }
 
@@ -3593,6 +3662,9 @@ ul li img {
     gap: 28.4rem;
     color: var(--color-white);
    }
+   .structure-img{
+        padding: 0rem 0rem 0rem 0rem;
+    }
 }
 
 @media only screen and (max-width: 1401px) {
@@ -3766,11 +3838,9 @@ ul li img {
     .phone {
         padding: 0rem 0rem 0rem 4rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 0.5rem;
+        padding: 0rem 0rem 0rem 4rem;
     }
-
     .contactpara {
         display: flex;
         flex-direction: column;
@@ -3960,11 +4030,11 @@ ul li img {
     }
 
     .phone {
-        padding: 0rem 0rem 0rem 4rem;
+        padding: 0rem 0rem 0rem 4.2rem;
     }
 
     .emailus {
-        padding: 0rem 0rem 0rem 0.5rem;
+        padding: 0rem 0rem 0rem 4rem;
     }
 
     .structure-img img {
@@ -4062,11 +4132,9 @@ ul li img {
     .phone {
         padding: 0rem 0rem 0rem 4.5rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 0.5rem;
+        padding: 0rem 0rem 0rem 4rem;
     }
-
     .contactinfo {
         display: flex;
         width: 50%;
@@ -4504,13 +4572,11 @@ ul li img {
         gap: 1rem;
         padding: 4rem 0rem 4rem 0rem;
     }
-
     .phone {
-        padding: 0rem 0rem 0rem 2rem;
+        padding: 0rem 0rem 0rem 3rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 3.5rem;
     }
 
     .Factoryaddress {
@@ -5299,15 +5365,12 @@ ul li img {
         padding: 0rem 0rem 0rem 6rem;
         gap: 5rem;
     }
-
     .phone {
-        padding: 0rem 0rem 0rem 2rem;
+        padding: 0rem 0rem 0rem 3.2rem;
     }
-
     .emailus {
-        padding: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 4rem;
     }
-
     .card-body {
         padding: 0rem 0rem 0rem 0rem;
         text-align: center;
@@ -5453,11 +5516,9 @@ ul li img {
         height: 16rem;
         width: 18rem;
     }
-
     .phone {
-        padding: 0rem 0rem 0rem 2rem;
+        padding: 0rem 0rem 0rem 3rem;
     }
-
     .paragraph p {
         line-height: 1.4;
         font-size: 1.2rem;
@@ -5568,12 +5629,10 @@ ul li img {
         gap: 0.3rem;
         font-size: 0.9rem;
     }
-
     .profile-container img {
         height: 20rem;
-        width: 90%;
+        width: 86%;
     }
-
     .profile {
         position: absolute;
         top: 0%;
@@ -5585,7 +5644,7 @@ ul li img {
         flex-direction: column;
         justify-content: center;
         padding: 0rem 0rem 0rem 5rem;
-        gap: 1rem;
+        gap: 2rem;
         color: white;
     }
     .para {
@@ -6033,6 +6092,10 @@ ul li img {
         justify-content: space-around;
         gap: 12rem;
         color: var(--color-white);
+    }
+    .profile-container img {
+        height: 20rem;
+        width: 86%;
     }
 }
 
@@ -6562,7 +6625,6 @@ ul li img {
         height: 2.2rem;
         width: 7rem;
     }
-
     .floors {
         position: absolute;
         top: 0%;
@@ -6574,7 +6636,7 @@ ul li img {
         flex-direction: column;
         justify-content: center;
         padding: 0rem 0rem 0rem 4rem;
-        gap: 1rem;
+        gap: 1.5rem;
         color: white;
     }
 
@@ -6716,7 +6778,7 @@ ul li img {
 
     .profile-container img {
         height: 18rem;
-        width: 92%;
+        width: 90%;
     }
 
     .col-door {
@@ -6735,12 +6797,6 @@ ul li img {
         width: 17rem;
         padding: 0rem 1rem 0rem 0rem;
     }
-
-    .profile-container img {
-        height: 18rem;
-        width: 80%;
-    }
-
     .whyus-content h3 {
         font-size: 1.4rem;
     }
@@ -7143,12 +7199,10 @@ ul li img {
         font-size: 0.9rem;
         letter-spacing: 0.2rem;
     }
-
     .profile-container img {
         height: 18rem;
-        width: 80%;
+        width: 90%;
     }
-
     .whyus-content h3 {
         font-size: 1.4rem;
     }
@@ -7658,7 +7712,6 @@ ul li img {
         font-size: 1.4rem;
         text-justify: inter-word;
     }
-
     .floors {
         position: absolute;
         top: 0%;
@@ -7670,10 +7723,9 @@ ul li img {
         flex-direction: column;
         justify-content: center;
         padding: 0rem 0rem 0rem 4rem;
-        gap: 0.5rem;
+        gap: 1.5rem;
         color: white;
     }
-
     .floors h3 {
         font-size: 1.7rem;
     }
@@ -7699,14 +7751,8 @@ ul li img {
 
     .profile-container img {
         height: 15rem;
-        width: 88%;
+        width: 90%;
     }
-
-    .profile-container img {
-        height: 15rem;
-        width: 88%;
-    }
-
     .content1 h3 {
         font-size: 1.5rem;
     }
@@ -7767,7 +7813,6 @@ ul li img {
         height: 5rem;
         width: 5rem;
     }
-
     .profile {
         position: absolute;
         top: 0%;
@@ -7779,10 +7824,9 @@ ul li img {
         flex-direction: column;
         justify-content: center;
         padding: 0rem 0rem 0rem 5rem;
-        gap: 1rem;
+        gap: 1.5rem;
         color: white;
     }
-
     .profile h3 {
         font-size: 1.5rem;
     }
@@ -7896,6 +7940,20 @@ ul li img {
         justify-content: left;
         padding: 0rem 0rem 0rem 4rem;
         gap: 1.5rem;
+    }
+    .profile {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.767);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 3rem;
+        gap: 1.5rem;
+        color: white;
     }
 }
 
@@ -8419,12 +8477,10 @@ ul li img {
         /* align-items: center; */
         padding: 1rem 1rem 1rem 1rem;
     }
-
     .profile-container img {
         height: 12rem;
-        width: 88%;
+        width: 92%;
     }
-
     .door-row {
         display: flex;
         align-items: center;
@@ -8593,12 +8649,10 @@ ul li img {
     .col-door1 p {
         font-size: 0.8rem;
     }
-
     .profile-container img {
         height: 12rem;
-        width: 95%;
+        width: 92%;
     }
-
     .aboutus p {
         font-size: 1.2rem;
         line-height: 1.3;
@@ -8899,8 +8953,8 @@ ul li img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0rem 0rem 0rem 3rem;
-        gap: 0.6rem;
+        padding: 0rem 0rem 0rem 2.5rem;
+        gap: 1.5rem;
         color: white;
     }
 
@@ -9197,22 +9251,20 @@ ul li img {
         height: 10rem;
         width: 90%;
     }
-
     .floors {
         position: absolute;
         top: 0%;
         left: 0%;
-        background-color: rgba(44, 43, 43, 0.53);
+        background-color: rgb(43 42 42 / 36%);
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0rem 1rem 0rem 2rem;
-        gap: 0.5rem;
+        padding: 0rem 0rem 0rem 4rem;
+        gap: 1.5rem;
         color: white;
     }
-
     .head p {
         display: flex;
         align-items: center;
@@ -9654,7 +9706,6 @@ ul li img {
         font-size: 0.8rem;
         line-height: 1.3;
     }
-
     .content1 {
         display: flex;
         flex-direction: column;
@@ -9662,10 +9713,9 @@ ul li img {
         line-height: 1.2;
         gap: 1rem;
         width: 100%;
-        padding: 0rem 0rem 0rem 0rem;
+        padding: 0rem 2rem 0rem 2rem;
         text-justify: inter-word;
     }
-
     .whyus-content {
         font-size: 1rem;
         gap: 0.5rem;
@@ -9972,6 +10022,16 @@ ul li img {
     .col-2 {
         width: 100%;
         height: 88%;
+    }
+    .col-door1 {
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #EFEFEF;
+        width: 16rem;
+        /* align-items: center; */
+        padding: 1rem 4rem 1rem 2rem;
     }
 }
 
@@ -10428,8 +10488,8 @@ ul li img {
         width: 19.5rem;
     }
     .profile-container img {
-        height: 8rem;
-        width: 90%;
+        height: 9rem;
+        width: 98%;
     }
     .head p {
         font-size: 0.6rem;
@@ -10475,7 +10535,7 @@ ul li img {
     }
     .floors {
         padding: 0rem 0rem 0rem 1.5rem;
-        gap: 1rem;
+        gap: 1.2rem;
     }
     .profile {
         padding: 0rem 0rem 0rem 1.5rem;
@@ -10790,12 +10850,10 @@ ul li img {
         color: black;
         text-align: left;
     }
-
     .profile-container img {
         height: 8rem;
-        width: 90%;
+        width: 98%;
     }
-
     .structure-content p {
         font-size: 0.9rem;
         line-height: 1.2;
@@ -10934,8 +10992,9 @@ ul li img {
         font-size: 0.7rem;
     }
     .social-icons img {
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
     }
     .social-icons{
         gap: 1rem;
@@ -11347,6 +11406,11 @@ ul li img {
         left: 1rem;
         width: 20.1rem;
         height: 18.2rem;
+    }
+    .social-icons img {
+        height: 1.6rem;
+        width: 1.6rem;
+        border-radius: 50%;
     }
 }
 
@@ -11863,24 +11927,4 @@ iframe {
     width: 2.5rem;
     /* -webkit-filter: invert(); */
     padding: 0rem 1rem 0rem 0rem;
-}
-
-/* social media icons */
-.social-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-.social-icons img{
-    height: 2rem;
-    width: 2rem;
-}
-
-h1{
-    display: none;
-}
-
-h2{
-    display: none;
 }
