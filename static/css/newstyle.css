@@ -1561,6 +1561,10 @@ h2{
         gap: 33.4rem;
         color: var(--color-white);
     }
+    .profile-container img {
+        height: 34rem;
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1820px) {
@@ -1749,6 +1753,10 @@ h2{
     .structure-img{
         padding: 0rem 0rem 0rem 6.5rem;
     }
+    .profile-container img {
+        height: 32rem;
+        width: 79%;
+    }
 }
 @media only screen and (max-width: 1731px)
 {
@@ -1775,7 +1783,10 @@ h2{
     .card-head h3 {
         font-size: 2.2rem;
     }
-
+    .profile-container img {
+        height: 32rem;
+        width: 78%;
+    }
     .btn-learnmore {
         height: 2.8rem;
         width: 10rem;
@@ -1977,6 +1988,13 @@ h2{
         align-items: center;
         justify-content: center;
         gap: 31.8rem;
+    }
+    .content-profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 6rem 2rem 6rem;
+        color: black;
     }
 }
 
@@ -2840,15 +2858,13 @@ h2{
     .floors p {
         font-size: 1.2rem;
     }
-
     .content-profile {
         display: flex;
         align-items: center;
         gap: 2rem;
-        padding: 4rem;
+        padding: 1rem 6rem 1rem 6rem;
         color: black;
     }
-
     .content1 p {
         font-size: 1.3rem;
         text-align: justify;
@@ -3167,15 +3183,13 @@ h2{
     .floors p {
         font-size: 1.2rem;
     }
-
     .content-profile {
         display: flex;
         align-items: center;
         gap: 2rem;
-        padding: 4rem;
+        padding: 1rem 5rem 1rem 5rem;
         color: black;
     }
-
     .content1 p {
         font-size: 1.3rem;
         text-align: justify;
@@ -3260,15 +3274,13 @@ h2{
         border-radius: 1rem;
         padding: 0.6rem;
     }
-
     .content-profile {
         display: flex;
         align-items: center;
         gap: 2rem;
-        padding: 4rem;
+        padding: 1rem 5rem 1rem 5rem;
         color: black;
     }
-
     .content1 p {
         font-size: 1.3rem;
         text-align: justify;
@@ -3355,6 +3367,9 @@ h2{
         gap: 29.5rem;
         color: var(--color-white);
     }
+    .content1 h3 {
+        font-size: 1.5rem;
+    }
 }
 @media only screen and (max-width: 1438px)
 {
@@ -3381,7 +3396,13 @@ h2{
         justify-content: left;
         padding: 0rem 0rem 0rem 12rem;
     }
-
+    .content-profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 4rem 1rem 4rem;
+        color: black;
+    }
     .col-door1 {
         justify-content: left;
         display: flex;
@@ -3423,10 +3444,9 @@ h2{
         gap: 1.5rem;
         padding: 2rem;
     }
-    .card-head h3 {
-        font-size: 1.8rem;
+    .content1 h3 {
+        font-size: 1.5rem;
     }
-
     .btn-learnmore a {
         font-size: 1.2rem;
         text-decoration: none;
@@ -3562,7 +3582,7 @@ h2{
 
     .profile-container {
         display: flex;
-        padding: 0rem 0rem 1rem 0rem;
+        padding: 1rem 0rem 1rem 0rem;
         align-items: center;
         justify-content: center;
         margin: 0.8rem 0rem 0rem 0rem;
@@ -3653,6 +3673,20 @@ h2{
     }
     .structure-img{
         padding: 0rem 0rem 0rem 1rem;
+    }
+    .floors {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgb(43 42 42 / 36%);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 10rem;
+        gap: 2rem;
+        color: white;
     }
 }
 
@@ -3956,6 +3990,13 @@ h2{
         justify-content: center;
         gap: 27.1rem;
         color: var(--color-white);
+    }
+    .content-profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 4rem 2rem 4rem;
+        color: black;
     }
 }
 @media only screen and (max-width: 1375px)
@@ -4316,6 +4357,20 @@ h2{
         align-items: center;
         gap: 1rem;
         padding: 2rem;
+    }
+    .floors {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: rgb(43 42 42 / 36%);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 7rem;
+        gap: 2rem;
+        color: white;
     }
 }
 @media only screen and (max-width: 1318px) {
@@ -5177,7 +5232,7 @@ h2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0rem 0rem 0rem 12rem;
+        padding: 0rem 0rem 0rem 6.6rem;
         gap: 1rem;
         color: white;
     }
@@ -5686,13 +5741,12 @@ h2{
         gap: 2rem;
         padding: 0rem 6rem 0rem 6rem;
     }
-
     .content-profile {
         flex-direction: column;
         display: flex;
         align-items: center;
         gap: 2rem;
-        padding: 3rem 3rem 3rem 3rem;
+        padding: 1rem 3rem 1rem 3rem;
         color: black;
     }
 
@@ -5710,7 +5764,6 @@ h2{
         gap: 2rem;
         color: white;
     }
-
     .content1 {
         display: flex;
         flex-direction: column;
@@ -5718,10 +5771,9 @@ h2{
         line-height: 1.2;
         gap: 1rem;
         width: 100%;
-        padding: 0rem 2rem 0rem 2rem;
+        padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
-
     .content2 {
         display: flex;
         flex-direction: column;
@@ -5968,10 +6020,9 @@ h2{
         display: flex;
         align-items: center;
         gap: 2rem;
-        padding: 3rem 3rem 3rem 3rem;
+        padding: 1rem 3rem 1rem 3rem;
         color: black;
     }
-
     .content1 {
         display: flex;
         flex-direction: column;
@@ -5979,10 +6030,9 @@ h2{
         line-height: 1.2;
         gap: 1rem;
         width: 100%;
-        padding: 0rem 2rem 0rem 2rem;
+        padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
-
     .content2 {
         display: flex;
         flex-direction: column;
@@ -6663,16 +6713,14 @@ h2{
         height: 18rem;
         width: 88%;
     }
-
     .content-profile {
         flex-direction: column;
         display: flex;
         align-items: center;
         gap: 2rem;
-        padding: 1rem 3rem 1rem 3rem;
+        padding: 1rem 4rem 1rem 4.5rem;
         color: black;
     }
-
     .content1 h3 {
         font-size: 1.9rem;
     }
@@ -6778,12 +6826,6 @@ h2{
         justify-content: center;
         gap: 0.9rem;
     }
-
-    .profile-container img {
-        height: 18rem;
-        width: 90%;
-    }
-
     .col-door {
         justify-content: left;
         display: flex;
@@ -6840,6 +6882,10 @@ h2{
         gap: 6.5rem;
         color: var(--color-white);
     }
+    .profile-container img {
+        height: 20rem;
+        width: 82%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -6850,7 +6896,13 @@ h2{
         gap: 5.8rem;
         color: var(--color-white);
     }
-
+    .profile-container {
+        display: flex;
+        padding: 1rem 0rem 1rem 0rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 0rem 0rem 0rem;
+    }
     .col-door {
         justify-content: left;
         display: flex;
@@ -6879,6 +6931,18 @@ h2{
         /* align-items: center; */
         padding: 1rem 4rem 1rem 2rem;
     }
+    .profile-container img {
+        height: 18rem;
+        width: 87%;
+    }
+    .content-profile {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 3rem 1rem 3rem;
+        color: black;
+    }s
 }
 
 @media only screen and (max-width: 780px) {
@@ -6906,6 +6970,18 @@ h2{
         justify-content: left;
         padding: 0rem 0rem 0rem 6rem;
         gap: 3rem;
+    }
+    .profile-container img {
+        height: 18rem;
+        width: 86%;
+    }
+    .content-profile {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 3rem 1rem 3rem;
+        color: black;
     }
 }
 
@@ -7204,7 +7280,7 @@ h2{
     }
     .profile-container img {
         height: 18rem;
-        width: 90%;
+        width: 87%;
     }
     .whyus-content h3 {
         font-size: 1.4rem;
@@ -7235,6 +7311,14 @@ h2{
         justify-content: space-around;
         gap: 5.2rem;
         color: var(--color-white);
+    }
+}
+
+@media only screen and (max-width: 760px)
+{
+    .profile-container img {
+        height: 18rem;
+        width: 86%;
     }
 }
 
@@ -7751,10 +7835,9 @@ h2{
     .col-door p {
         font-size: 1rem;
     }
-
     .profile-container img {
         height: 15rem;
-        width: 90%;
+        width: 84%;
     }
     .content1 h3 {
         font-size: 1.5rem;
@@ -8189,12 +8272,10 @@ h2{
         justify-content: center;
         gap: 1.5rem;
     }
-
     .profile-container img {
         height: 12rem;
-        width: 90%;
+        width: 84%;
     }
-
     .col-door p {
         font-size: 0.7rem;
     }
@@ -8313,12 +8394,10 @@ h2{
         height: 35rem;
         width: 36rem;
     }
-
     .profile-container img {
         height: 12rem;
-        width: 90%;
+        width: 83%;
     }
-
     .col-door {
         justify-content: left;
         display: flex;
@@ -8386,6 +8465,12 @@ h2{
         align-items: center;
         justify-content: left;
         padding: 0rem 0rem 0rem 2.5rem;
+    }
+    .visitcommo p {
+        font-size: 0.7rem;
+    }
+    .visitcommo h5 {
+        font-size: 0.8rem;
     }
 }
 
@@ -8482,7 +8567,7 @@ h2{
     }
     .profile-container img {
         height: 12rem;
-        width: 92%;
+        width: 88%;
     }
     .door-row {
         display: flex;
@@ -8654,7 +8739,7 @@ h2{
     }
     .profile-container img {
         height: 12rem;
-        width: 92%;
+        width: 86%;
     }
     .aboutus p {
         font-size: 1.2rem;
@@ -9113,14 +9198,12 @@ h2{
         height: 31rem;
         width: 28rem;
     }
-
     .door-row1 {
         display: flex;
         align-items: center;
         justify-content: left;
         padding: 0rem 0rem 0rem 3rem;
     }
-
     .col-door1 {
         justify-content: left;
         display: flex;
@@ -9131,7 +9214,6 @@ h2{
         /* align-items: center; */
         padding: 1rem 4rem 1rem 2rem;
     }
-
     /* .col-door1 h4{
         font-size: 0.8rem;
     }
@@ -9151,7 +9233,6 @@ h2{
         border-bottom-right-radius: 4rem;
         color: var(--color-black-shade);
     }
-
     .col-2 {
         float: right;
         display: flex;
@@ -9165,35 +9246,29 @@ h2{
         border-bottom-left-radius: 4rem;
         color: black;
     }
-
     .card-pro img {
         height: 12rem;
         width: 12rem;
     }
-
     .btn-read-more {
         height: 1.8rem;
         width: 6rem;
     }
-
     .btn-read-more a {
         font-size: 0.7rem;
         color: #070707;
         text-decoration: none;
     }
-
     .content-images2 img {
         height: 11rem;
         width: 11rem;
         border-radius: 1rem;
     }
-
     .door-whyus-img img {
         height: 12rem;
         width: 23rem;
         gap: 0.7rem;
     }
-
     .col-door {
         justify-content: left;
         display: flex;
@@ -9204,11 +9279,9 @@ h2{
         /* align-items: center; */
         padding: 1rem 2rem 1rem 3rem;
     }
-
     .col-door p {
         font-size: 0.8rem;
     }
-
     .profile {
         position: absolute;
         top: 0%;
@@ -9223,12 +9296,10 @@ h2{
         gap: 1rem;
         color: white;
     }
-
     .profile p {
         font-size: 0.9rem;
         padding: 0rem 3rem 0rem 0rem;
     }
-
     .btn-more {
         font-size: 0.8rem;
         width: 17rem;
@@ -9239,7 +9310,6 @@ h2{
         border-radius: 0.6rem;
         letter-spacing: 0.1rem;
     }
-
     .content-images img {
         height: 30rem;
         width: 22rem;
@@ -9249,10 +9319,9 @@ h2{
         font-size: 0.9rem;
         list-style-type: none;
     }
-
     .profile-container img {
         height: 10rem;
-        width: 90%;
+        width: 85%;
     }
     .floors {
         position: absolute;
@@ -10291,7 +10360,7 @@ h2{
     }
     .profile-container img {
         height: 10rem;
-        width: 100%;
+        width: 90%;
     }
     .content1 h3 {
         font-size: 1.1rem;
@@ -10492,7 +10561,7 @@ h2{
     }
     .profile-container img {
         height: 9rem;
-        width: 98%;
+        width: 90%;
     }
     .head p {
         font-size: 0.6rem;
@@ -10723,11 +10792,9 @@ h2{
         height: 1.5rem;
         width: 1.5rem;
     }
-
     .q1 h3 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
-
     .q1 p {
         font-size: 0.7rem;
     }
@@ -10763,9 +10830,8 @@ h2{
         margin: 0rem 0rem 0rem 0rem;
         padding: 0rem 0rem 0rem 0rem;
     }
-
     .col-door h4 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .footer-ul ul li {
         font-size: 0.6rem;
@@ -10804,6 +10870,14 @@ h2{
         left: 1rem;
         width: 20.3rem;
         height: 18.2rem;
+    }
+    .content1 h3 {
+        font-size: 1rem;
+    }
+    .col-door {
+        width: 17.5rem;
+        gap: 0.2rem;
+        padding: 0.8rem;
     }
     .head p {
         font-size: 0.5rem;
@@ -10855,7 +10929,7 @@ h2{
     }
     .profile-container img {
         height: 8rem;
-        width: 98%;
+        width: 90%;
     }
     .structure-content p {
         font-size: 0.9rem;
@@ -11012,10 +11086,10 @@ h2{
     .col-door h4 {
         font-size: 0.9rem;
     }
-
     .col-door {
         width: 17.5rem;
         gap: 0.2rem;
+        padding: 0.8rem;
     }
 
     .aboutus h3 {
@@ -11036,7 +11110,9 @@ h2{
         padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
-
+    .content1 h3 {
+        font-size: 1rem;
+    }
     .content1 p {
         font-size: 0.9rem;
         line-height: 1.4;
@@ -11425,7 +11501,7 @@ h2{
         line-height: 1.4;
         gap: 1rem;
         width: 100%;
-        padding: 0rem 2rem 0rem 2rem;
+        padding: 0rem 1rem 0rem 1rem;
         text-justify: inter-word;
     }
     .door-whyus-img img {
