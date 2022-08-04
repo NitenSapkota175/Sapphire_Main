@@ -1104,7 +1104,7 @@ form textarea {
 .structure-content {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 1.2rem;
 }
 .structure-content h4 {
     font-size: 1.8rem;
@@ -2611,8 +2611,8 @@ h2{
         gap: 32rem;
         color: var(--color-white);
     }
-    .structure-img{
-        padding: 0rem 0rem 0rem 3rem;
+    .structure-img {
+        padding: 0rem 0rem 0rem 1rem;
     }
 }
 
@@ -4036,12 +4036,10 @@ h2{
     .emailus {
         padding: 0rem 0rem 0rem 4rem;
     }
-
     .structure-img img {
-        height: 48rem;
-        width: 40rem;
+        height: 42rem;
+        width: 34rem;
     }
-
     .door-whyus-img img {
         height: 16rem;
         width: 30rem;
@@ -4521,12 +4519,10 @@ h2{
         padding: 3rem;
         color: var(--color-white);
     }
-
     .structure-img img {
-        height: 50rem;
-        width: 40rem;
+        height: 40rem;
+        width: 34rem;
     }
-
     .col-ourwork img {
         height: 19rem;
         width: 22rem;
@@ -5208,12 +5204,10 @@ h2{
         height: 24rem;
         width: 90%;
     }
-
     .structure-img img {
-        height: 48rem;
-        width: 36rem;
+        height: 40rem;
+        width: 32rem;
     }
-
     .col-ourwork img {
         height: 15rem;
         width: 20rem;
@@ -5257,6 +5251,11 @@ h2{
         justify-content: left;
         padding: 0rem 0rem 0rem 6rem;
         gap: 10rem;
+    }
+    .social-icons img {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
     }
 }
 
@@ -5844,18 +5843,15 @@ h2{
         height: 3rem;
         width: 3rem;
     }
-
     .q1 h3 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
-
     .q1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.6rem;
     }
-
     .main-q {
         padding: 1.5rem 16rem 1.5rem 16rem;
         display: flex;
@@ -10288,7 +10284,7 @@ h2{
     }
     .profile-container img {
         height: 10rem;
-        width: 100%;
+        width: 90%;
     }
     .content1 h3 {
         font-size: 1.1rem;

@@ -11,12 +11,10 @@
     <!-- class here is different you are looking at product_type2 class even though it is product_type1-->
     <div class="profile">
         <!-- <h3>{{product1.Product_Name|ljust:"7"}}</h3> -->
-
-
-        <h3>{{product1.Product_Name|slice:":9"}}</h3>
+        <div class="heading">
+            <h3>{{product1.Product_Name|slice:":9"}}</h3>
         <h3>{{product1.Product_Name|slice:"9:"}}</h3>
-      
-
+        </div>
         <p>{{product1.Product_Short_Description_1}}</p>
         {%if product1.Website_Link%}
         <button class="btn-more">{{product1.Website_Link}}</button>
