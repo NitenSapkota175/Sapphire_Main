@@ -31,11 +31,11 @@ sitemaps = {
 
 
 urlpatterns = [
-    path('admin/',include('admin_honeypot.urls',namespace='admin_honey')),
+    #path('admin/',include('admin_honeypot.urls',namespace='admin_honey')),
     path('sapphire_main_secret_10101111/', admin.site.urls),
     path('',include('Sapphire.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
      name='django.contrib.sitemaps.views.sitemap') #this is straight from django docs
 ]
-if settings.DEBUG == True:
+#if settings.DEBUG == True:
 urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
