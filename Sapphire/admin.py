@@ -29,7 +29,7 @@ class SettingsAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
     fields = ['Company_Name','Main_logo','Main_Logo' , 'Office_Address_Title' , 'Office_Address1' ,
      'Office_Address2', 'City_1' , 'Office_Address_Zip_Code' , 'Contact_Title', 'Contact_Number_1',
       'Contact_Number_2', 'Contact_Number_3' , 'Email_Title' , 'Offical_Email_Id' , 'Offical_Information_Email_Id' ,
-       'Facebook_Page_Link', 'Instagram_Page_Link' , 'Factory_Address_Title', 'Factory_Address1' , 
+       'Facebook_Page_Link', 'Instagram_Page_Link' , "LinkedIn_Page_Link", "Twitter_Page_Link", 'Factory_Address_Title', 'Factory_Address1' , 
        'Factory_Address2', 'City_2', 'Factory_Adress_Zip_Code' , 'Copyright_Field', 'Footor_logo' ,
        'Footor_Logo',
         ]
