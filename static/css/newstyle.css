@@ -181,12 +181,10 @@ main {
     margin: 1rem 0rem 1rem 0rem;
     padding: 1rem 0rem 1rem 0rem;
 }
-
 .row-l:last-child {
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
     padding: 0rem 0rem 2rem 0rem;
 }
-
 .col-1 {
     display: flex;
     flex-direction: row;
@@ -810,7 +808,6 @@ form textarea {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .profile {
     position: absolute;
     top: 0%;
@@ -821,7 +818,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0rem 0rem 0rem 10rem;
+    padding: 0rem 29rem 0rem 10rem;
     gap: 2rem;
     color: white;
 }
@@ -869,15 +866,16 @@ form textarea {
     text-decoration: none;
     color: rgb(21, 127, 21);
 }
-
 .profile-container {
     display: flex;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     align-items: center;
     justify-content: center;
     margin: 1rem 0rem 0rem 0rem;
 }
-
+.content1 h3{
+    font-size: 2rem;
+}
 .profile-container img {
     height: 38rem;
     width: 95%;
@@ -946,10 +944,9 @@ form textarea {
     flex-direction: column;
     gap: 0.5rem;
 }
-
 .content-images2 img {
-    height: 22rem;
-    width: 30rem;
+    height: 20rem;
+    width: 25rem;
 }
 .content2 ul li {
     font-size: 1.3rem;
@@ -1278,10 +1275,22 @@ ul li img {
     justify-content: center;
     gap: 2rem;
 }
-.social-icons img {
+
+.facebook img{
     height: 3rem;
     width: 3rem;
-    border-radius: 50%;
+}
+.insta img{
+    height: 3rem;
+    width: 3rem;
+}
+.twitter img{
+    height: 2.7rem;
+    width: 2.7rem;
+}
+.linkedin img{
+    height: 3rem;
+    width: 3rem;
 }
 
 h1{
@@ -1519,7 +1528,7 @@ h2{
         color: var(--color-white);
     }
     .structure-img{
-        padding: 0rem 0rem 0rem 8rem;
+        padding: 0rem 0rem 0rem 6.5rem;
     }
     .para {
         position: absolute;
@@ -1807,12 +1816,10 @@ h2{
         width: 33rem;
         gap: 0.7rem;
     }
-
     .structure-img img {
-        height: 50rem;
+        height: 48rem;
         width: 42rem;
     }
-
     .structure-content h4 {
         font-size: 1.6rem;
     }
@@ -2006,6 +2013,13 @@ h2{
         gap: 31.2rem;
         color: var(--color-white);
     }
+    .content-images2 img {
+        height: 20rem;
+        width: 26rem;
+    }
+    .content1 h3 {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -2083,11 +2097,10 @@ h2{
     .profile p {
         font-size: 1.2rem;
     }
-
     .structure-content {
         display: flex;
         flex-direction: column;
-        gap: 0.9rem;
+        gap: 1.9rem;
     }
 
     .whyus-content h3 {
@@ -2676,15 +2689,15 @@ h2{
     .emailus {
         padding: 0rem 0rem 0rem 4rem;
     }
-
     .Factoryaddress {
         padding: 0rem 0rem 0rem 1rem;
     }
-
     .phone {
         padding: 0rem 0rem 0rem 4rem;
     }
-
+    .content1 h3 {
+        font-size: 1.6rem;
+    }
     .rate-col-1 {
         width: 15rem;
         height: auto;
@@ -3582,21 +3595,22 @@ h2{
 
     .profile-container {
         display: flex;
-        padding: 1rem 0rem 1rem 0rem;
+        padding: 2rem 0rem 1rem 0rem;
         align-items: center;
         justify-content: center;
         margin: 0.8rem 0rem 0rem 0rem;
     }
-
     .profile-container img {
         height: 26rem;
         width: 90%;
     }
-
     .content1 h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
-
+    .content-images2 img {
+        height: 20rem;
+        width: 26rem;
+    }
     .structure-content h4 {
         font-size: 1.4rem;
     }
@@ -3687,6 +3701,13 @@ h2{
         padding: 0rem 0rem 0rem 10rem;
         gap: 2rem;
         color: white;
+    }
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem;
+        width: 50%;
+        align-items: center;
     }
 }
 
@@ -3815,7 +3836,7 @@ h2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0rem 0rem 0rem 5rem;
+        padding: 0rem 29rem 0rem 5rem;
         gap: 2rem;
         color: white;
     }
@@ -3842,9 +3863,8 @@ h2{
     .structure-content h4 {
         font-size: 1.5rem;
     }
-
     .structure-img img {
-        height: 48rem;
+        height: 45rem;
         width: 40rem;
     }
     .profile h3 {
@@ -4300,6 +4320,13 @@ h2{
         justify-content: center;
         gap: 25.6rem;
         color: var(--color-white);
+    }
+    .content1 h3 {
+        font-size: 1.5rem;
+    }
+    .content-images2 img {
+        height: 18rem;
+        width: 22rem;
     }
 }
 
@@ -5086,6 +5113,9 @@ h2{
         padding: 0rem 0rem 0rem 6rem;
         gap: 10rem;
     }
+    .content1 h3 {
+        font-size: 1.3rem;
+    }
 }
 
 @media only screen and (max-width: 1201px)
@@ -5266,12 +5296,10 @@ h2{
         height: 24rem;
         width: 90%;
     }
-
     .structure-img img {
-        height: 48rem;
-        width: 36rem;
+        height: 45rem;
+        width: 35rem;
     }
-
     .col-ourwork img {
         height: 15rem;
         width: 20rem;
@@ -5430,7 +5458,7 @@ h2{
         padding: 0rem 0rem 0rem 4rem;
     }
     .card-body {
-        padding: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 1rem;
         text-align: center;
         line-height: 1.4rem;
     }
@@ -5493,9 +5521,15 @@ h2{
         font-size: 2.2rem;
     }
     .content1 h3 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
-
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        gap: 9.5rem;
+        width: 50%;
+        align-items: center;
+    }
     .contactform {
         padding: 1rem 0rem 1rem 2rem;
         display: flex;
@@ -5593,11 +5627,9 @@ h2{
     .contactpara h3 {
         font-size: 1.7rem;
     }
-
     .content1 h3 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
-
     .rate-para p {
         font-size: 1.1rem;
         line-height: 1.4;
@@ -6722,7 +6754,7 @@ h2{
         color: black;
     }
     .content1 h3 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
 
     .quality {
@@ -6896,12 +6928,15 @@ h2{
         gap: 5.8rem;
         color: var(--color-white);
     }
+    .content1 h3 {
+        font-size: 1.6rem;
+    }
     .profile-container {
         display: flex;
-        padding: 1rem 0rem 1rem 0rem;
+        padding: 0.8rem 0rem 1rem 0rem;
         align-items: center;
         justify-content: center;
-        margin: 0rem 0rem 0rem 0rem;
+        margin: 1rem 0rem 0rem 0rem;
     }
     .col-door {
         justify-content: left;
@@ -6942,7 +6977,7 @@ h2{
         gap: 2rem;
         padding: 1rem 3rem 1rem 3rem;
         color: black;
-    }s
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -7620,6 +7655,22 @@ h2{
     }
     .main-q h3 {
         font-size: 1.8rem;
+    }
+    .facebook img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .insta img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .twitter img{
+        height: 2.1rem;
+        width: 2.1rem;
+    }
+    .linkedin img{
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 
@@ -8339,6 +8390,14 @@ h2{
     .main-q h3{
         font-size: 1.7rem;
     }
+    .content-images2 img {
+        height: 16rem;
+        width: 17rem;
+        border-radius: 1rem;
+    }
+    .col-door1 h4 {
+        font-size: 1.1rem;
+    }
 }
 
 @media only screen and (max-width: 620px)
@@ -8385,6 +8444,12 @@ h2{
         background-color: #000;
         font-size: 1.4rem;
         padding: 0.8rem;
+    }
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 }
 
@@ -9864,10 +9929,6 @@ h2{
         font-size: 0.6rem;
         line-height: 1.4;
     }
-    .social-icons img {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
     .social-icons {
         gap: 1.5rem;
     }
@@ -11068,11 +11129,6 @@ h2{
     .head p {
         font-size: 0.7rem;
     }
-    .social-icons img {
-        height: 2rem;
-        width: 2rem;
-        border-radius: 50%;
-    }
     .social-icons{
         gap: 1rem;
     }
@@ -11486,11 +11542,6 @@ h2{
         width: 20.1rem;
         height: 18.2rem;
     }
-    .social-icons img {
-        height: 1.6rem;
-        width: 1.6rem;
-        border-radius: 50%;
-    }
 }
 
 @media only screen and (max-width: 368px) {
@@ -11602,10 +11653,6 @@ h2{
         align-items: center;
         justify-content: center;
         gap: 1rem;
-    }
-    .social-icons img {
-        height: 1.3rem;
-        width: 1.3rem;
     }
 }
 
