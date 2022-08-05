@@ -34,7 +34,9 @@ class Settings(SingleInstanceMixin,models.Model):
 
     Facebook_Page_Link = models.URLField(max_length=225,null=True,blank=True)
     Instagram_Page_Link = models.URLField(max_length=225,null=True,blank=True)
-    
+    Twitter_Page_Link = models.URLField(max_length=225,null=True,blank=True)
+    LinkedIn_Page_Link = models.URLField(max_length=225,null=True,blank=True)
+
 
     Factory_Address_Title = models.CharField(max_length=255,default="Factory Address")
     Factory_Address1 = models.CharField(max_length=255,default="Demdema,Sanasekhata")
