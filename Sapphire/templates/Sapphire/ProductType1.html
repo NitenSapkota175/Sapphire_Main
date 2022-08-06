@@ -12,7 +12,7 @@
     <div class="profile">
         <!-- <h3>{{product1.Product_Name|ljust:"7"}}</h3> -->
         <div class="heading">
-            {%if product1.Product_Name|lower == 'Sapphire Floors' %}
+            {%if product1.Product_Name == 'Sapphire Floors' %}
             <h3>{{product1.Product_Name|slice:":9"}}</h3>
             <h3>{{product1.Product_Name|slice:"9:"}}</h3>
             {%else%}
