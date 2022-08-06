@@ -12,8 +12,13 @@
     <div class="profile">
         <!-- <h3>{{product1.Product_Name|ljust:"7"}}</h3> -->
         <div class="heading">
+            {%if product1.Product_Name == 'SAPPHIRE FLOORS' %}
             <h3>{{product1.Product_Name|slice:":9"}}</h3>
             <h3>{{product1.Product_Name|slice:"9:"}}</h3>
+            {%else%}
+                <h3>{{product1.Product_Name|slice:":5"}}</h3>
+                <h3>{{product1.Product_Name|slice:"5:"}}</h3>
+            {%endif%}
         </div>
         <p>{{product1.Product_Short_Description_1}}</p>
         {%if product1.Website_Link%}
