@@ -22,7 +22,17 @@
         <ul>
             <li><a href="{%url 'Home' %}">Home</a></li>
             <li><a href="{%url 'Aboutus' %}">About us</a></li>
-            <li><a href="{%url 'Product'%}">Products</a></li>
+            <li><a href="{%url 'Product'%}">
+                <div class="dropdown">
+                    <button class="dropbtn">Products</button>
+                    <div class="dropdown-content">
+                      <a href="#">Profile</a>
+                      <a href="#">Door & Windows</a>
+                      <a href="#">Floors</a>
+                    </div>
+                  </div>
+                </a>
+            </li>
             <li><a href="{%url 'Ourwork' %}">Our Works</a></li>
             <li><a href="{%url 'contactus' %}">Contact Us</a></li>
         </ul>
