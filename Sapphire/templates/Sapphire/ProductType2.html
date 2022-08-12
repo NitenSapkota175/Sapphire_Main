@@ -71,7 +71,7 @@
             </div>
 
 
-            <ul>
+            <ul class="listtype">
                 {% for Assurance in product2.product_type2_assurance_set.all%}   
                 <li><img src="{%static 'images/check.png' %}" alt="">{{Assurance.ProductType2_Assurance}}</li>
                 {% endfor %} 
