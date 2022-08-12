@@ -4,20 +4,17 @@
     box-sizing: border-box;
     font-family: 'Poppins','Oswald';
 }
-
 :root {
     --color-head: rgba(242, 242, 101, 0.133);
     --color-white: rgb(244, 244, 244);
     --color-black-shade: rgb(41, 39, 39);
     --color-main: rgb(48, 197, 143);
 }
-
 body {
     font-family: 'Poppins','Oswald';
     margin: 0;
     padding: 0;
 }
-
 .head {
     background-color: #DBD8CC;
     display: flex;
@@ -26,30 +23,25 @@ body {
     padding: 0.2rem 2rem 0.2rem 0rem;
     gap: 1rem;
 }
-
 .head p {
     display: flex;
     align-items: center;
     gap: 0.3rem;
 }
-
 .head img {
     height: 1rem;
     width: 1rem;
 }
-
 .head-nav h3 {
     color: white;
     font-size: 1.3rem;
 }
-
 /* navbar */
 nav {
     background-color: var(--color-white);
     color: var(--color-black-shade);
     padding: 1rem;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -140,12 +132,10 @@ nav {
     background-color: rgba(0, 0, 0, 0.611);
     /* text-align: justify; */
 }
-
 .para h3 {
     padding: 3rem 0rem 0rem 0rem;
     font-size: 2.6rem;
 }
-
 .para p {
     font-size: 1.6rem;
     padding: 1rem 0rem 0rem 0rem;
@@ -174,7 +164,6 @@ main {
     font-size: 1.5rem;
     color: rgb(26, 26, 26);
 }
-
 .row-l {
     width: 100%;
     height: 25rem;
@@ -197,13 +186,11 @@ main {
     border-bottom-right-radius: 4rem;
     color: var(--color-black-shade);
 }
-
 .img img {
     height: 16rem;
     width: 18rem;
     padding: 0rem 3rem 0rem 0rem;
 }
-
 .card1 {
     display: flex;
     flex-direction: column;
@@ -211,11 +198,9 @@ main {
     gap: 2rem;
     padding: 2rem;
 }
-
 .card-head h3 {
     font-size: 2.4rem;
 }
-
 .card-body {
     padding: 0rem 5rem 0rem 5rem;
     text-align: center;
@@ -239,7 +224,6 @@ main {
     border-bottom-left-radius: 4rem;
     color: black;
 }
-
 .card2 {
     display: flex;
     flex-direction: column;
@@ -247,7 +231,6 @@ main {
     gap: 2rem;
     padding: 2rem;
 }
-
 .btn-learnmore {
     height: 3rem;
     width: 10rem;
@@ -262,7 +245,6 @@ main {
     color: black;
     font-weight: 600;
 }
-
 .btn-learnmore2 {
     height: 3rem;
     width: 10rem;
@@ -915,7 +897,7 @@ form textarea {
 .content2 {
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
+    gap: 2.5rem;
     width: 50%;
     align-items: center;
 }
@@ -947,7 +929,7 @@ form textarea {
     gap: 0.5rem;
 }
 .content-images2 img {
-    height: 16rem;
+    height: 18rem;
     width: 24rem;
 }
 .content2 ul li {
@@ -1294,11 +1276,9 @@ ul li img {
     height: 3rem;
     width: 3rem;
 }
-
 h1{
     display: none;
 }
-
 h2{
     display: none;
 }
@@ -1307,6 +1287,44 @@ h2{
     flex-direction: column;
     gap: 0.6rem;
 }
+.dropbtn {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+    border: none;
+    font-weight: bold;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} 
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown-content a:hover {
+    background-color: rgb(166, 165, 165);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+.dropdown-content a{
+    font-size: 1rem;
+}
+
 @media only screen and (max-width: 1921px) {
     .content1 p {
         font-size: 1.4rem;
@@ -1318,8 +1336,12 @@ h2{
         list-style-type: none;
         /* gap: 0.2rem; */
     }
-    .listtype{
-        padding: 7rem 0rem 0rem 8rem;
+    .listtype {
+        padding: 9rem 17rem 0rem 0rem;
+    }
+    .content-images img {
+        height: 43rem;
+        width: 34rem;
     }
     .listtype2 {
         padding: 2rem 8.5rem 0rem 0rem;
@@ -1515,7 +1537,7 @@ h2{
         padding: 0rem 0rem 0rem 9rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 7.8rem;
+        padding: 9rem 17rem 0rem 0rem;
     }
 }
 
@@ -1528,7 +1550,7 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 7.5rem;
+        padding: 9rem 17rem 0rem 0rem;
     }
     .structure-img{
         padding: 0rem 0rem 0rem 6.5rem;
@@ -1564,7 +1586,11 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 7rem;
+        padding: 10rem 17rem 0rem 0rem;
+    }
+    .content-images img {
+        height: 44rem;
+        width: 34rem;
     }
 }
 
@@ -1581,7 +1607,7 @@ h2{
         width: 80%;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 6.5rem;
+        padding: 7rem 17rem 0rem 0rem;
     }
 }
 
@@ -1675,6 +1701,10 @@ h2{
     .structure-img{
         padding: 0rem 0rem 0rem 7.5rem;
     }
+    .content-images img {
+        height: 43rem;
+        width: 33rem;
+    }
 }
 
 @media only screen and (max-width: 1795px) {
@@ -1696,7 +1726,7 @@ h2{
     color: rgb(21, 20, 20);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 6rem;
+        padding: 7rem 17rem 0rem 0rem;
     }
 }
 
@@ -1757,7 +1787,7 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 5.5rem;
+        padding: 7rem 17rem 0rem 0rem;
     }
     .para {
         position: absolute;
@@ -1806,7 +1836,7 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 5rem;
+        padding: 7rem 17rem 0rem 0rem;
     }
 }
 
@@ -1921,7 +1951,7 @@ h2{
         padding: 0rem 0rem 0rem 6rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 4.7rem;
+        padding: 7rem 16.5rem 0rem 0rem;
     }
 }
 
@@ -1938,7 +1968,7 @@ h2{
         padding: 0rem 0rem 0rem 5.5rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 4.5rem;
+        padding: 6rem 16rem 0rem 0rem;
     }
 }
 
@@ -1968,7 +1998,7 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 4.2rem;
+        padding: 6rem 16rem 0rem 0rem;
     }
 }
 
@@ -1981,7 +2011,7 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3.8rem;
+        padding: 7rem 16rem 0rem 0rem;
     }
     .card2 {
         display: flex;
@@ -1994,8 +2024,8 @@ h2{
         padding: 0rem 0rem 0rem 5rem;
     }
     .content-images img {
-        height: 42rem;
-        width: 35rem;
+        height: 48rem;
+        width: 33rem;
     }
     .emailus {
         padding: 0rem 2.5rem 0rem 0rem;
@@ -2015,7 +2045,7 @@ h2{
         padding: 0rem 0rem 0rem 4rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3.2rem;
+        padding: 7rem 16rem 0rem 0rem;
     }
 }
 
@@ -2057,7 +2087,7 @@ h2{
         color: black;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 4rem;
+        padding: 7rem 16rem 0rem 0rem;
     }
 }
 
@@ -2077,11 +2107,11 @@ h2{
         font-size: 1.8rem;
     }
     .content-images img {
-        height: 44rem;
-        width: 35rem;
+        height: 46rem;
+        width: 33rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3.9rem;
+        padding: 7rem 16rem 0rem 0rem;
     }
 }
 
@@ -2098,7 +2128,7 @@ h2{
     }
     .content-images img {
         height: 40rem;
-        width: 35rem;
+        width: 33rem;
     }
     .card-body {
         padding: 0rem 10rem 0rem 10rem;
@@ -2298,7 +2328,7 @@ h2{
         padding: 0rem 0rem 0rem 4rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3.5rem;
+        padding: 7rem 16rem 0rem 0rem;
     }    
 }
 
@@ -2315,7 +2345,7 @@ h2{
         padding: 0rem 0rem 0rem 3.5rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3.4rem;
+        padding: 7rem 16rem 0rem 0rem;
     }
 }
 
@@ -2329,10 +2359,10 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3.2rem;
+        padding: 7rem 16rem 0rem 0rem;
     }
     .content-images2 img {
-        height: 14rem;
+        height: 16rem;
         width: 23rem;
     }
     .listtype2 {
@@ -2358,7 +2388,10 @@ h2{
         padding: 1rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3.1rem;
+        padding: 5rem 16rem 0rem 0rem;
+    }
+    .listtype2 {
+        padding: 2rem 7.5rem 0rem 0rem;
     }
 }
 
@@ -2374,7 +2407,7 @@ h2{
         padding: 0rem 0rem 0rem 3rem;
     }
     .listtype {
-        padding: 7rem 0rem 0rem 3rem;
+        padding: 5rem 16rem 0rem 0rem;
     }
     .col-ourwork img {
         height: 20rem;
@@ -2398,7 +2431,7 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 5rem 0rem 0rem 2.8rem;
+        padding: 5rem 16rem 0rem 0rem;
     }
 }
 
@@ -2746,8 +2779,8 @@ h2{
         gap: 1rem;
     }
     .listtype {
-        padding: 5rem 0rem 0rem 2.7rem;
-    }
+        padding: 5rem 19.5rem 0rem 0rem;
+    }    
 }
 @media only screen and (max-width: 1540px)
 {
@@ -2759,11 +2792,11 @@ h2{
         color: var(--color-white);
     }
     .content-images img {
-        height: 35rem;
+        height: 38rem;
         width: 32rem;
     }
     .listtype {
-        padding: 5rem 0rem 0rem 4.5rem;
+        padding: 5rem 18.5rem 0rem 0rem;
     }
 }
 
@@ -2779,8 +2812,8 @@ h2{
         padding: 0rem 0rem 0rem 3rem;
     }
     .listtype {
-        padding: 5rem 0rem 0rem 4.5rem;
-    }
+        padding: 5rem 18.5rem 0rem 0rem;
+    }    
 }
 
 @media only screen and (max-width: 1522px)
@@ -2817,8 +2850,8 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 5rem 0rem 0rem 4rem;
-    }    
+        padding: 5rem 18.5rem 0rem 0rem;
+    }      
 }
 
 @media only screen and (max-width: 1500px) {
@@ -2843,7 +2876,7 @@ h2{
         padding: 1rem;
     }
     .listtype {
-        padding: 5rem 0rem 0rem 4.2rem;
+        padding: 5rem 17rem 0rem 0rem;
     }
     .para {
         position: absolute;
@@ -2901,7 +2934,7 @@ h2{
         font-size: 0.9rem;
     }
     .content-images2 img {
-        height: 14rem;
+        height: 17rem;
         width: 23rem;
     }
     .listtype2 {
@@ -3141,8 +3174,15 @@ h2{
         padding: 0rem 0rem 0rem 2.5rem;
     }
     .content-images img {
-        height: 38rem;
+        height: 50rem;
         width: 32rem;
+    }
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 50%;
+        align-items: center;
     }
 }
 
@@ -3173,7 +3213,11 @@ h2{
         color: var(--color-white);
     }
     .listtype {
-        padding: 5rem 0rem 0rem 4rem;
+        padding: 7rem 16.5rem 0rem 0rem;
+    }
+    .content-images img {
+        height: 50rem;
+        width: 32rem;
     }
 }
 
@@ -3434,7 +3478,7 @@ h2{
         padding: 0rem 0rem 0rem 1.8rem;
     }
     .content-images img {
-        height: 40rem;
+        height: 50rem;
         width: 32rem;
     }
 }
@@ -3863,14 +3907,14 @@ h2{
     .content2 {
         display: flex;
         flex-direction: column;
-        gap: 4.5rem;
+        gap: 1.5rem;
         width: 50%;
         align-items: center;
     }
     .content-images img {
-        height: 35rem;
+        height: 50rem;
         width: 32rem;
-    }    
+    }   
     .listtype {
         padding: 5rem 17rem 0rem 0rem;
     }
@@ -3912,6 +3956,14 @@ h2{
         color: var(--color-white);
         background-color: rgba(0, 0, 0, 0.611);
         /* text-align: justify; */
+    }
+    .dropbtn {
+        /* background-color: transparent; */
+        /* color: rgb(0, 0, 0); */
+        /* padding: 16px; */
+        font-size: 1.2rem;
+        /* border: none; */
+        /* font-weight: bold; */
     }
     .para h3 {
         padding: 1rem 0rem 0rem 0rem;
@@ -4351,9 +4403,9 @@ h2{
         padding: 0rem 0rem 0rem 5rem;
     }
     .content-images img {
-        height: 40rem;
+        height: 50rem;
         width: 32rem;
-    }   
+    }  
     .col-door1 {
         justify-content: left;
         display: flex;
@@ -4759,7 +4811,7 @@ h2{
         list-style-type: square;
     }
     .content-images img {
-        height: 36rem;
+        height: 42rem;
         width: 30rem;
     }
     .content-images2 {
@@ -5049,6 +5101,14 @@ h2{
         height: 18rem;
         width: 23rem;
     }    
+    .dropbtn {
+        /* background-color: transparent; */
+        /* color: rgb(0, 0, 0); */
+        /* padding: 16px; */
+        font-size: 1.4rem;
+        /* border: none; */
+        /* font-weight: bold; */
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -5144,7 +5204,7 @@ h2{
         gap: 10rem;
     }
     .content-images img {
-        height: 38rem;
+        height: 49rem;
         width: 30rem;
     }
 }
@@ -5226,9 +5286,8 @@ h2{
         gap: 4rem;
     }
     .listtype {
-        padding: 5rem 17rem 0rem 0rem;
+        padding: 5rem 15.5rem 0rem 0rem;
     }
-
     .whyus-content h3 {
         font-size: 1.9rem;
     }
@@ -5281,7 +5340,14 @@ h2{
         width: 30rem;
         gap: 0.7rem;
     }
-
+    .dropbtn {
+        /* background-color: transparent; */
+        /* color: rgb(0, 0, 0); */
+        /* padding: 16px; */
+        font-size: 1.1rem;
+        /* border: none; */
+        /* font-weight: bold; */
+    }
     .nav ul li {
         text-decoration: none;
         list-style: none;
@@ -5568,7 +5634,14 @@ h2{
         /* align-items: center; */
         padding: 1rem 4rem 1rem 2rem;
     }
-
+    .dropbtn {
+        /* background-color: transparent; */
+        /* color: rgb(0, 0, 0); */
+        /* padding: 16px; */
+        font-size: 1.4rem;
+        /* border: none; */
+        /* font-weight: bold; */
+    }
     .footer-row {
         display: flex;
         align-items: center;
@@ -6252,6 +6325,9 @@ h2{
     .listtype2 {
         padding: 2rem 0rem 0rem 0rem;
     }
+    .dropdown-content a{
+        font-size: 0.9rem;
+    }
 }
 
 @media only screen and (max-width: 996px) {
@@ -6474,7 +6550,7 @@ h2{
     .nav ul li a {
         text-decoration: none;
         color: var(--color-black-shade);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .col-ourwork img {
@@ -6547,7 +6623,9 @@ h2{
         justify-content: center;
         gap: 3rem;
     }
-
+    .dropbtn {
+        font-size: 1.3rem;
+    }
     .contactform {
         padding: 0rem 5rem 1rem 5rem;
         display: flex;
@@ -6663,6 +6741,14 @@ h2{
         justify-content: space-around;
         gap: 8rem;
         color: var(--color-white);
+    }
+    .dropbtn {
+        /* background-color: transparent; */
+        /* color: rgb(0, 0, 0); */
+        /* padding: 16px; */
+        font-size: 1.2rem;
+        /* border: none; */
+        /* font-weight: bold; */
     }
 }
 
@@ -8283,6 +8369,14 @@ h2{
     .main-q h3 {
         font-size: 1.7rem;
     }
+    .dropbtn {
+        /* background-color: transparent; */
+        /* color: rgb(0, 0, 0); */
+        /* padding: 16px; */
+        font-size: 1rem;
+        /* border: none; */
+        /* font-weight: bold; */
+    }
 }
 
 @media only screen and (max-width: 680px) {
@@ -8620,6 +8714,14 @@ h2{
     }
     .col-door1 h4 {
         font-size: 1.1rem;
+    }
+    .dropbtn {
+        /* background-color: transparent; */
+        /* color: rgb(0, 0, 0); */
+        padding: 0px;
+        font-size: 1rem;
+        /* border: none; */
+        /* font-weight: bold; */
     }
 }
 
@@ -9358,6 +9460,22 @@ h2{
         font-size: 1.4rem;
         padding: 0.5rem;
     }
+    .dropbtn {
+        /* background-color: transparent; */
+        color: rgb(255 251 251);
+        padding: 0px;
+        font-size: 1rem;
+        /* border: none; */
+        font-weight: 600;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+        z-index: 1;
+    }    
 }
 
 @media only screen and (max-width: 520px) {
