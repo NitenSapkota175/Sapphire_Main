@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7hljt!*b3j*)g%o5zt+ql!3mg$q$xk(ocd=_ex5a1atx-!$)@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 if DEBUG == False:
     ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
@@ -34,8 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'phonenumber_field',
-    #'storages',
-    #'admin_honeypot',
+    'storages',
+    'admin_honeypot',
     
     'Sapphire.apps.SapphireConfig',
     
@@ -198,8 +198,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'sapphire.upvc@gmail.com'
 EMAIL_HOST_PASSWORD = 'hxtbiphpaifiibob'
-#EMAIL_USE_SSL = True
-EMAIL_USE_TLS = True
+EMAIL_USE_SSL = True
+#EMAIL_USE_TLS = True
 
 
 
