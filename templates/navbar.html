@@ -26,10 +26,12 @@
                 <div class="dropdown">
                     <button class="dropbtn">Products</button>
                     <div class="dropdown-content">
-                      <a href="#">Profile</a>
-                      <a href="#">Door & Windows</a>
-                      <a href="#">Floors</a>
-                    </div>
+                    {%for product2  in Product2%}  
+                      <a href="{% url  'ProductType2' product2.id %}">{{product2.Product_Name}}</a>
+                    {%endfor%}
+                    {%for product1  in Product1%}  
+                    <a href="{% url  'ProductType1' product1.id %}">{{product1.Product_Name}}</a>
+                  {%endfor%}
                   </div>
                 </a>
             </li>
