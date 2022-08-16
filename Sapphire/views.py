@@ -89,3 +89,5 @@ def Contactus(request):
 
     return render(request,'Sapphire/Contactus.html',context)
 
+def BrochurePage(request):
+    return render(request,'Sapphire/brochure.html')
