@@ -1,7 +1,6 @@
 from email.headerregistry import Group
 from django.contrib import admin
-from . models import Contact, End_Section_Of_Products, Home,Settings,About,Testimonial,Our_Works,Product_Type_1,Product_Type_2,Product_Type1_Features,Product_Type1_Assurances,Product_Type1_Structure,Product_Type2_Assurance,Product_Type2_Features  
-
+from . models import Contact, End_Section_Of_Products, Home,Settings,About,Testimonial,Our_Works,Product_Type_1,Product_Type_2,Product_Type1_Features,Product_Type1_Assurances,Product_Type1_Structure,Product_Type2_Assurance,Product_Type2_Features,Customer_InfoPage,BrochurePage  
 from django.contrib import admin
 from django.contrib import admin
 from django.contrib.auth.models import Group
@@ -101,6 +100,11 @@ class Product_Type_2Admin(admin.ModelAdmin):
     readonly_fields = ['Product_Top_Background_image','Product_Middle_image','Product_HomePage_image', 'Product_ProductPage_image','Introduction_Section_image',
     'Why_Us_image1','Why_Us_image2']
 
+class Customer_InfoPageAdmin(admin.ModelAdmin):
+    fields = ['FullName','Phone_Number','Email','Subject','State','Message']
+    readonly_fields = ['FullName','Phone_Number','Email','Subject','State','Message']
+
+
 
 admin.site.register(Settings,SettingsAdmin)
 admin.site.register(Home,HomeAdmin)
@@ -111,6 +115,8 @@ admin.site.register(Product_Type_1 , Product_Type_1Admin)
 admin.site.register(Product_Type_2,Product_Type_2Admin)
 admin.site.register(Contact,ContactAdmin)
 admin.site.register(End_Section_Of_Products,End_Section_Of_ProductsAdmin)
+admin.site.register(Customer_InfoPage,Customer_InfoPageAdmin)
+admin.site.register(BrochurePage)
 #admin.site.register(Site)
 # Remove Groups
 admin.site.unregister(Group)

@@ -1,3 +1,4 @@
+from email import message
 from django.db import models
 from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
@@ -363,4 +364,27 @@ class Contact(SingleInstanceMixin,models.Model):
          verbose_name_plural = " Contact Us"
 
 
+class Customer_InfoPage(models.Model):
+    FullName = models.CharField(max_length=200,blank=False)
+    Phone_Number = PhoneNumberField()
+    Email = models.EmailField()
+    Subject = models.CharField(max_length=500,blank=False,null=True)
+    State = models.CharField(max_length=200,blank=False)
+    Message = models.TextField()
 
+    def __str__(self):
+        return self.Email
+
+    class Meta:
+         verbose_name_plural = "Customer_InfoPage"
+
+class BrochurePage(models.Model):
+    Product_Name = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to='static/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.Product_Name
+
+    class Meta:
+         verbose_name_plural = "BrochurePage"
