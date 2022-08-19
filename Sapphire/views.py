@@ -1,6 +1,7 @@
+from sre_parse import State
 from django.shortcuts import redirect, render
 from django.http  import HttpResponse
-from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings
+from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings,Customer_InfoPage
 from django.core.mail import send_mail,BadHeaderError
 
 # Create your views here.
@@ -90,4 +91,17 @@ def Contactus(request):
     return render(request,'Sapphire/Contactus.html',context)
 
 def BrochurePage(request):
-    return render(request,'Sapphire/brochure.html')
+    post_not = True 
+    if request.method == 'POST':
+         post_not = False
+         Customer_InfoPage.objects.create(
+            FullName = request.POST.get('name') ,
+            Phone_Number  = request.POST.get('number'),
+            Email = request.POST.get('email'),
+            Subject = request.POST.get('subject'),
+            State = request.POST.get('state'),
+            Message = request.POST.get('messages'),
+         )
+         return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
+
+    return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})

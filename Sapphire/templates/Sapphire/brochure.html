@@ -2,19 +2,21 @@
 {%load static%}
 {%block content %}
 
+{%if post_not == True %}
 <div class="container">
-    <form action="/action_page.php">
+    <form action="" method = 'POST'>
+        {% csrf_token %}
       <label for="fname">Name</label>
-      <input class="brochuretext" type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input class="brochuretext" type="text" id="fname" name="name" placeholder="Your name..">
   
       <label for="lname">Email</label>
-      <input class="brochuretext" type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input class="brochuretext" type="text" id="lname" name="email" placeholder="Your last name..">
         
       <label for="lname">Number</label>
-      <input class="brochuretext" type="number" id="lname" name="lastname" placeholder="Your last name..">
+      <input class="brochuretext" type="number" id="lname" name="number" placeholder="Your last name..">
 
       <label for="country">State</label>
-      <select id="country" name="country">
+      <select id="country" name="state">
         <option value="australia">West Bengal</option>
         <option value="canada">Karnataka</option>
         <option value="usa">Kerala</option>
@@ -23,8 +25,15 @@
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.."               style="height:200px"></textarea>
   
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="messages" placeholder="Write something.."               style="height:200px"></textarea>
+  
+
       <input class="brochuresubmit" type="submit" value="Submit">
     </form>
   </div>
+{%else%}
+    <h1>Hello everyone</h1>
+{% endif %}
 
   {%endblock content%}
