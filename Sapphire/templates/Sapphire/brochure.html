@@ -2,38 +2,48 @@
 {%load static%}
 {%block content %}
 
-{%if post_not == True %}
 <div class="container">
-    <form action="" method = 'POST'>
-        {% csrf_token %}
-      <label for="fname">Name</label>
-      <input class="brochuretext" type="text" id="fname" name="name" placeholder="Your name..">
-  
-      <label for="lname">Email</label>
-      <input class="brochuretext" type="text" id="lname" name="email" placeholder="Your last name..">
-        
-      <label for="lname">Number</label>
-      <input class="brochuretext" type="number" id="lname" name="number" placeholder="Your last name..">
-
-      <label for="country">State</label>
-      <select id="country" name="state">
-        <option value="australia">West Bengal</option>
-        <option value="canada">Karnataka</option>
-        <option value="usa">Kerala</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.."               style="height:200px"></textarea>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="messages" placeholder="Write something.."               style="height:200px"></textarea>
-  
-
-      <input class="brochuresubmit" type="submit" value="Submit">
-    </form>
-  </div>
-{%else%}
-    <h1>Hello everyone</h1>
-{% endif %}
+  <form action="/action_page.php">
+    <div class="row3">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input class="text" type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row3">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input class="text" type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row3">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row3">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input class="submit" type="submit" value="Submit">
+    </div>
+  </form>
+</div>
 
   {%endblock content%}
