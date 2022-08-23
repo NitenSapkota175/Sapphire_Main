@@ -1327,39 +1327,32 @@ h2{
 .stickynavbar{
     display: block;
     position: fixed;
-    top: 28rem;
+    top: 18rem;
     right: 0.5rem;
 }
 .sticky-ul {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 2rem;
 }
 .sticky-ul li {
     list-style: none;
-    border-radius: 50%;
 }
 
 .sticky-li-facebook img{
     height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
+    width: 4rem;
 }
 .sticky-li-insta img{
     height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
+    width: 4rem;
 }
 .sticky-li-linkedin img{
     height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
+    width: 4rem;
 }
 .sticky-li-twitter img{
     height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
+    width: 4rem;
 }
 .stickynavbar::before:footer{
     display: none;
