@@ -26,7 +26,7 @@
                 <div class="dropdown">
                     <button class="dropbtn">Products</button>
                     <div class="dropdown-content">
-                    {%for product2  in Product2%}  
+                    {%for product2  in Product2%}   
                       <a href="{% url  'ProductType2' product2.id %}">{{product2.Product_Name}}</a>
                     {%endfor%}
                     {%for product1  in Product1%}  
@@ -35,9 +35,10 @@
                     </div>
             </a>
               </li>
+              <li><a href="{%url 'Brochure' %}">Brochure</a></li>
               <li><a href="{%url 'Ourwork' %}">Our Works</a></li>
               <li><a href="{%url 'contactus' %}">Contact Us</a></li>
-            <li><a href="{%url 'Brochure' %}">Brochure</a></li>
+          
         </ul>
     </div>
 </nav>

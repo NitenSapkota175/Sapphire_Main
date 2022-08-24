@@ -105,3 +105,4 @@ def BrochurePage(request):
          return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
 
     return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
+

@@ -1,0 +1,13 @@
+{%extends 'main.html'%}
+{%load static%}
+{%block content %}
+   <section class="formbody">
+    <form class="formbrochure">      
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <input name="number" type="text" class="feedback-input" placeholder="Number" />
+        <textarea name="text" class="feedback-inputs" placeholder="Comment"></textarea>
+        <input class="submitbrochure" type="submit" value="SUBMIT"/>
+      </form>
+   </section>
+{%endblock content%}
