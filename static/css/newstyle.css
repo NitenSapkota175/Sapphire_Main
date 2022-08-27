@@ -1479,11 +1479,6 @@ h2 {
 }
 /* sticky navbar ends */
 /* brochure information inputs */
-.formbrochure {
-    display: flex;
-    align-items: center;
-    background-color: #0c0c0c;
-}
 
 /* brochure styling ends */
 
@@ -1549,92 +1544,80 @@ iframe {
 
 
 /* Brochure */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.formbody {
-    background: rgb(222 222 223);
-    padding: 1rem 0rem 1rem 0rem;
-}
-
-.formbrochure {
-    /* margin: 3rem; */
-    padding: 2rem;
-    border-radius: 25px;
-    max-width: 420px;
-    margin: 50px auto;
-    background: rgb(36, 36, 39);
-}
-.feedback-input {
-    color: white;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border: 2px solid #0642b4;
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
+.footer_get_touch_outer {
+    margin-top: 80px;
+    background: #f2f4f6;
+  }
+  .container-brochure {
     width: 100%;
-    box-sizing: border-box;
+    max-width: 1140px;
+    margin: auto;
+  }
+  .grid-70-30 {
+    display: grid;
+    grid-template-columns: 100% 100%;
+  }
+  .get_form_inner {
+    display: block;
+    padding: 50px 40px;
+    background: #fff;
+    box-shadow: -4px -2px 20px -7px #cfd5df;
+  }
+  .brochure-text, .brochure-text, .brochure-email, .brochure-phone {
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #333;
+    height: 42px;
+    padding: 0 0 0 20px;
+    width: 100%;
     outline: 0;
-}
-
-.feedback-inputs {
-    color: white;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border: 2px solid #0642b4;
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
+  }
+  .grid-50-50 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .grid-full {
+    margin: 20px 0;
+  }
+  .brochure-textarea {
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #333;
+    padding: 12px 0 0 20px;
     width: 100%;
-    box-sizing: border-box;
     outline: 0;
-}
-
-.feedback-input:focus {
-    border: 2px solid #099a26;
-}
-
-.feedback-inputs:focus {
-    border: 2px solid #099a26;
-}
-
-.feedback-inputs {
-    height: 150px;
-    line-height: 150%;
-    resize: vertical;
-}
-.submitbrochure {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    width: 100%;
-    background: #0642b4;
-    border-radius: 5px;
-    border: 0;
+    margin-bottom: 20px;
+  }
+  .get_form_inner_text h3 {
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .submit-brochure {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid;
+    font-weight: 500;
+    padding: 10px 20px;
+    outline: 0;
     cursor: pointer;
-    color: white;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 500;
-}
-
-.submitbrochure:hover {
-    background: #099a26;
-}
+    color: #103e65;
+    transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    -webkit-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    -moz-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    -ms-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    -o-transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .submit-brochure:hover {
+    background-color: #f85508;
+    border-color: #f85508;
+    color: #fff;
+  }
+/* brochure styling ends here */
 
 @media only screen and (max-width: 1921px) {
     .content1 p {

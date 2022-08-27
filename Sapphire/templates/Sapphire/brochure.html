@@ -2,16 +2,31 @@
 {%load static%}
 {%block content %}
 {%if post_not == True %}
-   <section class="formbody">
-    <form class="formbrochure" action = "{%url 'Brochure' %}" method = "POST"> 
-      {% csrf_token %}     
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="email" class="feedback-input" placeholder="Email" />
-          <input name="number" type="Number" class="feedback-input" placeholder="Number" />
-        <textarea name="messages" class="feedback-inputs" placeholder="Comment"></textarea>
-        <input class="submitbrochure" type="submit" value="SUBMIT"/>
-      </form>
-   </section>
+<section class="footer_get_touch_outer">
+  <div class="container-brochure">
+    <div class="footer_get_touch_inner grid-70-30">
+      <div class="colmun-70 get_form">
+        <div class="get_form_inner">
+          <div class="get_form_inner_text">
+            <h3>Quick Enquiry</h3>
+          </div>
+          <form action="#">
+            <div class="grid-50-50">
+              <input class="brochure-text" type="text" placeholder="First Name">
+              <input class="brochure-text" type="text" placeholder="Last Name">
+              <input class="brochure-email" type="email" placeholder="Email">
+              <input class="brochure-phone" type="tel" placeholder="Phone">
+            </div>
+            <div class="grid-full">
+              <textarea class="brochure-textarea" placeholder="Tell us about your thoughts" cols="30" rows="10"></textarea>
+              <input class="submit-brochure" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>       
+    </div>
+  </div>
+</section>
 {%else%}
     <!-- Write the div code here , you can also comment html forum make sure you comment if else and
     endif and  you write the code of three divs and after finishig put code here and test 
