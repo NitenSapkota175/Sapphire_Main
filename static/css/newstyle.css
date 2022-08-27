@@ -1436,17 +1436,20 @@ h2 {
 }
 
 .sticky-nav li:nth-child(1) a {
-    background-color: #4267B2;
+    background-color: #c82c2c;
 }
 
 .sticky-nav li:nth-child(2) a {
-    background-color: #c13584;
+    background-color:#4267B2;
 }
 
 .sticky-nav li:nth-child(3) a {
-    background-color: #1DA1F2;
+    background-color: #c13584;
 }
 .sticky-nav li:nth-child(4) a {
+    background-color:#1DA1F2 ;
+}
+.sticky-nav li:nth-child(5) a {
     background-color: #0C63BC;
 }
 .sticky-nav li a i {
