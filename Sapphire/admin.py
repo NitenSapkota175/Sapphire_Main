@@ -4,6 +4,7 @@ from . models import Contact, End_Section_Of_Products, Home,Settings,About,Testi
 from django.contrib import admin
 from django.contrib import admin
 from django.contrib.auth.models import Group
+from datetime import timedelta
 class SingleInstanceAdminMixin(object):
    
     def has_add_permission(self, request):
@@ -11,6 +12,14 @@ class SingleInstanceAdminMixin(object):
         if num_objects >= 1:
             return False
         return super(SingleInstanceAdminMixin, self).has_add_permission(request)
+
+class ZeroInstanceAdminMixin(object):
+   
+    def has_add_permission(self, request):
+        num_objects = self.model.objects.count()
+        if num_objects >=0 :
+            return False
+        return super(ZeroInstanceAdminMixin, self).has_add_permission(request)
 
 class HomeAdmin(SingleInstanceAdminMixin,admin.ModelAdmin):
     model = Home
@@ -100,9 +109,14 @@ class Product_Type_2Admin(admin.ModelAdmin):
     readonly_fields = ['Product_Top_Background_image','Product_Middle_image','Product_HomePage_image', 'Product_ProductPage_image','Introduction_Section_image',
     'Why_Us_image1','Why_Us_image2']
 
-class Customer_InfoPageAdmin(admin.ModelAdmin):
+class Customer_InfoPageAdmin(ZeroInstanceAdminMixin,admin.ModelAdmin):
+    list_display = ['Email','get_ist']
     fields = ['FullName','Phone_Number','Email','Subject','State','Message']
     readonly_fields = ['FullName','Phone_Number','Email','Subject','State','Message']
+    def get_ist(self, obj):
+        return obj.Sent + timedelta(minutes=330)
+
+    get_ist.short_description = 'Time in (IST)'
 
 
 

@@ -27,10 +27,11 @@ def Sapphire_contactus(request):
 
 
 def Sapphire_Product1(request):
-    Product1 = Product_Type_1.objects.all()
+    Product1 = Product_Type_1.objects.all()[0:1]
+    Product1A = Product_Type_1.objects.all()[1:2]
     
 
-    return {'Product1' : Product1 }
+    return {'Product1' : Product1 , 'Product1A' : Product1A}
 
 def Sapphire_Product2(request):
     Product2 = Product_Type_2.objects.all()

@@ -12,6 +12,14 @@ class SingleInstanceMixin(object):
             raise ValidationError("Can only create 1 %s instance" % model.__name__)
         super(SingleInstanceMixin, self).clean()
 
+class ZeroInstanceMixin(object):
+    
+    def clean(self):
+        model = self.__class__
+        if (model.objects.count() > 0 and self.id != model.objects.get().id):
+            raise ValidationError("Can only create 1 %s instance" % model.__name__)
+        super(ZeroInstanceMixin, self).clean()
+
 class Settings(SingleInstanceMixin,models.Model):
     Company_Name = models.CharField(max_length=225,default="Sapphire Commotrade Pvt.Ltd")
     Main_Logo = models.ImageField()
@@ -364,13 +372,15 @@ class Contact(SingleInstanceMixin,models.Model):
          verbose_name_plural = " Contact Us"
 
 
-class Customer_InfoPage(models.Model):
+class Customer_InfoPage(ZeroInstanceMixin,models.Model):
     FullName = models.CharField(max_length=200,blank=False)
     Phone_Number = PhoneNumberField()
     Email = models.EmailField()
     Subject = models.CharField(max_length=500,blank=False,null=True)
-    State = models.CharField(max_length=200,blank=False)
+    State = models.CharField(max_length=200,blank=False,null=True)
     Message = models.TextField()
+    Sent = models.DateTimeField(auto_now_add=True,null=True)
+
 
     def __str__(self):
         return self.Email

@@ -70,6 +70,14 @@ def Contactus(request):
         number = request.POST.get('phoneno')
         message_body = request.POST.get('help')
         
+       
+        Customer_InfoPage.objects.create(
+            FullName = name ,
+            Phone_Number  = number,
+            Email = email,
+            Message = message_body,
+         )
+        
         if name and email and message_body and number:
             try:
                 send_mail(name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
@@ -92,17 +100,37 @@ def Contactus(request):
 
 def BrochurePage(request):
     post_not = True 
+
     if request.method == 'POST':
-         post_not = False
-         Customer_InfoPage.objects.create(
-            FullName = request.POST.get('name') ,
-            Phone_Number  = request.POST.get('number'),
-            Email = request.POST.get('email'),
-            Subject = request.POST.get('subject'),
-            State = request.POST.get('state'),
-            Message = request.POST.get('messages'),
-         )
-         return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
+         
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        number = request.POST.get('number')
+        message_body = request.POST.get('messages')
+        
+       
+     
+        
+        if name and email and message_body and number:
+            try:
+                send_mail(name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
+                Customer_InfoPage.objects.create(
+                        FullName = name ,
+                        Phone_Number  = number,
+                        Email = email,
+                        Message = message_body,
+                    )
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            post_not = False
+            return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
+        else:
+    
+            return HttpResponse('Make sure all fields are entered and valid.')
+    
+    
+    
+         
 
     return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
 

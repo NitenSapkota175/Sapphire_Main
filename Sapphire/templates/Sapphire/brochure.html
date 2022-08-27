@@ -1,13 +1,22 @@
 {%extends 'main.html'%}
 {%load static%}
 {%block content %}
+{%if post_not == True %}
    <section class="formbody">
-    <form class="formbrochure">      
+    <form class="formbrochure" action = "{%url 'Brochure' %}" method = "POST"> 
+      {% csrf_token %}     
         <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-          <input name="number" type="text" class="feedback-input" placeholder="Number" />
-        <textarea name="text" class="feedback-inputs" placeholder="Comment"></textarea>
+        <input name="email" type="email" class="feedback-input" placeholder="Email" />
+          <input name="number" type="Number" class="feedback-input" placeholder="Number" />
+        <textarea name="messages" class="feedback-inputs" placeholder="Comment"></textarea>
         <input class="submitbrochure" type="submit" value="SUBMIT"/>
       </form>
    </section>
+{%else%}
+    <!-- Write the div code here , you can also comment html forum make sure you comment if else and
+    endif and  you write the code of three divs and after finishig put code here and test 
+    if it shows an error it is probably beause html comment cannot comment django if endif and else not 
+    sure
+  -->
+{% endif %}
 {%endblock content%}
