@@ -110,7 +110,7 @@ def BrochurePage(request):
         Full_Name = First_name + " " +Last_name
         email = request.POST.get('Email')
         number = request.POST.get('number')
-        message_body = request.POST.get('messages')
+        message_body = request.POST.get('message')
         
        
      
