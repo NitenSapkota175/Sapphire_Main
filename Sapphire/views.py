@@ -117,7 +117,7 @@ def BrochurePage(request):
         
         if First_name and Last_name  and email and message_body and number:
             try:
-                send_mail(name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
+                send_mail(Full_Name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
                 Customer_InfoPage.objects.create(
                         FullName =Full_Name,
                         Phone_Number=number,
