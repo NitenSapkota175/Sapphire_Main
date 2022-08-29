@@ -8,14 +8,15 @@
       <div class="colmun-70 get_form">
         <div class="get_form_inner">
           <div class="get_form_inner_text">
-            <h3>Quick Enquiry</h3>
+            <h3>Enter your details to download Brochure</h3>
           </div>
-          <form action="#">
+          <form action="{%url 'Brochure' %}" method = "POST" >
+            {%csrf_token%}
             <div class="grid-50-50">
-              <input class="brochure-text" type="text" placeholder="First Name">
-              <input class="brochure-text" type="text" placeholder="Last Name">
-              <input class="brochure-email" type="email" placeholder="Email">
-              <input class="brochure-phone" type="tel" placeholder="Phone">
+              <input name="name" class="brochure-text" type="text" placeholder="First Name">
+              <input name="email" class="brochure-text" type="text" placeholder="Last Name">
+              <input name="number" class="brochure-email" type="email" placeholder="Email">
+              <input name = "messages" class="brochure-phone" type="tel" placeholder="Phone">
             </div>
             <div class="grid-full">
               <textarea class="brochure-textarea" placeholder="Tell us about your thoughts" cols="30" rows="10"></textarea>

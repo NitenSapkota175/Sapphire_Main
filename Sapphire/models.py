@@ -376,8 +376,6 @@ class Customer_InfoPage(ZeroInstanceMixin,models.Model):
     FullName = models.CharField(max_length=200,blank=False)
     Phone_Number = PhoneNumberField()
     Email = models.EmailField()
-    Subject = models.CharField(max_length=500,blank=False,null=True)
-    State = models.CharField(max_length=200,blank=False,null=True)
     Message = models.TextField()
     Sent = models.DateTimeField(auto_now_add=True,null=True)
 

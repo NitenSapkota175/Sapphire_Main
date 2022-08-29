@@ -111,8 +111,8 @@ class Product_Type_2Admin(admin.ModelAdmin):
 
 class Customer_InfoPageAdmin(ZeroInstanceAdminMixin,admin.ModelAdmin):
     list_display = ['Email','get_ist']
-    fields = ['FullName','Phone_Number','Email','Subject','State','Message']
-    readonly_fields = ['FullName','Phone_Number','Email','Subject','State','Message']
+    fields = ['FullName','Phone_Number','Email','Message']
+    readonly_fields = ['FullName','Phone_Number','Email','Message']
     def get_ist(self, obj):
         return obj.Sent + timedelta(minutes=330)
 
