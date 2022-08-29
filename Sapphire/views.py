@@ -105,22 +105,24 @@ def BrochurePage(request):
 
     if request.method == 'POST':
          
-        name = request.POST.get('name')
-        email = request.POST.get('email')
+        First_name = request.POST.get('FirstName')
+        Last_name = request.POST.get('LastName')
+        Full_Name = First_name + " " +Last_name
+        email = request.POST.get('Email')
         number = request.POST.get('number')
         message_body = request.POST.get('messages')
         
        
      
         
-        if name and email and message_body and number:
+        if First_name and Last_name  and email and message_body and number:
             try:
                 send_mail(name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
                 Customer_InfoPage.objects.create(
-                        FullName = name ,
-                        Phone_Number  = number,
-                        Email = email,
-                        Message = message_body,
+                        FullName =Full_Name,
+                        Phone_Number=number,
+                        Email=email,
+                        Message=message_body,
                     )
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')

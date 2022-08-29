@@ -13,13 +13,13 @@
           <form action="{%url 'Brochure' %}" method = "POST" >
             {%csrf_token%}
             <div class="grid-50-50">
-              <input name="name" class="brochure-text" type="text" placeholder="First Name">
-              <input name="email" class="brochure-text" type="text" placeholder="Last Name">
-              <input name="number" class="brochure-email" type="email" placeholder="Email">
-              <input name = "messages" class="brochure-phone" type="tel" placeholder="Phone">
+              <input name="FirstName" class="brochure-text" type="text" placeholder="First Name">
+              <input name="LastName" class="brochure-text" type="text" placeholder="Last Name">
+              <input name="Email" class="brochure-email" type="email" placeholder="Email">
+              <input name = "Number" class="brochure-phone" type="tel" placeholder="Phone">
             </div>
             <div class="grid-full">
-              <textarea class="brochure-textarea" placeholder="Tell us about your thoughts" cols="30" rows="10"></textarea>
+              <textarea name = "message"class="brochure-textarea" placeholder="Tell us about your thoughts" cols="30" rows="10"></textarea>
               <input class="submit-brochure" type="submit" value="Submit">
             </div>
           </form>
