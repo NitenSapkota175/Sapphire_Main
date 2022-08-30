@@ -1447,11 +1447,12 @@ h2 {
     background-color: #c13584;
 }
 .sticky-nav li:nth-child(4) a {
-    background-color:#1DA1F2 ;
+    background-color: #0ebe52;
 }
 .sticky-nav li:nth-child(5) a {
-    background-color: #0C63BC;
+   background-color: #c9c131;
 }
+
 .sticky-nav li a i {
     position: absolute;
     top: 17px;
@@ -1479,7 +1480,30 @@ h2 {
 }
 /* sticky navbar ends */
 /* brochure information inputs */
-
+.brochure-Div {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4rem;
+}
+.brochure-Row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.brochure-col {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+}
+.brochure-col a {
+    text-decoration: none;
+    background-color: #283b8c;
+    height: 1.6rem;
+    width: 3rem;
+}
+.brochure-col a i {
+    color: white;
+}
 /* brochure styling ends */
 
 /* 6813 */
