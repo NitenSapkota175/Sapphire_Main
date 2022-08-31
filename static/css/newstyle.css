@@ -1506,6 +1506,92 @@ h2 {
 }
 /* brochure styling ends */
 
+.brochure-Div {
+    display: block;
+    background-color: azure;
+    padding: 4rem 0rem 4rem 0rem;
+}
+
+.brochure-Row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem 2rem 2rem;
+}
+.brochure-col{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(59, 57, 55);
+}
+.brochure-col .anchor{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    /* margin: 15px; */
+    height: 8rem;
+    width: 14rem;
+    flex-direction: column;
+}
+.brochure-col .anchor .pdffff{
+    height: 2rem;
+    width: 2rem;
+    font-size: 40px;
+}
+
+.brochure-inside-div button {
+    background-color: transparent;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: white;
+    border: 1px solid white;
+}
+
+.brochure-inside-div button:hover {
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 900px)
+{
+  .brochure-col .anchor{
+    height: 8rem;
+    width: 12rem;
+}  
+}
+@media only screen and (max-width: 800px)
+{
+  .brochure-col .anchor{
+    height: 6rem;
+    width: 10rem;
+}  
+}
+
+@media only screen and (max-width: 800px)
+{
+  .brochure-col .anchor{
+    height: 8rem;
+    width: 20rem;
+    }  
+
+    .brochure-Row {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px)
+{
+  .brochure-col .anchor{
+    height: 8rem;
+    width: 18rem;
+    }  
+} 
+
 /* 6813 */
 iframe {
     width: 100%;

@@ -34,20 +34,34 @@
     if it shows an error it is probably beause html comment cannot comment django if endif and else not 
     sure
   -->
-<section class="brochure-Div">
-  <div class="brochure-Row">
-    <div class="brochure-col">
-       <a href="#"><i class="fa-solid fa-file-pdf"></i></a>
+  <section class="brochure-Div">
+    <div class="brochure-Row">
+      <div class="brochure-col">
+         <a class="anchor" href="#">
+            <i class="fa-solid fa-file-pdf pdffff"></i> 
+        </a>
+        <div class="brochure-inside-div">
+            <button type="submit-brochure">View</button>
+            <button type="submit-brochure">Download</button>
+        </div>
+      </div>
+  
+      <div class="brochure-col">
+        <a class="anchor" href="#"><i class="fa-solid fa-file-pdf pdffff"></i></a>
+        <div class="brochure-inside-div">
+            <button type="submit-brochure">View</button>
+            <button type="submit-brochure">Download</button>
+        </div>
+      </div>
+  
+      <div class="brochure-col">
+        <a class="anchor" href="#"><i class="fa-solid fa-file-pdf pdffff"></i></a>
+        <div class="brochure-inside-div">
+            <button type="submit-brochure">View</button>
+            <button type="submit-brochure">Download</button>
+        </div>
+      </div>
     </div>
-
-    <div class="brochure-col">
-      <a href="#"><i class="fa-solid fa-file-pdf"></i></a>
-    </div>
-
-    <div class="brochure-col">
-      <a href="#"><i class="fa-solid fa-file-pdf"></i></a>
-    </div>
-  </div>
-</section>
+  </section>
 {% endif %}
 {%endblock content%}
