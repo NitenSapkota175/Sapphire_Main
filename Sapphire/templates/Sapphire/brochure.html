@@ -1,7 +1,7 @@
 {%extends 'main.html'%}
 {%load static%}
 {%block content %}
-<!--{%if post_not == True %}
+{%if post_not == True %}
  <section class="footer_get_touch_outer">
   <div class="container-brochure">
     <div class="footer_get_touch_inner grid-70-30">
@@ -28,13 +28,13 @@
     </div>
   </div>
 </section>
-{%else%} -->
+{%else%}
     <!-- Write the div code here , you can also comment html forum make sure you comment if else and
     endif and  you write the code of three divs and after finishig put code here and test 
     if it shows an error it is probably beause html comment cannot comment django if endif and else not 
     sure
   -->
-  <section class="brochure-Div">
+  <!-- <section class="brochure-Div">
     <div class="brochure-Row">
       <div class="brochure-col">
          <a class="anchor" href="#">
@@ -62,6 +62,6 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 {% endif %}
 {%endblock content%}

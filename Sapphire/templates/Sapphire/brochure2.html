@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Oswald';
+        }
+        .brochure-Div {
+            display: block;
+            background-color: azure;
+            padding: 4rem 0rem 4rem 0rem;
+        }
+
+        .brochure-Row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        .brochure-col {
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            border-radius: 0.5rem;
+            background-color: rgb(59, 57, 55);
+        }
+
+        .brochure-col .anchor {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 1rem;
+            /* margin: 15px; */
+            height: 8rem;
+            width: 14rem;
+            flex-direction: column;
+        }
+
+        .brochure-col .anchor .pdffff {
+            height: 2rem;
+            width: 2rem;
+            font-size: 40px;
+        }
+
+        .brochure-inside-div button {
+            background-color: transparent;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .brochure-inside-div button:hover {
+            color: black;
+            background-color: white;
+        }
+
+        @media only screen and (max-width: 1900px) {
+            .brochure-col .anchor {
+                height: 10rem;
+                width: 18rem;
+            }
+        }
+        @media only screen and (max-width: 1000px) {
+            .brochure-col .anchor {
+                height: 9rem;
+                width: 16rem;
+            }
+        }
+        @media only screen and (max-width: 900px) {
+            .brochure-col .anchor {
+                height: 10rem;
+                width: 15rem;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .brochure-col .anchor {
+                height: 10rem;
+                width: 24rem;
+            }
+
+            .brochure-Row {
+                flex-direction: column;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .brochure-col .anchor {
+                height: 8rem;
+                width: 22rem;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .brochure-col .anchor {
+                height: 8rem;
+                width: 18rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="brochure-Div">
+        <div class="brochure-Row">
+            <div class="brochure-col">
+                <a class="anchor" href="#">
+                    <i class="fa-solid fa-file-pdf pdffff"></i>
+                </a>
+                <div class="brochure-inside-div">
+                    <button type="submit-brochure">View</button>
+                    <button type="submit-brochure">Download</button>
+                </div>
+            </div>
+
+            <div class="brochure-col">
+                <a class="anchor" href="#"><i class="fa-solid fa-file-pdf pdffff"></i></a>
+                <div class="brochure-inside-div">
+                    <button type="submit-brochure">View</button>
+                    <button type="submit-brochure">Download</button>
+                </div>
+            </div>
+
+            <div class="brochure-col">
+                <a class="anchor" href="#"><i class="fa-solid fa-file-pdf pdffff"></i></a>
+                <div class="brochure-inside-div">
+                    <button type="submit-brochure">View</button>
+                    <button type="submit-brochure">Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
