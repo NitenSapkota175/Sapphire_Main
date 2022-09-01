@@ -1480,33 +1480,6 @@ h2 {
 }
 /* sticky navbar ends */
 /* brochure information inputs */
-.brochure-Div {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 4rem;
-}
-.brochure-Row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-.brochure-col {
-    display: block;
-    height: 3rem;
-    width: 3rem;
-}
-.brochure-col a {
-    text-decoration: none;
-    background-color: #283b8c;
-    height: 1.6rem;
-    width: 3rem;
-}
-.brochure-col a i {
-    color: white;
-}
-/* brochure styling ends */
-
-
 /* 6813 */
 iframe {
     width: 100%;
