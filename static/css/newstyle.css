@@ -1569,8 +1569,9 @@ iframe {
 
 
 /* Brochure */
-.footer_get_touch_outer {
-    margin-top: 80px;
+  .footer_get_touch_outer {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background: #f2f4f6;
   }
   .container-brochure {
@@ -1623,6 +1624,7 @@ iframe {
   .submit-brochure {
     display: inline-block;
     font-size: 16px;
+    height: 3rem;
     text-transform: uppercase;
     background: transparent;
     border: 2px solid;
@@ -8632,6 +8634,9 @@ iframe {
         height: 10rem;
         width: 12.5rem;
     }
+    .submit-brochure {
+        height: 2.6rem;
+    }
 }
 
 @media only screen and (max-width: 721px) {
@@ -9481,6 +9486,9 @@ iframe {
         font-size: 1rem;
         /* border: none; */
         /* font-weight: bold; */
+    }
+    .sticky-nav {
+        display: none;
     }
 }
 
