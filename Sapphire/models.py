@@ -3,6 +3,7 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from phonenumber_field.modelfields import PhoneNumberField
 from django.utils.safestring import mark_safe
+from django.conf import settings
 class SingleInstanceMixin(object):
     
 
@@ -388,7 +389,7 @@ class Customer_InfoPage(ZeroInstanceMixin,models.Model):
 
 class BrochurePage(models.Model):
     Product_Name = models.CharField(max_length=255, blank=True)
-    document = models.FileField(upload_to='static/')
+    document = models.FileField(upload_to='')
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

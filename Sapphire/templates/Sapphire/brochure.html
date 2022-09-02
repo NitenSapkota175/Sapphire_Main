@@ -39,8 +39,8 @@
           </a>
           <p>{{brochure.Product_Name}}</p>
           <div class="brochure-inside-div">
-              <a href = "{%url 'download_file' %}" > <button type="submit-brochure">View</button> </a>
-              <a href = "{%url 'download_file' %}" >  <button type="submit-brochure">Download</button></a>
+              <a href = "" > <button type="submit-brochure">View</button> </a>
+              <a href = href = "{{brochure.document.url}}" download="{{brochure.document.url}}" >  <button>Download</button></a>
           </div>
       </div>
       {%endfor%}

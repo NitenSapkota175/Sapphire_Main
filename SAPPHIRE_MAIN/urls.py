@@ -5,7 +5,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from Sapphire.sitemaps import StaticViewsSitemap,Productsitemap1,Productsitemap2
 from django.contrib.sitemaps.views import sitemap
-
+from django.conf.urls import url 
+from django.views.static import serve
 
 sitemaps = {
     'sitemap' : StaticViewsSitemap,
@@ -20,7 +21,9 @@ urlpatterns = [
     path('sapphire_main_secret_10101111/', admin.site.urls),
     path('',include('Sapphire.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
-     name='django.contrib.sitemaps.views.sitemap') #this is straight from django docs
+     name='django.contrib.sitemaps.views.sitemap'), #this is straight from django docs
+    url(r'download/<?path>/.*$',serve,{'document_root' : settings.MEDIA_ROOT})
+
 ]
 #if settings.DEBUG == True:
 urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
