@@ -8,7 +8,7 @@ urlpatterns = [
     path('product_type2/<str:pk>',views.ProductType2,name='ProductType2'),
     path('ourwork',views.OurWork,name='Ourwork'),
     path('ContactUs/',views.Contactus,name='contactus'),
-    path('Brochure',views.BrochurePage,name='Brochure'),
+    path('Brochure',views.Brochure_Page,name='Brochure'),
+    path('Brochure',views.download_file,name='download_file'),
    
 ]
-

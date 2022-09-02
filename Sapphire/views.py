@@ -1,7 +1,8 @@
+from multiprocessing import context
 from sre_parse import State
 from django.shortcuts import redirect, render
 from django.http  import HttpResponse
-from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings,Customer_InfoPage
+from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings,Customer_InfoPage,BrochurePage
 from django.core.mail import send_mail,BadHeaderError
 import os
 import mimetypes
@@ -100,7 +101,7 @@ def Contactus(request):
 
     return render(request,'Sapphire/Contactus.html',context)
 
-def BrochurePage(request):
+def Brochure_Page(request):
     post_not = True 
 
     if request.method == 'POST':
@@ -112,7 +113,7 @@ def BrochurePage(request):
         number = request.POST.get('Number')
         message_body = request.POST.get('message')
         
-       
+        Brochure = BrochurePage.objects.all()
      
         
         if First_name and Last_name  and email and message_body and number:
@@ -127,7 +128,8 @@ def BrochurePage(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             post_not = False
-            return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
+            context = {'Brochure' : Brochure , 'post_not' : post_not}
+            return render(request,'Sapphire/brochure.html' , context)
         else:
     
             return HttpResponse('Make sure all fields are entered and valid.')

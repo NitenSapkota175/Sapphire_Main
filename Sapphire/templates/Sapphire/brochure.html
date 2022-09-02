@@ -30,40 +30,22 @@
 </section>
 {%else%}
 <section class="brochure-Div">
+
   <div class="brochure-Row">
+    {%for brochure in Brochure %}
       <div class="brochure-col">
           <a class="anchor" href="#">
-              <img class="pdffff" src="/static/images/pdf.png" alt="">
+              <img class="pdffff" src="{% static  "images/pdf.png" %}" alt="">
           </a>
-          <p>Lorem ipsum</p>
+          <p>{{brochure.Product_Name}}</p>
           <div class="brochure-inside-div">
-              <button type="submit-brochure">View</button>
-              <button type="submit-brochure">Download</button>
+              <a href = "{%url 'download_file' %}" > <button type="submit-brochure">View</button> </a>
+              <a href = "{%url 'download_file' %}" >  <button type="submit-brochure">Download</button></a>
           </div>
       </div>
-
-      <div class="brochure-col">
-          <a class="anchor" href="#">
-              <img class="pdffff" src="/static/images/pdf.png" alt="">
-          </a>
-          <p>Lorem ipsum</p>
-          <div class="brochure-inside-div">
-              <button type="submit-brochure">View</button>
-              <button type="submit-brochure">Download</button>
-          </div>
-      </div>
-
-      <div class="brochure-col">
-          <a class="anchor" href="#">
-              <img class="pdffff" src="/static/images/pdf.png" alt="">
-          </a>
-          <p>Lorem ipsum</p>
-          <div class="brochure-inside-div">
-              <button type="submit-brochure">View</button>
-              <button type="submit-brochure">Download</button>
-          </div>
-      </div>
+      {%endfor%}
   </div>
+
 </section>
 {% endif %}
 {%endblock content%}
