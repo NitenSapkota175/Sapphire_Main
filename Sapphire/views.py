@@ -178,7 +178,8 @@ def download_pdf_file(request, filename=''):
             # Define Django project base directory
             BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             # Define the full file path
-            filepath = BASE_DIR+ '/open-sapphiremain-spaces/' + filename
+            filepath = 'static.sapphirecommotrade.com/open-sapphiremain-spaces/' + filename
+            
             # Open the file for reading content
             path = open(filepath, 'rb')
             # Set the mime type
