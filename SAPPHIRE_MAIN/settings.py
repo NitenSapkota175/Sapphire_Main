@@ -84,7 +84,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'SAPPHIRE_MAIN.wsgi.application'
 
-GOOGLE_RECAPTCHA_SECRET_KEY = '6LcEqs0hAAAAAJhWRojBNTEJbLVi9HwaUvoqg5Qy'
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LcQ480hAAAAAPl1IPOFnIh_dfX53vRcvmmImGjk'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 if DEBUG == False:
