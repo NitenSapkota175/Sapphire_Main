@@ -22,8 +22,7 @@ urlpatterns = [
     path('',include('Sapphire.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
      name='django.contrib.sitemaps.views.sitemap'), #this is straight from django docs
-    url(r'download/<?path>/.*$',serve,{'document_root' : settings.MEDIA_ROOT})
-
+   
 ]
 #if settings.DEBUG == True:
 urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

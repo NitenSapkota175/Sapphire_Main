@@ -2,7 +2,7 @@
 import os
 from pathlib import Path
 
-from pickle import FALSE
+from pickle import FALSE, TRUE
 from socket import if_nameindex
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7hljt!*b3j*)g%o5zt+ql!3mg$q$xk(ocd=_ex5a1atx-!$)@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 if DEBUG == False:
     ALLOWED_HOSTS = ['www.sapphirecommotrade.com','sapphirecommotrade.com','localhost']
@@ -84,7 +84,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'SAPPHIRE_MAIN.wsgi.application'
 
-
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LcEqs0hAAAAAJhWRojBNTEJbLVi9HwaUvoqg5Qy'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 if DEBUG == False:

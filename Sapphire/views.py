@@ -10,8 +10,9 @@ from django.core.mail import send_mail,BadHeaderError
 import os
 import mimetypes
 from django.conf import settings
-
-
+from django.core.files.storage import FileSystemStorage
+import requests
+from django.contrib import messages
 # Create your views here.
 def HomePage(request):
     Home_obj = Home.objects.all()
@@ -73,29 +74,43 @@ def Contactus(request):
 
 
     if request.method == 'POST':
-        name = request.POST.get('full_name')
-        email = request.POST.get('email')
-        number = request.POST.get('phoneno')
-        message_body = request.POST.get('help')
+
+        recaptcha_response = request.POST.get('g-recaptcha-response')
+        data = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+        r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
+        result = r.json()
+             
+        if result['success']:  
+
+
+
+            name = request.POST.get('full_name')
+            email = request.POST.get('email')
+            number = request.POST.get('phoneno')
+            message_body = request.POST.get('help')
+            
         
-       
-        Customer_InfoPage.objects.create(
-            FullName = name ,
-            Phone_Number  = number,
-            Email = email,
-            Message = message_body,
-         )
+            Customer_InfoPage.objects.create(
+                FullName = name ,
+                Phone_Number  = number,
+                Email = email,
+                Message = message_body,
+            )
+            
+            if name and email and message_body and number:
+                try:
+                    send_mail(name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
+                except BadHeaderError:
+                    return HttpResponse('Invalid header found.')
+                return redirect('Home')
+            else:
         
-        if name and email and message_body and number:
-            try:
-                send_mail(name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
-            return redirect('Home')
+                return HttpResponse('Make sure all fields are entered and valid.')
         else:
-    
-            return HttpResponse('Make sure all fields are entered and valid.')
-    
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
     
     
         
@@ -110,47 +125,69 @@ def Brochure_Page(request):
     post_not = True 
 
     if request.method == 'POST':
-         
-        First_name = request.POST.get('FirstName')
-        Last_name = request.POST.get('LastName')
-        Full_Name = First_name + " " +Last_name
-        email = request.POST.get('Email')
-        number = request.POST.get('Number')
-        message_body = request.POST.get('message')
+
+        recaptcha_response = request.POST.get('g-recaptcha-response')
+        data = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+        r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
+        result = r.json()
+             
+        if result['success']:  
+
+            First_name = request.POST.get('FirstName')
+            Last_name = request.POST.get('LastName')
+            Full_Name = First_name + " " +Last_name
+            email = request.POST.get('Email')
+            number = request.POST.get('Number')
+            message_body = request.POST.get('message')
+            
+            Brochure = BrochurePage.objects.all()
         
-        Brochure = BrochurePage.objects.all()
-     
+            
+            if First_name and Last_name  and email and message_body and number:
+                try:
+                    send_mail(Full_Name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
+                    Customer_InfoPage.objects.create(
+                            FullName =Full_Name,
+                            Phone_Number=number,
+                            Email=email,
+                            Message=message_body,
+                        )
+                except BadHeaderError:
+                    return HttpResponse('Invalid header found.')
+                post_not = False
+                context = {'Brochure' : Brochure , 'post_not' : post_not}
+                return render(request,'Sapphire/brochure.html' , context)
+            else:
+                return HttpResponse('Make sure all fields are entered and valid.')
         
-        if First_name and Last_name  and email and message_body and number:
-            try:
-                send_mail(Full_Name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
-                Customer_InfoPage.objects.create(
-                        FullName =Full_Name,
-                        Phone_Number=number,
-                        Email=email,
-                        Message=message_body,
-                    )
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
-            post_not = False
-            context = {'Brochure' : Brochure , 'post_not' : post_not}
-            return render(request,'Sapphire/brochure.html' , context)
         else:
-    
-            return HttpResponse('Make sure all fields are entered and valid.')
-    
-    
-    
-         
+                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
+        
+            
 
     return render(request,'Sapphire/brochure.html' , {'post_not' : post_not})
 
 
-def download(request,path):
-    file_path = os.path.join(settings.MEDIA_ROOT,path)
-    if os.path.exists(file_path):
-        with open(file_path,'rb')as fh:
-            response=HttpResponse(fh.read() , content="application/BrochurePage")
-            response['Content-Disposition'] = 'inline;filename='+os.path.basename(file_path)
+
+def download_pdf_file(request, filename=''):
+        if filename != '':
+            # Define Django project base directory
+            BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            # Define the full file path
+            filepath = BASE_DIR + '/static/images/' + filename
+            # Open the file for reading content
+            path = open(filepath, 'rb')
+            # Set the mime type
+            mime_type, _ = mimetypes.guess_type(filepath)
+            # Set the return value of the HttpResponse
+            response = HttpResponse(path, content_type=mime_type)
+            # Set the HTTP header for sending to browser
+            response['Content-Disposition'] = "attachment; filename=%s" % filename
+            # Return the response value
             return response
-    raise HTTPError
+        else:
+            # Load the template
+            return render(request, 'file.html')

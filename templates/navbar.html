@@ -47,10 +47,14 @@
 
 <nav class="sticky-nav">
     <ul class="sticky-ul">
-        <li><a href="#"><i class="fa-solid fa-phone"></i><span>+919434049127</span></a></li>
-        <li><a href="#"><i class="fa-brands fa-facebook-f"></i><span>facebook</span></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i><span>instagram</span></a></li>
-        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></i><span>+919434049127</span></a></li>
+        {%for setting in settings%}
+
+        <li><a href=""><i class="fa-solid fa-phone"></i><span>{{setting.Contact_Number_1}}</span></a></li>
+        <li><a href="{{setting.Facebook_Page_Link}}"><i class="fa-brands fa-facebook-f"></i><span>facebook</span></a></li>
+        <li><a href="{{setting.Instagram_Page_Link}}"><i class="fa-brands fa-instagram"></i><span>instagram</span></a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></i><span>{{setting.Contact_Number_1}}</span></a></li>
+
+        {%endfor%}
         <li><a href="{%url 'Brochure' %}"><i class="fa-solid fa-circle-question"></i><span>Brochure</span></a></li>
     </ul>
 </nav>

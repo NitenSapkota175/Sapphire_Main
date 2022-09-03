@@ -9,6 +9,7 @@ urlpatterns = [
     path('ourwork',views.OurWork,name='Ourwork'),
     path('ContactUs/',views.Contactus,name='contactus'),
     path('Brochure',views.Brochure_Page,name='Brochure'),
-    
+    #path('download/<str:filename>', views.download_file,name='DownloadFile'),
+    path('download_pdf_file/<str:filename>', views.download_pdf_file,name='downloadPdfFile'),
    
 ]
