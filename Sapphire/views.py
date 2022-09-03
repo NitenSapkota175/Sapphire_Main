@@ -190,4 +190,4 @@ def download_pdf_file(request, filename=''):
             return response
         else:
             # Load the template
-            return render(request, 'file.html')
+            return redirect("Home")
