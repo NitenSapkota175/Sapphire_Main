@@ -164,6 +164,7 @@ def Brochure_Page(request):
                 return HttpResponse('Make sure all fields are entered and valid.')
         
         else:
+                return redirect('Home')
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
         
             
