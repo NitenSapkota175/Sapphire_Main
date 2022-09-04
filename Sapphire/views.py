@@ -178,7 +178,7 @@ def download_pdf_file(request, filename=''):
             # Define Django project base directory
             BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             # Define the full file path
-            filepath = 'https://open-sapphiremain-spaces.fra1.digitaloceanspaces.com/' + filename
+            filepath = settings.MEDIA_DIRECTORY + filename
             
             # Open the file for reading content
             path = open(filepath, 'rb')
