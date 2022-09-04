@@ -176,7 +176,7 @@ def Brochure_Page(request):
 def download_pdf_file(request, filename=''):
         if filename != '':
             # Define Django project base directory
-            BASE_DIR = settings.AWS_LOCATION 
+            BASE_DIR = settings.STATIC_URL
             # Define the full file path
             filepath = BASE_DIR + '/' + filename
             
