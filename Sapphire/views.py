@@ -4,7 +4,7 @@ from sre_parse import State
 from urllib import response
 from urllib.error import HTTPError
 from django.shortcuts import redirect, render
-from django.http  import HttpResponse,HttpResponseRedirect
+from django.http  import HttpResponse
 from . models import End_Section_Of_Products, Home,About, Product_Type_1, Testimonial,Product_Type_2,Our_Works,Contact,Settings,Customer_InfoPage,BrochurePage
 from django.core.mail import send_mail,BadHeaderError
 import os
@@ -13,7 +13,6 @@ from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 import requests
 from django.contrib import messages
-import boto3
 # Create your views here.
 def HomePage(request):
     Home_obj = Home.objects.all()
@@ -176,20 +175,21 @@ def Brochure_Page(request):
 
 def download_pdf_file(request, filename=''):
         if filename != '':
-                   
-
-            client = boto3.client('s3', aws_access_key_id = settings.AWS_ACCESS_KEY_ID, 
-            aws_secret_access_key = settings.AWS_SECRET_ACCESS_KEY)
-            bucket_name = settings.AWS_STORAGE_BUCKET_NAME
-            file_name = settings.AWS_MEDIA_LOCATION + '/' + filename
-
-            url = client.generate_presigned_url(
-                                                'get_object', 
-                                                Params = { 
-                                                            'Bucket': bucket_name, 
-                                                            'Key': file_name, }, 
-                                                ExpiresIn = 600, )
-            return HttpResponseRedirect(url)
+            # Define Django project base directory
+            BASE_DIR = settings.AWS_LOCATION 
+            # Define the full file path
+            filepath = BASE_DIR + '/' + filename
+            
+            # Open the file for reading content
+            path = open(filepath, 'rb')
+            # Set the mime type
+            mime_type, _ = mimetypes.guess_type(filepath)
+            # Set the return value of the HttpResponse
+            response = HttpResponse(path, content_type=mime_type)
+            # Set the HTTP header for sending to browser
+            response['Content-Disposition'] = "attachment; filename=%s" % filename
+            # Return the response value
+            return response
         else:
             # Load the template
             return redirect("Home")
