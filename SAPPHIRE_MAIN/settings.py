@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'phonenumber_field',
-     'storages',
+    'storages',
     #'admin_honeypot',
     
     'Sapphire.apps.SapphireConfig',

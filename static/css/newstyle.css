@@ -12308,6 +12308,11 @@ iframe {
         height: 18.2rem;
     }
 
+    .ourmissionh1 h3{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
     .content1 h3 {
         font-size: 1rem;
     }
@@ -12801,7 +12806,8 @@ iframe {
     }
 
     .ourmissionh1 h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 1rem;
     }
 
     .rate-quote h3 {
