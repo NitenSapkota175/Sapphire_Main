@@ -13,6 +13,7 @@ from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 import requests
 from django.contrib import messages
+import boto3
 # Create your views here.
 def HomePage(request):
     Home_obj = Home.objects.all()
@@ -176,20 +177,25 @@ def Brochure_Page(request):
 def download_pdf_file(request, filename=''):
         if filename != '':
             # Define Django project base directory
-            BASE_DIR = settings.STATIC_URL
+          #  BASE_DIR = settings.STATIC_URL
             # Define the full file path
-            filepath = BASE_DIR + '/' + filename
+           # filepath = BASE_DIR + '/' + filename
             
             # Open the file for reading content
-            path = open(filepath, 'rb')
+           # path = open(filepath, 'rb')
             # Set the mime type
-            mime_type, _ = mimetypes.guess_type(filepath)
+            #mime_type, _ = mimetypes.guess_type(filepath)
             # Set the return value of the HttpResponse
-            response = HttpResponse(path, content_type=mime_type)
+            #response = HttpResponse(path, content_type=mime_type)
             # Set the HTTP header for sending to browser
-            response['Content-Disposition'] = "attachment; filename=%s" % filename
+           # response['Content-Disposition'] = "attachment; filename=%s" % filename
             # Return the response value
-            return response
-        else:
+            #return response
+        #else:
             # Load the template
-            return redirect("Home")
+         #   return redirect("Home")
+
+         s3 = boto3.client('s3')
+         with open(filename, 'wb') as f:
+            s3.download_fileobj(settings.AWS_STORAGE_BUCKET_NAME , os.path.basename(filename), f)
+        
