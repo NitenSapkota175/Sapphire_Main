@@ -127,15 +127,15 @@ def Brochure_Page(request):
 
     if request.method == 'POST':
 
-        recaptcha_response = request.POST.get('g-recaptcha-response')
-        data = {
-                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
-                'response': recaptcha_response
-            }
-        r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
-        result = r.json()
+        # recaptcha_response = request.POST.get('g-recaptcha-response')
+        # data = {
+        #         'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+        #         'response': recaptcha_response
+        #     }
+        # r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
+        # result = r.json()
              
-        if result['success']:  
+        # if result['success']:  
 
             First_name = request.POST.get('FirstName')
             Last_name = request.POST.get('LastName')
@@ -164,7 +164,7 @@ def Brochure_Page(request):
             else:
                 return HttpResponse('Make sure all fields are entered and valid.')
         
-        else:
+     #   else:
                 return redirect('Home')
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
         
@@ -176,26 +176,24 @@ def Brochure_Page(request):
 
 def download_pdf_file(request, filename=''):
         if filename != '':
+  
             # Define Django project base directory
-          #  BASE_DIR = settings.STATIC_URL
-            # Define the full file path
-           # filepath = BASE_DIR + '/' + filename
+            BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             
+            # Define the full file path
+            filepath = filename
             # Open the file for reading content
-           # path = open(filepath, 'rb')
+            path = open(filepath, 'rb')
             # Set the mime type
-            #mime_type, _ = mimetypes.guess_type(filepath)
+            mime_type, _ = mimetypes.guess_type(filepath)
             # Set the return value of the HttpResponse
-            #response = HttpResponse(path, content_type=mime_type)
+            response = HttpResponse(path, content_type=mime_type)
             # Set the HTTP header for sending to browser
-           # response['Content-Disposition'] = "attachment; filename=%s" % filename
+            response['Content-Disposition'] = "attachment; filename=%s" % filename
             # Return the response value
-            #return response
-        #else:
-            # Load the template
-         #   return redirect("Home")
+            return response
 
-         s3 = boto3.client('s3')
-         with open(filename, 'wb') as f:
-            s3.download_fileobj(settings.AWS_STORAGE_BUCKET_NAME , os.path.basename(filename), f)
+        #  s3 = boto3.client('s3')
+        #  with open(filename, 'wb') as f:
+        #     s3.download_fileobj(settings.AWS_STORAGE_BUCKET_NAME , os.path.basename(filename), f)
         
