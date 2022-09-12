@@ -14,6 +14,7 @@ from django.core.files.storage import FileSystemStorage
 import requests
 from django.contrib import messages
 import boto3
+import botocore
 # Create your views here.
 def HomePage(request):
     Home_obj = Home.objects.all()
@@ -177,21 +178,33 @@ def Brochure_Page(request):
 def download_pdf_file(request, filename=''):
         if filename != '':
   
+   
+            s3 = boto3.resource('s3')
+
+            try:
+                s3.Bucket("open-sapphiremain-spaces").download_file(filename)
+            except botocore.exceptions.ClientError as e:
+                if e.response['Error']['Code'] == "404":
+                    print("The object does not exist.")
+                else:
+                    raise
+
+
             # Define Django project base directory
-            BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+          #  BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             
             # Define the full file path
-            filepath =  'https://open-sapphiremain-spaces.fra1.digitaloceanspaces.com/'+filename
+           # filepath =  'static.sapphirecommotrade.com/open-sapphiremain-spaces/'+filename
             # Open the file for reading content
-            path = open(filepath, 'rb')
+            #path = open(filepath, 'rb')
             # Set the mime type
-            mime_type, _ = mimetypes.guess_type(filepath)
+           # mime_type, _ = mimetypes.guess_type(filepath)
             # Set the return value of the HttpResponse
-            response = HttpResponse(path, content_type=mime_type)
+            #response = HttpResponse(path, content_type=mime_type)
             # Set the HTTP header for sending to browser
-            response['Content-Disposition'] = filename
+            #response['Content-Disposition'] = filename
             # Return the response value
-            return response
+           # return response
 
         #  s3 = boto3.client('s3')
         #  with open(filename, 'wb') as f:
