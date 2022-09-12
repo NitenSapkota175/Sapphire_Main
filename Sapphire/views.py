@@ -149,7 +149,7 @@ def Brochure_Page(request):
             
             if First_name and Last_name  and email and message_body and number:
                 try:
-                    send_mail(Full_Name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
+                   # send_mail(Full_Name,message_body+ " You can contact me at "+number ,email,['sapphire.upvc@gmail.com'],fail_silently=False)
                     Customer_InfoPage.objects.create(
                             FullName =Full_Name,
                             Phone_Number=number,
@@ -181,7 +181,7 @@ def download_pdf_file(request, filename=''):
             BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             
             # Define the full file path
-            filepath = filename
+            filepath =  'https://open-sapphiremain-spaces.fra1.digitaloceanspaces.com/'+filename
             # Open the file for reading content
             path = open(filepath, 'rb')
             # Set the mime type
@@ -189,7 +189,7 @@ def download_pdf_file(request, filename=''):
             # Set the return value of the HttpResponse
             response = HttpResponse(path, content_type=mime_type)
             # Set the HTTP header for sending to browser
-            response['Content-Disposition'] = "attachment; filename=%s" % filename
+            response['Content-Disposition'] = filename
             # Return the response value
             return response
 
